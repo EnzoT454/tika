@@ -37,7 +37,7 @@ import org.junit.jupiter.api.Test;
  * IFT3913, tache 2 : tests ecrits a la main pour les mutants de {@link MediaType} qui
  * survivaient aux tests originaux et aux tests generes par ChatUniTest (qui a ignore les
  * methodes set(...), getBaseType(), union(...) et les constructeurs).
- * Chaque test documente son intention, le choix des donnees et l'oracle (README.md, section 9.2).
+ * Chaque test documente son intention, le choix des donnees et l'oracle (readme-tache-2.md, section 9.2).
  */
 public class MediaTypeManualTest {
 

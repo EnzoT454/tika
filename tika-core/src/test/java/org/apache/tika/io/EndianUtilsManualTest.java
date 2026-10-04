@@ -30,7 +30,7 @@ import org.apache.tika.io.EndianUtils.BufferUnderrunException;
 /**
  * IFT3913, tache 2 : tests ecrits a la main pour les mutants de {@link EndianUtils} qui
  * survivaient aux tests originaux et aux tests generes par ChatUniTest.
- * Chaque test documente son intention, le choix des donnees et l'oracle (voir aussi README.md, section 9).
+ * Chaque test documente son intention, le choix des donnees et l'oracle (voir aussi readme-tache-2.md, section 9).
  */
 public class EndianUtilsManualTest {
 

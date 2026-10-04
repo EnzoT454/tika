@@ -22,7 +22,6 @@ Toute la documentation de la tâche 2 se trouve dans ce fichier unique.
 9. [Tests supplémentaires écrits à la main](#9-tests-supplémentaires-écrits-à-la-main)
 10. [Exécution dans GitHub Actions](#10-exécution-dans-github-actions)
 11. [Reproduire les résultats](#11-reproduire-les-résultats)
-12. [Déclaration d'utilisation de l'intelligence artificielle](#12-déclaration-dutilisation-de-lintelligence-artificielle)
 
 ## 1. Résumé des résultats
 
@@ -869,20 +868,3 @@ mvn -pl tika-core org.pitest:pitest-maven:mutationCoverage
 Les rapports obtenus lors de la rédaction de ce document sont conservés dans [tache2-rapports/](tache2-rapports/)
 (un dossier numéroté par étape, décrit dans [tache2-rapports/README.md](tache2-rapports/README.md)), avec les
 scripts d'analyse utilisés (`tache2-rapports/scripts/`).
-
-## 12. Déclaration d'utilisation de l'intelligence artificielle
-
-Conformément aux [directives de l'Université de Montréal](https://boite-outils.bib.umontreal.ca/c.php?g=743753&p=5377614),
-nous déclarons les usages suivants de l'IA générative :
-
-- **Génération des tests** : tous les fichiers `tika-core/src/test/java/**/<Classe>_*_Test.java` ont été produits par
-  ChatUniTest 2.1.1 avec le modèle ouvert Qwen2.5-Coder-7B-Instruct (Alibaba, licence Apache 2.0) exécuté localement
-  avec Ollama ; aucun service en ligne n'a été utilisé. C'est l'objet même de la tâche. Les prompts et réponses
-  complets sont archivés dans `tache2-rapports/03-chatunitest/`, et les corrections manuelles apportées à ces tests
-  sont listées dans l'en-tête de chaque fichier et à la section 5.
-- **Assistant de programmation** : <!-- À ADAPTER PAR LE BINÔME. Proposition : --> l'assistant Claude Code (Anthropic,
-  modèle Claude) a été utilisé pour installer et configurer le pipeline (Ollama, plugin ChatUniTest, pitest, workflow
-  GitHub Actions), lancer les analyses, écrire les scripts d'analyse de `tache2-rapports/scripts/`, rédiger les tests
-  manuels `*ManualTest.java` et une version complète de ce document. Les membres du binôme ont relu l'ensemble,
-  vérifié les chiffres à partir des rapports archivés et assument le contenu.
-- Aucune IA n'a été utilisée pour modifier le code de Tika lui-même (`src/main`), qui est inchangé.

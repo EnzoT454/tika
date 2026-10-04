@@ -35,7 +35,7 @@ import org.apache.tika.metadata.TikaCoreProperties;
  * survivaient aux tests originaux et aux tests generes par ChatUniTest (methodes privees
  * getEmbeddedPath/getEmbeddedName/getPrefixLength/lookupExtension, bornes de longueur,
  * branche "chemins existants" de resolveWithin).
- * Chaque test documente son intention, le choix des donnees et l'oracle (README.md, section 9.3).
+ * Chaque test documente son intention, le choix des donnees et l'oracle (readme-tache-2.md, section 9.3).
  */
 public class FilenameUtilsManualTest {
 

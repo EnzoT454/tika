@@ -1,6 +1,6 @@
 # Rapports de la tâche 2 (IFT3913)
 
-Toute la documentation est dans le [README.md](../README.md) à la racine ; ce dossier contient uniquement les
+Toute la documentation est dans le [readme-tache-2.md](../readme-tache-2.md) à la racine ; ce dossier contient uniquement les
 artefacts bruts produits pendant le travail, dans l'ordre des étapes.
 
 | Dossier | Contenu |

@@ -6,4 +6,4 @@
 | Nom Prénom | github-username |
 
 - Lien vers le répertoire GitHub : https://github.com/<utilisateur>/tika
-- Lien vers le README du répertoire : https://github.com/<utilisateur>/tika/blob/<branche>/README.md
+- Lien vers le README du répertoire : https://github.com/<utilisateur>/tika/blob/<branche>/readme-tache-2.md
