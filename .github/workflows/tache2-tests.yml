@@ -17,9 +17,9 @@ name: Tâche 2 — tests tika-core
 
 'on':
   push:
-    branches: [main, tache2-tests]
+    branches: [main, tache2-hamza]
   pull_request:
-    branches: [main, tache2-tests]
+    branches: [main, tache2-hamza]
   workflow_dispatch:
 
 permissions:
