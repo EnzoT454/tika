@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TikaComponentProcessor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Apache Tika Annotation Processor</a> &gt; <a href="index.source.html" class="el_package">org.apache.tika.annotation</a> &gt; <span class="el_source">TikaComponentProcessor.java</span></div><h1>TikaComponentProcessor.java</h1><pre class="source lang-java linenums">/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.tika.annotation;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import javax.annotation.processing.AbstractProcessor;
+import javax.annotation.processing.Filer;
+import javax.annotation.processing.Messager;
+import javax.annotation.processing.ProcessingEnvironment;
+import javax.annotation.processing.RoundEnvironment;
+import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.annotation.processing.SupportedSourceVersion;
+import javax.lang.model.SourceVersion;
+import javax.lang.model.element.AnnotationMirror;
+import javax.lang.model.element.AnnotationValue;
+import javax.lang.model.element.Element;
+import javax.lang.model.element.ExecutableElement;
+import javax.lang.model.element.TypeElement;
+import javax.lang.model.type.DeclaredType;
+import javax.lang.model.type.TypeMirror;
+import javax.tools.Diagnostic;
+import javax.tools.FileObject;
+import javax.tools.StandardLocation;
+
+
+/**
+ * Annotation processor for {@link TikaComponent} that generates:
+ * &lt;ul&gt;
+ *   &lt;li&gt;Standard Java SPI files (META-INF/services/*) for ServiceLoader&lt;/li&gt;
+ *   &lt;li&gt;Component index files (META-INF/tika/*.idx) for name-based lookup&lt;/li&gt;
+ * &lt;/ul&gt;
+ *
+ * &lt;p&gt;The processor maintains an inclusion list of known Tika service interfaces
+ * to avoid generating SPI files for utility interfaces like Serializable, etc.
+ */
+@SupportedAnnotationTypes(&quot;org.apache.tika.annotation.TikaComponent&quot;)
+@SupportedSourceVersion(SourceVersion.RELEASE_17)
+<span class="nc" id="L61">public class TikaComponentProcessor extends AbstractProcessor {</span>
+
+    /**
+     * Known Tika service interfaces for SPI generation.
+     * Only classes implementing these interfaces will have SPI files generated.
+     * &lt;p&gt;
+     * Components that don't implement any of these interfaces (e.g., DigesterFactory,
+     * ContentHandlerFactory implementations) go to parse-context.idx instead.
+     * These should specify their contextKey explicitly via @TikaComponent(contextKey=...).
+     */
+<span class="nc" id="L71">    private static final Map&lt;String, String&gt; SERVICE_INTERFACES = new LinkedHashMap&lt;&gt;();</span>
+
+    static {
+        // Map interface fully qualified name -&gt; index file name
+<span class="nc" id="L75">        SERVICE_INTERFACES.put(&quot;org.apache.tika.parser.Parser&quot;, &quot;parsers&quot;);</span>
+<span class="nc" id="L76">        SERVICE_INTERFACES.put(&quot;org.apache.tika.detect.Detector&quot;, &quot;detectors&quot;);</span>
+<span class="nc" id="L77">        SERVICE_INTERFACES.put(&quot;org.apache.tika.detect.EncodingDetector&quot;, &quot;encoding-detectors&quot;);</span>
+<span class="nc" id="L78">        SERVICE_INTERFACES.put(&quot;org.apache.tika.language.detect.LanguageDetector&quot;, &quot;language-detectors&quot;);</span>
+<span class="nc" id="L79">        SERVICE_INTERFACES.put(&quot;org.apache.tika.language.translate.Translator&quot;, &quot;translators&quot;);</span>
+<span class="nc" id="L80">        SERVICE_INTERFACES.put(&quot;org.apache.tika.renderer.Renderer&quot;, &quot;renderers&quot;);</span>
+<span class="nc" id="L81">        SERVICE_INTERFACES.put(&quot;org.apache.tika.metadata.filter.MetadataFilter&quot;, &quot;metadata-filters&quot;);</span>
+<span class="nc" id="L82">    }</span>
+
+    private Messager messager;
+    private Filer filer;
+
+    // Accumulate components across rounds
+    // Map: service interface name -&gt; set of implementing class names
+<span class="nc" id="L89">    private final Map&lt;String, Set&lt;String&gt;&gt; spiServices = new HashMap&lt;&gt;();</span>
+
+    // Map: index file name -&gt; map of (component name -&gt; class name)
+<span class="nc" id="L92">    private final Map&lt;String, Map&lt;String, String&gt;&gt; indexFiles = new HashMap&lt;&gt;();</span>
+
+    @Override
+    public synchronized void init(ProcessingEnvironment processingEnv) {
+<span class="nc" id="L96">        super.init(processingEnv);</span>
+<span class="nc" id="L97">        this.messager = processingEnv.getMessager();</span>
+<span class="nc" id="L98">        this.filer = processingEnv.getFiler();</span>
+<span class="nc" id="L99">    }</span>
+
+    @Override
+    public boolean process(Set&lt;? extends TypeElement&gt; annotations, RoundEnvironment roundEnv) {
+<span class="nc bnc" id="L103" title="All 2 branches missed.">        if (roundEnv.processingOver()) {</span>
+            // Final round - write accumulated data
+<span class="nc" id="L105">            writeServiceFiles();</span>
+<span class="nc" id="L106">            writeIndexFiles();</span>
+<span class="nc" id="L107">            return true;</span>
+        }
+
+<span class="nc bnc" id="L110" title="All 2 branches missed.">        for (Element element : roundEnv.getElementsAnnotatedWith(TikaComponent.class)) {</span>
+<span class="nc bnc" id="L111" title="All 2 branches missed.">            if (element instanceof TypeElement) {</span>
+<span class="nc" id="L112">                processComponent((TypeElement) element);</span>
+            }
+<span class="nc" id="L114">        }</span>
+
+<span class="nc" id="L116">        return true;</span>
+    }
+
+    private void processComponent(TypeElement element) {
+<span class="nc" id="L120">        String className = element.getQualifiedName().toString();</span>
+<span class="nc" id="L121">        TikaComponent annotation = element.getAnnotation(TikaComponent.class);</span>
+
+        // Determine component name
+<span class="nc" id="L124">        String componentName = annotation.name();</span>
+<span class="nc bnc" id="L125" title="All 4 branches missed.">        if (componentName == null || componentName.isEmpty()) {</span>
+            // Auto-generate from class name
+<span class="nc" id="L127">            String simpleName = element.getSimpleName().toString();</span>
+<span class="nc" id="L128">            componentName = KebabCaseConverter.toKebabCase(simpleName);</span>
+        }
+
+        // Check if component should be included in SPI
+<span class="nc" id="L132">        boolean includeSpi = annotation.spi();</span>
+
+        // Get contextKey if specified (need to use mirror API for Class types)
+<span class="nc" id="L135">        String contextKey = getContextKeyFromAnnotation(element);</span>
+
+        // Get defaultFor if specified (need to use mirror API for Class types)
+<span class="nc" id="L138">        String defaultFor = getDefaultForFromAnnotation(element);</span>
+
+<span class="nc" id="L140">        messager.printMessage(Diagnostic.Kind.NOTE,</span>
+                &quot;Processing @TikaComponent: &quot; + className + &quot; -&gt; &quot; + componentName +
+                &quot; (SPI: &quot; + includeSpi + &quot;, contextKey: &quot; + contextKey +
+                &quot;, defaultFor: &quot; + defaultFor + &quot;)&quot;);
+
+        // Find all implemented service interfaces
+<span class="nc" id="L146">        List&lt;String&gt; serviceInterfaces = findServiceInterfaces(element);</span>
+
+        // Build the index entry value (className or className:key=X[:default])
+        // Auto-detect contextKey from service interface if not explicitly specified
+<span class="nc" id="L150">        String indexValue = className;</span>
+<span class="nc bnc" id="L151" title="All 2 branches missed.">        if (contextKey != null) {</span>
+            // Explicit contextKey specified
+<span class="nc" id="L153">            indexValue = className + &quot;:key=&quot; + contextKey;</span>
+<span class="nc bnc" id="L154" title="All 2 branches missed.">        } else if (serviceInterfaces.size() == 1) {</span>
+            // Auto-detect contextKey from single service interface
+<span class="nc" id="L156">            indexValue = className + &quot;:key=&quot; + serviceInterfaces.get(0);</span>
+<span class="nc" id="L157">            messager.printMessage(Diagnostic.Kind.NOTE,</span>
+<span class="nc" id="L158">                    &quot;Auto-detected contextKey=&quot; + serviceInterfaces.get(0) + &quot; for &quot; + className);</span>
+<span class="nc bnc" id="L159" title="All 2 branches missed.">        } else if (serviceInterfaces.size() &gt; 1) {</span>
+            // Multiple interfaces - warn that contextKey should be specified
+<span class="nc" id="L161">            messager.printMessage(Diagnostic.Kind.WARNING,</span>
+                    &quot;Class &quot; + className + &quot; implements multiple interfaces: &quot; +
+                    serviceInterfaces + &quot;. Consider specifying @TikaComponent(contextKey=...) &quot; +
+                    &quot;to select which one to use as ParseContext key.&quot;, element);
+        }
+
+        // Add :default marker if defaultFor is specified
+<span class="nc bnc" id="L168" title="All 2 branches missed.">        if (defaultFor != null) {</span>
+<span class="nc" id="L169">            indexValue = indexValue + &quot;:default&quot;;</span>
+        }
+
+        // Components that don't implement any known service interface go to parse-context.idx
+        // These should specify their contextKey explicitly via @TikaComponent(contextKey=...)
+<span class="nc bnc" id="L174" title="All 2 branches missed.">        if (serviceInterfaces.isEmpty()) {</span>
+            // Put in parse-context.idx
+<span class="nc" id="L176">            messager.printMessage(Diagnostic.Kind.NOTE,</span>
+                    &quot;Class &quot; + className + &quot; is a parse-context component, &quot; +
+                    &quot;adding to parse-context.idx&quot;, element);
+
+<span class="nc" id="L180">            Map&lt;String, String&gt; index = indexFiles.computeIfAbsent(&quot;parse-context&quot;,</span>
+<span class="nc" id="L181">                    k -&gt; new LinkedHashMap&lt;&gt;());</span>
+<span class="nc" id="L182">            addToIndex(index, componentName, indexValue, className, element);</span>
+        }
+
+        // Process SPI service interfaces (these also get their own idx files)
+<span class="nc bnc" id="L186" title="All 2 branches missed.">        for (String serviceInterface : serviceInterfaces) {</span>
+            // Add to SPI services only if spi = true
+<span class="nc bnc" id="L188" title="All 2 branches missed.">            if (includeSpi) {</span>
+<span class="nc" id="L189">                spiServices.computeIfAbsent(serviceInterface, k -&gt; new LinkedHashSet&lt;&gt;())</span>
+<span class="nc" id="L190">                        .add(className);</span>
+            }
+
+            // Always add to index files for name-based lookup, regardless of spi value
+<span class="nc" id="L194">            String indexFileName = SERVICE_INTERFACES.get(serviceInterface);</span>
+<span class="nc bnc" id="L195" title="All 2 branches missed.">            if (indexFileName != null) {</span>
+<span class="nc" id="L196">                Map&lt;String, String&gt; index = indexFiles.computeIfAbsent(indexFileName,</span>
+<span class="nc" id="L197">                        k -&gt; new LinkedHashMap&lt;&gt;());</span>
+<span class="nc" id="L198">                addToIndex(index, componentName, indexValue, className, element);</span>
+            }
+<span class="nc" id="L200">        }</span>
+<span class="nc" id="L201">    }</span>
+
+    /**
+     * Adds an entry to an index, checking for duplicates.
+     */
+    private void addToIndex(Map&lt;String, String&gt; index, String componentName,
+                           String indexValue, String className, TypeElement element) {
+<span class="nc bnc" id="L208" title="All 2 branches missed.">        if (index.containsKey(componentName)) {</span>
+<span class="nc" id="L209">            String existingValue = index.get(componentName);</span>
+            // Extract class name from value (may have :key= suffix)
+<span class="nc bnc" id="L211" title="All 2 branches missed.">            String existingClass = existingValue.contains(&quot;:&quot;)</span>
+<span class="nc" id="L212">                    ? existingValue.substring(0, existingValue.indexOf(&quot;:&quot;))</span>
+<span class="nc" id="L213">                    : existingValue;</span>
+<span class="nc bnc" id="L214" title="All 2 branches missed.">            if (!existingClass.equals(className)) {</span>
+<span class="nc" id="L215">                messager.printMessage(Diagnostic.Kind.ERROR,</span>
+                        &quot;Duplicate component name '&quot; + componentName + &quot;' for classes: &quot; +
+                        existingClass + &quot; and &quot; + className, element);
+            }
+<span class="nc" id="L219">        } else {</span>
+<span class="nc" id="L220">            index.put(componentName, indexValue);</span>
+        }
+<span class="nc" id="L222">    }</span>
+
+    /**
+     * Gets the contextKey value from the annotation using the mirror API.
+     * Returns null if contextKey is void.class (the default).
+     */
+    private String getContextKeyFromAnnotation(TypeElement element) {
+<span class="nc" id="L229">        return getClassAttributeFromAnnotation(element, &quot;contextKey&quot;);</span>
+    }
+
+    /**
+     * Gets the defaultFor value from the annotation using the mirror API.
+     * Returns null if defaultFor is void.class (the default).
+     */
+    private String getDefaultForFromAnnotation(TypeElement element) {
+<span class="nc" id="L237">        return getClassAttributeFromAnnotation(element, &quot;defaultFor&quot;);</span>
+    }
+
+    /**
+     * Gets a Class-typed attribute value from the annotation using the mirror API.
+     * Returns null if the attribute is void.class (the default).
+     */
+    private String getClassAttributeFromAnnotation(TypeElement element, String attributeName) {
+<span class="nc bnc" id="L245" title="All 2 branches missed.">        for (AnnotationMirror mirror : element.getAnnotationMirrors()) {</span>
+<span class="nc" id="L246">            DeclaredType annotationType = mirror.getAnnotationType();</span>
+<span class="nc bnc" id="L247" title="All 2 branches missed.">            if (annotationType.toString().equals(TikaComponent.class.getName())) {</span>
+                for (Map.Entry&lt;? extends ExecutableElement, ? extends AnnotationValue&gt; entry
+<span class="nc bnc" id="L249" title="All 2 branches missed.">                        : mirror.getElementValues().entrySet()) {</span>
+<span class="nc bnc" id="L250" title="All 2 branches missed.">                    if (entry.getKey().getSimpleName().toString().equals(attributeName)) {</span>
+                        // The value is a TypeMirror for Class types
+<span class="nc" id="L252">                        Object value = entry.getValue().getValue();</span>
+<span class="nc bnc" id="L253" title="All 2 branches missed.">                        if (value instanceof TypeMirror) {</span>
+<span class="nc" id="L254">                            String typeName = value.toString();</span>
+                            // void.class is the default, meaning &quot;not specified&quot;
+<span class="nc bnc" id="L256" title="All 4 branches missed.">                            if (!&quot;void&quot;.equals(typeName) &amp;&amp; !&quot;java.lang.Void&quot;.equals(typeName)) {</span>
+<span class="nc" id="L257">                                return typeName;</span>
+                            }
+                        }
+                    }
+<span class="nc" id="L261">                }</span>
+            }
+<span class="nc" id="L263">        }</span>
+<span class="nc" id="L264">        return null;</span>
+    }
+
+    /**
+     * Finds all Tika service interfaces implemented by the given type element.
+     */
+    private List&lt;String&gt; findServiceInterfaces(TypeElement element) {
+<span class="nc" id="L271">        List&lt;String&gt; result = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L272">        Set&lt;String&gt; visited = new LinkedHashSet&lt;&gt;();</span>
+<span class="nc" id="L273">        findInterfacesRecursive(element.asType(), result, visited, SERVICE_INTERFACES.keySet());</span>
+<span class="nc" id="L274">        return result;</span>
+    }
+
+    /**
+     * Recursively searches for interfaces in the type hierarchy.
+     *
+     * @param type the type to search from
+     * @param result list to add found interfaces to
+     * @param visited set of already visited types (to avoid infinite loops)
+     * @param targetInterfaces the set of interface names to look for
+     */
+    private void findInterfacesRecursive(TypeMirror type, List&lt;String&gt; result,
+                                         Set&lt;String&gt; visited, Set&lt;String&gt; targetInterfaces) {
+<span class="nc bnc" id="L287" title="All 4 branches missed.">        if (type == null || !(type instanceof DeclaredType)) {</span>
+<span class="nc" id="L288">            return;</span>
+        }
+
+<span class="nc" id="L291">        DeclaredType declaredType = (DeclaredType) type;</span>
+<span class="nc" id="L292">        TypeElement typeElement = (TypeElement) declaredType.asElement();</span>
+<span class="nc" id="L293">        String typeName = typeElement.getQualifiedName().toString();</span>
+
+        // Avoid infinite loops
+<span class="nc bnc" id="L296" title="All 2 branches missed.">        if (!visited.add(typeName)) {</span>
+<span class="nc" id="L297">            return;</span>
+        }
+
+        // Check if this is a target interface
+<span class="nc bnc" id="L301" title="All 2 branches missed.">        if (targetInterfaces.contains(typeName)) {</span>
+<span class="nc bnc" id="L302" title="All 2 branches missed.">            if (!result.contains(typeName)) {</span>
+<span class="nc" id="L303">                result.add(typeName);</span>
+            }
+        }
+
+        // Check superclass
+<span class="nc" id="L308">        TypeMirror superclass = typeElement.getSuperclass();</span>
+<span class="nc" id="L309">        findInterfacesRecursive(superclass, result, visited, targetInterfaces);</span>
+
+        // Check interfaces
+<span class="nc bnc" id="L312" title="All 2 branches missed.">        for (TypeMirror interfaceType : typeElement.getInterfaces()) {</span>
+<span class="nc" id="L313">            findInterfacesRecursive(interfaceType, result, visited, targetInterfaces);</span>
+<span class="nc" id="L314">        }</span>
+<span class="nc" id="L315">    }</span>
+
+    /**
+     * Writes META-INF/services files for Java SPI.
+     */
+    private void writeServiceFiles() {
+<span class="nc bnc" id="L321" title="All 2 branches missed.">        for (Map.Entry&lt;String, Set&lt;String&gt;&gt; entry : spiServices.entrySet()) {</span>
+<span class="nc" id="L322">            String serviceInterface = entry.getKey();</span>
+<span class="nc" id="L323">            Set&lt;String&gt; implementations = entry.getValue();</span>
+
+            // Sort implementations alphabetically for deterministic output
+<span class="nc" id="L326">            List&lt;String&gt; sortedImplementations = new ArrayList&lt;&gt;(implementations);</span>
+<span class="nc" id="L327">            Collections.sort(sortedImplementations);</span>
+
+            try {
+<span class="nc" id="L330">                FileObject file = filer.createResource(StandardLocation.CLASS_OUTPUT, &quot;&quot;,</span>
+                        &quot;META-INF/services/&quot; + serviceInterface);
+
+<span class="nc" id="L333">                try (Writer writer = file.openWriter()) {</span>
+<span class="nc" id="L334">                    writeApacheLicenseHeader(writer);</span>
+<span class="nc" id="L335">                    writer.write(&quot;\n\n&quot;);</span>
+<span class="nc" id="L336">                    writer.write(&quot;# Generated by TikaComponentProcessor\n&quot;);</span>
+<span class="nc" id="L337">                    writer.write(&quot;# Do not edit manually\n&quot;);</span>
+<span class="nc bnc" id="L338" title="All 2 branches missed.">                    for (String impl : sortedImplementations) {</span>
+                        // add comments for Bnd to generate OSGi metadata for Service Mediator spec (https://bnd.bndtools.org/chapters/230-manifest-annotations.html#meta-infservices-annotations)
+<span class="nc" id="L340">                        writer.write(&quot;#@aQute.bnd.annotation.spi.ServiceProvider()\n&quot;);</span>
+<span class="nc" id="L341">                        writer.write(impl);</span>
+<span class="nc" id="L342">                        writer.write(&quot;\n&quot;);</span>
+<span class="nc" id="L343">                    }</span>
+                }
+
+<span class="nc" id="L346">                messager.printMessage(Diagnostic.Kind.NOTE,</span>
+                        &quot;Generated SPI file: META-INF/services/&quot; + serviceInterface +
+<span class="nc" id="L348">                        &quot; with &quot; + implementations.size() + &quot; implementations&quot;);</span>
+
+<span class="nc" id="L350">            } catch (IOException e) {</span>
+<span class="nc" id="L351">                messager.printMessage(Diagnostic.Kind.ERROR,</span>
+<span class="nc" id="L352">                        &quot;Failed to write SPI file for &quot; + serviceInterface + &quot;: &quot; + e.getMessage());</span>
+<span class="nc" id="L353">            }</span>
+<span class="nc" id="L354">        }</span>
+<span class="nc" id="L355">    }</span>
+
+    /**
+     * Writes META-INF/tika/*.idx files for name-based component lookup.
+     */
+    private void writeIndexFiles() {
+<span class="nc bnc" id="L361" title="All 2 branches missed.">        for (Map.Entry&lt;String, Map&lt;String, String&gt;&gt; entry : indexFiles.entrySet()) {</span>
+<span class="nc" id="L362">            String fileName = entry.getKey();</span>
+<span class="nc" id="L363">            Map&lt;String, String&gt; components = entry.getValue();</span>
+
+            try {
+<span class="nc" id="L366">                FileObject file = filer.createResource(StandardLocation.CLASS_OUTPUT, &quot;&quot;,</span>
+                        &quot;META-INF/tika/&quot; + fileName + &quot;.idx&quot;);
+
+<span class="nc" id="L369">                try (Writer writer = file.openWriter()) {</span>
+<span class="nc" id="L370">                    writeApacheLicenseHeader(writer);</span>
+<span class="nc" id="L371">                    writer.write(&quot;# Generated by TikaComponentProcessor\n&quot;);</span>
+<span class="nc" id="L372">                    writer.write(&quot;# Do not edit manually\n&quot;);</span>
+<span class="nc" id="L373">                    writer.write(&quot;# Format: component-name=fully.qualified.ClassName[:key=contextKeyClass]\n&quot;);</span>
+<span class="nc bnc" id="L374" title="All 2 branches missed.">                    for (Map.Entry&lt;String, String&gt; component : components.entrySet()) {</span>
+<span class="nc" id="L375">                        writer.write(component.getKey());</span>
+<span class="nc" id="L376">                        writer.write(&quot;=&quot;);</span>
+<span class="nc" id="L377">                        writer.write(component.getValue());</span>
+<span class="nc" id="L378">                        writer.write(&quot;\n&quot;);</span>
+<span class="nc" id="L379">                    }</span>
+                }
+
+<span class="nc" id="L382">                messager.printMessage(Diagnostic.Kind.NOTE,</span>
+                        &quot;Generated index file: META-INF/tika/&quot; + fileName + &quot;.idx&quot; +
+<span class="nc" id="L384">                        &quot; with &quot; + components.size() + &quot; components&quot;);</span>
+
+<span class="nc" id="L386">            } catch (IOException e) {</span>
+<span class="nc" id="L387">                messager.printMessage(Diagnostic.Kind.ERROR,</span>
+<span class="nc" id="L388">                        &quot;Failed to write index file &quot; + fileName + &quot;: &quot; + e.getMessage());</span>
+<span class="nc" id="L389">            }</span>
+<span class="nc" id="L390">        }</span>
+<span class="nc" id="L391">    }</span>
+
+    /**
+     * Writes the Apache License 2.0 header to a file.
+     */
+    private void writeApacheLicenseHeader(Writer writer) throws IOException {
+<span class="nc" id="L397">        String header = &quot;&quot;&quot;</span>
+                #  Licensed to the Apache Software Foundation (ASF) under one or more
+                #  contributor license agreements.  See the NOTICE file distributed with
+                #  this work for additional information regarding copyright ownership.
+                #  The ASF licenses this file to You under the Apache License, Version 2.0
+                #  (the &quot;License&quot;); you may not use this file except in compliance with
+                #  the License.  You may obtain a copy of the License at
+                #
+                #       http://www.apache.org/licenses/LICENSE-2.0
+                #
+                #  Unless required by applicable law or agreed to in writing, software
+                #  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+                #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+                #  See the License for the specific language governing permissions and
+                #  limitations under the License.
+
+                &quot;&quot;&quot;;
+<span class="nc" id="L414">        writer.write(header);</span>
+<span class="nc" id="L415">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.15.202606040825</span></div></body></html>

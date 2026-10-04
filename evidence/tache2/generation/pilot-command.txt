@@ -1,0 +1,5 @@
+# From the root of the prepared local copy
+./mvnw -B -pl tika-core -Pchatunitest test-compile io.github.zju-aces-ise:chatunitest-maven-plugin:2.1.1:method '-DselectMethod=org.apache.tika.io.LookaheadInputStream#markSupported'
+
+# After copying the generated Java unchanged into the temporary test source directory
+./mvnw -B -pl tika-core -Pchatunitest compiler:testCompile surefire:test -Dtest=LookaheadInputStream_markSupported_6_0_Test

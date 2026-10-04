@@ -1,0 +1,54 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.LookaheadInputStream;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.IOException;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class LookaheadInputStream_markSupported_6_0_Test {
+
+    @Mock
+    private InputStream mockStream;
+
+    private LookaheadInputStream lookaheadInputStream;
+
+    @BeforeEach
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+        lookaheadInputStream = new LookaheadInputStream(mockStream, 10);
+    }
+
+    @Test
+    public void testMarkSupported() throws IOException {
+        // Call the method using reflection
+        boolean result = (boolean) ReflectionUtils.invokeMethod(lookaheadInputStream, "markSupported");
+        // Verify the result
+        assertTrue(result, "markSupported() should return true");
+    }
+
+    @Test
+    public void testMarkSupportedWithMockStream() throws IOException {
+        // Mock the behavior of the mockStream to return true
+        when(mockStream.markSupported()).thenReturn(true);
+        // Call the method using reflection
+        boolean result = (boolean) ReflectionUtils.invokeMethod(lookaheadInputStream, "markSupported");
+        // Verify the result
+        assertTrue(result, "markSupported() should return true when mockStream.markSupported() returns true");
+    }
+
+    @Test
+    public void testMarkSupportedWithMockStreamFalse() throws IOException {
+        // Mock the behavior of the mockStream to return false
+        when(mockStream.markSupported()).thenReturn(false);
+        // Call the method using reflection
+        boolean result = (boolean) ReflectionUtils.invokeMethod(lookaheadInputStream, "markSupported");
+        // Verify the result
+        assertFalse(result, "markSupported() should return false when mockStream.markSupported() returns false");
+    }
+}

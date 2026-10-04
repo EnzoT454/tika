@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>KebabCaseConverter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Apache Tika Annotation Processor</a> &gt; <a href="index.source.html" class="el_package">org.apache.tika.annotation</a> &gt; <span class="el_source">KebabCaseConverter.java</span></div><h1>KebabCaseConverter.java</h1><pre class="source lang-java linenums">/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the &quot;License&quot;); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.tika.annotation;
+
+import java.util.Locale;
+
+/**
+ * Utility for converting Java class names to kebab-case.
+ * Used for automatic component name generation from class names.
+ *
+ * &lt;p&gt;Examples:
+ * &lt;ul&gt;
+ *   &lt;li&gt;PDFParser → pdf-parser&lt;/li&gt;
+ *   &lt;li&gt;OCRParser → ocr-parser&lt;/li&gt;
+ *   &lt;li&gt;HTMLParser → html-parser&lt;/li&gt;
+ *   &lt;li&gt;DefaultParser → default-parser&lt;/li&gt;
+ *   &lt;li&gt;TesseractOCRParser → tesseract-ocr-parser&lt;/li&gt;
+ * &lt;/ul&gt;
+ */
+public class KebabCaseConverter {
+
+    private KebabCaseConverter() {
+        // Utility class
+    }
+
+    /**
+     * Converts a Java class name to kebab-case.
+     *
+     * @param className the simple class name (without package)
+     * @return the kebab-case version of the name
+     */
+    public static String toKebabCase(String className) {
+<span class="fc bfc" id="L47" title="All 4 branches covered.">        if (className == null || className.isEmpty()) {</span>
+<span class="fc" id="L48">            return className;</span>
+        }
+
+        // Insert hyphen before uppercase letters that follow lowercase letters
+        // or before uppercase letters that are followed by lowercase letters
+<span class="fc" id="L53">        String result = className</span>
+                // Insert hyphen between lowercase and uppercase: &quot;aB&quot; -&gt; &quot;a-B&quot;
+<span class="fc" id="L55">                .replaceAll(&quot;([a-z])([A-Z])&quot;, &quot;$1-$2&quot;)</span>
+                // Insert hyphen before uppercase letter followed by lowercase
+                // in a sequence of uppercase letters: &quot;HTMLParser&quot; -&gt; &quot;HTML-Parser&quot;
+<span class="fc" id="L58">                .replaceAll(&quot;([A-Z]+)([A-Z][a-z])&quot;, &quot;$1-$2&quot;)</span>
+                // Insert hyphen between letter and digit: &quot;PDF2Text&quot; -&gt; &quot;PDF2-Text&quot;
+<span class="fc" id="L60">                .replaceAll(&quot;([a-zA-Z])(\\d)&quot;, &quot;$1-$2&quot;)</span>
+                // Insert hyphen between digit and letter: &quot;2Text&quot; -&gt; &quot;2-Text&quot;
+<span class="fc" id="L62">                .replaceAll(&quot;(\\d)([a-zA-Z])&quot;, &quot;$1-$2&quot;)</span>
+<span class="fc" id="L63">                .toLowerCase(Locale.ROOT);</span>
+
+<span class="fc" id="L65">        return result;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.15.202606040825</span></div></body></html>

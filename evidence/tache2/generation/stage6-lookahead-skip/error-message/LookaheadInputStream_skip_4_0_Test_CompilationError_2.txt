@@ -1,0 +1,61 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.lang.reflect.Field;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class LookaheadInputStream_skip_4_0_Test {
+
+    private LookaheadInputStream lookaheadInputStream;
+
+    @BeforeEach
+    public void setUp() throws IOException {
+        // Create a ByteArrayInputStream with some data
+        byte[] data = { 1, 2, 3, 4, 5 };
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(data);
+        // Initialize the LookaheadInputStream with the input stream and buffer size
+        lookaheadInputStream = new LookaheadInputStream(inputStream, 5);
+    }
+
+    @Test
+    public void testSkip() throws IOException {
+        // Skip 2 bytes
+        long skipped = lookaheadInputStream.skip(2);
+        // Check that the position has been updated correctly
+        assertEquals(2, skipped);
+        // Access the private field position using reflection
+        Field positionField = LookaheadInputStream.class.getDeclaredField("position");
+        positionField.setAccessible(true);
+        assertEquals(2, positionField.getInt(lookaheadInputStream));
+        // Check that the available bytes have been reduced
+        assertEquals(3, lookaheadInputStream.available());
+    }
+
+    @Test
+    public void testSkipBeyondAvailable() throws IOException {
+        // Skip 6 bytes (more than available)
+        long skipped = lookaheadInputStream.skip(6);
+        // Check that the position has been updated correctly
+        assertEquals(5, skipped);
+        // Access the private field position using reflection
+        Field positionField = LookaheadInputStream.class.getDeclaredField("position");
+        positionField.setAccessible(true);
+        assertEquals(5, positionField.getInt(lookaheadInputStream));
+        // Check that the available bytes have been reduced to 0
+        assertEquals(0, lookaheadInputStream.available());
+    }
+}
+
+--------------------------------------------
+Error in LookaheadInputStream_skip_4_0_Test: line 35 : unreported exception java.lang.NoSuchFieldException; must be caught or declared to be thrown
+Error in LookaheadInputStream_skip_4_0_Test: line 37 : unreported exception java.lang.IllegalAccessException; must be caught or declared to be thrown
+Error in LookaheadInputStream_skip_4_0_Test: line 49 : unreported exception java.lang.NoSuchFieldException; must be caught or declared to be thrown
+Error in LookaheadInputStream_skip_4_0_Test: line 51 : unreported exception java.lang.IllegalAccessException; must be caught or declared to be thrown

@@ -1,0 +1,22 @@
+[
+  {
+    "attempt": 0,
+    "round": 0,
+    "prompt": [
+      {
+        "role": "system",
+        "content": "Generate a compact Java test class using JUnit Jupiter (org.junit.jupiter.api).\nUse only the supplied public API and standard Java classes. Construct the subject\nwith its documented constructor. Do not use reflection, invented helper classes,\nor mocks when an ordinary Java object is sufficient.\nTest only the focal method. Derive expected results from its supplied source and\ndocumented contract; do not invent behavior for unrelated methods.\nProduce one or two focused @Test methods with meaningful assertions. Do not use\n@Disabled, assumptions, or catch exceptions merely to make tests pass.\nReturn only the complete Java source, with a package declaration and explicit imports.\n"
+      },
+      {
+        "role": "user",
+        "content": "Generate tests for LookaheadInputStream.markSupported().\n\nThe focal class, constructor signatures and method source are:\n```java\norg.apache.tika.io\nimport java.io.IOException;\nimport java.io.InputStream;\npublic class LookaheadInputStream {\nprivate final byte[] buffer;\nprivate InputStream stream;\nprivate int buffered = 0;\nprivate int position = 0;\nprivate int mark = 0;\npublic LookaheadInputStream(InputStream stream, int n){}\n@Override\n    public boolean markSupported() {\n        return true;\n    }\n}\n```\n\nOther available signatures (bodies omitted, not empty implementations):\n@Override\n    public void close() throws IOException{}\nprivate void fill() throws IOException{}\n@Override\n    public int read() throws IOException{}\n@Override\n    public int read(byte[] b, int off, int len) throws IOException{}\n@Override\n    public long skip(long n) throws IOException{}\n@Override\n    public int available(){}\n@Override\n    public synchronized void mark(int readlimit){}\n@Override\n    public synchronized void reset(){}\npublic LookaheadInputStream(InputStream stream, int n){}\n\nUse the public constructor and public methods. Keep the tests short and focused\non the focal method; use standard-library fixtures rather than reflection.\n"
+      }
+    ],
+    "response": "```java\npackage org.apache.tika.io;\n\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\n\npublic class LookaheadInputStreamTest {\n\n    private LookaheadInputStream lookaheadInputStream;\n\n    @BeforeEach\n    public void setUp() {\n        // Create a mock InputStream for testing\n        InputStream mockStream = new InputStream() {\n            @Override\n            public int read() throws IOException {\n                return 0; // Mock implementation\n            }\n        };\n        lookaheadInputStream = new LookaheadInputStream(mockStream, 10);\n    }\n\n    @Test\n    public void testMarkSupported() {\n        // Test the markSupported method\n        assertTrue(lookaheadInputStream.markSupported());\n    }\n}\n```\n\nIn this test class, we create a `LookaheadInputStream` instance using a mock `InputStream` for testing purposes. The `markSupported` method is then tested to ensure it returns `true`, as per the documented contract.",
+    "promptToken": 382,
+    "responseToken": 199,
+    "hasCode": true,
+    "code": "package org.apache.tika.io;\n\nimport org.mockito.*;\nimport org.junit.jupiter.api.*;\nimport static org.mockito.Mockito.*;\nimport static org.junit.jupiter.api.Assertions.*;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport java.io.IOException;\nimport java.io.InputStream;\n\npublic class LookaheadInputStream_markSupported_6_0_Test {\n\n    private LookaheadInputStream lookaheadInputStream;\n\n    @BeforeEach\n    public void setUp() {\n        // Create a mock InputStream for testing\n        InputStream mockStream = new InputStream() {\n\n            @Override\n            public int read() throws IOException {\n                // Mock implementation\n                return 0;\n            }\n        };\n        lookaheadInputStream = new LookaheadInputStream(mockStream, 10);\n    }\n\n    @Test\n    public void testMarkSupported() {\n        // Test the markSupported method\n        assertTrue(lookaheadInputStream.markSupported());\n    }\n}\n",
+    "hasError": false
+  }
+]

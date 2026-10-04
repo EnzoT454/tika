@@ -1,0 +1,1 @@
+./mvnw -B -pl tika-core -am clean install

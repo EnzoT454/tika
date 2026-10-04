@@ -14,6 +14,9 @@ dependency-reduced-pom.xml
 nbactions.xml
 nb-configuration.xml
 *.DS_Store
+._*
+_*
+AGENTS.md
 *.tmp-inception
 *.snap
 .*.swp

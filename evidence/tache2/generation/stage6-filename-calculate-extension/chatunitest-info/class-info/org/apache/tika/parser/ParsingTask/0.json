@@ -1,0 +1,34 @@
+{
+  "className": "ParsingTask",
+  "methodName": "parse",
+  "brief": "public void parse(InputStream stream, ContentHandler handler, Metadata metadata,\n                          ParseContext context) throws IOException, SAXException, TikaException{}",
+  "methodSignature": "parse(InputStream, ContentHandler, Metadata, ParseContext)",
+  "sourceCode": "public void parse(InputStream stream, ContentHandler handler, Metadata metadata,\n                          ParseContext context) throws IOException, SAXException, TikaException {\n            Thread thread = new Thread(this, \"Tika network parser\");\n            thread.start();\n\n            TaggedContentHandler tagged =\n                    new TaggedContentHandler(handler);\n            try {\n                XMLReaderUtils\n                        .parseSAX(stream, new TeeContentHandler(tagged, new MetaHandler(metadata)),\n                                context);\n            } catch (SAXException e) {\n                tagged.throwIfCauseOf(e);\n                throw new TikaException(\"Invalid network parser output\", e);\n            } catch (IOException e) {\n                throw new TikaException(\"Unable to read network parser output\", e);\n            } finally {\n                try {\n                    thread.join(1000);\n                } catch (InterruptedException e) {\n                    throw new TikaException(\"Network parser interrupted\", e);\n                }\n\n                if (exception != null) {\n                    input.throwIfCauseOf(exception);\n                    throw new TikaException(\"Unexpected network parser error\", exception);\n                }\n            }\n        }",
+  "useField": false,
+  "isConstructor": false,
+  "isGetSet": false,
+  "isPublic": true,
+  "isBoolean": false,
+  "isAbstract": false,
+  "parameters": [
+    "InputStream",
+    "ContentHandler",
+    "Metadata",
+    "ParseContext"
+  ],
+  "dependentMethods": {
+    "java.io.InputStream": [],
+    "org.apache.tika.metadata.Metadata": [],
+    "org.apache.tika.parser.ParseContext": [],
+    "java.lang.Thread": [
+      "start()",
+      "join(long)"
+    ],
+    "org.apache.commons.io.input.TaggedInputStream": [
+      "throwIfCauseOf(Throwable)"
+    ]
+  },
+  "full_method_info": "public void parse(InputStream stream, ContentHandler handler, Metadata metadata, ParseContext context) throws IOException, SAXException, TikaException {\n    Thread thread = new Thread(this, \"Tika network parser\");\n    thread.start();\n    TaggedContentHandler tagged = new TaggedContentHandler(handler);\n    try {\n        XMLReaderUtils.parseSAX(stream, new TeeContentHandler(tagged, new MetaHandler(metadata)), context);\n    } catch (SAXException e) {\n        tagged.throwIfCauseOf(e);\n        throw new TikaException(\"Invalid network parser output\", e);\n    } catch (IOException e) {\n        throw new TikaException(\"Unable to read network parser output\", e);\n    } finally {\n        try {\n            thread.join(1000);\n        } catch (InterruptedException e) {\n            throw new TikaException(\"Network parser interrupted\", e);\n        }\n        if (exception != null) {\n            input.throwIfCauseOf(exception);\n            throw new TikaException(\"Unexpected network parser error\", exception);\n        }\n    }\n}",
+  "method_comment": "",
+  "method_annotation": ""
+}

@@ -1,0 +1,84 @@
+{
+  "tika-core": {
+    "surefire": {
+      "tests": 749,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "skipped_tests": [
+      {
+        "class": "org.apache.tika.io.TikaInputStreamTest",
+        "test": "reproduceRandomizedTestFailure",
+        "reason": "Enable this test to reproduce a specific failure using seed from logs"
+      },
+      {
+        "class": "org.apache.tika.sax.CustomErrorHandlerTest",
+        "test": "testUndeclaredEntityXML",
+        "reason": "TODO -- rework without xerces"
+      }
+    ],
+    "coverage": {
+      "INSTRUCTION": {
+        "missed": 24436,
+        "covered": 22171
+      },
+      "BRANCH": {
+        "missed": 2139,
+        "covered": 2105
+      },
+      "LINE": {
+        "missed": 5254,
+        "covered": 5462
+      },
+      "COMPLEXITY": {
+        "missed": 2466,
+        "covered": 1847
+      },
+      "METHOD": {
+        "missed": 1127,
+        "covered": 1036
+      },
+      "CLASS": {
+        "missed": 156,
+        "covered": 189
+      }
+    }
+  },
+  "tika-annotation-processor": {
+    "surefire": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "skipped_tests": [],
+    "coverage": {
+      "INSTRUCTION": {
+        "missed": 662,
+        "covered": 25
+      },
+      "BRANCH": {
+        "missed": 66,
+        "covered": 4
+      },
+      "LINE": {
+        "missed": 158,
+        "covered": 9
+      },
+      "COMPLEXITY": {
+        "missed": 50,
+        "covered": 3
+      },
+      "METHOD": {
+        "missed": 17,
+        "covered": 1
+      },
+      "CLASS": {
+        "missed": 1,
+        "covered": 1
+      }
+    }
+  },
+  "staged_source_changes_after_build": []
+}

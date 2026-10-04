@@ -1,0 +1,80 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+
+public class LookaheadInputStream_markSupported_6_0_Test {
+
+    private LookaheadInputStream lookaheadInputStream;
+
+    @BeforeEach
+    public void setUp() throws IOException {
+        // Create a ByteArrayInputStream for testing
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(new byte[] { 1, 2, 3, 4, 5 });
+        // Initialize the LookaheadInputStream
+        lookaheadInputStream = new LookaheadInputStream(byteArrayInputStream, 5);
+    }
+
+    @Test
+    public void testMarkSupported() {
+        // Test the markSupported method
+        assertTrue(lookaheadInputStream.markSupported(), "markSupported() should return true");
+    }
+
+    @Test
+    public void testMarkSupportedAfterMark() throws IOException {
+        // Mark the stream
+        lookaheadInputStream.mark(1);
+        // Test the markSupported method again
+        assertTrue(lookaheadInputStream.markSupported(), "markSupported() should return true after marking");
+    }
+
+    @Test
+    public void testMarkSupportedAfterReset() throws IOException {
+        // Mark the stream
+        lookaheadInputStream.mark(1);
+        // Reset the stream
+        lookaheadInputStream.reset();
+        // Test the markSupported method again
+        assertTrue(lookaheadInputStream.markSupported(), "markSupported() should return true after resetting");
+    }
+
+    @Test
+    public void testMarkSupportedAfterClose() throws IOException {
+        // Close the stream
+        lookaheadInputStream.close();
+        // Test the markSupported method again
+        assertFalse(lookaheadInputStream.markSupported(), "markSupported() should return false after closing");
+    }
+
+    @Test
+    public void testMarkSupportedAfterRead() throws IOException {
+        // Read from the stream
+        lookaheadInputStream.read();
+        // Test the markSupported method again
+        assertTrue(lookaheadInputStream.markSupported(), "markSupported() should return true after reading");
+    }
+
+    @Test
+    public void testMarkSupportedAfterSkip() throws IOException {
+        // Skip from the stream
+        lookaheadInputStream.skip(1);
+        // Test the markSupported method again
+        assertTrue(lookaheadInputStream.markSupported(), "markSupported() should return true after skipping");
+    }
+
+    @Test
+    public void testMarkSupportedAfterAvailable() throws IOException {
+        // Get the available bytes
+        lookaheadInputStream.available();
+        // Test the markSupported method again
+        assertTrue(lookaheadInputStream.markSupported(), "markSupported() should return true after available");
+    }
+}

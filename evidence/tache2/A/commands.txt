@@ -1,0 +1,3 @@
+Working directory: /private/tmp/tika-tache2-initial-g426d_l2
+./mvnw -B -pl tika-core -am clean install
+./mvnw -B -pl tika-core -Pmutation org.pitest:pitest-maven:mutationCoverage

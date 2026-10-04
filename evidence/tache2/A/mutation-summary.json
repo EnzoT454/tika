@@ -1,0 +1,45 @@
+{
+  "report_sha256": "661b12484da07e39d45b4907670053d857a8e4ac3934bf8287e982dce8ab219b",
+  "identity_fields": [
+    "class",
+    "method",
+    "descriptor",
+    "mutator",
+    "indexes"
+  ],
+  "classes": {
+    "org.apache.tika.io.FilenameUtils": {
+      "total": 115,
+      "statuses": {
+        "KILLED": 69,
+        "NO_COVERAGE": 16,
+        "SURVIVED": 30
+      },
+      "killed_pct": 60.0,
+      "pit_detected": 69,
+      "pit_detected_pct": 60.0
+    },
+    "org.apache.tika.io.LookaheadInputStream": {
+      "total": 33,
+      "statuses": {
+        "KILLED": 19,
+        "NO_COVERAGE": 9,
+        "SURVIVED": 5
+      },
+      "killed_pct": 57.58,
+      "pit_detected": 19,
+      "pit_detected_pct": 57.58
+    }
+  },
+  "total": {
+    "total": 148,
+    "statuses": {
+      "KILLED": 88,
+      "NO_COVERAGE": 25,
+      "SURVIVED": 35
+    },
+    "killed_pct": 59.46,
+    "pit_detected": 88,
+    "pit_detected_pct": 59.46
+  }
+}

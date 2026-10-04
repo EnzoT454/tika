@@ -1,0 +1,2 @@
+cd /private/tmp/tika-tache2-initial-zie1v2f8
+./mvnw -B -pl tika-core -am clean install

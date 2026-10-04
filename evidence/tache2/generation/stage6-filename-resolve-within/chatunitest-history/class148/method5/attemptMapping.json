@@ -1,0 +1,11 @@
+{
+  "attempt0": {
+    "testClassName": "FilenameUtils_resolveWithin_5_0_Test",
+    "fullName": "org.apache.tika.io.FilenameUtils_resolveWithin_5_0_Test",
+    "path": "/private/tmp/tika-tache2-initial-_r1kj3k2/tika-core/target/chatunitest-tests/tika-parent/tika-core/org/apache/tika/io/FilenameUtils_resolveWithin_5_0_Test.java",
+    "className": "FilenameUtils",
+    "packageName": "org.apache.tika.io",
+    "methodName": "resolveWithin",
+    "methodSig": "resolveWithin(Path, String)"
+  }
+}

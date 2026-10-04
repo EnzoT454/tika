@@ -1,0 +1,16 @@
+error: non-monotonic index .git/objects/pack/._pack-a15b6d983f381803c5a4d8670de5869836e06fab.idx
+error: non-monotonic index .git/objects/pack/._pack-a15b6d983f381803c5a4d8670de5869836e06fab.idx
+error: non-monotonic index .git/objects/pack/._pack-a15b6d983f381803c5a4d8670de5869836e06fab.idx
+diff --git a/.gitignore b/.gitignore
+index 5033761d9..37ab4c6c3 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -14,6 +14,8 @@ dependency-reduced-pom.xml
+ nbactions.xml
+ nb-configuration.xml
+ *.DS_Store
++._*
++_*
+ *.tmp-inception
+ *.snap
+ .*.swp

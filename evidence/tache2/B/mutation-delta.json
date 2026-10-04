@@ -1,0 +1,62 @@
+{
+  "before": "A",
+  "after": "B",
+  "mutation_count": 148,
+  "changed_count": 2,
+  "newly_killed": [
+    {
+      "id": "3cca5ac236c81f45",
+      "class": "org.apache.tika.io.LookaheadInputStream",
+      "method": "markSupported",
+      "descriptor": "()Z",
+      "line": "129",
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator",
+      "description": "replaced boolean return with false for org/apache/tika/io/LookaheadInputStream::markSupported",
+      "before_status": "NO_COVERAGE",
+      "after_status": "KILLED",
+      "before_killing_test": "",
+      "after_killing_test": "org.apache.tika.io.LookaheadInputStreamGeneratedTest.[engine:junit-jupiter]/[class:org.apache.tika.io.LookaheadInputStreamGeneratedTest]/[method:markSupportedIsTrue()]"
+    },
+    {
+      "id": "e8b83566eb240ba8",
+      "class": "org.apache.tika.io.FilenameUtils",
+      "method": "calculateExtension",
+      "descriptor": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;)Ljava/lang/String;",
+      "line": "393",
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+      "description": "removed conditional - replaced equality check with false",
+      "before_status": "SURVIVED",
+      "after_status": "KILLED",
+      "before_killing_test": "",
+      "after_killing_test": "org.apache.tika.io.FilenameUtilsGeneratedTest.[engine:junit-jupiter]/[class:org.apache.tika.io.FilenameUtilsGeneratedTest]/[method:calculateExtensionReturnsProvidedDefaultWithoutMimeType()]"
+    }
+  ],
+  "changes": [
+    {
+      "id": "3cca5ac236c81f45",
+      "class": "org.apache.tika.io.LookaheadInputStream",
+      "method": "markSupported",
+      "descriptor": "()Z",
+      "line": "129",
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator",
+      "description": "replaced boolean return with false for org/apache/tika/io/LookaheadInputStream::markSupported",
+      "before_status": "NO_COVERAGE",
+      "after_status": "KILLED",
+      "before_killing_test": "",
+      "after_killing_test": "org.apache.tika.io.LookaheadInputStreamGeneratedTest.[engine:junit-jupiter]/[class:org.apache.tika.io.LookaheadInputStreamGeneratedTest]/[method:markSupportedIsTrue()]"
+    },
+    {
+      "id": "e8b83566eb240ba8",
+      "class": "org.apache.tika.io.FilenameUtils",
+      "method": "calculateExtension",
+      "descriptor": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;)Ljava/lang/String;",
+      "line": "393",
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+      "description": "removed conditional - replaced equality check with false",
+      "before_status": "SURVIVED",
+      "after_status": "KILLED",
+      "before_killing_test": "",
+      "after_killing_test": "org.apache.tika.io.FilenameUtilsGeneratedTest.[engine:junit-jupiter]/[class:org.apache.tika.io.FilenameUtilsGeneratedTest]/[method:calculateExtensionReturnsProvidedDefaultWithoutMimeType()]"
+    }
+  ]
+}

@@ -1,0 +1,1468 @@
+{
+  "baseline_commit": "a2d75c2c10563b261148e9bafe4046832b33c1a6",
+  "report_sha256": "3733f0097e2c010ca4bd9b54a37332f4a2d08784250e31b6c4139ab5530f6265",
+  "coverage_scope": "All original tika-core tests in the archived baseline",
+  "pit_run": false,
+  "candidates": [
+    {
+      "class": "org.apache.tika.io.LookaheadInputStream",
+      "source": "tika-core/src/main/java/org/apache/tika/io/LookaheadInputStream.java",
+      "test_source": "tika-core/src/test/java/org/apache/tika/io/LookaheadInputStreamTest.java",
+      "counters": {
+        "INSTRUCTION": {
+          "covered": 129,
+          "missed": 35
+        },
+        "BRANCH": {
+          "covered": 14,
+          "missed": 2
+        },
+        "LINE": {
+          "covered": 32,
+          "missed": 8
+        },
+        "COMPLEXITY": {
+          "covered": 15,
+          "missed": 3
+        },
+        "METHOD": {
+          "covered": 8,
+          "missed": 2
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0
+        }
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;I)V",
+          "line": 48,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 24,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 9,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "close",
+          "descriptor": "()V",
+          "line": 74,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 10,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "fill",
+          "descriptor": "()V",
+          "line": 81,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 39,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 8,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 6,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 5,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "read",
+          "descriptor": "()I",
+          "line": 93,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 22,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "read",
+          "descriptor": "([BII)I",
+          "line": 103,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 33
+            },
+            "BRANCH": {
+              "covered": 0,
+              "missed": 2
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 7
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 2
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1
+            }
+          }
+        },
+        {
+          "name": "skip",
+          "descriptor": "(J)J",
+          "line": 116,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 18,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "available",
+          "descriptor": "()I",
+          "line": 124,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 6,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 1,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "markSupported",
+          "descriptor": "()Z",
+          "line": 129,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 2
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 1
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 1
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1
+            }
+          }
+        },
+        {
+          "name": "mark",
+          "descriptor": "(I)V",
+          "line": 134,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 5,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 2,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "reset",
+          "descriptor": "()V",
+          "line": 139,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 5,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 2,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        }
+      ],
+      "uncovered_or_partial_source_lines": [
+        {
+          "nr": 103,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "fill();"
+        },
+        {
+          "nr": 104,
+          "mi": 5,
+          "ci": 0,
+          "mb": 2,
+          "cb": 0,
+          "source": "if (buffered > position) {"
+        },
+        {
+          "nr": 105,
+          "mi": 8,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "len = Math.min(len, buffered - position);"
+        },
+        {
+          "nr": 106,
+          "mi": 8,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "System.arraycopy(buffer, position, b, off, len);"
+        },
+        {
+          "nr": 107,
+          "mi": 6,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "position += len;"
+        },
+        {
+          "nr": 108,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return len;"
+        },
+        {
+          "nr": 110,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return -1;"
+        },
+        {
+          "nr": 129,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return true;"
+        }
+      ],
+      "original_test_cases": [
+        "testMarkLookahead",
+        "testZeroLookahead",
+        "testEmptyStream",
+        "testBasicLookahead",
+        "testNullStream",
+        "testSkipLookahead"
+      ],
+      "surefire": {
+        "tests": 6,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "decision": "shortlisted_pending_pit"
+    },
+    {
+      "class": "org.apache.tika.io.FilenameUtils",
+      "source": "tika-core/src/main/java/org/apache/tika/io/FilenameUtils.java",
+      "test_source": "tika-core/src/test/java/org/apache/tika/io/FilenameUtilsTest.java",
+      "counters": {
+        "INSTRUCTION": {
+          "covered": 807,
+          "missed": 64
+        },
+        "BRANCH": {
+          "covered": 86,
+          "missed": 24
+        },
+        "LINE": {
+          "covered": 154,
+          "missed": 21
+        },
+        "COMPLEXITY": {
+          "covered": 46,
+          "missed": 23
+        },
+        "METHOD": {
+          "covered": 13,
+          "missed": 1
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0
+        }
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "line": 34,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 0,
+              "missed": 3
+            },
+            "LINE": {
+              "covered": 0,
+              "missed": 1
+            },
+            "COMPLEXITY": {
+              "covered": 0,
+              "missed": 1
+            },
+            "METHOD": {
+              "covered": 0,
+              "missed": 1
+            }
+          }
+        },
+        {
+          "name": "normalize",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "line": 69,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 57,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 8,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 9,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 5,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getName",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "line": 108,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 41,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 7,
+              "missed": 1
+            },
+            "LINE": {
+              "covered": 9,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 4,
+              "missed": 1
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getSuffixFromPath",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "line": 131,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 29,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 6,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 7,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 4,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getSanitizedEmbeddedFileName",
+          "descriptor": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+          "line": 145,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 128,
+              "missed": 4
+            },
+            "BRANCH": {
+              "covered": 15,
+              "missed": 3
+            },
+            "LINE": {
+              "covered": 30,
+              "missed": 2
+            },
+            "COMPLEXITY": {
+              "covered": 7,
+              "missed": 3
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getSanitizedEmbeddedFilePath",
+          "descriptor": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+          "line": 208,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 177,
+              "missed": 10
+            },
+            "BRANCH": {
+              "covered": 20,
+              "missed": 4
+            },
+            "LINE": {
+              "covered": 41,
+              "missed": 4
+            },
+            "COMPLEXITY": {
+              "covered": 9,
+              "missed": 4
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "resolveWithin",
+          "descriptor": "(Ljava/nio/file/Path;Ljava/lang/String;)Ljava/nio/file/Path;",
+          "line": 296,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 29,
+              "missed": 29
+            },
+            "BRANCH": {
+              "covered": 3,
+              "missed": 5
+            },
+            "LINE": {
+              "covered": 6,
+              "missed": 4
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 3
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getPrefixLength",
+          "descriptor": "(Ljava/lang/String;)I",
+          "line": 319,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 30,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 7,
+              "missed": 3
+            },
+            "LINE": {
+              "covered": 6,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 3,
+              "missed": 3
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "removeProtocol",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "line": 330,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 22,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 4,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 7,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 3,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getEmbeddedPath",
+          "descriptor": "(Lorg/apache/tika/metadata/Metadata;)Ljava/lang/String;",
+          "line": 343,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 34,
+              "missed": 6
+            },
+            "BRANCH": {
+              "covered": 5,
+              "missed": 3
+            },
+            "LINE": {
+              "covered": 10,
+              "missed": 3
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 3
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getEmbeddedName",
+          "descriptor": "(Lorg/apache/tika/metadata/Metadata;)Ljava/lang/String;",
+          "line": 364,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 34,
+              "missed": 6
+            },
+            "BRANCH": {
+              "covered": 5,
+              "missed": 3
+            },
+            "LINE": {
+              "covered": 10,
+              "missed": 3
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 3
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "calculateExtension",
+          "descriptor": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;)Ljava/lang/String;",
+          "line": 392,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 18,
+              "missed": 2
+            },
+            "BRANCH": {
+              "covered": 3,
+              "missed": 1
+            },
+            "LINE": {
+              "covered": 7,
+              "missed": 1
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 1
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "lookupExtension",
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+          "line": 407,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 10,
+              "missed": 4
+            },
+            "BRANCH": {
+              "covered": 1,
+              "missed": 1
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 3
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 1
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "line": 36,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 198,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 7,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        }
+      ],
+      "uncovered_or_partial_source_lines": [
+        {
+          "nr": 34,
+          "mi": 3,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "public class FilenameUtils {"
+        },
+        {
+          "nr": 117,
+          "mi": 0,
+          "ci": 8,
+          "mb": 1,
+          "cb": 3,
+          "source": "if (cand.equals(\"..\") || cand.equals(\".\")) {"
+        },
+        {
+          "nr": 151,
+          "mi": 0,
+          "ci": 8,
+          "mb": 1,
+          "cb": 3,
+          "source": "if (path.startsWith(\"\\\"\") && path.endsWith(\"\\\"\")) {"
+        },
+        {
+          "nr": 173,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (StringUtils.isBlank(namePart)) {"
+        },
+        {
+          "nr": 174,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return null;"
+        },
+        {
+          "nr": 184,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (StringUtils.isBlank(namePart)) {"
+        },
+        {
+          "nr": 185,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return null;"
+        },
+        {
+          "nr": 231,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (StringUtils.isBlank(fName)) {"
+        },
+        {
+          "nr": 232,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return null;"
+        },
+        {
+          "nr": 249,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (StringUtils.isBlank(namePart)) {"
+        },
+        {
+          "nr": 250,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return null;"
+        },
+        {
+          "nr": 258,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (StringUtils.isBlank(namePart)) {"
+        },
+        {
+          "nr": 259,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return null;"
+        },
+        {
+          "nr": 265,
+          "mi": 0,
+          "ci": 4,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (namePart.length() > maxLength) {"
+        },
+        {
+          "nr": 268,
+          "mi": 4,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return namePart + extension;"
+        },
+        {
+          "nr": 305,
+          "mi": 5,
+          "ci": 5,
+          "mb": 3,
+          "cb": 1,
+          "source": "if (java.nio.file.Files.exists(resolved) && java.nio.file.Files.exists(normalizedDir)) {"
+        },
+        {
+          "nr": 306,
+          "mi": 5,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "Path realDir = normalizedDir.toRealPath();"
+        },
+        {
+          "nr": 307,
+          "mi": 5,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "Path realResolved = resolved.toRealPath();"
+        },
+        {
+          "nr": 308,
+          "mi": 4,
+          "ci": 0,
+          "mb": 2,
+          "cb": 0,
+          "source": "if (!realResolved.startsWith(realDir)) {"
+        },
+        {
+          "nr": 309,
+          "mi": 10,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "throw new IOException("
+        },
+        {
+          "nr": 323,
+          "mi": 0,
+          "ci": 19,
+          "mb": 3,
+          "cb": 5,
+          "source": "if (path.length() == 2 && path.charAt(0) >= 'A' && path.charAt(0) <= 'Z' && path.charAt(1) == ':') {"
+        },
+        {
+          "nr": 348,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (! StringUtils.isBlank(path)) {"
+        },
+        {
+          "nr": 349,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return path;"
+        },
+        {
+          "nr": 352,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (! StringUtils.isBlank(path)) {"
+        },
+        {
+          "nr": 353,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return path;"
+        },
+        {
+          "nr": 356,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (! StringUtils.isBlank(path)) {"
+        },
+        {
+          "nr": 357,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return path;"
+        },
+        {
+          "nr": 369,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (! StringUtils.isBlank(path)) {"
+        },
+        {
+          "nr": 370,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return path;"
+        },
+        {
+          "nr": 373,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (! StringUtils.isBlank(path)) {"
+        },
+        {
+          "nr": 374,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return path;"
+        },
+        {
+          "nr": 377,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (! StringUtils.isBlank(path)) {"
+        },
+        {
+          "nr": 378,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return path;"
+        },
+        {
+          "nr": 399,
+          "mi": 0,
+          "ci": 2,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (ext != null) {"
+        },
+        {
+          "nr": 402,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return \".bin\";"
+        },
+        {
+          "nr": 410,
+          "mi": 0,
+          "ci": 3,
+          "mb": 1,
+          "cb": 1,
+          "source": "if (!StringUtils.isBlank(ext)) {"
+        },
+        {
+          "nr": 413,
+          "mi": 1,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "} catch (MimeTypeException e) {"
+        },
+        {
+          "nr": 415,
+          "mi": 1,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "}"
+        },
+        {
+          "nr": 416,
+          "mi": 2,
+          "ci": 0,
+          "mb": 0,
+          "cb": 0,
+          "source": "return null;"
+        }
+      ],
+      "original_test_cases": [
+        "testGetName",
+        "testExtension",
+        "normalizeWithNull",
+        "normalizeWithNotPrintableChars",
+        "normalizeWithReservedChar",
+        "normalizeWithReservedChars",
+        "testEmbeddedFileNames",
+        "testEmbeddedFilePaths",
+        "testResolveWithin",
+        "normalizeNothingTodo"
+      ],
+      "surefire": {
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "decision": "shortlisted_pending_pit"
+    },
+    {
+      "class": "org.apache.tika.io.TailStream",
+      "source": "tika-core/src/main/java/org/apache/tika/io/TailStream.java",
+      "test_source": "tika-core/src/test/java/org/apache/tika/io/TailStreamTest.java",
+      "counters": {
+        "INSTRUCTION": {
+          "covered": 287,
+          "missed": 0
+        },
+        "BRANCH": {
+          "covered": 22,
+          "missed": 0
+        },
+        "LINE": {
+          "covered": 61,
+          "missed": 0
+        },
+        "COMPLEXITY": {
+          "covered": 23,
+          "missed": 0
+        },
+        "METHOD": {
+          "covered": 12,
+          "missed": 0
+        },
+        "CLASS": {
+          "covered": 1,
+          "missed": 0
+        }
+      },
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/io/InputStream;I)V",
+          "line": 87,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 11,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "read",
+          "descriptor": "()I",
+          "line": 98,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 12,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "read",
+          "descriptor": "([B)I",
+          "line": 112,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 13,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "read",
+          "descriptor": "([BII)I",
+          "line": 126,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 15,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 4,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "skip",
+          "descriptor": "(J)J",
+          "line": 139,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 52,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 10,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 11,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 6,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "mark",
+          "descriptor": "(I)V",
+          "line": 162,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 23,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "reset",
+          "descriptor": "()V",
+          "line": 175,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 21,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "getTail",
+          "descriptor": "()[B",
+          "line": 191,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 35,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "appendByte",
+          "descriptor": "(B)V",
+          "line": 204,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 26,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "appendBuf",
+          "descriptor": "([BII)V",
+          "line": 219,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 23,
+              "missed": 0
+            },
+            "BRANCH": {
+              "covered": 2,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 5,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 2,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "replaceTailBuffer",
+          "descriptor": "([BII)V",
+          "line": 238,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 17,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 3,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        },
+        {
+          "name": "copyToTailBuffer",
+          "descriptor": "([BII)V",
+          "line": 253,
+          "counters": {
+            "INSTRUCTION": {
+              "covered": 39,
+              "missed": 0
+            },
+            "LINE": {
+              "covered": 6,
+              "missed": 0
+            },
+            "COMPLEXITY": {
+              "covered": 1,
+              "missed": 0
+            },
+            "METHOD": {
+              "covered": 1,
+              "missed": 0
+            }
+          }
+        }
+      ],
+      "uncovered_or_partial_source_lines": [],
+      "original_test_cases": [
+        "testTailChunkReads",
+        "testResetWithoutMark",
+        "testSkip",
+        "testSkipReadEnd",
+        "testReadWithMarkAndReset",
+        "testTailBeforeRead",
+        "testTailSingleByteReads",
+        "testTailBufferPartlyRead",
+        "testSkipEOS"
+      ],
+      "surefire": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "decision": "excluded_full_coverage"
+    }
+  ]
+}

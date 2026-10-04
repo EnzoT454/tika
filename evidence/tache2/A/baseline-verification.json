@@ -1,0 +1,9 @@
+{
+  "java_sources_unchanged_from_initial": true,
+  "surefire": {
+    "tests": 749,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2
+  }
+}
