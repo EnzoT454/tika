@@ -1,0 +1,58 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.EndianUtils;
+import org.apache.tika.exception.TikaException;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.junit.jupiter.api.function.Executable;
+import java.lang.reflect.Method;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import java.lang.reflect.InvocationTargetException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_readShortLE_0_0_Test {
+
+    @Test
+    public void testReadShortLE() throws IOException, TikaException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        EndianUtils endianUtils = new EndianUtils();
+        Method readShortLEMethod = EndianUtils.class.getDeclaredMethod("readShortLE", InputStream.class);
+        readShortLEMethod.setAccessible(true);
+        byte[] data = new byte[] { 0x12, 0x34 };
+        InputStream inputStream = new ByteArrayInputStream(data);
+        short result = (short) readShortLEMethod.invoke(endianUtils, inputStream);
+        assertEquals(0x3412, result);
+    }
+
+    @Test
+    public void testReadShortLE_IOException() throws IOException, TikaException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        EndianUtils endianUtils = new EndianUtils();
+        Method readShortLEMethod = EndianUtils.class.getDeclaredMethod("readShortLE", InputStream.class);
+        readShortLEMethod.setAccessible(true);
+        InputStream inputStream = new ByteArrayInputStream(new byte[] {});
+        Executable executable = () -> readShortLEMethod.invoke(endianUtils, inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+
+    @Test
+    public void testReadShortLE_BufferUnderrunException() throws IOException, TikaException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        EndianUtils endianUtils = new EndianUtils();
+        Method readShortLEMethod = EndianUtils.class.getDeclaredMethod("readShortLE", InputStream.class);
+        readShortLEMethod.setAccessible(true);
+        InputStream inputStream = new ByteArrayInputStream(new byte[] { 0x12 });
+        Executable executable = () -> readShortLEMethod.invoke(endianUtils, inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readShortLE_0_0_Test: line 38 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readShortLE_0_0_Test
+Error in EndianUtils_readShortLE_0_0_Test: line 48 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readShortLE_0_0_Test

@@ -1,0 +1,209 @@
+package org.apache.tika.io;
+
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.metadata.TikaCoreProperties;
+import org.apache.tika.mime.MimeTypes;
+import org.apache.tika.utils.StringUtils;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.apache.tika.extractor.EmbeddedDocumentUtil;
+import org.apache.tika.mime.MimeTypeException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test {
+
+    @Mock
+    private MimeTypes mimeTypes;
+
+    @Mock
+    private Metadata metadata;
+
+    @BeforeEach
+    public void setUp() {
+        when(mimeTypes.getDefaultMimeTypes()).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathAndLongExtension() throws Exception {
+        when(mimeTypes.getDefaultMimeTypes()).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "example.txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathAndLongPathAndLongExtensionAndTruncation() throws Exception {
+        when(mimeTypes.getDefaultMimeTypes()).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "example.txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withBlankPath() throws Exception {
+        when(mimeTypes.getDefaultMimeTypes()).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "example.txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathAndExtension() throws Exception {
+        when(mimeTypes.getDefaultMimeTypes()).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "example.txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPath() throws Exception {
+        when(mimeTypes.getDefaultMimeTypes()).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathAndLongPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example/very/long/path.txt");
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 15);
+        assertEquals("example/very/long/path.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathAndLongPathAndExtension() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example/very/long/path.txt");
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 20);
+        assertEquals("example/very/long/path.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathAndLongPathAndLongExtension() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example/very/long/path.txt");
+        String result = FilenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 18);
+        assertEquals("example/very/long/path.txt", result);
+    }
+}
+
+--------------------------------------------
+Error in testGetSanitizedEmbeddedFileName_withPathAndLongExtension(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withPathAndLongPathAndLongExtensionAndTruncation(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withBlankPath(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withPathAndExtension(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withPath(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withPathAndLongPath(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withPathAndLongPathAndExtension(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+Error in testGetSanitizedEmbeddedFileName_withPathAndLongPathAndLongExtension(): line 35 : org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.

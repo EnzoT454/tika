@@ -1,0 +1,20 @@
+{
+  "attempt0": {
+    "testClassName": "MediaType_text_3_0_Test",
+    "fullName": "org.apache.tika.mime.MediaType_text_3_0_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\mime\\MediaType_text_3_0_Test.java",
+    "className": "MediaType",
+    "packageName": "org.apache.tika.mime",
+    "methodName": "text",
+    "methodSig": "text(String)"
+  },
+  "attempt1": {
+    "testClassName": "MediaType_text_3_1_Test",
+    "fullName": "org.apache.tika.mime.MediaType_text_3_1_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\mime\\MediaType_text_3_0_Test.java",
+    "className": "MediaType",
+    "packageName": "org.apache.tika.mime",
+    "methodName": "text",
+    "methodSig": "text(String)"
+  }
+}

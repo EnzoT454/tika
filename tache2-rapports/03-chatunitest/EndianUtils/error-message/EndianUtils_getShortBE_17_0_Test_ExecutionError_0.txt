@@ -1,0 +1,62 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.EndianUtils;
+import java.io.IOException;
+import java.io.InputStream;
+import org.apache.tika.exception.TikaException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+public class EndianUtils_getShortBE_17_0_Test {
+
+    @Test
+    public void testGetShortBE() throws IOException, TikaException {
+        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+        int offset = 0;
+        short result = EndianUtils.getShortBE(data, offset);
+        assertEquals(0x0201, result);
+    }
+
+    @Test
+    public void testGetShortBEWithOffset() throws IOException, TikaException {
+        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+        int offset = 2;
+        short result = EndianUtils.getShortBE(data, offset);
+        assertEquals(0x0403, result);
+    }
+
+    @Test
+    public void testGetShortBEWithMaxOffset() throws IOException, TikaException {
+        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+        int offset = 6;
+        short result = EndianUtils.getShortBE(data, offset);
+        assertEquals(0x0807, result);
+    }
+
+    @Test
+    public void testGetShortBEWithNegativeOffset() throws IOException, TikaException {
+        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+        int offset = -2;
+        short result = EndianUtils.getShortBE(data, offset);
+        assertEquals(0x0605, result);
+    }
+
+    @Test
+    public void testGetShortBEWithLargeOffset() throws IOException, TikaException {
+        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+        int offset = 10;
+        short result = EndianUtils.getShortBE(data, offset);
+        assertEquals(0x0201, result);
+    }
+}
+
+--------------------------------------------
+Error in testGetShortBEWithOffset(): line 29 : org.opentest4j.AssertionFailedError: expected: <1027> but was: <772>
+Error in testGetShortBE(): line 21 : org.opentest4j.AssertionFailedError: expected: <513> but was: <258>
+Error in testGetShortBEWithLargeOffset(): line 52 : java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 8
+Error in testGetShortBEWithMaxOffset(): line 37 : org.opentest4j.AssertionFailedError: expected: <2055> but was: <1800>
+Error in testGetShortBEWithNegativeOffset(): line 44 : java.lang.ArrayIndexOutOfBoundsException: Index -2 out of bounds for length 8

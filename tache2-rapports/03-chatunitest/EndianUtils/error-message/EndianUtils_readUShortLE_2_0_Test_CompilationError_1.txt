@@ -1,0 +1,50 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.io.EndianUtils;
+import org.apache.tika.io.BufferUnderrunException;
+import java.lang.reflect.Method;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_readUShortLE_2_0_Test {
+
+    private EndianUtils endianUtils;
+
+    @BeforeEach
+    public void setUp() {
+        endianUtils = new EndianUtils();
+    }
+
+    @Test
+    public void testReadUShortLE() throws Exception {
+        // Test normal case
+        InputStream inputStream = new ByteArrayInputStream(new byte[] { 0x12, 0x34 });
+        int result = (int) invokePrivateMethod(endianUtils, "readUShortLE", inputStream);
+        assertEquals(0x3412, result);
+        // Test with negative values
+        inputStream = new ByteArrayInputStream(new byte[] { -1, -1 });
+        assertThrows(BufferUnderrunException.class, () -> invokePrivateMethod(endianUtils, "readUShortLE", inputStream));
+        // Test with less than 2 bytes
+        inputStream = new ByteArrayInputStream(new byte[] { 0x12 });
+        assertThrows(BufferUnderrunException.class, () -> invokePrivateMethod(endianUtils, "readUShortLE", inputStream));
+    }
+
+    private Object invokePrivateMethod(Object object, String methodName, Object... args) throws Exception {
+        Method method = object.getClass().getDeclaredMethod(methodName, Stream.of(args).map(Object::getClass).toArray(Class[]::new));
+        method.setAccessible(true);
+        return method.invoke(object, args);
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readUShortLE_2_0_Test: line 8 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.io

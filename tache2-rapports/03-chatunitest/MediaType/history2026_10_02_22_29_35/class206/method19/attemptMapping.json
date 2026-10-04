@@ -1,0 +1,20 @@
+{
+  "attempt0": {
+    "testClassName": "MediaType_hashCode_19_0_Test",
+    "fullName": "org.apache.tika.mime.MediaType_hashCode_19_0_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\mime\\MediaType_hashCode_19_0_Test.java",
+    "className": "MediaType",
+    "packageName": "org.apache.tika.mime",
+    "methodName": "hashCode",
+    "methodSig": "hashCode()"
+  },
+  "attempt1": {
+    "testClassName": "MediaType_hashCode_19_1_Test",
+    "fullName": "org.apache.tika.mime.MediaType_hashCode_19_1_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\mime\\MediaType_hashCode_19_0_Test.java",
+    "className": "MediaType",
+    "packageName": "org.apache.tika.mime",
+    "methodName": "hashCode",
+    "methodSig": "hashCode()"
+  }
+}

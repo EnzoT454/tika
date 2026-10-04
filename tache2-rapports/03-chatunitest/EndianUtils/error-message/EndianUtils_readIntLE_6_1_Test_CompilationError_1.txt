@@ -1,0 +1,59 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.EndianUtils;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.exception.BufferUnderrunException;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.IOException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_readIntLE_6_1_Test {
+
+    private EndianUtils endianUtils;
+
+    @BeforeEach
+    public void setUp() {
+        endianUtils = new EndianUtils();
+    }
+
+    @AfterEach
+    public void tearDown() {
+        endianUtils = null;
+    }
+
+    @Test
+    @DisplayName("Test readIntLE with valid input")
+    public void testReadIntLEValidInput() throws IOException, TikaException {
+        byte[] input = new byte[] { 0x12, 0x34, 0x56, 0x78 };
+        InputStream inputStream = new ByteArrayInputStream(input);
+        int result = endianUtils.readIntLE(inputStream);
+        Assertions.assertEquals(0x78563412, result);
+    }
+
+    @Test
+    @DisplayName("Test readIntLE with negative input")
+    public void testReadIntLENegativeInput() throws IOException, TikaException {
+        byte[] input = new byte[] { -1, -1, -1, -1 };
+        InputStream inputStream = new ByteArrayInputStream(input);
+        Assertions.assertThrows(BufferUnderrunException.class, () -> endianUtils.readIntLE(inputStream));
+    }
+
+    @Test
+    @DisplayName("Test readIntLE with end of stream")
+    public void testReadIntLEEndOfStream() throws IOException, TikaException {
+        byte[] input = new byte[] {};
+        InputStream inputStream = new ByteArrayInputStream(input);
+        Assertions.assertThrows(BufferUnderrunException.class, () -> endianUtils.readIntLE(inputStream));
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readIntLE_6_1_Test: line 5 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.exception

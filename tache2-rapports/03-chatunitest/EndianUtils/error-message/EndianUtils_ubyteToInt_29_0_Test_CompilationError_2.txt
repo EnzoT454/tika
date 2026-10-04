@@ -1,0 +1,108 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.EndianUtils;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import org.apache.tika.exception.TikaException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_ubyteToInt_29_0_Test {
+
+    @Test
+    public void testUbyteToInt() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x01, 0x02, 0x03, 0x04 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithMaxValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0xFF, 0x00, 0x00, 0x00 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(255, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithMinValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x00, 0x00, 0x00, 0x00 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithLargeValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x7F, 0xFF, 0xFF, 0xFF };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(127, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithSmallValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x80, 0x00, 0x00, 0x00 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(128, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithZeroValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x00, 0x00, 0x00, 0x00 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithNegativeOneValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0xFF, 0xFF, 0xFF, 0xFF };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(255, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithPositiveOneValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x01, 0x00, 0x00, 0x00 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void testUbyteToIntWithPositiveTwoValue() {
+        EndianUtils endiannessUtil = new EndianUtils();
+        byte[] data = { 0x02, 0x00, 0x00, 0x00 };
+        byte b = data[0];
+        int result = endiannessUtil.ubyteToInt(b);
+        assertEquals(2, result);
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_ubyteToInt_29_0_Test: line 29 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 47 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 47 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 47 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 56 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 74 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 74 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 74 : incompatible types: possible lossy conversion from int to byte
+Error in EndianUtils_ubyteToInt_29_0_Test: line 74 : incompatible types: possible lossy conversion from int to byte

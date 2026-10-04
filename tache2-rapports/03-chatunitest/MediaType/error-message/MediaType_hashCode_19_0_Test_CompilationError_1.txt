@@ -1,0 +1,116 @@
+package org.apache.tika.mime;
+
+import java.lang.reflect.Method;
+import org.apache.tika.mime.MediaType;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import java.nio.charset.Charset;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MediaType_hashCode_19_0_Test {
+
+    @Test
+    public void testHashCode() throws Exception {
+        // Create an instance of MediaType
+        MediaType mediaType = new MediaType("text", "html");
+        // Get the hashCode method using reflection
+        Method hashCodeMethod = MediaType.class.getDeclaredMethod("hashCode");
+        // Set the method accessible
+        hashCodeMethod.setAccessible(true);
+        // Invoke the hashCode method
+        int hashCode = (int) hashCodeMethod.invoke(mediaType);
+        // Verify the result
+        assertEquals("text/html".hashCode(), hashCode);
+    }
+
+    @Test
+    public void testHashCodeWithParameters() throws Exception {
+        // Create an instance of MediaType with parameters
+        Map<String, String> parameters = new HashMap<>();
+        parameters.put("charset", "UTF-8");
+        MediaType mediaType = new MediaType("text", "html", parameters);
+        // Get the hashCode method using reflection
+        Method hashCodeMethod = MediaType.class.getDeclaredMethod("hashCode");
+        // Set the method accessible
+        hashCodeMethod.setAccessible(true);
+        // Invoke the hashCode method
+        int hashCode = (int) hashCodeMethod.invoke(mediaType);
+        // Verify the result
+        assertEquals("text/html;charset=UTF-8".hashCode(), hashCode);
+    }
+
+    @Test
+    public void testHashCodeWithEmptyParameters() throws Exception {
+        // Create an instance of MediaType with empty parameters
+        Map<String, String> parameters = Collections.emptyMap();
+        MediaType mediaType = new MediaType("text", "html", parameters);
+        // Get the hashCode method using reflection
+        Method hashCodeMethod = MediaType.class.getDeclaredMethod("hashCode");
+        // Set the method accessible
+        hashCodeMethod.setAccessible(true);
+        // Invoke the hashCode method
+        int hashCode = (int) hashCodeMethod.invoke(mediaType);
+        // Verify the result
+        assertEquals("text/html".hashCode(), hashCode);
+    }
+
+    @Test
+    public void testHashCodeWithNullParameters() throws Exception {
+        // Create an instance of MediaType with null parameters
+        MediaType mediaType = new MediaType("text", "html", null);
+        // Get the hashCode method using reflection
+        Method hashCodeMethod = MediaType.class.getDeclaredMethod("hashCode");
+        // Set the method accessible
+        hashCodeMethod.setAccessible(true);
+        // Invoke the hashCode method
+        int hashCode = (int) hashCodeMethod.invoke(mediaType);
+        // Verify the result
+        assertEquals("text/html".hashCode(), hashCode);
+    }
+
+    @Test
+    public void testHashCodeWithEmptyString() throws Exception {
+        // Create an instance of MediaType with empty string
+        MediaType mediaType = new MediaType("", "");
+        // Get the hashCode method using reflection
+        Method hashCodeMethod = MediaType.class.getDeclaredMethod("hashCode");
+        // Set the method accessible
+        hashCodeMethod.setAccessible(true);
+        // Invoke the hashCode method
+        int hashCode = (int) hashCodeMethod.invoke(mediaType);
+        // Verify the result
+        assertEquals("".hashCode(), hashCode);
+    }
+
+    @Test
+    public void testHashCodeWithNullString() throws Exception {
+        // Create an instance of MediaType with null string
+        MediaType mediaType = new MediaType(null, null);
+        // Get the hashCode method using reflection
+        Method hashCodeMethod = MediaType.class.getDeclaredMethod("hashCode");
+        // Set the method accessible
+        hashCodeMethod.setAccessible(true);
+        // Invoke the hashCode method
+        int hashCode = (int) hashCodeMethod.invoke(mediaType);
+        // Verify the result
+        assertEquals("null".hashCode(), hashCode);
+    }
+}
+
+--------------------------------------------
+Error in MediaType_hashCode_19_0_Test: line 102 : reference to MediaType is ambiguous
+  both constructor MediaType(org.apache.tika.mime.MediaType,java.util.Map<java.lang.String,java.lang.String>) in org.apache.tika.mime.MediaType and constructor MediaType(org.apache.tika.mime.MediaType,java.nio.charset.Charset) in org.apache.tika.mime.MediaType match

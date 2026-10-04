@@ -1,0 +1,20 @@
+{
+  "attempt0": {
+    "testClassName": "FilenameUtils_calculateExtension_10_0_Test",
+    "fullName": "org.apache.tika.io.FilenameUtils_calculateExtension_10_0_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\io\\FilenameUtils_calculateExtension_10_0_Test.java",
+    "className": "FilenameUtils",
+    "packageName": "org.apache.tika.io",
+    "methodName": "calculateExtension",
+    "methodSig": "calculateExtension(Metadata, String)"
+  },
+  "attempt1": {
+    "testClassName": "FilenameUtils_calculateExtension_10_1_Test",
+    "fullName": "org.apache.tika.io.FilenameUtils_calculateExtension_10_1_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\io\\FilenameUtils_calculateExtension_10_0_Test.java",
+    "className": "FilenameUtils",
+    "packageName": "org.apache.tika.io",
+    "methodName": "calculateExtension",
+    "methodSig": "calculateExtension(Metadata, String)"
+  }
+}

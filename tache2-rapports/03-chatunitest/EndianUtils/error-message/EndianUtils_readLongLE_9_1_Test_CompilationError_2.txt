@@ -1,0 +1,48 @@
+package org.apache.tika.io;
+
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.io.EndianUtils;
+import org.apache.tika.io.BufferUnderrunException;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class EndianUtils_readLongLE_9_1_Test {
+
+    @Mock
+    private InputStream inputStream;
+
+    @Test
+    public void testReadLongLE() throws IOException, TikaException {
+        // Mock the InputStream to return specific values
+        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0);
+        // Call the method under test
+        long result = EndianUtils.readLongLE(inputStream);
+        // Verify the result
+        assertEquals(0xFEDCBA9876543210L, result);
+        // Verify that read() was called exactly 8 times
+        verify(inputStream, times(8)).read();
+    }
+
+    @Test
+    public void testReadLongLE_WithBufferUnderrunException() throws IOException {
+        // Mock the InputStream to return -1 (indicating end of stream)
+        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, -1);
+        // Call the method under test and assert that it throws BufferUnderrunException
+        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readLongLE(inputStream));
+        // Verify that read() was called exactly 8 times
+        verify(inputStream, times(8)).read();
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readLongLE_9_1_Test: line 5 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.io

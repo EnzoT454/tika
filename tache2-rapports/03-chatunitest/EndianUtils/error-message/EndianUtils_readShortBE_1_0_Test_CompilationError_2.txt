@@ -1,0 +1,64 @@
+package org.apache.tika.io;
+
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.io.EndianUtils;
+import org.apache.tika.io.InputStream;
+import org.apache.tika.io.BufferUnderrunException;
+import java.io.IOException;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_readShortBE_1_0_Test {
+
+    private InputStream mockInputStream;
+
+    @BeforeEach
+    public void setUp() {
+        mockInputStream = Mockito.mock(InputStream.class);
+    }
+
+    @Test
+    public void testReadShortBE() throws IOException, BufferUnderrunException {
+        when(mockInputStream.read()).thenReturn(0x12, 0x34);
+        short result = EndianUtils.readShortBE(mockInputStream);
+        assertEquals(0x1234, result);
+    }
+
+    @Test
+    public void testReadShortBEBufferUnderrunException() throws IOException {
+        when(mockInputStream.read()).thenReturn(-1);
+        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readShortBE(mockInputStream));
+    }
+
+    @Test
+    public void testReadUShortBE() throws IOException, BufferUnderrunException {
+        when(mockInputStream.read()).thenReturn(0x12, 0x34);
+        int result = EndianUtils.readUShortBE(mockInputStream);
+        assertEquals(0x1234, result);
+    }
+
+    @Test
+    public void testReadUShortBEBufferUnderrunException() throws IOException {
+        when(mockInputStream.read()).thenReturn(-1);
+        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readUShortBE(mockInputStream));
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readShortBE_1_0_Test: line 5 : cannot find symbol
+  symbol:   class InputStream
+  location: package org.apache.tika.io
+Error in EndianUtils_readShortBE_1_0_Test: line 6 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.io
+Error in EndianUtils_readShortBE_1_0_Test: line 26 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readShortBE_1_0_Test
+Error in EndianUtils_readShortBE_1_0_Test: line 39 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readShortBE_1_0_Test

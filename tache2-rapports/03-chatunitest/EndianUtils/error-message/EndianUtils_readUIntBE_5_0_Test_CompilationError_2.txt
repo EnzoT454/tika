@@ -1,0 +1,42 @@
+package org.apache.tika.io;
+
+import org.apache.tika.exception.BufferUnderrunException;
+import org.apache.tika.io.EndianUtils;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import org.apache.tika.exception.TikaException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class EndianUtils_readUIntBE_5_0_Test {
+
+    @Mock
+    private InputStream inputStream;
+
+    @Test
+    public void testReadUIntBE() throws IOException, BufferUnderrunException {
+        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, 0x78);
+        long result = EndianUtils.readUIntBE(inputStream);
+        assertEquals(0x12345678L, result);
+    }
+
+    @Test
+    public void testReadUIntBEWithBufferUnderrun() throws IOException {
+        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, -1);
+        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readUIntBE(inputStream));
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readUIntBE_5_0_Test: line 3 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.exception
+Error in EndianUtils_readUIntBE_5_0_Test: line 23 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readUIntBE_5_0_Test

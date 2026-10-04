@@ -1,0 +1,22 @@
+[
+  {
+    "attempt": 0,
+    "round": 0,
+    "prompt": [
+      {
+        "role": "system",
+        "content": "Please help me generate a whole JUnit test for a focal method in a focal class.\nI will provide the following information of the focal method:\n1. Required dependencies to import.\n2. The focal class signature.\n3. Source code of the focal method.\n4. Signatures of r methods and fields in the class.\nI will provide followotheing brief information if the focal method has dependencies:\n1. Signatures of dependent classes.\n2. Signatures of dependent methods and fields in the dependent classes.\nI need you to create a whole unit test using JUnit 5, ensuring optimal branch and line coverage. Compile without errors, and use reflection to invoke private methods. No additional explanations required."
+      },
+      {
+        "role": "user",
+        "content": "The focal method is `getUShortBE(byte[])` in the focal class `EndianUtils`, and their information is\n```org.apache.tika.io\nimport java.io.IOException;\nimport java.io.InputStream;\nimport org.apache.tika.exception.TikaException;\npublic class EndianUtils {\nprivate static final int LONG_SIZE = 8;\npublic static int getUShortBE(byte[] data) {\n        return getUShortBE(data, 0);\n    }\n}```.\n    The brief information of dependent class `org.apache.tika.io.EndianUtils` is\n    ```org.apache.tika.io\nimport java.io.IOException;\nimport java.io.InputStream;\nimport org.apache.tika.exception.TikaException;\npublic class EndianUtils {\nprivate static final int LONG_SIZE = 8;\n\npublic static int getUShortBE(byte[] data, int offset) {\n        int b0 = data[offset] & 0xFF;\n        int b1 = data[offset + 1] & 0xFF;\n        return (b0 << 8) + (b1);\n    }\n}```.\n"
+      }
+    ],
+    "response": "```java\nimport org.apache.tika.io.EndianUtils;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.function.Executable;\nimport static org.junit.jupiter.api.Assertions.*;\n\npublic class EndianUtilsTest {\n\n    @Test\n    public void testGetUShortBE() {\n        byte[] data = new byte[]{0x01, 0x02};\n        int result = EndianUtils.getUShortBE(data);\n        assertEquals(258, result);\n    }\n\n    @Test\n    public void testGetUShortBEWithOffset() {\n        byte[] data = new byte[]{0x01, 0x02, 0x03, 0x04};\n        int result = EndianUtils.getUShortBE(data, 1);\n        assertEquals(514, result);\n    }\n\n    @Test\n    public void testGetUShortBEWithEmptyArray() {\n        byte[] data = new byte[0];\n        Executable executable = () -> EndianUtils.getUShortBE(data);\n        assertThrows(IndexOutOfBoundsException.class, executable);\n    }\n\n    @Test\n    public void testGetUShortBEWithNegativeOffset() {\n        byte[] data = new byte[]{0x01, 0x02};\n        Executable executable = () -> EndianUtils.getUShortBE(data, -1);\n        assertThrows(IndexOutOfBoundsException.class, executable);\n    }\n}\n```",
+    "promptToken": 377,
+    "responseToken": 298,
+    "hasCode": true,
+    "code": "package org.apache.tika.io;\n\nimport org.apache.tika.io.EndianUtils;\nimport org.junit.jupiter.api.function.Executable;\nimport org.mockito.*;\nimport org.junit.jupiter.api.*;\nimport static org.mockito.Mockito.*;\nimport static org.junit.jupiter.api.Assertions.*;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport org.apache.tika.exception.TikaException;\n\npublic class EndianUtils_getUShortBE_18_0_Test {\n\n    @Test\n    public void testGetUShortBE() {\n        byte[] data = new byte[] { 0x01, 0x02 };\n        int result = EndianUtils.getUShortBE(data);\n        assertEquals(258, result);\n    }\n\n    @Test\n    public void testGetUShortBEWithOffset() {\n        byte[] data = new byte[] { 0x01, 0x02, 0x03, 0x04 };\n        int result = EndianUtils.getUShortBE(data, 1);\n        assertEquals(514, result);\n    }\n\n    @Test\n    public void testGetUShortBEWithEmptyArray() {\n        byte[] data = new byte[0];\n        Executable executable = () -> EndianUtils.getUShortBE(data);\n        assertThrows(IndexOutOfBoundsException.class, executable);\n    }\n\n    @Test\n    public void testGetUShortBEWithNegativeOffset() {\n        byte[] data = new byte[] { 0x01, 0x02 };\n        Executable executable = () -> EndianUtils.getUShortBE(data, -1);\n        assertThrows(IndexOutOfBoundsException.class, executable);\n    }\n}\n",
+    "hasError": false
+  }
+]

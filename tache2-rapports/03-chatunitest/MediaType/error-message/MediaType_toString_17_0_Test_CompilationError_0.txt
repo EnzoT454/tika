@@ -1,0 +1,52 @@
+package org.apache.tika.mime;
+
+import java.lang.reflect.Method;
+import org.apache.tika.mime.MediaType;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MediaType_toString_17_0_Test {
+
+    private MediaType mediaType;
+
+    @BeforeEach
+    public void setUp() {
+        try {
+            Method method = MediaType.class.getDeclaredConstructor(String.class, String.class);
+            method.setAccessible(true);
+            mediaType = (MediaType) method.newInstance("application", "json");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testToString() throws Exception {
+        Method method = MediaType.class.getDeclaredMethod("toString");
+        method.setAccessible(true);
+        String result = (String) method.invoke(mediaType);
+        assertEquals("application/json", result);
+    }
+}
+
+--------------------------------------------
+Error in MediaType_toString_17_0_Test: line 31 : incompatible types: java.lang.reflect.Constructor<org.apache.tika.mime.MediaType> cannot be converted to java.lang.reflect.Method
+Error in MediaType_toString_17_0_Test: line 33 : cannot find symbol
+  symbol:   method newInstance(java.lang.String,java.lang.String)
+  location: variable method of type java.lang.reflect.Method

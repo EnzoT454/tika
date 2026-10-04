@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntLE(Ljava/io/InputStream;)J' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntME(Ljava/io/InputStream;)I' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadIntME()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='10'><tests>
+<test name='org.apache.tika.io.EndianUtilsTest.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtilsTest]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getIntBE([BI)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getIntBE_22_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntBE_22_0_Test]/[method:testGetIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getIntBE_22_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntBE_22_0_Test]/[method:testGetIntBEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getIntBE_22_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntBE_22_0_Test]/[method:testGetIntBEWithOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getIntBE_22_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntBE_22_0_Test]/[method:testGetIntBEWithOffsetExceedsArrayLength()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test]/[method:testGetUIntBEWithOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBEWithNegativeNumber()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBEWithZero()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getIntLE([B)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_20_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_20_0_Test]/[method:testGetIntLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getIntLE([B)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_20_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_20_0_Test]/[method:testGetIntLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getIntLE([BI)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_20_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_20_0_Test]/[method:testGetIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_20_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_20_0_Test]/[method:testGetIntLEWithOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_21_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_21_0_Test]/[method:testGetIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test]/[method:testGetUIntLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='&lt;init&gt;()V' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_21_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_21_0_Test]/[method:testGetIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getLongLE_28_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getLongLE_28_0_Test]/[method:testGetLongLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test]/[method:testGetUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='&lt;init&gt;()V' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getIntLE_21_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getIntLE_21_0_Test]/[method:testGetIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getLongLE_28_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getLongLE_28_0_Test]/[method:testGetLongLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test]/[method:testGetUIntLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithNegativeInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test]/[method:testReadUIntLEWithValidInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getLongLE([BI)J' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtils_getLongLE_28_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getLongLE_28_0_Test]/[method:testGetLongLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getLongLE([BI)J' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtils_getLongLE_28_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getLongLE_28_0_Test]/[method:testGetLongLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getLongLE([BI)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getLongLE_28_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getLongLE_28_0_Test]/[method:testGetLongLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getLongLE([BI)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getLongLE_28_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getLongLE_28_0_Test]/[method:testGetLongLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUShortBE([BI)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithOffsetGreaterThanArrayLength()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithSingleElementArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test]/[method:testGetUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test]/[method:testGetUShortBEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test]/[method:testGetUShortBEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test]/[method:testGetUShortBEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test]/[method:testGetUShortBEWithTooLargeOffset()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getShortBE([BI)S' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithOffsetGreaterThanArrayLength()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithSingleElementArray()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getShortBE([B)S' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortBE_16_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortBE_16_0_Test]/[method:testGetShortBEWithSingleElementArray()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getShortLE([BI)S' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLEWithOffsetExceedingArrayLength()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getShortLE([BI)S' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUShortLE([BI)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLEWithEmptyArray()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getShortLE_13_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getShortLE_13_0_Test]/[method:testGetShortLEWithOffsetExceedingArrayLength()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test]/[method:testGetUShortLEWithNegativeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test]/[method:testGetUShortLEWithOffsetExceedingArrayLength()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test]/[method:testGetUShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test]/[method:testGetUShortLEWithLargeOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test]/[method:testGetUShortLEWithOffset()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUByte([BI)S' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUByte_30_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUByte_30_0_Test]/[method:testGetUByte()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUByte_30_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUByte_30_0_Test]/[method:testGetUByteNegative()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUIntBE([BI)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test]/[method:testGetUIntBEWithOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBEWithNegativeNumber()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBEWithZero()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUIntBE([BI)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test]/[method:testGetUIntBEWithOffset()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBEWithNegativeNumber()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test]/[method:testGetUIntBEWithZero()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUIntLE([BI)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test]/[method:testGetUIntLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUIntLE([BI)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test]/[method:testGetUIntLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUShortBE([B)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test]/[method:testGetUShortBE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='getUShortBE([B)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test]/[method:testGetUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test]/[method:testGetUShortBEWithEmptyArray()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithPartialInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntBE(Ljava/io/InputStream;)I' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntBE_7_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntBE_7_1_Test]/[method:testReadIntBEWithValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readIntLE(Ljava/io/InputStream;)I' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtils_readIntLE_6_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readIntLE_6_1_Test]/[method:testReadIntLEValidInput()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='7'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='8'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='9'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readLongLE(Ljava/io/InputStream;)J' number='10'><tests>
+<test name='org.apache.tika.io.EndianUtils_readLongLE_9_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readLongLE_9_1_Test]/[method:testReadLongLE_WithBufferUnderrunException()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortBE(Ljava/io/InputStream;)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortBE(Ljava/io/InputStream;)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortBE(Ljava/io/InputStream;)I' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readShortBE(Ljava/io/InputStream;)S' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readShortBE(Ljava/io/InputStream;)S' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortBE(Ljava/io/InputStream;)I' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadShortBEWithValidData()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortBE(Ljava/io/InputStream;)I' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortBE(Ljava/io/InputStream;)I' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortBE_1_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortBE_1_1_Test]/[method:testReadUShortBEWithEndOfStream()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test]/[method:testReadUShortBE_WithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortLE(Ljava/io/InputStream;)I' number='3'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortLE(Ljava/io/InputStream;)I' number='2'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readShortLE(Ljava/io/InputStream;)S' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortLE(Ljava/io/InputStream;)I' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortLE(Ljava/io/InputStream;)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortLE(Ljava/io/InputStream;)I' number='4'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLEWithBufferUnderrun()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readShortLE(Ljava/io/InputStream;)S' number='1'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUShortLE(Ljava/io/InputStream;)I' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtils_readShortLE_0_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readShortLE_0_1_Test]/[method:testReadShortLE()]'/>
+<test name='org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test]/[method:testReadUShortLE()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='8'><tests>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUE7(Ljava/io/InputStream;)J' number='9'><tests>
+<test name='org.apache.tika.io.EndianUtils_readUE7_11_0_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUE7_11_0_Test]/[method:testReadUE7_BufferUnderun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='5'><tests>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='readUIntBE(Ljava/io/InputStream;)J' number='6'><tests>
+<test name='org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test]/[method:testReadUIntBEWithBufferUnderrun()]'/>
+</tests>
+</block>
+<block classname='org.apache.tika.io.EndianUtils' method='ubyteToInt(B)I' number='0'><tests>
+<test name='org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test]/[method:testUbyteToInt()]'/>
+<test name='org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test]/[method:testUbyteToIntMax()]'/>
+<test name='org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test]/[method:testUbyteToIntMin()]'/>
+<test name='org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test]/[method:testUbyteToIntNegative()]'/>
+<test name='org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test.[engine:junit-jupiter]/[class:org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test]/[method:testUbyteToIntZero()]'/>
+</tests>
+</block>
+</coverage>

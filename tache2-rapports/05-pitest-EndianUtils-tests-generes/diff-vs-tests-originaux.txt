@@ -1,0 +1,174 @@
+== mutants nouvellement tues (avant -> apres) ==
+-- EndianUtils : 91
+   L45   readShortLE                  PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_readShortLE_0_1_Test#testReadShortLE()
+   L58   readShortBE                  PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_readShortBE_1_1_Test#testReadShortBEWithValidData()
+   L64   readUShortLE                 MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortLE_2_1_Test#testReadUShortLEWithBufferUnderrun()
+   L64   readUShortLE                 NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortLE_2_1_Test#testReadUShortLE()
+   L67   readUShortLE                 MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortLE_2_1_Test#testReadUShortLE()
+   L67   readUShortLE                 MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortLE_2_1_Test#testReadUShortLE()
+   L67   readUShortLE                 PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortLE_2_1_Test#testReadUShortLE()
+   L73   readUShortBE                 MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readShortBE_1_1_Test#testReadUShortBEWithEndOfStream()
+   L73   readUShortBE                 NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortBE_3_1_Test#testReadUShortBE()
+   L76   readUShortBE                 MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortBE_3_1_Test#testReadUShortBE()
+   L76   readUShortBE                 MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortBE_3_1_Test#testReadUShortBE()
+   L76   readUShortBE                 PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_readUShortBE_3_1_Test#testReadUShortBE()
+   L130  readIntLE                    NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L133  readIntLE                    PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()
+   L149  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithPartialInput()
+   L149  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithPartialInput()
+   L149  readIntBE                    NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L152  readIntBE                    PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()
+   L191  readLongLE                   MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_readLongLE_9_1_Test#testReadLongLE_WithBufferUnderrunException()
+   L191  readLongLE                   NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par EndianUtils_readLongLE_9_1_Test#testReadLongLE_WithBufferUnderrunException()
+   L270  getShortLE                   PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getShortLE_13_0_Test#testGetShortLE()
+   L291  getUShortLE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()
+   L292  getUShortLE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()
+   L292  getUShortLE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()
+   L293  getUShortLE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()
+   L293  getUShortLE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()
+   L293  getUShortLE                  PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()
+   L324  getUShortBE                  PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L335  getUShortBE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L336  getUShortBE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L336  getUShortBE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L337  getUShortBE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L337  getUShortBE                  MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L337  getUShortBE                  PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()
+   L347  getIntLE                     PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L359  getIntLE                     IncrementsMutator                  NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L359  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L360  getIntLE                     IncrementsMutator                  NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L360  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L361  getIntLE                     IncrementsMutator                  NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L361  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L362  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L363  getIntLE                     PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntLE_20_0_Test#testGetIntLE()
+   L385  getIntBE                     IncrementsMutator                  NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()
+   L385  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()
+   L386  getIntBE                     IncrementsMutator                  NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntBE_22_0_Test#testGetIntBEWithOffset()
+   L386  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()
+   L387  getIntBE                     IncrementsMutator                  NO_COVERAGE  -> KILLED    tue par EndianUtils_getIntBE_22_0_Test#testGetIntBEWithOffset()
+   L387  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()
+   L388  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()
+   L389  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L389  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L389  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L389  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L389  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L389  getIntBE                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L389  getIntBE                     PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L411  getUIntLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntLE_25_0_Test#testGetUIntLE()
+   L411  getUIntLE                    PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntLE_25_0_Test#testGetUIntLE()
+   L433  getUIntBE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()
+   L433  getUIntBE                    PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()
+   L446  getLongLE                    ConditionalsBoundaryMutator        NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L446  getLongLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L446  getLongLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L446  getLongLE                    NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L447  getLongLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L448  getLongLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L448  getLongLE                    MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L450  getLongLE                    PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getLongLE_28_0_Test#testGetLongLE()
+   L461  ubyteToInt                   MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_ubyteToInt_29_1_Test#testUbyteToIntMax()
+   L461  ubyteToInt                   PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_ubyteToInt_29_1_Test#testUbyteToIntMax()
+   L472  getUByte                     MathMutator                        NO_COVERAGE  -> KILLED    tue par EndianUtils_getUByte_30_0_Test#testGetUByte()
+   L472  getUByte                     PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par EndianUtils_getUByte_30_0_Test#testGetUByte()
+   par test tueur: {'EndianUtils_readShortLE_0_1_Test#testReadShortLE()': 1, 'EndianUtils_readShortBE_1_1_Test#testReadShortBEWithValidData()': 1, 'EndianUtils_readUShortLE_2_1_Test#testReadUShortLEWithBufferUnderrun()': 1, 'EndianUtils_readUShortLE_2_1_Test#testReadUShortLE()': 4, 'EndianUtils_readShortBE_1_1_Test#testReadUShortBEWithEndOfStream()': 1, 'EndianUtils_readUShortBE_3_1_Test#testReadUShortBE()': 4, 'EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput()': 8, 'EndianUtils_readIntBE_7_1_Test#testReadIntBEWithPartialInput()': 2, 'EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput()': 8, 'EndianUtils_readLongLE_9_1_Test#testReadLongLE_WithBufferUnderrunException()': 2, 'EndianUtils_getShortLE_13_0_Test#testGetShortLE()': 1, 'EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset()': 6, 'EndianUtils_getUShortBE_18_0_Test#testGetUShortBE()': 7, 'EndianUtils_getIntLE_20_0_Test#testGetIntLE()': 15, 'EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithZero()': 6, 'EndianUtils_getIntBE_22_0_Test#testGetIntBEWithOffset()': 2, 'EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber()': 8, 'EndianUtils_getUIntLE_25_0_Test#testGetUIntLE()': 2, 'EndianUtils_getLongLE_28_0_Test#testGetLongLE()': 8, 'EndianUtils_ubyteToInt_29_1_Test#testUbyteToIntMax()': 2, 'EndianUtils_getUByte_30_0_Test#testGetUByte()': 2}
+
+== mutants toujours vivants apres ==
+-- EndianUtils : 77
+   L64   readUShortLE                 ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L73   readUShortBE                 ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L92   readUIntLE                   ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L92   readUIntLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L92   readUIntLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L111  readUIntBE                   ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L111  readUIntBE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L111  readUIntBE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L111  readUIntBE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L130  readIntLE                    ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L130  readIntLE                    MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L130  readIntLE                    MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L130  readIntLE                    MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L149  readIntBE                    ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L149  readIntBE                    MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L168  readIntME                    ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L168  readIntME                    MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L168  readIntME                    MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L191  readLongLE                   ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L191  readLongLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L191  readLongLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L191  readLongLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L191  readLongLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L191  readLongLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L191  readLongLE                   MathMutator                        SURVIVED      Replaced bitwise OR with AND
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L195  readLongLE                   PrimitiveReturnsMutator            NO_COVERAGE   replaced long return with 0 for org/apache/tika/io/EndianUtils::readLo
+   L217  readLongBE                   ConditionalsBoundaryMutator        NO_COVERAGE   changed conditional boundary
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   MathMutator                        NO_COVERAGE   Replaced bitwise OR with AND
+   L217  readLongBE                   NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced Shift Left with Shift Right
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   MathMutator                        NO_COVERAGE   Replaced long addition with subtraction
+   L221  readLongBE                   PrimitiveReturnsMutator            NO_COVERAGE   replaced long return with 0 for org/apache/tika/io/EndianUtils::readLo
+   L235  readUE7                      ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L235  readUE7                      ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L235  readUE7                      IncrementsMutator                  SURVIVED      Changed increment from 1 to -1
+   L246  readUE7                      ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L259  getShortLE                   PrimitiveReturnsMutator            NO_COVERAGE   replaced short return with 0 for org/apache/tika/io/EndianUtils::getSh
+   L280  getUShortLE                  PrimitiveReturnsMutator            NO_COVERAGE   replaced int return with 0 for org/apache/tika/io/EndianUtils::getUSho
+   L303  getShortBE                   PrimitiveReturnsMutator            NO_COVERAGE   replaced short return with 0 for org/apache/tika/io/EndianUtils::getSh
+   L314  getShortBE                   PrimitiveReturnsMutator            NO_COVERAGE   replaced short return with 0 for org/apache/tika/io/EndianUtils::getSh
+   L362  getIntLE                     IncrementsMutator                  SURVIVED      Changed increment from 1 to -1
+   L373  getIntBE                     PrimitiveReturnsMutator            NO_COVERAGE   replaced int return with 0 for org/apache/tika/io/EndianUtils::getIntB
+   L388  getIntBE                     IncrementsMutator                  SURVIVED      Changed increment from 1 to -1
+   L399  getUIntLE                    PrimitiveReturnsMutator            NO_COVERAGE   replaced long return with 0 for org/apache/tika/io/EndianUtils::getUIn
+   L421  getUIntBE                    PrimitiveReturnsMutator            NO_COVERAGE   replaced long return with 0 for org/apache/tika/io/EndianUtils::getUIn

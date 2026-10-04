@@ -1,0 +1,52 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.io.EndianUtils;
+import org.junit.jupiter.api.function.Executable;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class EndianUtils_readUIntBE_5_1_Test {
+
+    private EndianUtils endianUtils;
+
+    @BeforeEach
+    public void setUp() {
+        endianUtils = new EndianUtils();
+    }
+
+    @Test
+    public void testReadUIntBE() throws IOException, TikaException {
+        byte[] data = { 0x01, 0x02, 0x03, 0x04 };
+        InputStream inputStream = new ByteArrayInputStream(data);
+        long result = (long) ReflectionTestUtils.invokeMethod(endianUtils, "readUIntBE", inputStream);
+        assertEquals(0x01020304L, result);
+    }
+
+    @Test
+    public void testReadUIntBEWithBufferUnderrun() throws IOException, TikaException {
+        InputStream inputStream = Mockito.mock(InputStream.class);
+        Mockito.when(inputStream.read()).thenReturn(-1);
+        Executable executable = () -> ReflectionTestUtils.invokeMethod(endianUtils, "readUIntBE", inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readUIntBE_5_1_Test: line 30 : cannot find symbol
+  symbol:   variable ReflectionTestUtils
+  location: class org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test
+Error in EndianUtils_readUIntBE_5_1_Test: line 38 : cannot find symbol
+  symbol:   variable ReflectionTestUtils
+  location: class org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test
+Error in EndianUtils_readUIntBE_5_1_Test: line 39 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test

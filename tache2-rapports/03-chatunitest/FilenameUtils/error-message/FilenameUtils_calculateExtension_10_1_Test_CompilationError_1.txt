@@ -1,0 +1,87 @@
+package org.apache.tika.io;
+
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.mime.MimeType;
+import org.apache.tika.mime.MimeTypes;
+import org.apache.tika.utils.StringUtils;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.apache.tika.extractor.EmbeddedDocumentUtil;
+import org.apache.tika.metadata.TikaCoreProperties;
+import org.apache.tika.mime.MimeTypeException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class FilenameUtils_calculateExtension_10_1_Test {
+
+    @Mock
+    private MimeTypes mimeTypes;
+
+    @InjectMocks
+    private FilenameUtils filenameUtils;
+
+    @BeforeEach
+    public void setUp() {
+        when(mimeTypes.forName("image/png")).thenReturn(new MimeType("image/png"));
+        when(mimeTypes.forName("application/pdf")).thenReturn(new MimeType("application/pdf"));
+        when(mimeTypes.forName("image/ocr-png")).thenReturn(new MimeType("image/png"));
+    }
+
+    @Test
+    public void testCalculateExtension_withContentType_png() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "image/png");
+        String defaultValue = "default.ext";
+        String result = filenameUtils.calculateExtension(metadata, defaultValue);
+        assertEquals("png", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withContentType_pdf() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "application/pdf");
+        String defaultValue = "default.ext";
+        String result = filenameUtils.calculateExtension(metadata, defaultValue);
+        assertEquals("pdf", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withContentType_ocr_png() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "image/ocr-png");
+        String defaultValue = "default.ext";
+        String result = filenameUtils.calculateExtension(metadata, defaultValue);
+        assertEquals("png", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withNoContentType() {
+        Metadata metadata = new Metadata();
+        String defaultValue = "default.ext";
+        String result = filenameUtils.calculateExtension(metadata, defaultValue);
+        assertEquals(defaultValue, result);
+    }
+
+    @Test
+    public void testCalculateExtension_withNullMetadata() {
+        Metadata metadata = null;
+        String defaultValue = "default.ext";
+        String result = filenameUtils.calculateExtension(metadata, defaultValue);
+        assertEquals(defaultValue, result);
+    }
+}
+
+--------------------------------------------
+Error in FilenameUtils_calculateExtension_10_1_Test: line 34 : incompatible types: java.lang.String cannot be converted to org.apache.tika.mime.MediaType
+Error in FilenameUtils_calculateExtension_10_1_Test: line 35 : incompatible types: java.lang.String cannot be converted to org.apache.tika.mime.MediaType
+Error in FilenameUtils_calculateExtension_10_1_Test: line 36 : incompatible types: java.lang.String cannot be converted to org.apache.tika.mime.MediaType
+Error in FilenameUtils_calculateExtension_10_1_Test: line -1 : Some messages have been simplified; recompile with -Xdiags:verbose to get full output

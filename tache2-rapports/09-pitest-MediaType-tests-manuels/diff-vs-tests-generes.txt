@@ -1,0 +1,26 @@
+== mutants nouvellement tues (avant -> apres) ==
+-- MediaType : 19
+   L181  application                  NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#factories_buildCanonicalTypeFromSubtype()
+   L185  audio                        NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#factories_buildCanonicalTypeFromSubtype()
+   L193  text                         NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#factories_buildCanonicalTypeFromSubtype()
+   L211  set                          NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#setOfMediaTypes_ignoresNullAndDuplicates_andIsUnmodifiable()
+   L215  set                          EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#setOfMediaTypes_ignoresNullAndDuplicates_andIsUnmodifiable()
+   L230  set                          NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#setOfStrings_parsesEachString_andSkipsUnparsable()
+   L234  set                          EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#setOfStrings_parsesEachString_andSkipsUnparsable()
+   L278  parse                        NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#parse_charsetBeforeType_isAccepted()
+   L288  isSimpleName                 ConditionalsBoundaryMutator        SURVIVED     -> KILLED    tue par MediaTypeManualTest#parse_simpleNameWithBoundaryCharacters_isCached()
+   L288  isSimpleName                 NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaTypeManualTest#parse_simpleNameWithBoundaryCharacters_isCached()
+   L351  union                        NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#constructorWithParameters_mergesBothMaps_newValuesWin()
+   L352  union                        EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#constructorWithEmptyMap_keepsBaseParameters()
+   L355  union                        VoidMethodCallMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#constructorWithParameters_mergesBothMaps_newValuesWin()
+   L356  union                        VoidMethodCallMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#constructorWithParameters_mergesBothMaps_newValuesWin()
+   L357  union                        EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#constructorWithParameters_mergesBothMaps_newValuesWin()
+   L367  getBaseType                  NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaTypeManualTest#getBaseType_stripsParameters_andReturnsSelfWhenNone()
+   L370  getBaseType                  NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#getBaseType_stripsParameters_andReturnsSelfWhenNone()
+   L425  hashCode                     PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#hashCode_isConsistentWithEquals_andWithCanonicalString()
+   L429  compareTo                    PrimitiveReturnsMutator            NO_COVERAGE  -> KILLED    tue par MediaTypeManualTest#compareTo_followsCanonicalStringOrder()
+   par test tueur: {'MediaTypeManualTest#factories_buildCanonicalTypeFromSubtype()': 3, 'MediaTypeManualTest#setOfMediaTypes_ignoresNullAndDuplicates_andIsUnmodifiable()': 2, 'MediaTypeManualTest#setOfStrings_parsesEachString_andSkipsUnparsable()': 2, 'MediaTypeManualTest#parse_charsetBeforeType_isAccepted()': 1, 'MediaTypeManualTest#parse_simpleNameWithBoundaryCharacters_isCached()': 2, 'MediaTypeManualTest#constructorWithParameters_mergesBothMaps_newValuesWin()': 4, 'MediaTypeManualTest#constructorWithEmptyMap_keepsBaseParameters()': 1, 'MediaTypeManualTest#getBaseType_stripsParameters_andReturnsSelfWhenNone()': 2, 'MediaTypeManualTest#hashCode_isConsistentWithEquals_andWithCanonicalString()': 1, 'MediaTypeManualTest#compareTo_followsCanonicalStringOrder()': 1}
+
+== mutants toujours vivants apres ==
+-- MediaType : 1
+   L257  parse                        NullReturnValsMutator              SURVIVED      replaced return value with null for org/apache/tika/mime/MediaType::pa

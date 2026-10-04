@@ -1,0 +1,20 @@
+{
+  "attempt0": {
+    "testClassName": "EndianUtils_readUShortLE_2_0_Test",
+    "fullName": "org.apache.tika.io.EndianUtils_readUShortLE_2_0_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\io\\EndianUtils_readUShortLE_2_0_Test.java",
+    "className": "EndianUtils",
+    "packageName": "org.apache.tika.io",
+    "methodName": "readUShortLE",
+    "methodSig": "readUShortLE(InputStream)"
+  },
+  "attempt1": {
+    "testClassName": "EndianUtils_readUShortLE_2_1_Test",
+    "fullName": "org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\io\\EndianUtils_readUShortLE_2_0_Test.java",
+    "className": "EndianUtils",
+    "packageName": "org.apache.tika.io",
+    "methodName": "readUShortLE",
+    "methodSig": "readUShortLE(InputStream)"
+  }
+}

@@ -1,0 +1,48 @@
+== mutants nouvellement tues (avant -> apres) ==
+-- FilenameUtils : 2
+   L344  getEmbeddedPath              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test#testGetSanitizedEmbeddedFilePath_withLongPath()
+   L365  getEmbeddedName              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test#testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndBackslash()
+   par test tueur: {'FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test#testGetSanitizedEmbeddedFilePath_withLongPath()': 1, 'FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test#testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndBackslash()': 1}
+
+== mutants toujours vivants apres ==
+-- FilenameUtils : 40
+   L134  getSuffixFromPath            ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L156  getSanitizedEmbeddedFileName ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L156  getSanitizedEmbeddedFileName NegateConditionalsMutator          SURVIVED      negated conditional
+   L174  getSanitizedEmbeddedFileName EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L185  getSanitizedEmbeddedFileName EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L189  getSanitizedEmbeddedFileName ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L215  getSanitizedEmbeddedFilePath ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L232  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L250  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L259  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L264  getSanitizedEmbeddedFilePath ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L265  getSanitizedEmbeddedFilePath ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L268  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L305  resolveWithin                NegateConditionalsMutator          SURVIVED      negated conditional
+   L305  resolveWithin                NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L308  resolveWithin                NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L320  getPrefixLength              ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L323  getPrefixLength              ConditionalsBoundaryMutator        NO_COVERAGE   changed conditional boundary
+   L323  getPrefixLength              ConditionalsBoundaryMutator        NO_COVERAGE   changed conditional boundary
+   L323  getPrefixLength              NegateConditionalsMutator          SURVIVED      negated conditional
+   L323  getPrefixLength              NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L323  getPrefixLength              NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L323  getPrefixLength              NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L324  getPrefixLength              PrimitiveReturnsMutator            NO_COVERAGE   replaced int return with 0 for org/apache/tika/io/FilenameUtils::getPr
+   L348  getEmbeddedPath              NegateConditionalsMutator          SURVIVED      negated conditional
+   L349  getEmbeddedPath              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L352  getEmbeddedPath              NegateConditionalsMutator          SURVIVED      negated conditional
+   L353  getEmbeddedPath              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L356  getEmbeddedPath              NegateConditionalsMutator          SURVIVED      negated conditional
+   L357  getEmbeddedPath              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L359  getEmbeddedPath              EmptyObjectReturnValsMutator       SURVIVED      replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L369  getEmbeddedName              NegateConditionalsMutator          SURVIVED      negated conditional
+   L370  getEmbeddedName              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L373  getEmbeddedName              NegateConditionalsMutator          SURVIVED      negated conditional
+   L374  getEmbeddedName              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L377  getEmbeddedName              NegateConditionalsMutator          SURVIVED      negated conditional
+   L378  getEmbeddedName              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L380  getEmbeddedName              EmptyObjectReturnValsMutator       SURVIVED      replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L402  calculateExtension           EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ca
+   L416  lookupExtension              EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::lo

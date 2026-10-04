@@ -1,0 +1,47 @@
+== mutants nouvellement tues (avant -> apres) ==
+-- MediaType : 18
+   L189  image                        NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L197  video                        NullReturnValsMutator              NO_COVERAGE  -> KILLED    tue par MediaType_video_4_0_Test#testVideoMethod()
+   L277  parse                        NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L288  isSimpleName                 NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaType_parse_7_0_Test#testParseParametersWithEmptyValues()
+   L288  isSimpleName                 NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L293  isSimpleName                 ConditionalsBoundaryMutator        SURVIVED     -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L293  isSimpleName                 BooleanTrueReturnValsMutator       SURVIVED     -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L349  union                        NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L350  union                        EmptyObjectReturnValsMutator       SURVIVED     -> KILLED    tue par MediaType_image_2_0_Test#testImageMethod()
+   L379  getType                      EmptyObjectReturnValsMutator       SURVIVED     -> KILLED    tue par MediaType_application_0_0_Test#testGetType()
+   L387  getSubtype                   MathMutator                        SURVIVED     -> KILLED    tue par MediaType_parse_7_0_Test#testParseSimpleType()
+   L387  getSubtype                   EmptyObjectReturnValsMutator       SURVIVED     -> KILLED    tue par MediaType_parse_7_0_Test#testParseSimpleType()
+   L398  hasParameters                NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaType_hasParameters_15_0_Test#testHasParametersWithEmptyParameters()
+   L398  hasParameters                BooleanTrueReturnValsMutator       SURVIVED     -> KILLED    tue par MediaType_hasParameters_15_0_Test#testHasParametersWithEmptyParameters()
+   L416  equals                       NegateConditionalsMutator          SURVIVED     -> KILLED    tue par MediaType_equals_18_0_Test#testEqualsWithNull()
+   L418  equals                       BooleanFalseReturnValsMutator      SURVIVED     -> KILLED    tue par MediaType_video_4_0_Test#testVideoMethod()
+   L418  equals                       BooleanTrueReturnValsMutator       SURVIVED     -> KILLED    tue par MediaType_equals_18_0_Test#testEquals()
+   L420  equals                       BooleanTrueReturnValsMutator       NO_COVERAGE  -> KILLED    tue par MediaType_equals_18_0_Test#testEqualsWithNull()
+   par test tueur: {'MediaType_image_2_0_Test#testImageMethod()': 7, 'MediaType_video_4_0_Test#testVideoMethod()': 2, 'MediaType_parse_7_0_Test#testParseParametersWithEmptyValues()': 1, 'MediaType_application_0_0_Test#testGetType()': 1, 'MediaType_parse_7_0_Test#testParseSimpleType()': 2, 'MediaType_hasParameters_15_0_Test#testHasParametersWithEmptyParameters()': 2, 'MediaType_equals_18_0_Test#testEqualsWithNull()': 2, 'MediaType_equals_18_0_Test#testEquals()': 1}
+
+== mutants toujours vivants apres ==
+-- MediaType : 20
+   L181  application                  NullReturnValsMutator              NO_COVERAGE   replaced return value with null for org/apache/tika/mime/MediaType::ap
+   L185  audio                        NullReturnValsMutator              NO_COVERAGE   replaced return value with null for org/apache/tika/mime/MediaType::au
+   L193  text                         NullReturnValsMutator              NO_COVERAGE   replaced return value with null for org/apache/tika/mime/MediaType::te
+   L211  set                          NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L215  set                          EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with Collections.emptySet for org/apache/tika/mi
+   L230  set                          NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L234  set                          EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with Collections.emptySet for org/apache/tika/mi
+   L257  parse                        NullReturnValsMutator              SURVIVED      replaced return value with null for org/apache/tika/mime/MediaType::pa
+   L278  parse                        NullReturnValsMutator              NO_COVERAGE   replaced return value with null for org/apache/tika/mime/MediaType::pa
+   L288  isSimpleName                 ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L288  isSimpleName                 NegateConditionalsMutator          SURVIVED      negated conditional
+   L351  union                        NegateConditionalsMutator          NO_COVERAGE   negated conditional
+   L352  union                        EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with Collections.emptyMap for org/apache/tika/mi
+   L355  union                        VoidMethodCallMutator              NO_COVERAGE   removed call to java/util/Map::putAll
+   L356  union                        VoidMethodCallMutator              NO_COVERAGE   removed call to java/util/Map::putAll
+   L357  union                        EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with Collections.emptyMap for org/apache/tika/mi
+   L367  getBaseType                  NegateConditionalsMutator          SURVIVED      negated conditional
+   L370  getBaseType                  NullReturnValsMutator              NO_COVERAGE   replaced return value with null for org/apache/tika/mime/MediaType::ge
+   L425  hashCode                     PrimitiveReturnsMutator            NO_COVERAGE   replaced int return with 0 for org/apache/tika/mime/MediaType::hashCod
+   L429  compareTo                    PrimitiveReturnsMutator            NO_COVERAGE   replaced int return with 0 for org/apache/tika/mime/MediaType::compare
+
+== ATTENTION : mutants tues avant mais plus apres ==
+   ('org.apache.tika.mime.MediaType', 'hashCode', '425', 'PrimitiveReturnsMutator') KILLED -> NO_COVERAGE

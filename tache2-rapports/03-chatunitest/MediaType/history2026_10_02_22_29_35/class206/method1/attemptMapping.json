@@ -1,0 +1,20 @@
+{
+  "attempt0": {
+    "testClassName": "MediaType_audio_1_0_Test",
+    "fullName": "org.apache.tika.mime.MediaType_audio_1_0_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\mime\\MediaType_audio_1_0_Test.java",
+    "className": "MediaType",
+    "packageName": "org.apache.tika.mime",
+    "methodName": "audio",
+    "methodSig": "audio(String)"
+  },
+  "attempt1": {
+    "testClassName": "MediaType_audio_1_1_Test",
+    "fullName": "org.apache.tika.mime.MediaType_audio_1_1_Test",
+    "path": "<depot>\\tika-core\\chatunitest\\tika-parent\\tika-core\\org\\apache\\tika\\mime\\MediaType_audio_1_0_Test.java",
+    "className": "MediaType",
+    "packageName": "org.apache.tika.mime",
+    "methodName": "audio",
+    "methodSig": "audio(String)"
+  }
+}

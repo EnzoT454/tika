@@ -1,0 +1,153 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.FilenameUtils;
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.utils.StringUtils;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.apache.tika.extractor.EmbeddedDocumentUtil;
+import org.apache.tika.metadata.TikaCoreProperties;
+import org.apache.tika.mime.MimeTypeException;
+import org.apache.tika.mime.MimeTypes;
+
+@ExtendWith(MockitoExtension.class)
+public class FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test {
+
+    @InjectMocks
+    private FilenameUtils filenameUtils;
+
+    @Mock
+    private Metadata metadata;
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withValidPath() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withBlankPath() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals(null, result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withNullPath() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals(null, result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withProtocolPath() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("http://example.com/example.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withReservedCharacters() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example?file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example%3Ffile.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withLongFileName() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("a".repeat(100) + ".txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("a".repeat(9) + "....txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withEmptyExtension() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals(null, result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withASCIINumericExtension() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.12345");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.12345", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withInvalidASCIINumericExtension() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.123456");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withMultipleDots() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example..txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withLeadingDot() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(".example.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("_example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withTrailingDot() throws IOException {
+        when(metadata.get(FilenameUtils.TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("example.txt.");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+}
+
+--------------------------------------------
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 34 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 41 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 48 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 55 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 62 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 69 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 76 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 83 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 90 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 97 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 104 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils
+Error in FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test: line 111 : cannot find symbol
+  symbol:   variable TikaCoreProperties
+  location: class org.apache.tika.io.FilenameUtils

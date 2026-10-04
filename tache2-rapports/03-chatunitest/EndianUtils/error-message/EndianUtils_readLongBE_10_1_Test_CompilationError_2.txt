@@ -1,0 +1,42 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.io.EndianUtils;
+import org.apache.tika.io.BufferUnderrunException;
+import org.junit.jupiter.api.function.Executable;
+import java.lang.reflect.Method;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_readLongBE_10_1_Test {
+
+    @Test
+    public void testReadLongBE() throws Exception {
+        // Test with valid input
+        byte[] input = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+        InputStream inputStream = new ByteArrayInputStream(input);
+        long result = EndianUtils.readLongBE(inputStream);
+        assertEquals(0x0102030405060708L, result);
+        // Test with negative input
+        input = new byte[] { (byte) 0xFF, (byte) 0xFE, (byte) 0xFD, (byte) 0xFC, (byte) 0xFB, (byte) 0xFA, (byte) 0xF9, (byte) 0xF8 };
+        inputStream = new ByteArrayInputStream(input);
+        result = EndianUtils.readLongBE(inputStream);
+        assertEquals(0xFFFFFFFFFFFFFFFEL, result);
+        // Test with buffer underrun
+        inputStream = new ByteArrayInputStream(new byte[] { 0x01, 0x02, 0x03, 0x04 });
+        Executable executable = () -> EndianUtils.readLongBE(inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readLongBE_10_1_Test: line 7 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.io

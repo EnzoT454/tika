@@ -1,0 +1,147 @@
+package org.apache.tika.io;
+
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.mime.MimeTypes;
+import org.apache.tika.mime.MimeType;
+import org.apache.tika.mime.MimeTypeException;
+import org.apache.tika.utils.StringUtils;
+import org.junit.jupiter.api.function.Executable;
+import java.io.IOException;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.nio.file.Path;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.apache.tika.extractor.EmbeddedDocumentUtil;
+import org.apache.tika.metadata.TikaCoreProperties;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class FilenameUtils_calculateExtension_10_0_Test {
+
+    private FilenameUtils filenameUtils;
+
+    private MimeTypes mimeTypes;
+
+    private EmbeddedDocumentUtil embeddedDocumentUtil;
+
+    @BeforeEach
+    public void setUp() {
+        filenameUtils = new FilenameUtils();
+        mimeTypes = mock(MimeTypes.class);
+        embeddedDocumentUtil = mock(EmbeddedDocumentUtil.class);
+        try {
+            ReflectionTestUtils.setField(filenameUtils, "mimeTypes", mimeTypes);
+            ReflectionTestUtils.setField(filenameUtils, "embeddedDocumentUtil", embeddedDocumentUtil);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testCalculateExtension_withMimeType() throws MimeTypeException {
+        String mimeType = "image/png";
+        when(mimeTypes.forName(mimeType)).thenReturn(mock(MimeType.class));
+        when(mimeTypes.forName(mimeType).getExtension()).thenReturn("png");
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, mimeType);
+        String result = filenameUtils.calculateExtension(metadata, "default");
+        assertEquals("png", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withNoMimeType() {
+        Metadata metadata = new Metadata();
+        String result = filenameUtils.calculateExtension(metadata, "default");
+        assertEquals("default", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withInvalidMimeType() throws MimeTypeException {
+        String mimeType = "image/ocr-png";
+        when(mimeTypes.forName(mimeType)).thenReturn(mock(MimeType.class));
+        when(mimeTypes.forName(mimeType).getExtension()).thenReturn(null);
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, mimeType);
+        String result = filenameUtils.calculateExtension(metadata, "default");
+        assertEquals(".bin", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withNullDefaultValue() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "image/png");
+        String result = filenameUtils.calculateExtension(metadata, null);
+        assertEquals("png", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withEmptyDefaultValue() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "image/png");
+        String result = filenameUtils.calculateExtension(metadata, "");
+        assertEquals("png", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withWhitespaceDefaultValue() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "image/png");
+        String result = filenameUtils.calculateExtension(metadata, "   ");
+        assertEquals("png", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withNullMetadata() {
+        String result = filenameUtils.calculateExtension(null, "default");
+        assertEquals("default", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withEmptyMetadata() {
+        Metadata metadata = new Metadata();
+        String result = filenameUtils.calculateExtension(metadata, "default");
+        assertEquals("default", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withWhitespaceMetadata() {
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, "    ");
+        String result = filenameUtils.calculateExtension(metadata, "default");
+        assertEquals("default", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withInvalidMimeTypeAndNullDefaultValue() throws MimeTypeException {
+        String mimeType = "image/ocr-png";
+        when(mimeTypes.forName(mimeType)).thenReturn(mock(MimeType.class));
+        when(mimeTypes.forName(mimeType).getExtension()).thenReturn(null);
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, mimeType);
+        String result = filenameUtils.calculateExtension(metadata, null);
+        assertEquals(".bin", result);
+    }
+
+    @Test
+    public void testCalculateExtension_withInvalidMimeTypeAndEmptyDefaultValue() throws MimeTypeException {
+        String mimeType = "image/ocr-png";
+        when(mimeTypes.forName(mimeType)).thenReturn(mock(MimeType.class));
+        when(mimeTypes.forName(mimeType).getExtension()).thenReturn(null);
+        Metadata metadata = new Metadata();
+        metadata.set(Metadata.CONTENT_TYPE, mimeType);
+        String result = filenameUtils.calculateExtension(metadata, "");
+    }
+}
+
+--------------------------------------------
+Error in FilenameUtils_calculateExtension_10_0_Test: line 38 : cannot find symbol
+  symbol:   variable ReflectionTestUtils
+  location: class org.apache.tika.io.FilenameUtils_calculateExtension_10_0_Test
+Error in FilenameUtils_calculateExtension_10_0_Test: line 39 : cannot find symbol
+  symbol:   variable ReflectionTestUtils
+  location: class org.apache.tika.io.FilenameUtils_calculateExtension_10_0_Test

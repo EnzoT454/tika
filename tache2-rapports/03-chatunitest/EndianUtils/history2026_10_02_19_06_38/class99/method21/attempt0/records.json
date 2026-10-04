@@ -1,0 +1,22 @@
+[
+  {
+    "attempt": 0,
+    "round": 0,
+    "prompt": [
+      {
+        "role": "system",
+        "content": "Please help me generate a whole JUnit test for a focal method in a focal class.\nI will provide the following information of the focal method:\n1. Required dependencies to import.\n2. The focal class signature.\n3. Source code of the focal method.\n4. Signatures of r methods and fields in the class.\nI will provide followotheing brief information if the focal method has dependencies:\n1. Signatures of dependent classes.\n2. Signatures of dependent methods and fields in the dependent classes.\nI need you to create a whole unit test using JUnit 5, ensuring optimal branch and line coverage. Compile without errors, and use reflection to invoke private methods. No additional explanations required."
+      },
+      {
+        "role": "user",
+        "content": "The focal method is `getIntLE(byte[], int)` in the focal class `EndianUtils`, and their information is\n```org.apache.tika.io\nimport java.io.IOException;\nimport java.io.InputStream;\nimport org.apache.tika.exception.TikaException;\npublic class EndianUtils {\nprivate static final int LONG_SIZE = 8;\npublic static int getIntLE(byte[] data, int offset) {\n        int i = offset;\n        int b0 = data[i++] & 0xFF;\n        int b1 = data[i++] & 0xFF;\n        int b2 = data[i++] & 0xFF;\n        int b3 = data[i++] & 0xFF;\n        return (b3 << 24) + (b2 << 16) + (b1 << 8) + (b0);\n    }\n}```.\n"
+      }
+    ],
+    "response": "```java\nimport org.apache.tika.io.EndianUtils;\nimport org.junit.jupiter.api.Test;\nimport java.lang.reflect.Method;\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\npublic class EndianUtilsTest {\n\n    @Test\n    public void testGetIntLE() throws Exception {\n        EndianUtils endianness = new EndianUtils();\n        Method method = endianness.getClass().getDeclaredMethod(\"getIntLE\", byte[].class, int.class);\n        method.setAccessible(true);\n\n        byte[] data = new byte[4];\n        data[0] = (byte) 0x01;\n        data[1] = (byte) 0x02;\n        data[2] = (byte) 0x03;\n        data[3] = (byte) 0x04;\n\n        int result = (int) method.invoke(endianness, data, 0);\n        assertEquals(0x04030201, result);\n    }\n}\n```",
+    "promptToken": 330,
+    "responseToken": 207,
+    "hasCode": true,
+    "code": "package org.apache.tika.io;\n\nimport org.apache.tika.io.EndianUtils;\nimport java.lang.reflect.Method;\nimport org.mockito.*;\nimport org.junit.jupiter.api.*;\nimport static org.mockito.Mockito.*;\nimport static org.junit.jupiter.api.Assertions.*;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport org.apache.tika.exception.TikaException;\n\npublic class EndianUtils_getIntLE_21_0_Test {\n\n    @Test\n    public void testGetIntLE() throws Exception {\n        EndianUtils endianness = new EndianUtils();\n        Method method = endianness.getClass().getDeclaredMethod(\"getIntLE\", byte[].class, int.class);\n        method.setAccessible(true);\n        byte[] data = new byte[4];\n        data[0] = (byte) 0x01;\n        data[1] = (byte) 0x02;\n        data[2] = (byte) 0x03;\n        data[3] = (byte) 0x04;\n        int result = (int) method.invoke(endianness, data, 0);\n        assertEquals(0x04030201, result);\n    }\n}\n",
+    "hasError": false
+  }
+]

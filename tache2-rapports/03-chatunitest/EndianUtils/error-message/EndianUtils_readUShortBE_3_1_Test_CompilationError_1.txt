@@ -1,0 +1,45 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.apache.tika.exception.TikaException;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class EndianUtils_readUShortBE_3_1_Test {
+
+    @Test
+    public void testReadUShortBE() throws IOException, TikaException {
+        // Arrange
+        byte[] data = { (byte) 0x12, (byte) 0x34 };
+        InputStream inputStream = new ByteArrayInputStream(data);
+        EndianUtils endianUtils = new EndianUtils();
+        // Act
+        int result = endianUtils.readUShortBE(inputStream);
+        // Assert
+        assertEquals(0x1234, result);
+    }
+
+    @Test
+    public void testReadUShortBE_WithBufferUnderrun() throws IOException, TikaException {
+        // Arrange
+        InputStream inputStream = mock(InputStream.class);
+        when(inputStream.read()).thenReturn(-1);
+        EndianUtils endianUtils = new EndianUtils();
+        // Act & Assert
+        assertThrows(BufferUnderrunException.class, () -> {
+            endianUtils.readUShortBE(inputStream);
+        });
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readUShortBE_3_1_Test: line 36 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test

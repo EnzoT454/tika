@@ -1,0 +1,46 @@
+package org.apache.tika.mime;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class MediaType_audio_1_0_Test {
+
+    @InjectMocks
+    private MediaType mediaType;
+
+    @Mock
+    private Map<String, String> parameters;
+
+    @Test
+    public void testAudio() throws Exception {
+        String type = "mp3";
+        MediaType result = mediaType.audio(type);
+        assertEquals("audio/mp3", result.toString());
+        // Use reflection to invoke the private method
+        Method parseMethod = MediaType.class.getDeclaredMethod("parse", String.class);
+        parseMethod.setAccessible(true);
+        parseMethod.invoke(null, "audio/" + type);
+    }
+}
+
+--------------------------------------------
+Error in MediaType_audio_1_0_Test: line 37 : cannot find symbol
+  symbol:   class Method
+  location: class org.apache.tika.mime.MediaType_audio_1_0_Test

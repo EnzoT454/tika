@@ -1,0 +1,40 @@
+package org.apache.tika.io;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import org.apache.tika.exception.TikaException;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.InputStream;
+
+public class EndianUtils_readIntME_8_1_Test {
+
+    @Test
+    public void testReadIntME() throws IOException, TikaException {
+        // Test case 1: Normal case
+        byte[] data1 = { 0x12, 0x34, 0x56, 0x78 };
+        ByteArrayInputStream inputStream1 = new ByteArrayInputStream(data1);
+        int result1 = EndianUtils.readIntME(inputStream1);
+        assertEquals(0x12345678, result1);
+        // Test case 2: End of stream
+        byte[] data2 = {};
+        ByteArrayInputStream inputStream2 = new ByteArrayInputStream(data2);
+        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readIntME(inputStream2));
+        // Test case 3: Negative values
+        byte[] data3 = { (byte) 0xFF, (byte) 0xFE, (byte) 0xFD, (byte) 0xFC };
+        ByteArrayInputStream inputStream3 = new ByteArrayInputStream(data3);
+        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readIntME(inputStream3));
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readIntME_8_1_Test: line 26 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readIntME_8_1_Test
+Error in EndianUtils_readIntME_8_1_Test: line 30 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: class org.apache.tika.io.EndianUtils_readIntME_8_1_Test

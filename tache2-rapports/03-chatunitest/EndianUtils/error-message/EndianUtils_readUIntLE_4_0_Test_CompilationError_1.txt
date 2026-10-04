@@ -1,0 +1,54 @@
+package org.apache.tika.io;
+
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.exception.BufferUnderrunException;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import org.junit.jupiter.api.function.Executable;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class EndianUtils_readUIntLE_4_0_Test {
+
+    @Test
+    public void testReadUIntLE() throws IOException, TikaException {
+        InputStream inputStream = mock(InputStream.class);
+        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, 0x78);
+        long result = EndianUtils.readUIntLE(inputStream);
+        assertEquals(0x78563412L, result);
+    }
+
+    @Test
+    public void testReadUIntLEWithNegativeValue() throws IOException, TikaException {
+        InputStream inputStream = mock(InputStream.class);
+        when(inputStream.read()).thenReturn(0xFF, 0xFF, 0xFF, 0xFF);
+        Executable executable = () -> EndianUtils.readUIntLE(inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+
+    @Test
+    public void testReadUIntLEWithBufferUnderrunException() throws IOException, TikaException {
+        InputStream inputStream = mock(InputStream.class);
+        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, -1);
+        Executable executable = () -> EndianUtils.readUIntLE(inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+
+    @Test
+    public void testReadUIntLEWithEmptyStream() throws IOException, TikaException {
+        InputStream inputStream = mock(InputStream.class);
+        when(inputStream.read()).thenReturn(-1, -1, -1, -1);
+        Executable executable = () -> EndianUtils.readUIntLE(inputStream);
+        assertThrows(BufferUnderrunException.class, executable);
+    }
+}
+
+--------------------------------------------
+Error in EndianUtils_readUIntLE_4_0_Test: line 4 : cannot find symbol
+  symbol:   class BufferUnderrunException
+  location: package org.apache.tika.exception

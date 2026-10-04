@@ -1,0 +1,333 @@
+package org.apache.tika.io;
+
+import org.apache.tika.io.FilenameUtils;
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.utils.StringUtils;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.apache.tika.extractor.EmbeddedDocumentUtil;
+import org.apache.tika.metadata.TikaCoreProperties;
+import org.apache.tika.mime.MimeTypeException;
+import org.apache.tika.mime.MimeTypes;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@ExtendWith(MockitoExtension.class)
+public class FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test {
+
+    @InjectMocks
+    private FilenameUtils filenameUtils;
+
+    @Mock
+    private Metadata metadata;
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withValidPath() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withBlankPath() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals(null, result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withNullPath() throws IOException {
+        when(metadata.get("resourceName")).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals(null, result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withProtocolPath() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("http://example.com/example.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withReservedCharacters() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example?file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example%3Ffile.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withLongFileName() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("a".repeat(100) + ".txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("a".repeat(9) + "....txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withEmptyExtension() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example.");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals(null, result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withASCIINumericExtension() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example.12345");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.12345", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withInvalidASCIINumericExtension() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example.123456");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withMultipleDots() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example..txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withLeadingDot() throws IOException {
+        when(metadata.get("resourceName")).thenReturn(".example.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("_example.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withTrailingDot() throws IOException {
+        when(metadata.get("resourceName")).thenReturn("example.txt.");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("example.txt", result);
+    }
+}
+
+--------------------------------------------
+Error in testGetSanitizedEmbeddedFileName_withLeadingDot(): line 105 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: .example.txt]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withLeadingDot(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:104)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withNullPath(): line 49 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: null]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withNullPath(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:48)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withASCIINumericExtension(): line 84 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example.12345]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withASCIINumericExtension(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:83)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withBlankPath(): line 42 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: ]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withBlankPath(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:41)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withReservedCharacters(): line 63 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example?file.txt]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withReservedCharacters(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:62)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withProtocolPath(): line 56 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: http://example.com/example.txt]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withProtocolPath(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:55)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withInvalidASCIINumericExtension(): line 91 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example.123456]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withInvalidASCIINumericExtension(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:90)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withMultipleDots(): line 98 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example..txt]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withMultipleDots(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:97)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withValidPath(): line 35 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example.txt]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withValidPath(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:34)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withEmptyExtension(): line 77 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example.]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withEmptyExtension(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:76)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withLongFileName(): line 70 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withLongFileName(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:69)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.
+Error in testGetSanitizedEmbeddedFileName_withTrailingDot(): line 112 : org.mockito.exceptions.misusing.PotentialStubbingProblem: 
+Strict stubbing argument mismatch. Please check:
+ - this invocation of 'get' method:
+    metadata.get(
+    org.apache.tika.metadata.Property@28add127
+);
+    -> at org.apache.tika.io.FilenameUtils.getEmbeddedName(FilenameUtils.java:364)
+ - has following stubbing(s) with different arguments:
+    1. metadata.get("resourceName"); stubbed with: [Returns: example.txt.]
+      -> at org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.testGetSanitizedEmbeddedFileName_withTrailingDot(FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java:111)
+Typically, stubbing argument mismatch indicates user mistake when writing tests.
+Mockito fails early so that you can debug potential problem easily.
+However, there are legit scenarios when this exception generates false negative signal:
+  - stubbing the same method multiple times using 'given().will()' or 'when().then()' API
+    Please use 'will().given()' or 'doReturn().when()' API for stubbing.
+  - stubbed method is intentionally invoked with different arguments by code under test
+    Please use default or 'silent' JUnit Rule (equivalent of Strictness.LENIENT).
+For more information see javadoc for PotentialStubbingProblem class.

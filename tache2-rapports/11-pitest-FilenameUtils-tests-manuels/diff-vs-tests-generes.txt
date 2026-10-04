@@ -1,0 +1,46 @@
+== mutants nouvellement tues (avant -> apres) ==
+-- FilenameUtils : 30
+   L134  getSuffixFromPath            ConditionalsBoundaryMutator        SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#suffix_fiveCharactersAccepted_sixRejected()
+   L174  getSanitizedEmbeddedFileName EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#fileName_blankNamePartBeforeExtension_returnsNull()
+   L189  getSanitizedEmbeddedFileName ConditionalsBoundaryMutator        SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#fileName_exactlyMaxLength_isNotTruncated()
+   L232  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#filePath_dotOnly_returnsNull()
+   L250  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#filePath_lastSegmentIsOnlyAnExtension_returnsNull()
+   L264  getSanitizedEmbeddedFilePath ConditionalsBoundaryMutator        SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#filePath_exactlyMaxLength_keepsRelativePath()
+   L265  getSanitizedEmbeddedFilePath ConditionalsBoundaryMutator        SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#filePath_tooLongPath_nameExactlyMaxLength_isNotTruncated()
+   L268  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#filePath_tooLongPath_nameExactlyMaxLength_isNotTruncated()
+   L305  resolveWithin                NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#resolveWithin_missingChildInExistingDir_isReturned(java.nio.file.Path)
+   L308  resolveWithin                NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#resolveWithin_existingChild_isReturned(java.nio.file.Path)
+   L323  getPrefixLength              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#degenerateShortNames_areKeptAsNames()
+   L323  getPrefixLength              NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#degenerateShortNames_areKeptAsNames()
+   L323  getPrefixLength              NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#degenerateShortNames_areKeptAsNames()
+   L323  getPrefixLength              NegateConditionalsMutator          NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#degenerateShortNames_areKeptAsNames()
+   L348  getEmbeddedPath              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_resourcePathWinsOverOtherProperties()
+   L349  getEmbeddedPath              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_eachPropertyAloneIsUsed()
+   L352  getEmbeddedPath              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_resourcePathWinsOverOtherProperties()
+   L353  getEmbeddedPath              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_resourcePathWinsOverOtherProperties()
+   L356  getEmbeddedPath              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_eachPropertyAloneIsUsed()
+   L357  getEmbeddedPath              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_eachPropertyAloneIsUsed()
+   L359  getEmbeddedPath              EmptyObjectReturnValsMutator       SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedPath_eachPropertyAloneIsUsed()
+   L369  getEmbeddedName              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedName_resourceNameWinsOverOtherProperties()
+   L370  getEmbeddedName              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#embeddedName_resourceNameWinsOverOtherProperties()
+   L373  getEmbeddedName              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedName_eachPropertyAloneIsUsed()
+   L374  getEmbeddedName              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#embeddedName_eachPropertyAloneIsUsed()
+   L377  getEmbeddedName              NegateConditionalsMutator          SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedName_eachPropertyAloneIsUsed()
+   L378  getEmbeddedName              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#embeddedName_eachPropertyAloneIsUsed()
+   L380  getEmbeddedName              EmptyObjectReturnValsMutator       SURVIVED     -> KILLED    tue par FilenameUtilsManualTest#embeddedName_eachPropertyAloneIsUsed()
+   L402  calculateExtension           EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#calculateExtension_unknownOrInvalidMimeType_fallsBackToBin()
+   L416  lookupExtension              EmptyObjectReturnValsMutator       NO_COVERAGE  -> KILLED    tue par FilenameUtilsManualTest#calculateExtension_unknownOrInvalidMimeType_fallsBackToBin()
+   par test tueur: {'FilenameUtilsManualTest#suffix_fiveCharactersAccepted_sixRejected()': 1, 'FilenameUtilsManualTest#fileName_blankNamePartBeforeExtension_returnsNull()': 1, 'FilenameUtilsManualTest#fileName_exactlyMaxLength_isNotTruncated()': 1, 'FilenameUtilsManualTest#filePath_dotOnly_returnsNull()': 1, 'FilenameUtilsManualTest#filePath_lastSegmentIsOnlyAnExtension_returnsNull()': 1, 'FilenameUtilsManualTest#filePath_exactlyMaxLength_keepsRelativePath()': 1, 'FilenameUtilsManualTest#filePath_tooLongPath_nameExactlyMaxLength_isNotTruncated()': 2, 'FilenameUtilsManualTest#resolveWithin_missingChildInExistingDir_isReturned(java.nio.file.Path)': 1, 'FilenameUtilsManualTest#resolveWithin_existingChild_isReturned(java.nio.file.Path)': 1, 'FilenameUtilsManualTest#degenerateShortNames_areKeptAsNames()': 4, 'FilenameUtilsManualTest#embeddedPath_resourcePathWinsOverOtherProperties()': 3, 'FilenameUtilsManualTest#embeddedPath_eachPropertyAloneIsUsed()': 4, 'FilenameUtilsManualTest#embeddedName_resourceNameWinsOverOtherProperties()': 2, 'FilenameUtilsManualTest#embeddedName_eachPropertyAloneIsUsed()': 5, 'FilenameUtilsManualTest#calculateExtension_unknownOrInvalidMimeType_fallsBackToBin()': 2}
+
+== mutants toujours vivants apres ==
+-- FilenameUtils : 10
+   L156  getSanitizedEmbeddedFileName ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L156  getSanitizedEmbeddedFileName NegateConditionalsMutator          SURVIVED      negated conditional
+   L185  getSanitizedEmbeddedFileName EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L215  getSanitizedEmbeddedFilePath ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L259  getSanitizedEmbeddedFilePath EmptyObjectReturnValsMutator       NO_COVERAGE   replaced return value with "" for org/apache/tika/io/FilenameUtils::ge
+   L305  resolveWithin                NegateConditionalsMutator          SURVIVED      negated conditional
+   L320  getPrefixLength              ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L323  getPrefixLength              ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L323  getPrefixLength              ConditionalsBoundaryMutator        SURVIVED      changed conditional boundary
+   L324  getPrefixLength              PrimitiveReturnsMutator            NO_COVERAGE   replaced int return with 0 for org/apache/tika/io/FilenameUtils::getPr

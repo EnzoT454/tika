@@ -34,6 +34,13 @@
   <name>Apache Tika core</name>
   <url>https://tika.apache.org/</url>
 
+  <properties>
+    <!-- IFT3913 / tache 2 : budget de jetons du prompt ChatUniTest (contexte Ollama 8192 par defaut) ;
+         surchargeable avec -Dchatunitest.maxPromptTokens=10000 (contexte Ollama 16384) -->
+    <chatunitest.maxPromptTokens>5500</chatunitest.maxPromptTokens>
+    <chatunitest.maxResponseTokens>1024</chatunitest.maxResponseTokens>
+  </properties>
+
   <dependencies>
     <!-- See https://issues.apache.org/jira/browse/TIKA-2566 for more info -->
     <dependency>
@@ -118,6 +125,32 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <scope>test</scope>
+    </dependency>
+    <!-- IFT3913 / tache 2 : lanceur JUnit Platform, requis par pitest-junit5-plugin -->
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-launcher</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- IFT3913 / tache 2 : dependances de test requises par ChatUniTest (chatunitest-starter) -->
+    <dependency>
+      <groupId>io.github.ZJU-ACES-ISE</groupId>
+      <artifactId>chatunitest-starter</artifactId>
+      <version>1.5.0</version>
+      <type>pom</type>
+      <scope>test</scope>
+      <exclusions>
+        <!-- junit-platform-runner (JUnit 4) force Surefire a choisir le fournisseur JUnit 4
+             et plus aucun test JUnit 5/6 n'est execute : on l'exclut, ainsi que vintage. -->
+        <exclusion>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-runner</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
@@ -289,6 +322,65 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <!-- IFT3913 / tache 2 : analyse de mutation avec pitest.
+           Les classes et tests cibles peuvent etre redefinis en ligne de commande
+           avec -DtargetClasses=... et -DtargetTests=... -->
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.30.0</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-junit5-plugin</artifactId>
+            <version>1.2.3</version>
+          </dependency>
+        </dependencies>
+        <configuration>
+          <targetClasses>
+            <param>org.apache.tika.io.EndianUtils</param>
+            <param>org.apache.tika.mime.MediaType</param>
+            <param>org.apache.tika.io.FilenameUtils</param>
+          </targetClasses>
+          <targetTests>
+            <param>org.apache.tika.io.EndianUtils*</param>
+            <param>org.apache.tika.mime.MediaType*</param>
+            <param>org.apache.tika.io.FilenameUtils*</param>
+          </targetTests>
+          <outputFormats>
+            <param>HTML</param>
+            <param>XML</param>
+          </outputFormats>
+          <timestampedReports>false</timestampedReports>
+          <exportLineCoverage>true</exportLineCoverage>
+        </configuration>
+      </plugin>
+      <!-- IFT3913 / tache 2 : generation de tests avec ChatUniTest et un modele ouvert
+           execute localement via Ollama (API compatible OpenAI sur le port 11434).
+           Exemple : mvn -pl tika-core chatunitest:class -DselectClass=org.apache.tika.io.EndianUtils -->
+      <plugin>
+        <groupId>io.github.zju-aces-ise</groupId>
+        <artifactId>chatunitest-maven-plugin</artifactId>
+        <version>2.1.1</version>
+        <configuration>
+          <!-- Ollama n'exige pas de cle : n'importe quelle chaine non vide convient -->
+          <apiKeys>ollama</apiKeys>
+          <!-- ChatUniTest 2.1.1 n'accepte qu'une liste fermee de noms de modeles ;
+               'codeqwen:v1.5-chat' est un alias Ollama (ollama cp) vers qwen2.5-coder:7b -->
+          <model>codeqwen:v1.5-chat</model>
+          <url>http://localhost:11434/v1/chat/completions</url>
+          <!-- fenetre de contexte Ollama = 8192 jetons : prompt + reponse doivent tenir dedans -->
+          <maxPromptTokens>${chatunitest.maxPromptTokens}</maxPromptTokens>
+          <maxResponseTokens>${chatunitest.maxResponseTokens}</maxResponseTokens>
+          <minErrorTokens>500</minErrorTokens>
+          <testNumber>2</testNumber>
+          <maxRounds>3</maxRounds>
+          <thread>false</thread>
+          <stopWhenSuccess>true</stopWhenSuccess>
+          <tmpOutput>${project.build.directory}/chatunitest-info</tmpOutput>
+          <testOutput>${project.basedir}/chatunitest</testOutput>
+        </configuration>
       </plugin>
     </plugins>
   </build>

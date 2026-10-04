@@ -1,0 +1,41 @@
+package org.apache.tika.mime;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.io.Serializable;
+import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+@ExtendWith(MockitoExtension.class)
+public class MediaType_image_2_1_Test {
+
+    @Mock
+    private MediaType mockMediaType;
+
+    @Test
+    public void testImage() {
+        String type = "png";
+        MediaType result = MediaType.image(type);
+        assertEquals("image/png", result.toString());
+        verifyStatic(MediaType.class);
+        MediaType.parse("image/png");
+    }
+}
+
+--------------------------------------------
+Error in MediaType_image_2_1_Test: line 33 : cannot find symbol
+  symbol:   method verifyStatic(java.lang.Class<org.apache.tika.mime.MediaType>)
+  location: class org.apache.tika.mime.MediaType_image_2_1_Test

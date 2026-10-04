@@ -1,0 +1,84 @@
+package org.apache.tika.mime;
+
+import java.io.Serializable;
+import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import org.mockito.*;
+import org.junit.jupiter.api.*;
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(MockitoExtension.class)
+public class MediaType_image_2_0_Test {
+
+    @Test
+    public void testImageMethod() {
+        // Test with a valid image type
+        MediaType mediaType = MediaType.image("png");
+        assertEquals("image/png", mediaType.toString());
+        assertEquals("image", mediaType.getType());
+        assertEquals("png", mediaType.getSubtype());
+        assertTrue(mediaType.getParameters().isEmpty());
+        // Test with a valid image type with parameters
+        Map<String, String> params = new HashMap<>();
+        params.put("charset", "UTF-8");
+        MediaType mediaTypeWithParams = MediaType.image("png", params);
+        assertEquals("image/png; charset=UTF-8", mediaTypeWithParams.toString());
+        assertEquals("image", mediaTypeWithParams.getType());
+        assertEquals("png", mediaTypeWithParams.getSubtype());
+        assertEquals("UTF-8", mediaTypeWithParams.getParameters().get("charset"));
+        // Test with an invalid image type
+        MediaType invalidMediaType = MediaType.image("");
+        assertNull(invalidMediaType);
+    }
+
+    @Test
+    public void testConstructor() {
+        // Test with a valid type, subtype, and parameters
+        Map<String, String> params = new HashMap<>();
+        params.put("charset", "UTF-8");
+        MediaType mediaType = new MediaType("image", "png", params);
+        assertEquals("image/png; charset=UTF-8", mediaType.toString());
+        assertEquals("image", mediaType.getType());
+        assertEquals("png", mediaType.getSubtype());
+        assertEquals("UTF-8", mediaType.getParameters().get("charset"));
+        // Test with a valid type and subtype
+        MediaType mediaTypeWithoutParams = new MediaType("image", "png");
+        assertEquals("image/png", mediaTypeWithoutParams.toString());
+        assertEquals("image", mediaTypeWithoutParams.getType());
+        assertEquals("png", mediaTypeWithoutParams.getSubtype());
+        assertTrue(mediaTypeWithoutParams.getParameters().isEmpty());
+    }
+
+    @Test
+    public void testGetBaseType() {
+        MediaType mediaType = MediaType.parse("image/png");
+        assertEquals(MediaType.parse("image"), mediaType.getBaseType());
+    }
+
+    @Test
+    public void testGetParameters() {
+        Map<String, String> params = new HashMap<>();
+        params.put("charset", "UTF-8");
+        MediaType mediaType = new MediaType("image", "png", params);
+        assertEquals(params, mediaType.getParameters());
+    }
+}
+
+--------------------------------------------
+Error in MediaType_image_2_0_Test: line 37 : method image in class org.apache.tika.mime.MediaType cannot be applied to given types;
+  required: java.lang.String
+  found:    java.lang.String,java.util.Map<java.lang.String,java.lang.String>
+  reason: actual and formal argument lists differ in length
