@@ -1,0 +1,16 @@
+{
+  "branch": "tache2-final",
+  "base_commit": "619ff28473dbbc342c787bd9c0cb2a6e378818c9",
+  "hamza_commit": "d3b8e3f9264fb7b77d39f2405f57e9955de534a5",
+  "source": "tika-core/src/test/java/org/apache/tika/io/FilenameUtilsManualTest.java",
+  "source_sha256": "166047722033acd182a2a8a53ad9ec7c505dff7866f385d1c08830e72e9b8feb",
+  "tests": 16,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "build_with_checks_exit_code": 1,
+  "build_with_checks_blocker": "202 Checkstyle errors in inherited tests",
+  "targeted_execution_exit_code": 0,
+  "pit_rerun": false,
+  "staging_directory": "/private/tmp/tika-final-step2-wbf90_na"
+}

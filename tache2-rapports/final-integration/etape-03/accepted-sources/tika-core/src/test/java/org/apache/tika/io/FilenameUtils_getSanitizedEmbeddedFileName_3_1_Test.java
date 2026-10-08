@@ -1,0 +1,208 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.tika.io;
+
+// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
+// Exporte tel quel par ChatUniTest (compilait sans intervention) lors de la seconde configuration :
+// contexte Ollama 16384, maxPromptTokens=10000, maxResponseTokens=2048 (2e tentative, tour 0).
+// Toutes les methodes de test reussissent sur le code non mute.
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+import java.io.IOException;
+
+import org.junit.jupiter.api.*;
+import org.mockito.*;
+
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.metadata.TikaCoreProperties;
+
+public class FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test {
+
+    private FilenameUtils filenameUtils;
+
+    private Metadata metadata;
+
+    @BeforeEach
+    public void setUp() {
+        filenameUtils = new FilenameUtils();
+        metadata = mock(Metadata.class);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withNullPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertNull(result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withEmptyPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn("");
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn("");
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn("");
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn("");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertNull(result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingProtocol() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("http://example.com/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingQuotes() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("\"file.txt\"");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingPrefix() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColon() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:\\path\\to\\file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndSlash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndBackslash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:\\path\\to\\file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColon() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndSlash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndBackslash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColon() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndSlash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndBackslash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColon() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndSlash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndBackslash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColon() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndSlash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndBackslash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndColon() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndColonAndSlash() throws IOException {
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn("C:::/path/to/file.txt");
+        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, "txt", 10);
+        assertEquals("file.txt", result);
+    }
+}

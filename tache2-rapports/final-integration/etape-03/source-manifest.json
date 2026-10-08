@@ -1,0 +1,162 @@
+[
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntBE_22_0_Test.java",
+    "sha256": "95a8cee926bb6ec722c06dbddf5b5b3a4e69bcc8b84cb43c4bc95a61906d3171"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_20_0_Test.java",
+    "sha256": "7d635837b4a2948e93da86e3b06fe81d8e8b32e6ec49101b790592e0e445b936"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_21_0_Test.java",
+    "sha256": "f7699e2326d38c3bd4db47cc0f758706eb271acd2e265f61c8efea8bb31e0d67"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getLongLE_28_0_Test.java",
+    "sha256": "8a123b18f4b027ca032eb904090665630c360f87c145025496e8351121cb0681"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortBE_16_0_Test.java",
+    "sha256": "647590c9a9560c496dabf034de47acd4e8caef3ced97a12c301a633bf09a46c2"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortLE_13_0_Test.java",
+    "sha256": "0c7a41510189c420053742532a3f1a512b61a3a71c16092208162e08861d23f7"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUByte_30_0_Test.java",
+    "sha256": "db637249d2f36cb7aa70cc7c0c02feb61ee3feedd7e98281712cd57dfb5b44a9"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_26_0_Test.java",
+    "sha256": "53e6b1fd7a4ed35071dd79f6aa1d02fc757c6e19ec8b51a56ecc85e4bd8a9aaf"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_27_0_Test.java",
+    "sha256": "bd4c590e25410dbdebdba17f2682e61d38e739466a4b045ce0f1666e3ea88335"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_24_0_Test.java",
+    "sha256": "977e22af442436edc4de60d8f4665c6863703d4047f592bcbd780ba5bfea49ff"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_25_0_Test.java",
+    "sha256": "b34a2f4bc439433011708e3383cd16b32d54e255987825100f0ddd5185704079"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_18_0_Test.java",
+    "sha256": "7a5aa22cd77e2fe20d1e46c309dbf82431e5977ff7673749bcf323cb8ed9595e"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_19_0_Test.java",
+    "sha256": "3133c2ee07c27798bc094320560dd9a022642258f724e23f9eedd403f92b62db"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_14_0_Test.java",
+    "sha256": "2a26f201ca6a60c15ce4a5c6b3f174d2e9ee18b9c737da61ebfb0a15f4f83bda"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_15_0_Test.java",
+    "sha256": "57c360136138d4523b2fdf64b45da15ad50cdb7e79e5ad06003dd5debffc336b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntBE_7_1_Test.java",
+    "sha256": "9898fef7c1728e85c59d0daadffcab267ef85810f20a89f09d1635f42fd90792"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntLE_6_1_Test.java",
+    "sha256": "f78854e20f1b14342ab16316324671fc09846b86b509e6714677521aa88db5be"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongBE_10_1_Test.java",
+    "sha256": "ddeec29aba6eaeac2bbfdfa084058523a21e5327ce3fc79defbf36c4b53646c3"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongLE_9_1_Test.java",
+    "sha256": "441b13030a790adb077c23c955eb8a8239b5c2ea22b84b298961d93688836f9c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortBE_1_1_Test.java",
+    "sha256": "b949c45f6d769362ed7d3fcbeb69a1ce2037df970f85b33f68311c9985676864"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java",
+    "sha256": "cad0f32114b2852b94b1444f247bbb4ba74c48e9e6cbc5a4a01d38c10902548d"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUE7_11_0_Test.java",
+    "sha256": "7eb569304ce66db5a72098416afeca9b283bfa6d14e0c25f134aabbe0e1421c6"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUIntBE_5_1_Test.java",
+    "sha256": "ccfbfb41b07d2cae513de7621b3540544b9a29ff8f09f806d076b085561daa36"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUIntLE_4_1_Test.java",
+    "sha256": "719a4d484c720fb3a0897748706f341816509f310439bac6efad2fe03d9c9f33"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortBE_3_1_Test.java",
+    "sha256": "7451f173faa9ab265a209472036c2a2ef5940fafdf526f8d963f2a5e38a94a43"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortLE_2_1_Test.java",
+    "sha256": "ba5f73f3b5de173719e3bd8b23946896091efb87f765bf1c144d47265551bd6d"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_ubyteToInt_29_1_Test.java",
+    "sha256": "2b5a483654a59769642b90319686e015af947ba84624ab3e06fe8f2750097c85"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_calculateExtension_10_1_Test.java",
+    "sha256": "d3e5abf32e64f439c3a5b1321604f16a3c7dad6714c4369d26bc471726338b0c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getName_1_0_Test.java",
+    "sha256": "ad77f38b0e85b65a7febffed0336d58979e9f7e375227876195eb9953efb5513"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java",
+    "sha256": "c14c02926a65ccb0daf4cc912f0bdc7c7fad7f5454e76d16556d5f6148c77bfd"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test.java",
+    "sha256": "572b2ef532dd39f52678f43838c8430fac1a65624aaba8f7ea6bc8e446caa0cf"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_normalize_0_0_Test.java",
+    "sha256": "a5306a84c9fb431c7403e622882d43a45195da6a622f1bfa3c48ab63b5264bdc"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_resolveWithin_5_0_Test.java",
+    "sha256": "e78dd7c2e20c2d60575eadfd6c4e58a6b8c8a170120fee3b224b69db78fad104"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_application_0_0_Test.java",
+    "sha256": "514b4ecadee7d412299e31cdb15c6d6f7b79dd0c940b71d99750e2b6b19ca0d9"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_equals_18_0_Test.java",
+    "sha256": "3b58d62ce82a5a6537fb71db62fd5bd340437af47be90a99a82e83a86db32826"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_hasParameters_15_0_Test.java",
+    "sha256": "563f486c889d9b2e3a9562170fc4093c148c29e38fbdb368b65af8ef33b30567"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_image_2_0_Test.java",
+    "sha256": "c98e27e9218577df08c037266be1e70c2e891b57efd31b519b92c863cca3806a"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_parse_7_0_Test.java",
+    "sha256": "5b6cd65817811045b0497a2ce653ff0210b8485b81fdc551da538288a89e3736"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_toString_17_1_Test.java",
+    "sha256": "0a281a3a545e175eab9266c3618a27d34c7ac8499c7d24819beecab76442e035"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_video_4_0_Test.java",
+    "sha256": "7ebfb8e4bdf04a668a20a0b22965808b3fcdaa2640a05a512559a492a4226c77"
+  }
+]

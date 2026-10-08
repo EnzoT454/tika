@@ -1,0 +1,56 @@
+{
+  "yaml_parsed": true,
+  "shell_syntax_valid": true,
+  "no_quality_or_test_skip_flags": true,
+  "scenarios": [
+    {
+      "scenario": "all_217_accepted_cases_pass",
+      "expected_exit": 0,
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "scenario": "missing_report",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Rapport attendu absent : org.apache.tika.io.EndianUtils_getIntBE_22_0_Test\n"
+    },
+    {
+      "scenario": "missing_case",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Cas absent, inattendu ou duplique : org.apache.tika.io.EndianUtils_getIntBE_22_0_Test\n"
+    },
+    {
+      "scenario": "renamed_case",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Cas absent, inattendu ou duplique : org.apache.tika.io.EndianUtils_getIntBE_22_0_Test\n"
+    },
+    {
+      "scenario": "duplicated_case",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Cas absent, inattendu ou duplique : org.apache.tika.io.EndianUtils_getIntBE_22_0_Test\n"
+    },
+    {
+      "scenario": "skipped_case",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Nouveau cas desactive : org.apache.tika.io.EndianUtils_getIntBE_22_0_Test\n"
+    },
+    {
+      "scenario": "failed_case",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Test echoue : /private/tmp/tika-ci-verifier-g73r7xk3/reports/TEST-org.apache.tika.io.EndianUtils_getIntBE_22_0_Test.xml\n"
+    },
+    {
+      "scenario": "tampered_suite_counter",
+      "expected_exit": 1,
+      "exit_code": 1,
+      "stderr": "Verification echouee : Compteur tests incoherent : /private/tmp/tika-ci-verifier-g73r7xk3/reports/TEST-org.apache.tika.io.EndianUtils_getIntBE_22_0_Test.xml\n"
+    }
+  ],
+  "reports_are_temporary_copies": true
+}

@@ -1,0 +1,26 @@
+import org.apache.tika.io.FilenameUtils;
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.metadata.TikaCoreProperties;
+public class EquivalenceProbe {
+    public static void main(String[] args) throws Exception {
+        System.out.println("OS\t" + System.getProperty("os.name"));
+        java.lang.reflect.Method prefix = FilenameUtils.class.getDeclaredMethod("getPrefixLength", String.class);
+        prefix.setAccessible(true);
+        for (String input : new String[]{"~", "~alice", "A:", "Z:", "C:", "A", "AB"}) {
+            Metadata metadata = new Metadata();
+            metadata.set(TikaCoreProperties.RESOURCE_NAME_KEY, input);
+            System.out.println(input + "\tprefix\t" + prefix.invoke(null, input));
+            System.out.println(input + "\tcommons_prefix\t" + org.apache.commons.io.FilenameUtils.getPrefixLength(input));
+            for (String operation : new String[]{"name", "path"}) {
+                try {
+                    String result = operation.equals("name")
+                        ? FilenameUtils.getSanitizedEmbeddedFileName(metadata, ".bin", 100)
+                        : FilenameUtils.getSanitizedEmbeddedFilePath(metadata, ".bin", 100);
+                    System.out.println(input + "\t" + operation + "\tRETURN:" + result);
+                } catch (Throwable error) {
+                    System.out.println(input + "\t" + operation + "\tTHROW:" + error.getClass().getName());
+                }
+            }
+        }
+    }
+}

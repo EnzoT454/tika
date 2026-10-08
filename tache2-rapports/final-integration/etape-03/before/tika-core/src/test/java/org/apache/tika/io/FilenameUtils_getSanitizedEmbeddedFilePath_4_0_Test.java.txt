@@ -1,0 +1,124 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.tika.io;
+
+// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
+// Exporte tel quel par ChatUniTest (compilait sans intervention).
+// 1 methode(s) de test desactivee(s) (@Disabled) car leur oracle est faux : elles echouent sur le code non mute.
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+import java.io.IOException;
+
+import org.junit.jupiter.api.*;
+import org.mockito.*;
+
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.metadata.TikaCoreProperties;
+
+public class FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test {
+
+    private FilenameUtils filenameUtils;
+
+    private Metadata metadata;
+
+    private String defaultExtension;
+
+    private int maxLength;
+
+    @BeforeEach
+    public void setUp() {
+        filenameUtils = new FilenameUtils();
+        metadata = mock(Metadata.class);
+        defaultExtension = "test";
+        maxLength = 100;
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withNullPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);
+        assertNull(result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withBlankPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn("  ");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn("");
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);
+        assertNull(result);
+    }
+
+    @Disabled("ChatUniTest : oracle faux - expected: <null> but was: <invalid/invalid_pathtest>")
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withInvalidPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn("invalid/path");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);
+        assertNull(result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withValidPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn("valid/path");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);
+        assertNotNull(result);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withLongPath() throws IOException {
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn("a".repeat(1000));
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);
+        assertNotNull(result);
+        assertTrue(result.length() <= maxLength);
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withReservedCharacters() throws IOException {
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn("invalid:filename");
+        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);
+        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);
+        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);
+        assertNotNull(result);
+        assertFalse(result.contains(":"));
+    }
+
+    @Test
+    public void testGetSanitizedEmbeddedFilePath_withProtocol() throws IOException {
+    }
+}

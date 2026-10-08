@@ -1,0 +1,15 @@
+import java.nio.file.*; import java.util.*;
+import org.pitest.classinfo.*; import org.pitest.mutationtest.engine.*;
+import org.pitest.mutationtest.engine.gregor.*; import org.pitest.mutationtest.engine.gregor.config.*;
+public class ExportMutation {
+ public static void main(String[] a) throws Exception {
+  Path classes=Paths.get(a[0]);
+  ClassByteArraySource source=name->{try{return Optional.of(Files.readAllBytes(classes.resolve(name.replace('.','/')+".class")));}catch(Exception e){return Optional.empty();}};
+  Mutater mutater=new GregorMutationEngine(new DefaultMutationEngineConfiguration(m->true,Mutator.fromStrings(Arrays.asList("CONDITIONALS_BOUNDARY","INCREMENTS","INVERT_NEGS","MATH","NEGATE_CONDITIONALS","VOID_METHOD_CALLS","EMPTY_RETURNS","FALSE_RETURNS","TRUE_RETURNS","NULL_RETURNS","PRIMITIVE_RETURNS")))).createMutator(source);
+  for(MutationDetails m:mutater.findMutations(ClassName.fromString("org.apache.tika.mime.MediaType"))) {
+   if(m.getMethod().equals("parse") && m.getFirstIndex()==44 && m.getMutator().contains("NullReturn")){
+    Path file=Paths.get(a[1],"org/apache/tika/mime/MediaType.class");Files.createDirectories(file.getParent());Files.write(file,mutater.getMutation(m.getId()).getBytes());System.out.println(m+" indexes="+m.getId().getIndexes());
+   }
+  }
+ }
+}

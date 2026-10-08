@@ -20,11 +20,10 @@ package org.apache.tika.io;
 // Exporte tel quel par ChatUniTest (compilait sans intervention).
 // Toutes les methodes de test reussissent sur le code non mute.
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.junit.jupiter.api.Test;
+
 
 public class FilenameUtils_normalize_0_0_Test {
 

@@ -1,0 +1,101 @@
+{
+  "workspace": "/private/tmp/tika-equivalence-nq7l21v7",
+  "source_sha256": "6c07d1c0fe2736f54106ab2aa6a1604cc64522fd6fff35445106ffe3594376ad",
+  "dependency_jar": "/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+  "variants": {
+    "original": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t2\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:null\nZ:\tprefix\t2\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:null\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+    "name_prefix_negated_L156": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tRETURN:~.bin\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tRETURN:~alice.bin\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t2\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:null\nZ:\tprefix\t2\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:null\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+    "prefix_lower_boundary_L323": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t0\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:A.bin\nZ:\tprefix\t2\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:null\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+    "prefix_upper_boundary_L323": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t2\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:null\nZ:\tprefix\t0\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:Z.bin\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n"
+  },
+  "commands": [
+    {
+      "command": [
+        "javac",
+        "-cp",
+        "/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "/private/tmp/tika-equivalence-nq7l21v7/EquivalenceProbe.java"
+      ],
+      "result": ""
+    },
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/private/tmp/tika-equivalence-nq7l21v7/original:/private/tmp/tika-equivalence-nq7l21v7:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "EquivalenceProbe"
+      ],
+      "stdout": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t2\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:null\nZ:\tprefix\t2\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:null\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "javac",
+        "-cp",
+        "/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "-d",
+        "/private/tmp/tika-equivalence-nq7l21v7/name_prefix_negated_L156",
+        "/private/tmp/tika-equivalence-nq7l21v7/name_prefix_negated_L156/FilenameUtils.java"
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/private/tmp/tika-equivalence-nq7l21v7/name_prefix_negated_L156:/private/tmp/tika-equivalence-nq7l21v7:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "EquivalenceProbe"
+      ],
+      "stdout": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tRETURN:~.bin\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tRETURN:~alice.bin\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t2\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:null\nZ:\tprefix\t2\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:null\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "javac",
+        "-cp",
+        "/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "-d",
+        "/private/tmp/tika-equivalence-nq7l21v7/prefix_lower_boundary_L323",
+        "/private/tmp/tika-equivalence-nq7l21v7/prefix_lower_boundary_L323/FilenameUtils.java"
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/private/tmp/tika-equivalence-nq7l21v7/prefix_lower_boundary_L323:/private/tmp/tika-equivalence-nq7l21v7:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "EquivalenceProbe"
+      ],
+      "stdout": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t0\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:A.bin\nZ:\tprefix\t2\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:null\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "javac",
+        "-cp",
+        "/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "-d",
+        "/private/tmp/tika-equivalence-nq7l21v7/prefix_upper_boundary_L323",
+        "/private/tmp/tika-equivalence-nq7l21v7/prefix_upper_boundary_L323/FilenameUtils.java"
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "java",
+        "-cp",
+        "/private/tmp/tika-equivalence-nq7l21v7/prefix_upper_boundary_L323:/private/tmp/tika-equivalence-nq7l21v7:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes:/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/tika-core-4.0.0-SNAPSHOT-test-jar-with-dependencies.jar",
+        "EquivalenceProbe"
+      ],
+      "stdout": "OS\tMac OS X\n~\tprefix\t2\n~\tcommons_prefix\t2\n~\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tprefix\t7\n~alice\tcommons_prefix\t7\n~alice\tname\tTHROW:java.lang.StringIndexOutOfBoundsException\n~alice\tpath\tTHROW:java.lang.StringIndexOutOfBoundsException\nA:\tprefix\t2\nA:\tcommons_prefix\t0\nA:\tname\tRETURN:null\nA:\tpath\tRETURN:null\nZ:\tprefix\t0\nZ:\tcommons_prefix\t0\nZ:\tname\tRETURN:null\nZ:\tpath\tRETURN:Z.bin\nC:\tprefix\t2\nC:\tcommons_prefix\t0\nC:\tname\tRETURN:null\nC:\tpath\tRETURN:null\nA\tprefix\t0\nA\tcommons_prefix\t0\nA\tname\tRETURN:A.bin\nA\tpath\tRETURN:A.bin\nAB\tprefix\t0\nAB\tcommons_prefix\t0\nAB\tname\tRETURN:AB.bin\nAB\tpath\tRETURN:AB.bin\n",
+      "stderr": ""
+    }
+  ],
+  "asserted_counterexamples": 3,
+  "integrated_into_test_suite": false,
+  "pit_rerun": false
+}

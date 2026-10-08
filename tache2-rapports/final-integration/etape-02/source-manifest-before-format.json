@@ -1,0 +1,2666 @@
+[
+  {
+    "path": ".asf.yaml",
+    "sha256": "8e1053cab00eaf88cb26009aa7d73883c41afc9d9a2923f94162882829a0ad54"
+  },
+  {
+    "path": ".editorconfig",
+    "sha256": "ce6d054262145fa73da0bfa012506206582a412c029a2e887cc745dacd7e43dd"
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "30143c79134b2da42e8b4a71940f8cc857ab196236938c0bc97b92eb4ea94840"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "3f53354b19aba7fd17c32fb5606127187401583d7c7f8e7e38c9d36ebd9bbb77"
+  },
+  {
+    "path": ".mvn/extensions.xml",
+    "sha256": "cecaa7c0db06693648cfb84c79b2870a738b6cce61dbe3d1554c8be64955ec86"
+  },
+  {
+    "path": ".mvn/maven.config",
+    "sha256": "e9387639a8f9da2723bc5e4634ff62e6539ade4f91744ba66ebaebdba5d2f01d"
+  },
+  {
+    "path": ".mvn/wrapper/maven-wrapper.properties",
+    "sha256": "76cb27be6c5d16eacd544f099882fe9b69e6ca1ce01c443ccc3870c96613695c"
+  },
+  {
+    "path": "CHANGES.txt",
+    "sha256": "75f37717f65b32e5f2ba61a160e7154b92ea128e8338b26f0c82ae1f0b868f26"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "4ea39a32cba352327ed014bf20b490870af5d1803124ea63e6230da093449267"
+  },
+  {
+    "path": "HEADER.txt",
+    "sha256": "b1945f0f6b5c57fab0613e6b6bb094c3722bc906e6d1bd48e9b17caf96cb863a"
+  },
+  {
+    "path": "KEYS",
+    "sha256": "be528e79b96bf7ee629ffc3ac150b3295de6d1f680433318e1e92037aa738e8a"
+  },
+  {
+    "path": "LICENSE.txt",
+    "sha256": "ad5f4c4d0d4a04ac264ee55539191e1d36eb5d43ff63bbfc2cf97d541dc7ce8c"
+  },
+  {
+    "path": "NOTICE.txt",
+    "sha256": "4cd09bac8d81bd34decf6b95fb23d42fc9b3d6b653ec4be8ef44674b692c97cd"
+  },
+  {
+    "path": "README-tika-original.md",
+    "sha256": "4c713c7eadeb7f221d2ede994974113574982482994ec729bc08d0c4b428c12a"
+  },
+  {
+    "path": "SECURITY.md",
+    "sha256": "1203cd379ebfd9e0a6a67cd2af378ef71fd39ba2bbefa991c5b81099ad9ac330"
+  },
+  {
+    "path": "assembly.xml",
+    "sha256": "9acb16962f64d975d665271a331407839ecef7de611f422665f2b84b06cd0a02"
+  },
+  {
+    "path": "docs/pom.xml",
+    "sha256": "f37a4f7adea14b0a34bca8ad54c20128e1c79c29498b3609447483105469a4a4"
+  },
+  {
+    "path": "mvnw",
+    "sha256": "cae96cef89ebea3531221f4ae17c23cf8edf67d00eae8306d4186ae1bbed4d02"
+  },
+  {
+    "path": "mvnw.cmd",
+    "sha256": "4a361e1374a3e5ad6d03e18e9adc0cf181ac5058ac6203b76f0ba3b456b56481"
+  },
+  {
+    "path": "overview.html",
+    "sha256": "0e6c313715972f0fee3e198de4b0bab8026f010a4666198dae84492a9cc0efa2"
+  },
+  {
+    "path": "pom.xml",
+    "sha256": "6da510253dcd38628ec08206a161bf99452b093a8f5b7f4fa46b75308b472304"
+  },
+  {
+    "path": "readme-tache-2.md",
+    "sha256": "9db1f2d8b28fe02ee850fb227e4e190f1ee723524ac85eb4859fa019b5f7989c"
+  },
+  {
+    "path": "tika-annotation-processor/pom.xml",
+    "sha256": "cb65ee587e871cbfa244338145c7a13708a5c12b46a64a64f8028797118f1607"
+  },
+  {
+    "path": "tika-annotation-processor/src/main/java/org/apache/tika/annotation/KebabCaseConverter.java",
+    "sha256": "9b3a39d080428f318ad9921a98a7ab645f72e8b41002bfeafcf7e06f599a1fa7"
+  },
+  {
+    "path": "tika-annotation-processor/src/main/java/org/apache/tika/annotation/TikaComponent.java",
+    "sha256": "7fcaee46646c937c14cdd4d4779a76b538a6e82ebac462b21ee60bcaa6cc33fb"
+  },
+  {
+    "path": "tika-annotation-processor/src/main/java/org/apache/tika/annotation/TikaComponentProcessor.java",
+    "sha256": "451109bd28654d68a90c2e3d5151b2ca6ec1274804e82d80f681e7663841715f"
+  },
+  {
+    "path": "tika-annotation-processor/src/main/resources/META-INF/services/javax.annotation.processing.Processor",
+    "sha256": "e3c18315b79f60d143337f4468b29acba402e678760fa4aba18db98b029bca35"
+  },
+  {
+    "path": "tika-annotation-processor/src/test/java/org/apache/tika/annotation/KebabCaseConverterTest.java",
+    "sha256": "e4ef23b8347859bf5070d63e97afc79863cc3ed12c538687edb23ab328104ac5"
+  },
+  {
+    "path": "tika-app/pom.xml",
+    "sha256": "ff96f71a7bd0685ea2c4fbbf3a1ee000e12d64adb7dd8ba444b616e3ccfc5c39"
+  },
+  {
+    "path": "tika-bom/pom.xml",
+    "sha256": "18bfdee668a75fa57195ce63b5ae241b6f72906dd3d0ea816511fac5b4b248f5"
+  },
+  {
+    "path": "tika-bundles/pom.xml",
+    "sha256": "780377f2d62f11def366a0987b1aa5f091b217e5d1032aaf0d7c47744a9918e5"
+  },
+  {
+    "path": "tika-bundles/tika-bundle-standard/pom.xml",
+    "sha256": "57f903ef9e44d85f4fc0543b0c68dd4a16fd9341f95b6d9ab9e50d3877bf0830"
+  },
+  {
+    "path": "tika-core/pom.xml",
+    "sha256": "33fb33d45447346298b1d3aad453fdf041e500994b81c3a0d8534ab5d495619a"
+  },
+  {
+    "path": "tika-core/src/main/appended-resources/META-INF/LICENSE",
+    "sha256": "ee2d54b2e7c0141b109690cfd95e4157b52c87db7a5576bd464b5c3a2cb931a4"
+  },
+  {
+    "path": "tika-core/src/main/assembly/test-jar-with-dependencies.xml",
+    "sha256": "fd625832055fa3d9e7cba60b653594b14109d31586aeeeff9d1d6a411cc70078"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/Tika.java",
+    "sha256": "82be21fabde58ac4ef6d5fcb9c46419d12f69cce4eb87d3c9930081f1c94fa86"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/concurrent/ConfigurableThreadPoolExecutor.java",
+    "sha256": "230f86abc734274296201903e81c9ec141a00ac41bbc91b28d1baef43b94817e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/concurrent/SimpleThreadPoolExecutor.java",
+    "sha256": "ad74b2c6836b82251b791211abccad154008c6e4ed5f3d365b0f33c26be372b3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/ConfigDeserializer.java",
+    "sha256": "2d5f070ec09c20ea53087f7388e5c0414c3e2e69c393258b33db870bd69c4199"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/ConfigValidator.java",
+    "sha256": "be72e1ecdf0d90748f52808c50b1a1628572c8a0bf83cd038f77d136cb4c591a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/EmbeddedLimits.java",
+    "sha256": "4ec0e962ce3598f301eebcabb9ac0fb76e8771ef0c6c03d38c646161da29d989"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/Initializable.java",
+    "sha256": "3378695c9e6963335c746ea7ee577c1527babe5c7572320265ee4c5576eea32a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/JsonConfig.java",
+    "sha256": "6c2e07545fbfd02dcddcc4478fa8e692499b6fd1590025b35419a7aceefd5fb1"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/OutputLimits.java",
+    "sha256": "fe8d69456624df089a5794d0b2b3b0df8b79eb8c0bd9900f043b3ca1a24537c1"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/ParseContextConfig.java",
+    "sha256": "ffff9795d4a6548f3992372b21e559d890e161ee0aed4246bdb441894b283dd0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/SelfConfiguring.java",
+    "sha256": "41ab375cf0ad17e2db9ad62bc257d2effae01d43f4f97454c530ee85be07f931"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java",
+    "sha256": "815d8f8874f4d341d78ffd2f26a0d575ea3cb76386098f47bdf5ac48f31d5704"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/TikaActivator.java",
+    "sha256": "6977fb253e3f8a1d446b9bced25b9fd22f17d1297b595856ddcec6d1b64618f4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/TikaExtras.java",
+    "sha256": "3dbdb5899d49a1152d53d997523b4b6b569ede00f3f87c6d1943a016d338d826"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/TikaProgressTracker.java",
+    "sha256": "7db2b64876c6851890341586cf0d45c39dfa79e1bc528e99c6cc72727307f84b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/TimeoutLimits.java",
+    "sha256": "957b807cd52ea3d0932563fca2b08bae744585b0d4748eec5cabf6e1a6851883"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/config/package-info.java",
+    "sha256": "3725157a3eb454d320f5a6e9ca41a71debd251a059661e7a0813336da2f9ede6"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/AutoDetectReader.java",
+    "sha256": "a076d4d093ec0b2c1cd1f30a43276a4832f50f98487aa22ae28c3fcd8d88d865"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/BOMDetector.java",
+    "sha256": "21b436b35095ffc6c8d2af1ee0b4a173aacbb233748ccacdc48888e9d3b0054f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/CharsetSupersets.java",
+    "sha256": "f648127b1a7c6b6db117f9730130a2c683bec2a66c7c7d59b4febfa78450d4cb"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/CompositeDetector.java",
+    "sha256": "813dab58d475517fe625bddacd38ce38995ef69d8ff4024b0935525772dbd7b4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/CompositeEncodingDetector.java",
+    "sha256": "332c178fd7ab1cb84e63804445551088208761df6976f8ea142353968a47cfb4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/DefaultDetector.java",
+    "sha256": "885002383a24c091424d9e6683d5ca395f0cbe28dd743727214070477b085a1a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/DefaultEncodingDetector.java",
+    "sha256": "85da12204470a443ebe020e9aa0da2b08791f1c4c520077de130ac1cc2b170eb"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/DefaultProbDetector.java",
+    "sha256": "6e31be3f4af1cf389ecc6e3c52f3b89846cf5eba12939a9b98ef69699cdb0a1d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/DetectHelper.java",
+    "sha256": "7d7c4ca71998925c8d525ab905a6e459ef4d82cf7be1b08cc6dd998480ad8217"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/Detector.java",
+    "sha256": "783ed9f97271c5907f345e7c20477b56812a016c56bd2de74bbbe77785f6d33c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/EmptyDetector.java",
+    "sha256": "b3d2291615d8bdd3ac415388057a315de9a7bb580bd5c0f1466ad7806531e735"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/EncodingDetector.java",
+    "sha256": "ff149fe65f2fdc4dd3a5dca46538b62be1d0a671f280189e2d8617ad25b20b9c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/EncodingDetectorContext.java",
+    "sha256": "df9bd6bdf8480c377117773c919e1011e5b0ddd1fba251c46891b29038e1381b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/EncodingProbeCache.java",
+    "sha256": "8101adea07571cc9947b8d728d7bff235fd9c63c52ac16529fd77c4daf9cfe2b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/EncodingResult.java",
+    "sha256": "29c6415365ef90bfa7610880bf44c6ba74ab8992607497fb5be484fdcf12ac67"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/FileCommandDetector.java",
+    "sha256": "7b4a67c09b3e9a84816c9eace5696b49d305f11298cae65f3e1c9efda4edd593"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/HighByteLetterStats.java",
+    "sha256": "0628190840644d93f8bcf4edd7094b51d966b76db6f08a04fcc10fe24493d6fd"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/MagicDetector.java",
+    "sha256": "42c99a9d5d1c997701d88cd592d6694dcd1f039b4137db13e4cef6efff2b4261"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/MetaEncodingDetector.java",
+    "sha256": "8f0d3358f468b784527592d3b4ab714f17df2209bbb66dd7c06653b1cebaea47"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/MetadataCharsetDetector.java",
+    "sha256": "f3ebc2e51ff0793758dc691011fb28c318f5975c2759ec1fbdd554dad397755d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/NNExampleModelDetector.java",
+    "sha256": "7a00905df740dd40ae6b8e690c8cbb34621c86242d445e719fa77bc57b84c628"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/NNTrainedModel.java",
+    "sha256": "0ab50b1077657e91f7afe34f28afaae316eb20546cdb0bfbc9106b6dcb161a20"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/NNTrainedModelBuilder.java",
+    "sha256": "0e325a4f06cfee3963ff86c2ca91754b9b11cb1a02319ebbc55b744443595a6c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/NameDetector.java",
+    "sha256": "569b3d78f76139eef6a3271cddc273d9f7f23f8acbd53cffc36e2a49669ef815"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/OverrideDetector.java",
+    "sha256": "acf989456473c427ab2dae1470d43dfe031a813c9bb9ee13918c28907cb865a3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/OverrideEncodingDetector.java",
+    "sha256": "0f0e53b215a362e351a707aaa119789b2ba0747edcb3cacadd4f672f509cc3d0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/TextDetector.java",
+    "sha256": "292c2d9eb1d76dcdf86af2e3d9aeff1dffd1a0fc9eba594a47fdde1bd67767b2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/TextStatistics.java",
+    "sha256": "1127f822bba3a4c7da51b25ece1c72b8784a105f2456286e349bb73e9c5c1b8d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/TrainedModel.java",
+    "sha256": "f0fb582ea986765ae0abfa6c8466b4a933ba820688629923def02d8a6ca4250c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/TrainedModelDetector.java",
+    "sha256": "687bc01063402128db81ad4f49b9246217d46bbc08c30da86efa0558409f8459"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/TypeDetector.java",
+    "sha256": "b453ecbde5409449544b13dc4ae7b775c518cec80d1d40172d9fbd1da555c318"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/XmlRootExtractor.java",
+    "sha256": "e5393a30289e916e760b555b7dfb735a1225ec39dc99dd9429d463bc98408ace"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/ZeroSizeFileDetector.java",
+    "sha256": "1eae8f83aa1382ce151437a2df6cbdb9b7f3f46f78f639489b8bc38a56ec51a3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/detect/package-info.java",
+    "sha256": "df629dee29e5b6171daee333633803fa2a13177f17c2de47cd2cee93eb9b9427"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/CompositeDigester.java",
+    "sha256": "7cd8fa106211e2bc810e89a8b32366939b69456d561b2029efebdbf4998de8cd"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/DigestDef.java",
+    "sha256": "b28a8a4bf7cba85503a7f641dafedc87a02c1a117641857f224cc6c2bb8c9c63"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/DigestHelper.java",
+    "sha256": "671120356fd1e1f36c036395928ae99795d05ea24fb7877c724ff14e6f6a16c2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/Digester.java",
+    "sha256": "17ccec1cc40f909f08bb78365747a85998b4fdba252342999c5dec789debfb00"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/DigesterFactory.java",
+    "sha256": "95710fab538d3d886c49f74abbb734e1c4931256064c7dee1050dd9eaeb0566a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/Encoder.java",
+    "sha256": "987e2fb3469c8f9ff35f169268b43875d47edfd140ea0f2b4d293542da7759ca"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/InputStreamDigester.java",
+    "sha256": "0c6e1f095014f671eb5d7ddc1250815fe4dfb8bd3bdb18b497fba25b21785278"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/digest/SkipContainerDocumentDigest.java",
+    "sha256": "ca3ada79fe7475e8181a202aba94b9fd35c083af39e5f66f33ec71d12aabd304"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/embedder/Embedder.java",
+    "sha256": "3910b63aa54633b0a7ac6a8f24d98ff68618cbd1eae6a8bfcfe3935407311934"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/embedder/ExternalEmbedder.java",
+    "sha256": "7a9d980651743ef2e8ffdc84ac106abcf4e5a7430cf25d3bed639ba0e8edd63f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/AccessPermissionException.java",
+    "sha256": "10963f615dfcbbf09b8c18d6332cb156f755de92baa680c7a269fbbd578b769b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/CorruptedFileException.java",
+    "sha256": "a7aa75fb6530bb2e482299f7dec77fe726784ea326adcff82f990a0210348fc7"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/EmbeddedLimitReachedException.java",
+    "sha256": "b9753da86069a206cb784db4c8a5a62e66b627b1a0ad57aed830092d7b52a025"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/EncryptedDocumentException.java",
+    "sha256": "0c44ab4f8ad120e7855c582eb94f5f10eb9f960e79a3886381e390beb58bbcc9"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/FileTooLongException.java",
+    "sha256": "27a1d946086e3076fe8fb7ad0cba46addf7cd6ebca5bc6913d719065b8348d89"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/RuntimeSAXException.java",
+    "sha256": "50c17f0c24f5351f67ef3f8cfb2579649b2c194bc010124229285a3255b77bfb"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/TikaConfigException.java",
+    "sha256": "0c6adedb9fc3ede7e566ec1c9d1ae5ca22695d772a578e513061bff559694e87"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/TikaException.java",
+    "sha256": "0c470001a3c0d591e4048b0c0a588ceae1f76f5ad0e49d1b8b02213c1b78e38e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/TikaMemoryLimitException.java",
+    "sha256": "64615e1048744fe4f1a8601dc3c8f7ac2cf5bb8897120b63c5606bfab567fea5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/TikaTimeoutException.java",
+    "sha256": "8019bb5cc49523e321d626abad622086e78c5d5f6355ef3862c5fffad0367be4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/UnsupportedFormatException.java",
+    "sha256": "0fc6361def4ec3773ff2bfdfbf1c2e234c6dbb5e303588d3ef5d934a9cf28f60"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/WriteLimitReachedException.java",
+    "sha256": "7f6f2388d01195cc0a37d84687cf0d25dd45cafc6644539ac8678f25a7a63428"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/ZeroByteFileException.java",
+    "sha256": "3e0ac15ec98fbf387e9a5629110a721bfe0b784112b4fc0781b4138c7e8a5179"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/exception/package-info.java",
+    "sha256": "d502593bddde910e47af385f7851ea00f9e39e6b1148c282a0205b1c9e6e5cd3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/ContainerExtractor.java",
+    "sha256": "acd2a27964720d5b8356b659cdcf18a9510412017de5e48159e815304942f068"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/DefaultEmbeddedStreamTranslator.java",
+    "sha256": "c886c207361db5ca85ac3caee6eee90b973acd26291f26aebc9e52c1ad9b7f81"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/DocumentSelector.java",
+    "sha256": "b8364da1527e628df5efad11eaf460ebe5ef12608019eec2ae5f68a796ca9f03"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentByteStoreExtractorFactory.java",
+    "sha256": "2e20daa5b3ec532e78bc7587a91f146efc6c2e70152a20e737fe77feca15d719"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentExtractor.java",
+    "sha256": "0d357e5c1a11b68bf331cb8c8a2976f8aa43ce6098f467e62aa2680ec48bed97"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentExtractorFactory.java",
+    "sha256": "8131079269bd5e20d8992762052d5d081c267d74136a15b2b6cde95be1137034"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentUtil.java",
+    "sha256": "bd98ac9939112ced7227c1ae367efa3d9a8d7b8eddbda552e55576cb58258e4d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/EmbeddedResourceHandler.java",
+    "sha256": "28b298b47f644d3f6f0722b091cd806670d338f8c37f5e2e6a606ea411453729"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/EmbeddedStreamTranslator.java",
+    "sha256": "ecebf72b21ca3d75a5d397bc256613fe957bf16af99a7489edcede856618d580"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/ParentContentHandler.java",
+    "sha256": "d92bbd87ce8e13d3a76778c86deecaced14af7a632aa2f6dfbfe4edfbeb47238"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/ParserContainerExtractor.java",
+    "sha256": "c43240f19f78de709e2f32a57b3cd8b7c8cb803e86d3cb4f0c1fafbf940f9d15"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/ParsingEmbeddedDocumentExtractor.java",
+    "sha256": "0dabae9dd0e58ad51c3d256c1a6f3fd48ff850d619ec838b34cdd521577739af"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/SkipEmbeddedDocumentSelector.java",
+    "sha256": "4aaf7bc0ebde631a363e47a7ef5bcbefa6a5509783e61e3ef225f5c480121f4f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/StandardExtractorFactory.java",
+    "sha256": "9bdd236c012af5638326cff63b9a9947fd316486eed1e0a5c01e9719a033c9e2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/UnpackHandler.java",
+    "sha256": "2afbc3d22897ab52d1c1d8f82bded07d13def9883fc1b7e5a5b2dfd3b64921ef"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/UnpackSelector.java",
+    "sha256": "9ba764d5465e4270863bb4104bbcbb5fee6547d491a2e3148f1adbd76ddb156c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/extractor/package-info.java",
+    "sha256": "2dd4b590554ea4a92ee72627a4e0494f15c35db28bbf9818dfb6b4f1b536fa4f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/BoundedInputStream.java",
+    "sha256": "1bd4749fe6577ab907b2199fef255ada7e67f1b53e0c660c0438d8129094b192"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/ByteArraySource.java",
+    "sha256": "78444fa839b00dc23b64a96b79f12e1164cf1cc0e86c848a1a65758b01407f8d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/CachingInputStream.java",
+    "sha256": "2660b9abd0fe27f320c181c58fc0694267a39a7e90b76062744250adead15292"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/CachingSource.java",
+    "sha256": "7f3bd461c2f094ace820b195e80e482b734e7f29034da956a4a25c0667fab20d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/EndianUtils.java",
+    "sha256": "1303a18718d59400875448c1a284aa452c882eed936568649a3ed210bcf48b25"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/FileSource.java",
+    "sha256": "0cd1d2f0bd1072ee900ad9e3ec8d8dc322f353bfabf9584b2c79373c537f42f7"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/FilenameUtils.java",
+    "sha256": "6c07d1c0fe2736f54106ab2aa6a1604cc64522fd6fff35445106ffe3594376ad"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/LookaheadInputStream.java",
+    "sha256": "98f07ececbd2ad17b5b05a89f94e8d36320eaeb82eaa19b47c0dcb27ec54dc98"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/SpoolingStrategy.java",
+    "sha256": "0e60a9e4f11d57431f8d0ba3c0b2013ff061310a14e3300b1ff6b3a39a85dee3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/StreamCache.java",
+    "sha256": "ca73b37b3e1f180789409defd0a4d545ece6f95d350ce6ac7bec4fbcb7a8b1e3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/TailStream.java",
+    "sha256": "8b40db52b8bc33b5efb74c58eccdee82b9e868bdd1ecfc0adb581b7ceb41a607"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java",
+    "sha256": "0bb1f9ce60c9f60c92157b1cf496506e00cc0dccb8696cd9a4940e8e124a5d44"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/TikaInputSource.java",
+    "sha256": "0fdd919ede90284616cf96c308249e70c1d6f6ec3195506aa91348ce22e779f1"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java",
+    "sha256": "da591487503fdc570ed891a7370a7526babab434b2aacc081717df3475a497a8"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/io/package-info.java",
+    "sha256": "45db0488e4153c6969c834da362d7fe6221aff40f23ea1ee7d84b94daa8fa603"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/detect/LanguageConfidence.java",
+    "sha256": "1080b99ed0251a3665cce8553f50d469d267ad06acb83ff8deb2f0d64bf61b23"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/detect/LanguageDetector.java",
+    "sha256": "bfe673b5f9f16fad5d02f1d10fbc1c12bd9ce881c2669905825c4506235c0ef7"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/detect/LanguageHandler.java",
+    "sha256": "119b0a22a18d44c64ac53d53e63aeb3eb79f8d482f5367bd57ee7a5723e72c2d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/detect/LanguageNames.java",
+    "sha256": "d6e43947d7d4c3c2691adb4df13fb925d25243f095f26660c83a474058c5fd28"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/detect/LanguageResult.java",
+    "sha256": "87c902f3bb954325e5f85607ee8266e5df7f2f598de999f3d79e25849d440244"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/detect/LanguageWriter.java",
+    "sha256": "f4ff071e259fcf6808d978face3536a66d16b8d3a40d312b453188b2758f23bc"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/translate/DefaultTranslator.java",
+    "sha256": "6708acd506205bf9f2acad702a0830ce85eb633c76b6b7c83a8eb40eadd873e8"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/translate/EmptyTranslator.java",
+    "sha256": "22240d587a8cec5b9cefc81ae495933accf1a5826f56a392a3fe9d2aca215fcf"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/language/translate/Translator.java",
+    "sha256": "85adc8087be009a23b4c6f504ff8512ad29e1412254843fe940e1e1f7fdba7ff"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/AccessPermissions.java",
+    "sha256": "4ba7d76779d033d865c85dbfadb117fd0f5bb048c03710f84e900074ff6a7d34"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Audio.java",
+    "sha256": "e9af72b2a29264c4444dd6fc12ea08cdb26c061ffe9c409eeb3f87a26fcad176"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/ClimateForcast.java",
+    "sha256": "b589e03b3a6a11d32d436d9b32120e17b4e4073a35104d046445b6b2c628c2d9"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/CreativeCommons.java",
+    "sha256": "e0a285d4695f6c95b52b6d69a75dac1f313f6afe61b6f9829ae60ad3d9db199d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/DWG.java",
+    "sha256": "93419a096dc77ebc1a107f588c1cb8a79944500f59841cc967380fe4f2ca2319"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Database.java",
+    "sha256": "ebcaad08e21d2a18d86a15aecc69eea1fe8c3559fb04dcfc1dbcfd7fb202f1ee"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/DublinCore.java",
+    "sha256": "00ab6f6c4f54440a4d52b055f6726a520145169e4dd87482e53e12677290ac30"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Epub.java",
+    "sha256": "d08313ec835788368375adfccf76ac4a310694d4e12f75d5cc7dfba55358eaf0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/ExternalProcess.java",
+    "sha256": "5b9a13571a207264473e647081b53c6b69f26efdccd9fecaa813e9dd88ed918a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/FileSystem.java",
+    "sha256": "36414352f28dbf717c79893cc144664e534b0ca83cb4ec0f7fab9470b25a9a2a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Font.java",
+    "sha256": "bec8f0c3846b141b9145c5d6079869d22e43c35e7b1058efc1f9f79ca895925f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Geographic.java",
+    "sha256": "2dea3f403f997aebcb3a2f21f6b266b9cace7f80dd7272f4b200cc180d67a1ce"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Google.java",
+    "sha256": "091b2f8b32105c0331a7e77215166df17b22720a1f7972a9d0c00a2f6515528c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/HTML.java",
+    "sha256": "38ee47bbcc0f928fab1faa0f201d78b680d1286060fa11c9df51f2b724e85141"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/HttpHeaders.java",
+    "sha256": "9f8b9c266aebcc945980ea4188d3b1a759d627b59a2eb0e4a5a1ea22a780a9ff"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/IPTC.java",
+    "sha256": "f67f9a8ec6df80a357e1b635b3b6cc0b217a2d92932dee771b17f65e1e894f40"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/MAPI.java",
+    "sha256": "fb23869b87fb80feb53686ed846fd6332f7dca01cdd462976785a3fec3bac1e4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/MachineMetadata.java",
+    "sha256": "17002b197299907023b46d14d4556d2aab5e21d47269aee6f3af8cb510980f5e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Message.java",
+    "sha256": "9876b1151f8e5d2f694906254a206db87e2c1b8904651009b7a45c61239ff74c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Metadata.java",
+    "sha256": "ebdac55d4e453da011013e52b3ae19f7cd6575feb06745843502283ab8886b2f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Office.java",
+    "sha256": "59f45118af365aef0d91b0276a21a5a798da62d586a492acd178cce10fa01475"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/OfficeOpenXMLCore.java",
+    "sha256": "24ef41169e9c49722a62940b81053ee212a57c9210b9853011c887b65ede3bb8"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/OfficeOpenXMLExtended.java",
+    "sha256": "26da5fcf5a36719a65d6855bc33670246611b069351b909284d332ce2c79933c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/PDF.java",
+    "sha256": "19d0db0e36a7de8981a3749d7b8de0e2be17525004ca36052aeb11e53f478514"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/PST.java",
+    "sha256": "d6caa84cc8fd88ced44484bd26f4445b0b19aec5e49f65362c79a1991d3bd183"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/PageAnchoring.java",
+    "sha256": "ea6879d181ab565bf835971a9304eca1ff4af9884749963369a07a7aac8ccddf"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/PagedText.java",
+    "sha256": "e21a9e0e16bb902b6aa4ef5372f2d519de601c6cdbf2661c82c88e2cb48f9d30"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/PassthroughPrefix.java",
+    "sha256": "ae469762f10b605669605d20c4f0e305ecd2727adaa149ba8c23af1f266ad2a5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Photoshop.java",
+    "sha256": "2c48d5c6f9bf842b04ae51752b2ebe2a4c60b5930ea6f981398a3564e8510d48"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Property.java",
+    "sha256": "b9b14897a71e8ba5936d3be02824ff3d3506316e9e970abfca296d92e05832ab"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/PropertyTypeException.java",
+    "sha256": "699b18e76f8171889638b734db6fbfdf517ded96527e0e9d5dddc9939c6af65f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/QuattroPro.java",
+    "sha256": "8ce0d0883db3c891f5196f0ce527ebbd76820df3c36b8f98c3b5eb9faab86402"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/QuickTime.java",
+    "sha256": "7b54a94c410008cedc5e68d6e67dc4d1bf6386516feaf369a34060a8d1b117de"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/RTFMetadata.java",
+    "sha256": "99701030c7e1b487f6fd86cf00d45a8bc271f6ba5d78d242601ca3c40f96a3ef"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Rendering.java",
+    "sha256": "7247057ca2a98d154d1589b1063a35c443f0c371555562587ed9ceff5db4b493"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/ReservedNamespaces.java",
+    "sha256": "060f644d685cad69dc5eca273d84ed4b119b40067f619afaa76ad9998827efeb"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/TIFF.java",
+    "sha256": "16f0112b7282f9c306b8f4e0c43bee7e7faf1f9dbfc0ac1c8b8264dd7fc17b91"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/TikaCoreProperties.java",
+    "sha256": "d93db912b22dcb61942f2e77c47019f9371bf2d59623bce278abea5d34c06ddb"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/TikaMimeKeys.java",
+    "sha256": "b05f4870d2acd995d4659a19feed934146915b96e4dc0d351973cc77d969a9f1"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/TikaPagedText.java",
+    "sha256": "f35993f41f2010b91ac91e479725c65b086f50235320155d46f8f65e33b46dc4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Video.java",
+    "sha256": "45405756cbbadd9d6fc913d2c888f4ea633d60510bd71a4e2bdf2897c061f97f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/WARC.java",
+    "sha256": "3d1adb76be599b8e49c34484fcce8f96e4f0ece50bdc7f372c0d7b6901e740a0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/WordPerfect.java",
+    "sha256": "91aedd995d6ac7d6e1e5192884a4492083b4d464a0952ecfbcf809913bc31a86"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMP.java",
+    "sha256": "feba9dd241a1945696abe7c010b90b5234cb07bcba5f3ad7ed7864deff68d59a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPDC.java",
+    "sha256": "926ba810a21221b758de3dc4dc76f7c0456f442aa5bcce9e88b25718915d6207"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPDM.java",
+    "sha256": "84b3a48aa20debb09c47e90c07b50ec56f793544ccdbf002277e81cef8c65560"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPIdq.java",
+    "sha256": "95970588d7c646675a623bb2631818edb2ebdf7a92b8e3d159b57119b556c672"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPMM.java",
+    "sha256": "88bf2ebb5951604f94d0ebebe8ce74a9898d1bd8b1495fecbe1a4ed8b2e8c476"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPPDF.java",
+    "sha256": "8b150f6c392b6bf051dd2337ca7b5c410f8e03ba834b93459a625da824a0ef80"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPRights.java",
+    "sha256": "71dce12b42fe7080068d75008a9700ea7c409a2a752ea1dc68fba67d1da169dd"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/XMPTIFF.java",
+    "sha256": "9b38476db0d3803282e68789f878627a9bdb4d3b3a21836cda9980f2a6e0b8d5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/Zip.java",
+    "sha256": "e37210cae3500bed43c76745e25af64ea7ec34a9a13011145794c45866b38c82"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/CaptureGroupMetadataFilter.java",
+    "sha256": "e1e00111fa8064068094d3a8da086f8d57e040b9c096bb4d742a96f45d1349ef"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/ClearByAttachmentTypeMetadataFilter.java",
+    "sha256": "faec3f5c9eb042acc24a99df5c2b95224643bfb7e39889e6ce8a4227a59bbfab"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/CompositeMetadataFilter.java",
+    "sha256": "b4a4ddfa85678f78a309094d2f38134ce19b8f93340915a942a19993659e3664"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/DateNormalizingMetadataFilter.java",
+    "sha256": "62938cf4ccddc4500df9f79c58c738c484576bd12430f917a641ca00f838b8b5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/DefaultMetadataFilter.java",
+    "sha256": "d6242e7dfbf66d1a44f09d2ab6f8bda50bba9c91af4500875fe9da26c1e03068"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/ExcludeFieldMetadataFilter.java",
+    "sha256": "2181e564561d02ea443eb08a1a113126f8feb74d2439d2a646e4fcde0b108137"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/FieldNameMappingFilter.java",
+    "sha256": "ba3a4c680449b17a6a10c3961ff1506f3a44debea31f564d89272a7c4c10d102"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/GeoPointMetadataFilter.java",
+    "sha256": "17a033893543f438b80b801b058ee2c9c4ae346a8498c092610218bf39084882"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/IncludeFieldMetadataFilter.java",
+    "sha256": "73e49abaaf536e60bda28938c8fb0df72f57f80076c6e16906e4658d675d4f8e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/LegacyKeyMigrationFilter.java",
+    "sha256": "5365d751aec8f8c57baec575960e6d4450dded81b6be65bb653759cf88e8e44f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/MetadataFilter.java",
+    "sha256": "aa76b128e46be86e9fb5c508d984ba1f7a1577c9cbeacf017a98fa9530b68989"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/MetadataFilterBase.java",
+    "sha256": "6bd0d0b04ea33dcca213b38763a60baea9df6771a820ebf4375ed30568fe198a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/NoOpFilter.java",
+    "sha256": "f1e87ced996287ad51f489df81fe12b80689613d96e25c9230957968d208c9c1"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/filter/RemoveByMimeMetadataFilter.java",
+    "sha256": "881546a1e1df45cec63f1f5afee6777729c88b13569eeee6e70491c5620bdba3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/package-info.java",
+    "sha256": "e4e8596d284095844e5deccc16b23a9a77c2fbea01001d46cd18c30c1ba2cc34"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/writefilter/MetadataWriteLimiter.java",
+    "sha256": "3f96655c8e41d5be507b7954995e79863af19a1a63f0bdeea6dea57ca8a46d2a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/writefilter/MetadataWriteLimiterFactory.java",
+    "sha256": "c2d3821de3be26fc9f1953e39db7e9c6250f3f693958cc0ac12e0ecc687017df"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/writefilter/StandardMetadataLimiter.java",
+    "sha256": "2d2e5e042bf3536b86c35d0996edaac3b6a0344d2f82d0a4a93279d237e821ab"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/metadata/writefilter/StandardMetadataLimiterFactory.java",
+    "sha256": "aa11a4e52cf6aeb6ea481936a00ef5ab0cccaa41d866d53602d509dfae4f9ea9"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/AndClause.java",
+    "sha256": "353b690028a76df3994ff2e55be49a0df965acd81225a943918698a88c91c347"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/Clause.java",
+    "sha256": "32bca78fa3bd0d90cb98610c3d855fe98eace135a8de638e86579f657826baec"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/HexCoDec.java",
+    "sha256": "be8a5f25cf14e6d91ca9f94994b015b592e190c8985c81e57a86638f1a5fffba"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/Magic.java",
+    "sha256": "4a843d4432557dba41748e3f7b1765e6e25d827977feda88a3da9d19b63a2eea"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MagicMatch.java",
+    "sha256": "b03b2f01e1f6936617c2361a09ad06544d6f74118e433d0c2ac847b2f1571160"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MediaType.java",
+    "sha256": "79c9bf06968a541cfa630571bbd95ae6701af610882993da568682da4bcbec13"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MediaTypeRegistry.java",
+    "sha256": "d80695ac992f236273278382f9ef3e520182006c64d4eec02df12bbf2f52220e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MimeType.java",
+    "sha256": "1783a2e1555bba9f6287eb109c7a4db8a729ea7520536f1e7dbcb2f3dcd63498"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypeException.java",
+    "sha256": "db9419a510c832340cac37246dab23c60771be1d70339cc28bce8e4a15fcf1fe"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypes.java",
+    "sha256": "fcac8bc42d1fc7f83c369262d6d9ac0aac4de470c0fa108c70270f6a63862153"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesFactory.java",
+    "sha256": "29327b7791d3aea50ce40f00249356fb3777448121b95bd1f5cda16e4311e1c8"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesReader.java",
+    "sha256": "f09b0e691ac6250bada891d5a2bf4cb3d55cf15c6c18fb0e0dd907608e353f62"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesReaderMetKeys.java",
+    "sha256": "6cb4dfe0d20838216b372dd8d845e6e6700c27e622ac6f0c91df8242c1797ccc"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/MinShouldMatchClause.java",
+    "sha256": "a9661468697a1642bc386601363b1a65b6d8b9f3811cbb65360f1e79e12d186c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/OrClause.java",
+    "sha256": "9d19fc433850485f1f11b7eebfe16e3c34ced92c282bd0e22fa2d311a81360af"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/Patterns.java",
+    "sha256": "e347b5e046e1aba15eae64e5265dce7f2fccafc3d576197876f336530e76133d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/ProbabilisticMimeDetectionSelector.java",
+    "sha256": "b3764293964b3bf73cbdcfec66e70c97338a6be233e176f9f91028f825604df0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/mime/package-info.java",
+    "sha256": "6b11e227003d31b7b5065182e01dab1ff7a256c01be0d0319d1694279b678cb3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/package-info.java",
+    "sha256": "1dcd4f00208565d7a71100302f1c3ef50a48c3d87452f5c572a260eec0975076"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/AbstractEncodingDetectorParser.java",
+    "sha256": "5dd4a97b5d4972778c2aa372e6432918f1a95253cba51f7bbe2ccea3063a54a0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/AbstractExternalProcessParser.java",
+    "sha256": "19255b47501c62ea052947e9eb1bcdea96899e9816d448fa1ef9b7ceb399983e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/AbstractParser.java",
+    "sha256": "15023659a0af26583b3817d3cd3c1ec33b5ecd59b14baaa265903ead16b4b022"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/AutoDetectParser.java",
+    "sha256": "b93df1cbbfd567dadd608addfe0b560fee42d8092f93430c60b53da63dd0a175"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/AutoDetectParserConfig.java",
+    "sha256": "6e7533c209903dc26e971f455e087db84323598e11ea89db1528813593fd19a9"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/CompositeParser.java",
+    "sha256": "09d0018a72b29e99b78fb46d766befae37d299def1fc1c85b0585437071fedf2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+    "sha256": "55aef2b37e542c0d466dfe25bfce5d68c5f3f970380f90a266ef448392cea72f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/DefaultParser.java",
+    "sha256": "df2254a614478e0afbf274f5d8b9080316afcbadb00418f0e2568267836016ae"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/DelegatingParser.java",
+    "sha256": "4b150476f55b8ca50e949dac16b6252965e4ba7ed0c56443c2bd249667bac0f4"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/EmptyParser.java",
+    "sha256": "311d5bb70042d9771612215bb9f757eb822e8fd23f6ff570520af1d1f63c04cc"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ErrorParser.java",
+    "sha256": "58114c926aae1128371f42873813e291a62685659720be9e22e752234e59ac87"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/MetadataOnlyParse.java",
+    "sha256": "bbda8fe79b849b4a27d4df8867cc370c2a5ca350195c842a96d2ca5aa73da7b2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/NetworkParser.java",
+    "sha256": "a38494b5f7b8a1ee618bb390f4e5e98bd27bfcab9d9b20513c6450539a3ee29d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ParseContext.java",
+    "sha256": "a1b8618cd00e78d4c601a62f5d95f7ad7eb55b80da2008b6089f68e8c0340062"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ParseRecord.java",
+    "sha256": "afe083f120744adbbb86e7702e874df14916f392d89e2afaffb8b6b3f8f84a32"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/Parser.java",
+    "sha256": "a3937aed9ff1d45c8e2b1465f67d6c6f9995a90743c0e4473f68ece59e056d1a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ParserDecorator.java",
+    "sha256": "bb282b944c45bda8e6917822c8589817d9521db1676868edca899ee6d6fd2e24"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ParserPostProcessor.java",
+    "sha256": "b25942db16f7f279c23cc83d2604c09701e9add1e60951d5caacb103e7381ad8"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ParsingIntent.java",
+    "sha256": "dec139e9844243fa420f49aa5a48af441cc73ad84d99955cb9360bb5ce95cb58"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/ParsingReader.java",
+    "sha256": "7876540c3d9367629a4a310a55005dd2b14d049e8ea100528be1b85c44ff26d0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/PasswordProvider.java",
+    "sha256": "61681bdc3fbbd276c7cc3ac881f48820c82cd94c4af05e374ee5bf42ed2b41fd"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/RecursiveParserWrapper.java",
+    "sha256": "b6d4abe5c9557972f2ded79152a67017b290d59e0d3a2698dba4a464d7697659"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+    "sha256": "ec8b463a5005ace65bcf53ddc1a6fe43c4f56affab9c3ea1028a125d32f4e3b1"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParserConfig.java",
+    "sha256": "2dfb8cc981ad6ab9f461dbca58e9608eeb9238dac84967ec983154ccbfa21076"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/RenderingParser.java",
+    "sha256": "d0a8cf62207fae79bc08b41d09875ffbbda0c54181d0146b36d2aa94e911614e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/SimplePasswordProvider.java",
+    "sha256": "1587605ae4a9d5c92e9bd2c4ef075c127ac0069b2b282e7a077f76c064b68ef5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/StatefulParser.java",
+    "sha256": "6201e79f0bbe6c465b80c08aadd3158382315690d54647c5b3415addebeecd07"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+    "sha256": "a44d1053262b4d65723394cdf089139db4d33c551769db3c816168efc15d1412"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParserConfig.java",
+    "sha256": "77d1a0b805bda0a8d571bcb5ad9083dc8ee018a128dd18beed913a3908f65524"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/multiple/AbstractMultipleParser.java",
+    "sha256": "e9d1883c91ac47cd4eb3cf89d29960f2bdffad10b4013231ab95c94b3e7b1d2c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/multiple/FallbackParser.java",
+    "sha256": "af675e41deedfd067426ef3420ea1f670fd3fe614adb876e1c4011743a74e73b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/multiple/SupplementingParser.java",
+    "sha256": "fb4fe1cf4a25c2b168e87bf6f5d209415140a42a423921fb4b3f528775b3dca6"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/parser/package-info.java",
+    "sha256": "e42db929f654342df4042655cb3252fde4387b962d2cca2ea86e6f6a08d2cedd"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/quality/TextQualityComparison.java",
+    "sha256": "9ad5f1ecf9d0890ff66fee38a85e2e7c7dde93634381d2d354dd58c50bb1d805"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/quality/TextQualityDetector.java",
+    "sha256": "3854d3a4df7b8e8cb53f80fd592429adcbeb5f88158acd8ec9ce990bf79d1010"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/quality/TextQualityScore.java",
+    "sha256": "9d9567550579dd989721449a8812eb87d1263c9b11c53ea1d9179f74444aa19e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/CompositeRenderer.java",
+    "sha256": "343faf58878bb6cb023529c9344110efa5fd92894866302def6c2bd8a313e264"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/PageBasedRenderResults.java",
+    "sha256": "39a13ad86fafc827656d19393aa919f384929bf801e0c6bc5788e657d4d7b0d2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/PageRangeRequest.java",
+    "sha256": "1c89fcd510890e436bfe50ccff8d68911ea2101afc29dc8fa82f381fc5a3674c"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/RenderRequest.java",
+    "sha256": "a9e531f673b9de2e0554133a5bd7a8a7a51cd66f62615c4c983777c2b676b3ba"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/RenderResult.java",
+    "sha256": "34c6e0a0533d1a442820f75523f5b454ef9680c2072bbeec074f7825d14ec097"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/RenderResults.java",
+    "sha256": "d27b30292fecda6fce3dffb3ce4a32f6f036ceadfe84e62558cd7e2c74608320"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/Renderer.java",
+    "sha256": "5ef8ceabd65a37639744451b07358892cd404a87fe78e128b1b2061a0ca10a49"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/RenderingState.java",
+    "sha256": "23b3246faec627d2af5c9c161611dc8c1ac71aa4f0cccaa73b0a3063a2d3fa31"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/renderer/RenderingTracker.java",
+    "sha256": "439efc2b7a8cd2aeb739dae8400006723a2c524a6b2af2c07e2745f65b39843f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/AbstractRecursiveParserWrapperHandler.java",
+    "sha256": "61b7290a2daf1c0c6c52209da9c7d4f4f2b78df02c2ddcbeebc17c6056bb9e32"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/BasicContentHandlerFactory.java",
+    "sha256": "b3e85806aade9468ac979aafc16459f6d714664e06674d068aa3c86f8ade3687"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/BodyContentHandler.java",
+    "sha256": "ddf282e755f2098330db542aa01ac8b077b83b305491825371aafc2287465249"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/CleanPhoneText.java",
+    "sha256": "147ddefbd8cfd75f5040bc03040bc75834dd97d4a53ca40398f637ef5a70db06"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ContentHandlerDecorator.java",
+    "sha256": "1ea205f9a2d37e4d42c5fc0ce2681ed5a4cff78f24e964c60ba58549e495bcfd"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ContentHandlerDecoratorFactory.java",
+    "sha256": "e9915993797dbf4786953ff4565b5736ef21bf8dd5ca7b6cce62511e7bff2681"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ContentHandlerFactory.java",
+    "sha256": "36634d4ceea5ab1f8881d45be98c2d8a84f469955d18350e016cb41492bd37cc"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/DIFContentHandler.java",
+    "sha256": "3c4a6d13315e28fcbab8bfb51947fc83f8ff2434636064906ce38f34f5a28a00"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ElementMappingContentHandler.java",
+    "sha256": "7f813d47ca507ede27003be74a53482b4e08932755bcd41d5f4741546966c748"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/EmbeddedContentHandler.java",
+    "sha256": "41a5e943aa63e3d686b00ccc2d21860ba0ae60f032d12554498b7079c9ed4f28"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/EndDocumentShieldingContentHandler.java",
+    "sha256": "10c94ef5f2e1f70b431ddd0404c9b9bfb91035d6f51c90c09874d8a4440e4428"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ExpandedTitleContentHandler.java",
+    "sha256": "96069cfc990ba08db5c29542d12e8660591d29dafe15f047885a8f624ce031a3"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/Link.java",
+    "sha256": "432250496cf3e360444994705eb57a5522b652d363da788059cb126c023021a2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/LinkBuilder.java",
+    "sha256": "7cd0f4481b2b2ed7c4b087918794a85c4354493c532550cd406b8c25c5cf490e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/LinkContentHandler.java",
+    "sha256": "fd1d5a9ea6ce19d89eacaf997738dc97bc89942936bd07d17691dcfaea14ff1a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/OfflineContentHandler.java",
+    "sha256": "019dafca2ccc05ce5e4cfd3b6a8d2692ceccbb85ae9b25d79afca173c597cae2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/PhoneExtractingContentHandler.java",
+    "sha256": "af4e99d25eb0e89a7398f01041f72300a07984f6c6deec98d10567c0075c3cac"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/RecursiveParserWrapperHandler.java",
+    "sha256": "2d2fcc868e5ae904ad16615613a4ddff7c5620d6f00c3fd5d8df5a0c89256fd0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/RichTextContentHandler.java",
+    "sha256": "a2ef991693c4fbeea1b00e95394f7099c43913d68de0838f8a6300c71cb1f311"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/SAXOutputConfig.java",
+    "sha256": "6df91d0bdd4c3c084f33d79e4e1fece23f3d3e4f8c5434d0dfb5ce7e782be807"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/SafeContentHandler.java",
+    "sha256": "b8a9edb2ae811d8d8290ebff472fbc716899128b50a58f28c1cc8655d557e92e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/SecureContentHandler.java",
+    "sha256": "6accb62726577fe18e9aede0a65e3b00707ef6c6b52516d5f5609ea9bb3595a2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StandardOrganizations.java",
+    "sha256": "8361a14251ff2ee0691506cce3e09f63eb2b7ebe2312e861bfe7e3405ceac4f0"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StandardReference.java",
+    "sha256": "5cef5d4760114f77040e446173d04a8a589445005bc9cfe3a7ae299e55b79205"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StandardsExtractingContentHandler.java",
+    "sha256": "6e432918180af6310c9873c54c92c9b8114e4c422c52889dc90602aabe588c07"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StandardsText.java",
+    "sha256": "4c40f49dce8f8ca8ba82fe71c3452b9b2f1050690f71d8fb96a6dc5bb8be0c0d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StoppingEarlyException.java",
+    "sha256": "b141b9defacdd31a959a1728f6b90d92cdb399582323f59113439845433ae717"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StreamingContentHandlerFactory.java",
+    "sha256": "9c595bc6c5399849a82e3d7f7d7969dede3ad1296943b055d48c6cbbdaf01bf9"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/StrictXHTMLValidator.java",
+    "sha256": "1ca8757bdd2ef5306ffce142378093c63361d796b42b07826b7df085d4090517"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/TaggedContentHandler.java",
+    "sha256": "55faf446fe1e69ff1e6cc62739cedc7ca29a3e54f8590474281e2350f2a81872"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/TaggedSAXException.java",
+    "sha256": "fd778d136e4c10ccf6705149725b6e2f947fd19f2c3a3451287f801b8632f692"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/TeeContentHandler.java",
+    "sha256": "4768fb4f58aed710197d967a2f5d6440a46f66c395c09565f8c3840040656041"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/TextAndAttributeContentHandler.java",
+    "sha256": "f4f09f90d96f1c81210eab6fac6bef8df281aa6147f8433a6668cb69511f17b5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/TextContentHandler.java",
+    "sha256": "c8b8ab954c99e031c2359d2f91092c580bc7cd07b3e0d18d908709f064df4e00"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ToHTMLContentHandler.java",
+    "sha256": "5132890c860433ba9bc32862be0849952d83809fb484fd720d94fe8989bd7eed"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ToMarkdownContentHandler.java",
+    "sha256": "38f3f8e988478e817d2b1d2db57318ad26163dc6a9a69d33960007b3f3e54d0e"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ToTextContentHandler.java",
+    "sha256": "0d9eaea0d74a4428babf7a3a51c034dd2761ec7ecd6c93ee6f65089518dc0c01"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/ToXMLContentHandler.java",
+    "sha256": "896a3716fd77163d3214e4a9430c319aa2fa6afd7bebdd7083f3917908ea4093"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/WriteLimiter.java",
+    "sha256": "27fbd94e00433683d9baa773f081ffab206fd9fb692056c1b0b1654aacc822ea"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/WriteOutContentHandler.java",
+    "sha256": "de9938ac5f97f27ddc0c7c2c2f47126db50544773056f5fd593e5fb42589ee4f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/XHTMLBalancingHandler.java",
+    "sha256": "3b287a7366a6bab03f6b6a4290f60f71743707290979541bfdca716525ca9b33"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/XHTMLContentHandler.java",
+    "sha256": "128d30c74b86b67a53acdd33b62182a6f014f2f0b3944aac343e943ba4674803"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/XMPContentHandler.java",
+    "sha256": "a1d4b019e69ef0440d2a4524392a99e4453da2aa301920c4f7cb6c2154ebaf8a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/package-info.java",
+    "sha256": "b55cf23cf14dfa9412d8592418837529f53b20b8bbe191807b2ca90825a7c45a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/AttributeMatcher.java",
+    "sha256": "089c3b1c69abd3da86ecae17e95e4a02eb221a7662e69309c9e5a602a20a6e52"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/ChildMatcher.java",
+    "sha256": "2817fa781a545c64956a00fa8f4e81b21ea3488dd36678cc7c6fc1e1baf6ce01"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/CompositeMatcher.java",
+    "sha256": "3243acafac6dce4ed825e279b33417968b420a36dd12edd7a3b0847f1a1c2489"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/ElementMatcher.java",
+    "sha256": "a9f7add59ee0b59d51f40a16dc8bf6c946c692b153938f751fca169d74edb700"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/Matcher.java",
+    "sha256": "95b930242243d0fcf3b4e14a8c35165585933221c61e97fa9b6b91eabf326b9d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/MatchingContentHandler.java",
+    "sha256": "6d8bb19b6a3f0a117a96255d21fca2264705b7c7bf3c886b98acc1383f5b8910"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/NamedAttributeMatcher.java",
+    "sha256": "f426eed93f23bd4590e99f5f98696e848cb6e7a0c8a0fd5b8a790a88f86fe1c2"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/NamedElementMatcher.java",
+    "sha256": "391d3527f0724a03d06aec794fb1c28eb93d06bc57b626bd519ba35f5158a939"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/NodeMatcher.java",
+    "sha256": "b042d63b4fa4bd17a694985747deff2c6b856fa192e6b012c94c01e39ae6eefa"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/SubtreeMatcher.java",
+    "sha256": "5577455a18d517f8dcf521b3ee225ad78bbb6ac4b72adb63960a8af1ab874493"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/TextMatcher.java",
+    "sha256": "e63f067d04045cb5c8f0d71d45c5602236d74531aac548d1c2ab6fc2b41dafa9"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/XPathParser.java",
+    "sha256": "d073e214a31345cd6020fa32b1bb4c3391c90bbb4303c5e25850af0a0c10bb3f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/sax/xpath/package-info.java",
+    "sha256": "48a8f3e151d4e6114ae9dcf2df023782ddd870c4d60fe24ced8a89a750aba8d5"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/CharsetUtils.java",
+    "sha256": "3b887d9c57238929608b6346d286918ca747dd2c0a7eec4b5f13971f9faabf87"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/CompareUtils.java",
+    "sha256": "e5525d1b9a8a3f4724ed536a7cc699ec46497f27b06d93cfb07b7a49b2a8bf16"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/ConcurrentUtils.java",
+    "sha256": "dc2b71953758bcd6b8294bcf489092dd977497799c1b90c272b398f2de565a7f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/DateUtils.java",
+    "sha256": "4a928dbd3d585d3845513d0968626204f221423de0199b4b385eda184dd62170"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/DurationFormatUtils.java",
+    "sha256": "05bae6986c2b3aa9c3b3f2f4e53efeda37e8612762eb5e8193bd21c5ef1a359b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/ExceptionUtils.java",
+    "sha256": "9409387e452c8d5ce2ab844b92bfac9d52a3988c964b18ea219905a35a724a7d"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/FileProcessResult.java",
+    "sha256": "4e28f7e19699f2b3c70323d6afa97522b051767950f038e5c41954686fac5714"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/ParserUtils.java",
+    "sha256": "4bc964cdef07b77e7d4435a659667f49f5aa8b4b72297d053a3dc0c7f9cb4940"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/ProcessUtils.java",
+    "sha256": "6f0bdb3fb649f52ee972ff0086fbbab50a932b19df42870cd9e7737c35079121"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/RegexUtils.java",
+    "sha256": "839f5ed3e3fb6ea6a5da17a9f3b78def25eee9cc736f988721145c38dbbd17eb"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/ServiceLoaderUtils.java",
+    "sha256": "7fd2a780ae2b013e05d862faa90ca060595357d84f4d1b5179a523dda32b4a42"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/StreamGobbler.java",
+    "sha256": "9cced6ac96b6363738d7c911a451a7807a04b9e1bbfcf05225937019357b251f"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/StringUtils.java",
+    "sha256": "3a9b090d8b6131f1ad89616aa381a81e7ff4a939bbbacd140ece8e8045fdbf4a"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/SystemUtils.java",
+    "sha256": "cdd2be509a1870cfe6503e9a8f4f79f8da15cdbab9c265dd2758ac4f51b6a9ee"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+    "sha256": "79a65e13c72bbfa8231dc0f31ce85620f5523825f49f5704cf686ac64b55ed6b"
+  },
+  {
+    "path": "tika-core/src/main/java/org/apache/tika/utils/package-info.java",
+    "sha256": "5910e2676288753d5e197fdb1bb455374ddeb5831f0e76cd2d2b97802dfe2c31"
+  },
+  {
+    "path": "tika-core/src/main/resources/META-INF/services/org.apache.tika.detect.EncodingDetector",
+    "sha256": "dc4fc646599bfceb235b1f453e01ccec7a18a0525c8c266d854f7ae40409987e"
+  },
+  {
+    "path": "tika-core/src/main/resources/META-INF/services/org.apache.tika.metadata.filter.MetadataFilter",
+    "sha256": "e09ae2db97e82d3d0968a724a899ccc0613d0f325582c495e0fb52858e408f44"
+  },
+  {
+    "path": "tika-core/src/main/resources/org/apache/tika/detect/tika-example.nnmodel",
+    "sha256": "c12063079d42f2b90849ecf598feaed6f4951a3506b7d046ae5b5adc9737d759"
+  },
+  {
+    "path": "tika-core/src/main/resources/org/apache/tika/metadata/metadata-migration-3x-4x.json",
+    "sha256": "48a2f2831c8f37d4bf30138bc985499f44e4bb037567984d1a4324d4005806ca"
+  },
+  {
+    "path": "tika-core/src/main/resources/org/apache/tika/mime/tika-mimetypes.xml",
+    "sha256": "167942bc8c2c38910ea9e734b950dd15c519108fad1e8cd483e50504b0d8cc47"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/custom/detect/MyCustomDetector.java",
+    "sha256": "f7bb3b17826d3f6aacdd35888033a93a19b7a41a8e11f6c95b40abadbd377010"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/MultiThreadedTikaTest.java",
+    "sha256": "fd4c69cf7a5dd23034d041ddec8221195206d0740b6cb2195a766ccdddc11113"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/ResourceLoggingClassLoader.java",
+    "sha256": "8aaaf589848f1a33b7ab966299028fd5370b3830a31fdb493e38f81c1a3e7e0c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/TikaDetectionTest.java",
+    "sha256": "3527237d3dfcb822607c01ba99654a408954a029a51a6f8ebebc9b2fd2f23c43"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/TikaTest.java",
+    "sha256": "9b69678f0f5897acdaaf4fff222d877021daf279677463f3dad093ab00452152"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/TypeDetectionBenchmark.java",
+    "sha256": "7add8f97e87e2aa15b6b9a1979ddf94e5a991c71e7d35aa3fd3b13c1b4c7e721"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/config/DummyExecutor.java",
+    "sha256": "c7771722e0dea5451c33684aa77db964dbee6ca4410570c8b5c9cc6c39a724b7"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/config/DummyParser.java",
+    "sha256": "0e73ac286f7121bb82864b8828fba1169101ca09ab7e16ce1a45233a4e7b701a"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/config/ParseContextConfigTest.java",
+    "sha256": "b24c87c54c72a1bbac7b9614426050034ea27ac494b6c81d7d540ce3dce9912f"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/config/TikaExtrasTest.java",
+    "sha256": "984aa1677c06da0423b124200d76271cf8398f35412d62e57cc5deeac77fd442"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/config/TikaProgressTrackerTest.java",
+    "sha256": "9d1f6e1f723015f6dee5658b4fec13d253616eafa87a12076fcb10456df5b23c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/BOMDetectorTest.java",
+    "sha256": "1dae7dd5e27ea2239c8afecaef5e318bdbb2dcef1d59e791c2ab17a236041320"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/CharsetSupersetsTest.java",
+    "sha256": "b7979f23c28d58c3fc1bc42aeb9bd8711c5fe67901a3e9d56e098d331369d1b7"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/FileCommandDetectorTest.java",
+    "sha256": "3b002aecaef246f031143ebf702c4cb420d520f10d2fcfe27dd2e7aadc7ba531"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/HighByteLetterStatsTest.java",
+    "sha256": "90ea234b7d9a8dee85328aab6bdd2c80adfbe1613701ead1db35a76f90468967"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/MagicDetectorTest.java",
+    "sha256": "3747e6c2ff41ae7f4cfbe0d759bea4eba774e2806089c3329575e6827ca05bc3"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/MetadataCharsetDetectorTest.java",
+    "sha256": "dc11ffd143c0140439853cf726f4143e100be3fc9205d60f75ca8aaa69edec0b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/MimeDetectionWithNNTest.java",
+    "sha256": "7a9c10ce56e49cf997f9edf4293d788852336fd23401e113abf6673f320d03c5"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/NameDetectorTest.java",
+    "sha256": "8d4100c10056fb25df8a087cc9ad3986f09cf567d6d7e877e3bb134802f0ac54"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/TextDetectorTest.java",
+    "sha256": "2d054cf4bd20a2772bc16b3ad064b171f5a08dcf6d24fe250b2c48944ac8f3d3"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/TypeDetectorTest.java",
+    "sha256": "d1328e4a063136b01c5b0a8b3a935cd89b7fc421a4ad93f73fa7a6a5f9e029ca"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/detect/ZeroSizeFileDetectorTest.java",
+    "sha256": "90d41f5f584a00e69f1bf6156eb2abd88e29ef13e00a15fe750b0daed368df76"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/digest/InputStreamDigesterTest.java",
+    "sha256": "a8e5797d6c7c2aca088898b218e9dcac91a95638cfbe8c939e1224c65d8f23d3"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/extractor/EmbeddedDocumentUtilExtensionTest.java",
+    "sha256": "fd9f6008c42c2106c218f45765e880e7edb16356070044a0c138a3929fe4f4c4"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtilsManualTest.java",
+    "sha256": "bcfc4ef3de576f758f72e622339a4182e9c7eff0041ff2347eb9c86cfa7cf720"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtilsTest.java",
+    "sha256": "9d3a1a7a4262dc2682a0b9c0980042182056a8bb937bd903e44ec8d85ddb9fd7"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntBE_22_0_Test.java",
+    "sha256": "95a8cee926bb6ec722c06dbddf5b5b3a4e69bcc8b84cb43c4bc95a61906d3171"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntBE_23_0_Test.java",
+    "sha256": "16584585c6a6ce3ca1a3b8d5b4eba7a71fc0e44221bbef9b62bafb6774e55398"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_20_0_Test.java",
+    "sha256": "7d635837b4a2948e93da86e3b06fe81d8e8b32e6ec49101b790592e0e445b936"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_21_0_Test.java",
+    "sha256": "f7699e2326d38c3bd4db47cc0f758706eb271acd2e265f61c8efea8bb31e0d67"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getLongLE_28_0_Test.java",
+    "sha256": "8a123b18f4b027ca032eb904090665630c360f87c145025496e8351121cb0681"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortBE_16_0_Test.java",
+    "sha256": "647590c9a9560c496dabf034de47acd4e8caef3ced97a12c301a633bf09a46c2"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortBE_17_1_Test.java",
+    "sha256": "e23e7b1173ab7539e5c67dc34852bcc48f3447f9e7bd3a45d5d7a70c5914168c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortLE_12_0_Test.java",
+    "sha256": "7990346f6ce3e4fd9074c1e6f47f1ebc74564e376ae73e27d54de269c623da53"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortLE_13_0_Test.java",
+    "sha256": "0c7a41510189c420053742532a3f1a512b61a3a71c16092208162e08861d23f7"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUByte_30_0_Test.java",
+    "sha256": "db637249d2f36cb7aa70cc7c0c02feb61ee3feedd7e98281712cd57dfb5b44a9"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_26_0_Test.java",
+    "sha256": "97191f66e9d34ba433ac79635ef99444e0f43a8ce20e1d6abb73edd23279f2b9"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_27_0_Test.java",
+    "sha256": "2ed63c96666aac0f9b8cc5196431f4dc79e4bc27d2b8778f28ff96d103438ed3"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_24_0_Test.java",
+    "sha256": "c585178c1c8d1485df9fe2fd1aac85ea2f9c769aac73f9b51b2c35862791a9c2"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_25_0_Test.java",
+    "sha256": "b34a2f4bc439433011708e3383cd16b32d54e255987825100f0ddd5185704079"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_18_0_Test.java",
+    "sha256": "5b84e34115682739a2230ce96ac3ca1a273f212f879f47fa070144fa1e7a8956"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_19_0_Test.java",
+    "sha256": "41207656967a89c44e43b111afdf04a40016bdf96e779cdb55180235665ae99e"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_14_0_Test.java",
+    "sha256": "90690dc89c4ea7ad33cb5d995384fa569353447c73c0e8301aca0204d6d422e8"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_15_0_Test.java",
+    "sha256": "57c360136138d4523b2fdf64b45da15ad50cdb7e79e5ad06003dd5debffc336b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntBE_7_1_Test.java",
+    "sha256": "8b78ad83903759e10d4ee03aa20c6073cd927d6caaad96585db273c2453c689c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntLE_6_1_Test.java",
+    "sha256": "c4ca8ff59b354ceba664c02363d5dfaea58bb3f55bdde40a2626ed02212d87ea"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntME_8_1_Test.java",
+    "sha256": "c2cd4a32d7b06d7ae0d90a5600750faf9f72b6c033a38bf495e4d7b4cabbd3b8"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongBE_10_1_Test.java",
+    "sha256": "a974b8d6b2f4f040266f70af4be5f62e1420246d6b3e62f93286b9715366971d"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongLE_9_1_Test.java",
+    "sha256": "f24af4a267c8d05f388765193907cc610507482c1147bbe5f427bb102d02ca68"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortBE_1_1_Test.java",
+    "sha256": "1169f42429168354be48d63c9b0cddc4f2fe6cc8952034fae2719d9a72edf1ae"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java",
+    "sha256": "b1f2c7da5847e3a8bdaaf7e8e1ebf00bdf1e67c2dce4c17953807033c4df3971"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUE7_11_0_Test.java",
+    "sha256": "4c91932d62fbdfc87c40b0680f0e40da82f37b933b5f081aee6bd33d519b1755"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUIntBE_5_1_Test.java",
+    "sha256": "ccfbfb41b07d2cae513de7621b3540544b9a29ff8f09f806d076b085561daa36"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUIntLE_4_1_Test.java",
+    "sha256": "719a4d484c720fb3a0897748706f341816509f310439bac6efad2fe03d9c9f33"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortBE_3_1_Test.java",
+    "sha256": "7451f173faa9ab265a209472036c2a2ef5940fafdf526f8d963f2a5e38a94a43"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortLE_2_1_Test.java",
+    "sha256": "ba5f73f3b5de173719e3bd8b23946896091efb87f765bf1c144d47265551bd6d"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_ubyteToInt_29_1_Test.java",
+    "sha256": "7446766106c4cc74ac05a80d6711a06bebfb35712bf301a86738de893203d2a8"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtilsManualTest.java",
+    "sha256": "166047722033acd182a2a8a53ad9ec7c505dff7866f385d1c08830e72e9b8feb"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtilsTest.java",
+    "sha256": "cd2d60bc93d6b9c27c1f34a498d0519485cfcf4fc5c188d2ce261bb95c784edd"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_calculateExtension_10_1_Test.java",
+    "sha256": "fa826bf07a6fa29cbc4dacd6cba8f482397b584d87acfab97ccf1c3172b59dfa"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getName_1_0_Test.java",
+    "sha256": "20ab47a6aca1617d430d3ddac66d606ac7eb64deea9be85297e7e305b83db109"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java",
+    "sha256": "c14c02926a65ccb0daf4cc912f0bdc7c7fad7f5454e76d16556d5f6148c77bfd"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test.java",
+    "sha256": "56d3b02b4554a0d0cd7405cb79bb7fded48fde8f7402874538429ba572d26fc3"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSuffixFromPath_2_0_Test.java",
+    "sha256": "c0cecdbc4d6da38ce2f520621940048388352152160ccd1c3670a5b14485bda5"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_normalize_0_0_Test.java",
+    "sha256": "a5306a84c9fb431c7403e622882d43a45195da6a622f1bfa3c48ab63b5264bdc"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_resolveWithin_5_0_Test.java",
+    "sha256": "c110e48c7bff3a69d19dd599355c1875877adfed6dd02b74c721200792f1b95e"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/LookaheadInputStreamTest.java",
+    "sha256": "ee3181ab824a027bfacbc4751433f67131cb864837e553799d129d94eae29748"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/TailStreamTest.java",
+    "sha256": "a6f3deda3980d2869e6bf3426d0cdb55fd39c137937a9694afcc95af71a5a5ac"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/TemporaryResourcesTest.java",
+    "sha256": "8380382a04e2a32dcfb66ea644497139113a2e7e521a4f2a6b174bc220132fc1"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/io/TikaInputStreamTest.java",
+    "sha256": "2339174a5e30868055415001a9b586deffd82db81b5b05ff79196e7ce1ab79b5"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/language/detect/LanguageNamesTest.java",
+    "sha256": "1159e6cf206bfc7441fde4798bc69ec2f8eb7942cb70f15d80ed628e242833df"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/metadata/MetadataInternalKeyGuardTest.java",
+    "sha256": "5e54e9a4a4e83ff748373e2ab8ec39c8e2f594a5976c5a637aa001f2c584627b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/metadata/TestMetadata.java",
+    "sha256": "87c1a7f97f9aa16991cfa48c274c1b63472da109210e60c85cabb9e2c54a2e8c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/metadata/TestPageAnchoring.java",
+    "sha256": "78ac1f5d2e4f1c9c5314f0c2d8266eef015e6f64cda4d83050a772ac3fac0367"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/metadata/filter/LegacyKeyMigrationFilterTest.java",
+    "sha256": "92c9204ab2b1dc17b7235e2e8488c7a7294a61504b68686a5632314ea473df51"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/CustomReaderTest.java",
+    "sha256": "8bf52a480444121069f68853eb5e37c0105c0c14f2e32dbd9a6cf72ec4aa3ddc"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaTypeManualTest.java",
+    "sha256": "d744e758991f855db7545bd5afeacfb2c14a173d7a26c873d1e33f4ee5572097"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaTypeTest.java",
+    "sha256": "267ecd129c74bb386201b27010301fa7fd8b9e7bab68e4a03850bb5476089b00"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_application_0_0_Test.java",
+    "sha256": "514b4ecadee7d412299e31cdb15c6d6f7b79dd0c940b71d99750e2b6b19ca0d9"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_audio_1_1_Test.java",
+    "sha256": "55cd634cb193551041da0bf08edae59370104eb182c06232d40d51871e462eac"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_compareTo_20_0_Test.java",
+    "sha256": "ee1ef92814d314b6fd810c7338c5c91bbc2438b9085d31e7c09408dcc49dd55a"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_equals_18_0_Test.java",
+    "sha256": "3b58d62ce82a5a6537fb71db62fd5bd340437af47be90a99a82e83a86db32826"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_hasParameters_15_0_Test.java",
+    "sha256": "563f486c889d9b2e3a9562170fc4093c148c29e38fbdb368b65af8ef33b30567"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_hashCode_19_1_Test.java",
+    "sha256": "47f1b34cde53563b9fc7c43eed88575365059d6f51f898af86b1cbf4a5794a25"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_image_2_0_Test.java",
+    "sha256": "3e5243a95c4311dd097dfa31f16d80f7899ba3af554fad50ec9566dcebcf00e0"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_parse_7_0_Test.java",
+    "sha256": "7b3edeb6e58020fff55a2a6b8b6a382e4306b7c1692a907e9e6d92f0dcd38df0"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_text_3_1_Test.java",
+    "sha256": "99d3c32ed9b12747d759e878f37ea97ceba32cca4d2e6f96caa0555a36d69ab6"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_toString_17_1_Test.java",
+    "sha256": "0a281a3a545e175eab9266c3618a27d34c7ac8499c7d24819beecab76442e035"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MediaType_video_4_0_Test.java",
+    "sha256": "7ebfb8e4bdf04a668a20a0b22965808b3fcdaa2640a05a512559a492a4226c77"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MimeDetectionTest.java",
+    "sha256": "2e7ef9a99695c5b2677007783d0069d7177213de28693cc66331f6439afeac9a"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java",
+    "sha256": "2252da49f5e421a8df65df8ba1fd736022b0819a006ac73a324cd5aaaea41b98"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/PatternsTest.java",
+    "sha256": "3e44f95193be109c5e99e3907df4a9b94b7dcb929c07b1310f07ce9bc913474d"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/ProbabilisticMimeDetectionTest.java",
+    "sha256": "786afab4a915faa43994b9607c6f2f766eb1d272a26baa5e680b1a072fc0c73c"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/mime/RFC822DetectionTest.java",
+    "sha256": "1ad7cb74ba1704c80abdfd40bd12b75912b97544fe003b34c6c96693e57eebde"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/CompositeParserTest.java",
+    "sha256": "d2dae2aa6244905685129e8fab3ecae1fd54ba400caf045525a8c078d31b3673"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/DummyParser.java",
+    "sha256": "b994d559f33b68d2edcc884f7976c2c9762f28c9897d166c21482c733a32d6a0"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/ParseContextTest.java",
+    "sha256": "dbea5ce5900d97fbf85be340ab1fad296e71f1e475ca520c8f2c2eccbb305422"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/ParserDecoratorTest.java",
+    "sha256": "aca184b502af882e6a0f8d0b24fc690d1cbf3f431adf8e6124193e9a782aa7d0"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/RegexCaptureParserTest.java",
+    "sha256": "4202f0dd7448a71a312fd847d3041c00e0c2492b2e4372f2b1927b9a76018548"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/mock/MockParser.java",
+    "sha256": "f82d6a1dad134cc44790f2771607dc0ccd6014eda90cbd4ec1c052966caff21b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/mock/MockParserTest.java",
+    "sha256": "ba1f64b64a0f57fbaa6ddc337bb4461b4bce56b55a0acf28340e2de268d84613"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/mock/VowelParser.java",
+    "sha256": "3c4b203608f90df77a9357be5dc650418ff583b01b5e3a617670d1a6764febc4"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/parser/multiple/MultipleParserTest.java",
+    "sha256": "3ae295797f3a885d3e5fcaf35f9ca517eac92ca17c3762d596a4cf574d499aec"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/BasicContentHandlerFactoryTest.java",
+    "sha256": "50961488d01257c0f5ff800a36e8e52b2d54ea6c44725f89cdd7c60c75e40e83"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/BodyContentHandlerTest.java",
+    "sha256": "c32444c8a3a7731c90ca7e392a866b8476c8e6eacca5d16035d255eda54e0678"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/CustomErrorHandlerTest.java",
+    "sha256": "37783d9931dfb1531b5eb6b001b51de888c7619ac5786c49463ed0f35328001b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/LinkContentHandlerTest.java",
+    "sha256": "cf32550161ee92f24d6c0e92a414e0f6d4c1663ea09d66dcd17444ccae219f23"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/NonValidatingContentHandler.java",
+    "sha256": "ac31280ae0121fc10055decca1051803057a4dda8833390559c8a9de7e1fcf93"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/OfflineContentHandlerTest.java",
+    "sha256": "57b518cf27da1bb15045bc6ce4b4afc9f6deaefb8e9eb5082ff3fa95a2711b49"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/RichTextContentHandlerTest.java",
+    "sha256": "2da5055b554c37a179e5b44dfbcd339914b9db2162d3056d71be4a45df9e49e6"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/SafeContentHandlerTest.java",
+    "sha256": "7316a1acbd08122379716703c71dd2f73a37c68f00b866cc785219c8ce2132e7"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/SecureContentHandlerTest.java",
+    "sha256": "87829a468eb92cd0815cc552f1b860e6fc45fa2651e77f8122f52651cfbc824b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/SerializerTest.java",
+    "sha256": "30368b93dfff18b5559aef75efe5c1f7592192aff07bae190b632a94f907ae0b"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/ToMarkdownContentHandlerTest.java",
+    "sha256": "15bda05e6cc81213c8da16cc7aec417e6a92ef5cf13c56cfa1896fd536dab366"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/XHTMLBalancingHandlerTest.java",
+    "sha256": "2d6b7ee7fb8c0982d3c511aeb3aa74f9c2a0c86bc89c34b7e6b504418eda753a"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/XHTMLContentHandlerTest.java",
+    "sha256": "fc5f3788959f925dc65c3242328ec44281967403fb23ec25cf21801894b4de20"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/sax/xpath/XPathParserTest.java",
+    "sha256": "ab8e40102e9a17f32be3d98fc5dcd77f34dfb5a8c8ff866c41e90f42d2620923"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/utils/CharsetUtilsTest.java",
+    "sha256": "043462e9446a4cc2679dd661ccd7d06deb74e0fe55b23b194d8d49980c84b6ad"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/utils/ConcurrentUtilsTest.java",
+    "sha256": "f8f3e73b7f906d822da714286844c8086cfdef9d0d9fb5f93f3957f7eda124db"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/utils/RegexUtilsTest.java",
+    "sha256": "173f06f567ec7a676bcfd29c1b624b89605dfc9b6ff1a60a649c1ec37688e72f"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/utils/ServiceLoaderUtilsTest.java",
+    "sha256": "6542c06c486aa6c9aa7d744f477db6670c278e5c20d507af6bac2d9d6459994e"
+  },
+  {
+    "path": "tika-core/src/test/java/org/apache/tika/utils/XMLReaderUtilsTest.java",
+    "sha256": "6d456fd846f2a30c618c788ec2bc560dadb91ce8bc99164d60cb140c440d22ac"
+  },
+  {
+    "path": "tika-core/src/test/resources/META-INF/services/org.apache.tika.parser.Parser",
+    "sha256": "b7d881aa8e725e82ebec61f052ba301f3da519a03b28a59762f3c4fbdea77714"
+  },
+  {
+    "path": "tika-core/src/test/resources/custom-mimetypes.xml",
+    "sha256": "54df44e623cfc9423f7907da9ebeb8777f6c68e07bbcd5b866329c8e3fd4cdcb"
+  },
+  {
+    "path": "tika-core/src/test/resources/custom-mimetypes2.xml",
+    "sha256": "b44cd34fdf0f48b3d2c5d4fa7398506f46961599f221e74f02fd3fd2c79fe458"
+  },
+  {
+    "path": "tika-core/src/test/resources/log4j2.xml",
+    "sha256": "7146b6d560259c6ca17cd1862fe82637fb4e83619f023858f40a910ce8d623a7"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/config/TIKA-2653-vowel-parser-ae.xml",
+    "sha256": "aa64c6d53bfced9227cba53675e2e61e853d6c9ca5693f9683bd8dd68d92a6d1"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/config/TIKA-2653-vowel-parser-iou.xml",
+    "sha256": "b5134829cfe92a8645ed11dee30b94afd898bc4722ddc8b9fec6f88cccfc99f9"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/detect/tika-example.nnmodel",
+    "sha256": "c12063079d42f2b90849ecf598feaed6f4951a3506b7d046ae5b5adc9737d759"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/io/test.txt",
+    "sha256": "dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/GLDAS_CLM10SUBP_3H.A19790202.0000.001.grb",
+    "sha256": "60c92cc56040d963efcb94447c2f7085abc5d8de462af544489fef8b96b49c81"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/brwNIMS_2014.dif",
+    "sha256": "c6d57023fe25e5db9d74dd125dd79f887b6406e0d76aded282abb49950d2bdda"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/circles-with-prefix.svg",
+    "sha256": "39aa33cfee5557da858e53863d4066fa3491326d338bbe629ccd7a0372211213"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/circles.svg",
+    "sha256": "8cdd4fd9511411d83588879799aed860b73281966b7243c4da4ea02711a23d8f"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/custom-mimetypes-badMinShouldMatch1.xml",
+    "sha256": "57be7686dcbd061aae2052affb61202ad5e146686fff08122dc0cca7b25ea1d4"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/custom-mimetypes-badMinShouldMatch2.xml",
+    "sha256": "e6ab88251d2418acdb72f2a9b8bc5938a7414c90cb057b4b1ac66aa72df1c5f7"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/custom-mimetypes-badMinShouldMatch3.xml",
+    "sha256": "d36dda650779ca4925fd3f7b417d0f634547589e683a6d3f555838dd5b0364ed"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/custom-mimetypes-badMinShouldMatch4.xml",
+    "sha256": "1a8ea054cdbaf603204174d53b8b758ba5b898e0850181f9d447687bc75433aa"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/custom-mimetypes-minShouldMatch.xml",
+    "sha256": "cac71fd984118e61457648bfa8976bc6a963dd7c069fa65e555404da26feb802"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/datamatrix.png",
+    "sha256": "9b0bd957c56e1983024da7975632447d7744a4fe2360f66c7912cd640e3648fc"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/external-mimetypes.xml",
+    "sha256": "5da74238f58c9a3cdd392277d5d9475c9e926688ca0b4445e533f3ef02544df0"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/gdas1.forecmwf.2014062612.grib2",
+    "sha256": "c4beeaa512242e778e196abd30b2931e398d45f4a551f90130c89d9a212053e4"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/htmlfragment",
+    "sha256": "675c896693bffc3937f2f16fa9454c872be34d1b942fbdf5d4be3891f2850891"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/plotutils-bin-cgm-v3.cgm",
+    "sha256": "5fa3c0c7fc9908e3886c9b3b050162052f3e50a99acb03a5ae37709e8e0ce2c5"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/stylesheet.xsl",
+    "sha256": "4fab9546f8b23e839817004087bbcd917dd6bc107797c1c3c03e834cfad2a6f1"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-android-binary.xml",
+    "sha256": "fc2b99c67bded85e48693e32ad397a5a4cc4e79d5136fcfbb3521184991db77e"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-difficult-rdf1.xml",
+    "sha256": "2bf8f70550228e0d1db1bf2678d706a0f8d8dda9f7541dff82ab15784a35fa2c"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-difficult-rdf2.xml",
+    "sha256": "d79c70af29265944fafd8419b50156151ca5e48cca6d885c4ce32dbb90f1b9fc"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-html-snippet-iframe.jsp",
+    "sha256": "b1ccce9a313ccc490c567b791e80cc60aab91de40854dd0a5dbe3554364135a7"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-iso-8859-1.xml",
+    "sha256": "4d9a18272e009e2bcd3dfc071bf264b9b853335b2dc94117b21d2cccd2f3b3d2"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-long-comment.xml",
+    "sha256": "b58f31dd373c9078584904a757538af7417c94f039548172fa43001410c13fee"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-malformed-header.html.bin",
+    "sha256": "3a36c033530a270769c3f15fac7508f8ca13f0fcb094ece2c7a9ee722f830584"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-pngNotEml.bin",
+    "sha256": "46a9cd27a45313f7056ac990fdbe497cf3f5d378e6e4c3ff63a144bc876859c9"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-tika-327.html",
+    "sha256": "3f26caabf805cbe40e2906668e2aa04e482adb46404ad4122256d64f4f3d086d"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-utf16be.xml",
+    "sha256": "4c0d4b3c45b54ffef9d2a485db7a09f4a1b8e10e9c919b01430062bfca69dcf8"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-utf16le.xml",
+    "sha256": "8271b01afb231fbd5cb75df87b9dffcd6f22d3b949ba68814c8660425b40ed4c"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-utf8-bom.xml",
+    "sha256": "7cbf9062ebf358c2131e6cbdc0de25e282de26761cebac0fcccfd0670f0d4638"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test-utf8.xml",
+    "sha256": "1068e4ae9d0629d38cf299909bdd055408210cc915c1bab7904f79d3de0382d0"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test.html",
+    "sha256": "d440a81f3b3d03503432d0cf6e7a744cc3e0589ada2fbded84a54eeb7c3aebe9"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/test.xls",
+    "sha256": "8f279fb44b131070347d82320c5e7900b0e4d77ead38371b1f26ce95092b211b"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/testlargerbuffer.html",
+    "sha256": "130cc20ffeff180a65485ad23b70d81658b17b910dbb3d9c5f2fea3cdfd059ce"
+  },
+  {
+    "path": "tika-core/src/test/resources/org/apache/tika/mime/truncated-utf16-xml.xyz",
+    "sha256": "556eb1cad577cf8d4f8800370934ea19ee6e96b5f269436fec07000b441fc8fd"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/ang20150420t182050_corr_v1e_img.hdr",
+    "sha256": "d66c716b6e701009280515eaaa3490da4b23f654a4bbdcbe49f7ea1c2c526c0f"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/basic_embedded.xml",
+    "sha256": "fdaa937c96d1ed010b8d307ccddf9d11c3b48db732a8771eaafe99d59e076d0a"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/bz2/bzip2-8-file.txt.bz2",
+    "sha256": "1e1467c3efad7181b36968457ddf624310091bbafd024ac4efa3cf1c36f9df3a"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/bz2/empty-file.txt.bz2",
+    "sha256": "d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/bz2/lbzip2-8-file.txt.bz2",
+    "sha256": "6cec802738484531b514af6873cbaafffb893db831d70d8b32e8dd0d81f43eef"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/bz2/small-file.txt.bz2",
+    "sha256": "562698e3ca70b53e140a9b914d6208bbd38e04b211fc9eaaa6d76cf1a3b84d7f"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/bz2/test-file-1.csv.bz2",
+    "sha256": "3c97d0d9c3dd6e8f95933e3f49f54e1a8b49437de310fa72fbb254356146109c"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/bz2/test-file-2.csv.bz2",
+    "sha256": "4623a6b478349d1f3295d29f9997011ddb6e5498cbdaa4af5aa14ee2bfe294e3"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/embedded_then_npe.xml",
+    "sha256": "d5bd81da6c11af7990e21dea7b2f188facbcdfa6139318a02b073649355f7294"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/embedded_with_npe.xml",
+    "sha256": "6982287d0df072e11d3ea83be7479f49afd9debdb8972213d863a0bb0f5ea484"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/example.xml",
+    "sha256": "7a1de7471ea1c3d3ce4c9ea9bc779c23fc479df63ae5b826c268dc3021e82406"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/massive_embedded.xml",
+    "sha256": "8db27c3785405ef80d245d7a4cb08a699c02ce17655fe1549d5b4a4b1ee8d469"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/mock_fakeload.xml",
+    "sha256": "78ced472867e7b07fd9bb5acb6790d85c594cd13797f90e50db8db6998b2352e"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/mock_times.xml",
+    "sha256": "5f3b924303e960ce35d7f705e91d3018dd110a9c3cef0546a91fe013d6dad6fd"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/subdir/example.xml",
+    "sha256": "7a1de7471ea1c3d3ce4c9ea9bc779c23fc479df63ae5b826c268dc3021e82406"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/testOverlappingText.pdf",
+    "sha256": "906bfbc390a95b09417abf33c6ef2bf7c9190cbf9787996bcfa5c0bc17b8bde1"
+  },
+  {
+    "path": "tika-core/src/test/resources/test-documents/undeclared_entity.xml",
+    "sha256": "58558db464b78334ccdf8eb081fb0e10cc96f7a458db13a6b0988150484c6af1"
+  },
+  {
+    "path": "tika-detectors/pom.xml",
+    "sha256": "c3cfa98c835c1086ae36b3f4f7962097eb9194be9e070bcc9655e1721c3ed208"
+  },
+  {
+    "path": "tika-detectors/tika-detector-magika/pom.xml",
+    "sha256": "ea2163223561da4243bd84bcef4e9fe25eeca3e9131ce650469298be9f94c37c"
+  },
+  {
+    "path": "tika-detectors/tika-detector-siegfried/pom.xml",
+    "sha256": "fbe6ada237a12d492abbe4d43eec65b37769b61b4bffaca142a128bd25b6a18d"
+  },
+  {
+    "path": "tika-e2e-tests/pom.xml",
+    "sha256": "b1b733712ef18eb322423a03be4763ea6e018f041a3962861d9ce80a343d66eb"
+  },
+  {
+    "path": "tika-e2e-tests/tika-grpc/pom.xml",
+    "sha256": "e0306d470cbe20b0bca7f0b51577e5f5cf2d899acb825b3ccbba5565e82801fb"
+  },
+  {
+    "path": "tika-e2e-tests/tika-server/pom.xml",
+    "sha256": "118839b1aa571f154ba04e38c0b951b4870eb4534af08749595bce2a8820d670"
+  },
+  {
+    "path": "tika-encoding-detectors/pom.xml",
+    "sha256": "d940bb812026c298056633813cceaf946d530a9f5b4d7e701a41d5886c782aad"
+  },
+  {
+    "path": "tika-encoding-detectors/tika-encoding-detector-html/pom.xml",
+    "sha256": "a4d727acc863e5cd9c9ef2b2fef4a998da9ae9354460355f60eaef6754e78e82"
+  },
+  {
+    "path": "tika-encoding-detectors/tika-encoding-detector-icu4j/pom.xml",
+    "sha256": "2b27100fe41c7cc150dd9797a1fa209f938e0b4163a77b25a362d578f65cb8fa"
+  },
+  {
+    "path": "tika-encoding-detectors/tika-encoding-detector-mojibuster/pom.xml",
+    "sha256": "2c1f7de3a44bb5c43fab403f8e2a8366b7bd23cd378037897635d6e10330c486"
+  },
+  {
+    "path": "tika-encoding-detectors/tika-encoding-detector-universal/pom.xml",
+    "sha256": "a120cd73c120798e85de06eb09532bd45603562c46aef4dd96896f6856a15ccf"
+  },
+  {
+    "path": "tika-eval/pom.xml",
+    "sha256": "e8cfa1cb23470166dc4c81ddb34f1a460e88c691dd3135d6166fb8a8cf69f4d4"
+  },
+  {
+    "path": "tika-eval/tika-eval-app/pom.xml",
+    "sha256": "bd3ced78ec08b73cdb1619309c142b8e276c9587b5ef8d4833b36f76810b0843"
+  },
+  {
+    "path": "tika-eval/tika-eval-core/pom.xml",
+    "sha256": "4d08a68c434bbe437ed0afb9ab747fc2e08a11d42c5cf4286746737af0106d9f"
+  },
+  {
+    "path": "tika-example/pom.xml",
+    "sha256": "c3898cdf8cdc440ea915eff0518ad95f69fc063ba4692ad2c4c61169c9fbe7bd"
+  },
+  {
+    "path": "tika-grpc/pom.xml",
+    "sha256": "837727e50f0d9d2617ea483fa6e2f9c93e03368e6d39a51bde04237f4b88910a"
+  },
+  {
+    "path": "tika-handlers/pom.xml",
+    "sha256": "07af5ec83f5590b1cec115ee9ef6214590f36090595ce30f5008411b8626f9b3"
+  },
+  {
+    "path": "tika-handlers/tika-handler-boilerpipe/pom.xml",
+    "sha256": "5ba40d631abe6a7d4e8c782bfe7627d6bd50adec4b1fa47820f3d2b323bb4a60"
+  },
+  {
+    "path": "tika-integration-tests/pom.xml",
+    "sha256": "f5d01d6c87713dfc4605863381d29b17dfbacf887c9116e2485f9ad28f61b159"
+  },
+  {
+    "path": "tika-integration-tests/tika-pipes-es-integration-tests/pom.xml",
+    "sha256": "0012f62c276dbb24e75fe8f4582375179530313b00501ac1f7b86b2494e58ae9"
+  },
+  {
+    "path": "tika-integration-tests/tika-pipes-kafka-integration-tests/pom.xml",
+    "sha256": "b37ab3ac6ac50bedd3cb24ef8a30561134bfdb63e19a132b89037289fc1d495d"
+  },
+  {
+    "path": "tika-integration-tests/tika-pipes-opensearch-integration-tests/pom.xml",
+    "sha256": "4d442584587fd3dd66885a84a4986f87223a1bf9cf8d1591d7dc3e2b64ed8dce"
+  },
+  {
+    "path": "tika-integration-tests/tika-pipes-s3-integration-tests/pom.xml",
+    "sha256": "82511fb2b416f5c94408d920bdee061fc85a073ed1749a59f8287cf27c8c8b4b"
+  },
+  {
+    "path": "tika-integration-tests/tika-pipes-solr-integration-tests/pom.xml",
+    "sha256": "69f68881a2abcc0d3df0f666d07f8a920395dc69d28ee79c6021fd269966e818"
+  },
+  {
+    "path": "tika-integration-tests/tika-resource-loading-tests/pom.xml",
+    "sha256": "9fb0ab2b79684575ed63e694c8aa3cb7abf4e306bfbc33dc496389f450df0e8b"
+  },
+  {
+    "path": "tika-integration-tests/tika-woodstox-tests/pom.xml",
+    "sha256": "67642b6cb387876086e2309135678c607a316d80464f1a40c553fd43001e4d26"
+  },
+  {
+    "path": "tika-java7/pom.xml",
+    "sha256": "cc1d783907a69cbbf49e96d728e9718afc3767c516e2007fdc95c7de817799ab"
+  },
+  {
+    "path": "tika-langdetect/pom.xml",
+    "sha256": "d4662cd0912a271c1a3e0c85591877d29b325b041e26096d37ac6b1a8dd12ae1"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-charsoup-core/pom.xml",
+    "sha256": "88c09e579566e21a07decefcafd1be2d6988e6bf56ec80e375c42aeccceafc5c"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-charsoup/pom.xml",
+    "sha256": "25ec4adef55d0e2d9f906588b4cff7ada97cf1e94c484d510217d66eece10ac1"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-lingo24/pom.xml",
+    "sha256": "7d339bea33d143430ac10f8c22de0778213e7658223aef3b0eea998b23785a02"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-mitll-text/pom.xml",
+    "sha256": "a9741c369ba7c29fa0879fc40c9c702cfee46f9f4d1aebbddeae864fabfc8d2e"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-opennlp/pom.xml",
+    "sha256": "a89411e0b3295d39ea4e3fde174b6f54f10345fd5d4cd1f5728e2496daae6dfe"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-optimaize/pom.xml",
+    "sha256": "f03ae8ab5f4a0cf808abdc9b1dca1c504e03a0c4cb99575f4636ee7b8e07510f"
+  },
+  {
+    "path": "tika-langdetect/tika-langdetect-test-commons/pom.xml",
+    "sha256": "ee59f0e1f435408a31f3025c8aeabef63ae37d5c107df762d7144ef71ba41104"
+  },
+  {
+    "path": "tika-metadata-schema/pom.xml",
+    "sha256": "e196746995c1f6994b1733ae5aad4f3951461da58d53c0050da1703f30a1cf81"
+  },
+  {
+    "path": "tika-ml/pom.xml",
+    "sha256": "9341141e258a8a78f01983ea5ceb8dff712b549e15c55350190c7906ed48c479"
+  },
+  {
+    "path": "tika-ml/tika-ml-chardetect/pom.xml",
+    "sha256": "b30872ca5209cd282a06fcc80dbdd62415b002af3c39bb4d8715cd376409302c"
+  },
+  {
+    "path": "tika-ml/tika-ml-core/pom.xml",
+    "sha256": "5f47ee59f65666f83f402443055909ae933eccbfc1fbe51b090bfe7a2bf116d1"
+  },
+  {
+    "path": "tika-ml/tika-ml-junkdetect-tools/pom.xml",
+    "sha256": "f460099621e85cf1a48151df66cae76bcfd5c69a88b8b892fde889e294b68b89"
+  },
+  {
+    "path": "tika-ml/tika-ml-junkdetect/pom.xml",
+    "sha256": "0d010c14930a2d36a44ef3bc5e05037cf95b0333af35f88d60c3ee9b0c8a0531"
+  },
+  {
+    "path": "tika-parent/checkstyle.xml",
+    "sha256": "1472d7774886541c8b9226ad6ccae30a05bdf6b6c2ec31f90521bfbaa7975185"
+  },
+  {
+    "path": "tika-parent/intellij-code-style.xml",
+    "sha256": "7f4d63655d4006f25c96a6e8c536e2073b0437b66e46bb1bc7494f5c296d7bb7"
+  },
+  {
+    "path": "tika-parent/license-header.txt",
+    "sha256": "32235a65b50f13cb98f1f60098ffa1141e8b61987165952f97300476b44d2b2e"
+  },
+  {
+    "path": "tika-parent/pom.xml",
+    "sha256": "5c61eb042e609f6620ff8277077fc1a1d317c68479a1dc0ce7c2641a17d8cae7"
+  },
+  {
+    "path": "tika-parsers/pom.xml",
+    "sha256": "1bd37081df0d863d6d47afb8fdd1af8d7fe58a457f545b0341551cc4345ea974"
+  },
+  {
+    "path": "tika-parsers/tika-http-jdk/pom.xml",
+    "sha256": "380499f355246a4086c61fb1807a2672a60c8ac22946fb68148e501bad341ee3"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/pom.xml",
+    "sha256": "504fb2edfb3712a16a5207aeccac082714a9b2dbbe687a87097cf9c3d8ce54ec"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/tika-parser-ocr-encode-module/pom.xml",
+    "sha256": "6b3ee9b786ea9e3bb7759698182da3a7c6bb0ad57dd6183c19ee35446014771f"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/tika-parser-scientific-module/pom.xml",
+    "sha256": "93f735aa17f674b486aa71f86d845285cfae3b52d7e3b42ba7566e40513ac082"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/tika-parser-scientific-package/pom.xml",
+    "sha256": "c7632516030e03f76bb7e4f498f270bd81d8b5a62741a10675e1f02e898917a5"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/tika-parser-sqlite3-module/pom.xml",
+    "sha256": "c4d4391ffd5ffd6083396eebbd64902dc2ea64f61203f25b895316e28a482424"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/tika-parser-sqlite3-package/pom.xml",
+    "sha256": "3c1e649c9f10d1b35973af4d1469b70fb7debb1307ab2149a6c57f3a9bf66134"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-extended/tika-parsers-extended-integration-tests/pom.xml",
+    "sha256": "96bcfdfa67561f5a5345adf071cfbc9f2bf0d8bdb6895c215ca2f2cec984a442"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/pom.xml",
+    "sha256": "dd5ebffb924a7dcdd538889e41a406a1f32c9fae25b15d6c7c70d04dfc44ceca"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/tika-inference/pom.xml",
+    "sha256": "96adf5d74900cbdf1186c53491d1daecbf4c73c71d25f8bfc45fae8dab2d42e8"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/tika-parser-nlp-module/pom.xml",
+    "sha256": "70695d26028d3edfcdbb54d1658c64561e8a3102abec616ef67d1142d59d4d38"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/tika-parser-nlp-package/pom.xml",
+    "sha256": "9cccced5b319810191daad4ed12d9ba987d1ceb0ec16ca7c12b6f45ae12a7fe6"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/tika-parser-tess4j-module/pom.xml",
+    "sha256": "086ea670fc2a4909251f60e319524ee8c608ffbd37c062475918ff23e1913348"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/tika-transcribe-aws/pom.xml",
+    "sha256": "62ef71e1390cc79a7a991931541deb4e290ead0d79ad75962e7722e4f63dae0f"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-ml/tika-vlm/pom.xml",
+    "sha256": "3efc66a369e898c95a214c4d90e735e2a16bc03faad71b0ef5e132dad9b46a31"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/pom.xml",
+    "sha256": "6e527af3b8289025a05ed40eee623222c8fad697feca531565bb3e97be721f2c"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-integration-tests/pom.xml",
+    "sha256": "5415fe71259f208f42533ceb06a01e1c315af3201709af67531d43f9a729232a"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/pom.xml",
+    "sha256": "d68ec7976abc2783053723f9e81c605aeb6981d9c7c5da9cd0f294263e73f73c"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-apple-module/pom.xml",
+    "sha256": "7d9fba515e93858415b0657368e612dea95a5a9fe14503de65c735505e29196a"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-audiovideo-module/pom.xml",
+    "sha256": "2e34b1945442fa14fab0c0f679f54d879358ad434cc3b219ea59aa456cfb57a4"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-cad-module/pom.xml",
+    "sha256": "746929277bdba21373efe18d8d1eafe9185db6a8f0057a89a12830f8ab78ec03"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-code-module/pom.xml",
+    "sha256": "f1ef80a751449c646b19403204076ee14d6d2a2715df050cfc65d67b4c4d8ee4"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-crypto-module/pom.xml",
+    "sha256": "18e336c8cd0069b9ebe499b609017ad4da15fb0dfbf67ac034fe61ae50eb15dd"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-datauri-commons/pom.xml",
+    "sha256": "d92422e9cdd642c719ecac8ef5d348c85b4cf6ff8b971096b1abf41d7ac1d134"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-digest-commons/pom.xml",
+    "sha256": "757c6f000151e0fe7e9bfb8aa47fd189e98d1ffa0be2743f41c2c4d4e59d8b9c"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-font-module/pom.xml",
+    "sha256": "3ab8ddd24fb5d09c51a3cc24ce79fd99bf388aa12a2a79ade63df894efecef24"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-html-module/pom.xml",
+    "sha256": "bc183ad12f7fca97366f5ff8cae597fc9ccd70b87f12a1304ff97032cb91ffb3"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-image-module/pom.xml",
+    "sha256": "c57e20a17fb1cb7ebd0dd9d904782afb33af3534044bea4237bdb56db677dad5"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-jdbc-commons/pom.xml",
+    "sha256": "5acfa7149609ff93eaf2565e7e416e25cfd486a44a221e97d9a55a5d759eb240"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-mail-commons/pom.xml",
+    "sha256": "1f9e84c2a79f97ddbcb308ff50356f1694399d5c6e09753ebba47174138b15b4"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-mail-module/pom.xml",
+    "sha256": "53a043438e26669a37ce617673781562dab4cd6866f5d4628bcb60fd2fda9c3c"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/pom.xml",
+    "sha256": "9c5f04532c98afd7bfcbb80ea2c2772b238fc0cb8377f0177759fdbaec6006c9"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-miscoffice-module/pom.xml",
+    "sha256": "136040225705e15f1c3071d6cefa4f5a4c55e2d501dccfebe97aefc07f3edb57"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-news-module/pom.xml",
+    "sha256": "f67582c56feb125ead7986932ad1cecf1edcf895c416306d6bb05d561dfa6962"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/pom.xml",
+    "sha256": "23d813878d79e284d02c65c0187e5057b635f4646e5578cd9318901f9e072f61"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/pom.xml",
+    "sha256": "f7a43a90fc8746c7c2c7c4ee657b23143a9af0f632e0e680820e6f440c17442e"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pkg-module/pom.xml",
+    "sha256": "b0a47431b7efe504214e50702a054bf7e9f18075467861762d8bafd181ac34fc"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-text-module/pom.xml",
+    "sha256": "86ef312379ec533c9a5fab4a5463014ffac69db25845ed402355ff040df9a52e"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-webarchive-module/pom.xml",
+    "sha256": "f9034c84e6860d8e25b7f8ada0aec4d379ca86ed05c8fa67de676cd05cdca8bd"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-xml-module/pom.xml",
+    "sha256": "3fcabcf8225cea455808f50ba28ba6df75894b15cc7e1cb4f6f9f4c3dc83ceaf"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-xmp-commons/pom.xml",
+    "sha256": "77c8441adfc8e3b93faea0b8ce30f0aead40e72db7b6bd5c26d50e0ea9b8c11e"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-zip-commons/pom.xml",
+    "sha256": "d51a7f34624ab3b92180eeec29702269e74bed56b80d605be830aa22c0c70f4e"
+  },
+  {
+    "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-package/pom.xml",
+    "sha256": "2075f8f53ef48e213be541a8891adfaa7ff38f3b3448d2b70b0cffd60036739c"
+  },
+  {
+    "path": "tika-pipes/pom.xml",
+    "sha256": "168c18d936bed800f56a5856a992814b174eeff993be745d4ff0f8040de7e5f8"
+  },
+  {
+    "path": "tika-pipes/tika-async-cli/pom.xml",
+    "sha256": "3bfee1fa2d2bf623a2f4f1e4553cc8ce03a5ce36b3bf801d91b01daadf01a6fe"
+  },
+  {
+    "path": "tika-pipes/tika-httpclient-commons/pom.xml",
+    "sha256": "0e8b334cfdc43f51b5e739bdf632bfedb5aca6c9ec80a0f9d46f14ba0aa06ece"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-api/pom.xml",
+    "sha256": "651077bd5d7a1ba0e4beacd0995fa96358de71ff9280ab4d83fc123a3681abc6"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-config-store-ignite/pom.xml",
+    "sha256": "4f8baddc5d258f3dfd52a7f84851c329f233d8bc1609bea706b10bd05cc4bb19"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-core/pom.xml",
+    "sha256": "d029c4dd61eb0a89c5424da24ac52590a5341169ecc349ac43ae73e17a3478ca"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-fork-parser/pom.xml",
+    "sha256": "47df251b7c32adaf828d0a76dd65c387e78a249a9a033cf57c7a1706b01e91c9"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-integration-tests/pom.xml",
+    "sha256": "c2e8a7337ae15c4217bc7d1516139b8633e13255b68a81027389de5b103d1bf4"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-iterator-commons/pom.xml",
+    "sha256": "0a69391417446815add3fd7ad5704fc788df4399a981e0c9ccc15c671664e958"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/pom.xml",
+    "sha256": "ebfafc47e10b997837a63fde1d2077ad004996d443e1916bdaf1ebc0ba141057"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-atlassian-jwt/pom.xml",
+    "sha256": "afd8538dbdcf40d6f1371537aca43abac085e5cc32273476cc0f7a8024ae18f1"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-az-blob/pom.xml",
+    "sha256": "a4c904dddf09720510cc71546d68b1836a985fa3ed9f945201a33350883fce1c"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-csv/pom.xml",
+    "sha256": "f17220fac5d6f41bf03b247eb5cbb44e8deafdd866f4ef6d3719afe63a7467b2"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-es/pom.xml",
+    "sha256": "0d81be63e8dec1dd9e5e928dd60c3abc596ddbeaae6d8058fa7a483a4996a8e8"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-file-system/pom.xml",
+    "sha256": "7f5087636990700878beb9d333071e0018f8b157e4f5ac39e5a85998f11b934d"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-gcs/pom.xml",
+    "sha256": "b6ba9f04ce23d1ffe3cc633f10b8d2cac3ab210743ca1e08af51d422437a91a3"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-google-drive/pom.xml",
+    "sha256": "636ed29a0b22051cd2c49ad7c397c4f216e5bf4e75bc137587f544c2f2e9cdea"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-http/pom.xml",
+    "sha256": "f7196f0e2bc0510b3e0ea77e3479e5ce300dcee28883731868939ef728e61524"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-jdbc/pom.xml",
+    "sha256": "8165beb95cf52f0b7b375aa417cbb8693ce3ede60ca6ef5a27b875728b7fa0a4"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-json/pom.xml",
+    "sha256": "81b54bdaa89272cfcac84abf489c4f0798c4fc88acbef19a9427cf28d6e00796"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-kafka/pom.xml",
+    "sha256": "b3aad1530c9deb9971e0dd85fb16ce84a39659e2bc86f895b87e0754fe40159e"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-microsoft-graph/pom.xml",
+    "sha256": "8c68f9d3f4f57f5c00f141431e31093138f1ef7795ab170a84dab60e29101294"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-opensearch/pom.xml",
+    "sha256": "dcbe9b25949eb4520205f2d7f9666658f573d41c5372f9b715ee0cfa7f390fa3"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-s3/pom.xml",
+    "sha256": "dd24081afbeb6c1d5a9844003b0101d286c42dc9bd73a756669c557be3d7ae28"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-plugins/tika-pipes-solr/pom.xml",
+    "sha256": "15a4c40f5a01d658827287c3d5a3f0be7627aa9213cdbfc0f8a98cb3fd04e003"
+  },
+  {
+    "path": "tika-pipes/tika-pipes-reporter-commons/pom.xml",
+    "sha256": "7915e46da44c9d34d8536d502b346f8770efa0cc112832f80bffbaa4e2dd960c"
+  },
+  {
+    "path": "tika-plugins-core/pom.xml",
+    "sha256": "597cc7c12cb024ab75826b3a82063c70a4ba0c33546a75b5e884a3156b7a8dc2"
+  },
+  {
+    "path": "tika-serialization/pom.xml",
+    "sha256": "6a3a655e1cbfcf2b218204d19c2f7a30edd3b551208cb8343b14d007f0730944"
+  },
+  {
+    "path": "tika-server/pom.xml",
+    "sha256": "a70abe8394a091ce625b85965ac677346b0a93add7f0ffbea741b797aade7451"
+  },
+  {
+    "path": "tika-server/tika-server-client/pom.xml",
+    "sha256": "cc1b85107ecf3e3e839d1d2cf0c03f61d7a70aa30c3681986420f7c3cde00b42"
+  },
+  {
+    "path": "tika-server/tika-server-core/pom.xml",
+    "sha256": "be45ef97fd4c6805a902f74107ce557076cf2a11f8fb1a63f473f3cde775b2cb"
+  },
+  {
+    "path": "tika-server/tika-server-standard/pom.xml",
+    "sha256": "ab00a43c8469f866dc108f1a76361b96e5c90b775d01ec9b4998500ee5aecef1"
+  },
+  {
+    "path": "tika-translate/pom.xml",
+    "sha256": "83e8dcd16475132717246d2fa3cfcde2417b4e735000f61b65b970fc46022d75"
+  },
+  {
+    "path": "tika-xmp/pom.xml",
+    "sha256": "5a7ae6cffc66b76d92c565eb3573daedd2b11f22ff31c7b92f13fad2b840babb"
+  }
+]

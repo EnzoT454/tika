@@ -1,0 +1,54 @@
+[INFO] Maveniverse Nisse 0.9.4 loaded
+[INFO] Nisse injecting 23 properties into User Properties
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika-parent:pom:4.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /private/tmp/tika-final-step2-wbf90_na/tika-parent/pom.xml, line 34, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika:pom:4.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /private/tmp/tika-final-step2-wbf90_na/tika-parent/pom.xml, line 34, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] No need for inlining
+[INFO] 
+[INFO] ---------------------< org.apache.tika:tika-core >----------------------
+[INFO] Building Apache Tika core 4.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-cli) @ tika-core ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 113 source files with javac [debug deprecation release 17] to target/test-classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java:[296,37] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java:[304,37] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/ParserDecoratorTest.java:[117,28] withFallbacks(java.util.Collection<? extends org.apache.tika.parser.Parser>,java.util.Set<org.apache.tika.mime.MediaType>) in org.apache.tika.parser.ParserDecorator has been deprecated
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/ServiceLoaderUtilsTest.java:[45,48] org.apache.tika.detect.OverrideDetector in org.apache.tika.detect has been deprecated
+[INFO] 4 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java:[57,61] unreported exception org.apache.tika.io.EndianUtils.BufferUnderrunException; must be caught or declared to be thrown
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.066 s
+[INFO] Finished at: 2026-10-08T10:06:03-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile (default-cli) on project tika-core: Compilation failure
+[ERROR] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java:[57,61] unreported exception org.apache.tika.io.EndianUtils.BufferUnderrunException; must be caught or declared to be thrown
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

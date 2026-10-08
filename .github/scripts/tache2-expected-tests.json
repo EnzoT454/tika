@@ -1,0 +1,449 @@
+{
+  "counts": {
+    "ai": 161,
+    "manual": 56
+  },
+  "core_tests": 966,
+  "allowed_skipped": {
+    "org.apache.tika.io.TikaInputStreamTest": [
+      "reproduceRandomizedTestFailure"
+    ],
+    "org.apache.tika.sax.CustomErrorHandlerTest": [
+      "testUndeclaredEntityXML"
+    ]
+  },
+  "classes": {
+    "org.apache.tika.io.EndianUtils_getIntBE_22_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetIntBEWithOffset",
+        "testGetIntBE",
+        "testGetIntBEWithEmptyArray",
+        "testGetIntBEWithOffsetExceedsArrayLength"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getIntLE_20_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetIntLE",
+        "testGetIntLEWithOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getIntLE_21_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetIntLE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getLongLE_28_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetLongLE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getShortBE_16_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetShortBEWithOffsetGreaterThanArrayLength",
+        "testGetShortBEWithEmptyArray",
+        "testGetShortBEWithNegativeOffset",
+        "testGetShortBEWithSingleElementArray"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getShortLE_13_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetShortLE",
+        "testGetShortLEWithOffsetExceedingArrayLength",
+        "testGetShortLEWithEmptyArray",
+        "testGetShortLEWithNegativeOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUByte_30_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUByte",
+        "testGetUByteNegative"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUIntBEWithOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUIntBEWithZero",
+        "testGetUIntBEWithOffset",
+        "testGetUIntBEWithLargeNumber",
+        "testGetUIntBEWithNegativeNumber",
+        "testGetUIntBE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUIntLE_24_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUIntLE",
+        "testGetUIntLEWithOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUIntLE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUShortBEWithNegativeOffset",
+        "testGetUShortBE",
+        "testGetUShortBEWithEmptyArray",
+        "testGetUShortBEWithOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUShortBEWithNegativeOffset",
+        "testGetUShortBE",
+        "testGetUShortBEWithTooLargeOffset",
+        "testGetUShortBEWithOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUShortLEWithNegativeOffset",
+        "testGetUShortLE",
+        "testGetUShortLEWithOffset",
+        "testGetUShortLEWithOffsetExceedingArrayLength"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetUShortLE",
+        "testGetUShortLEWithOffset",
+        "testGetUShortLEWithLargeOffset"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readIntBE_7_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadIntBEWithNegativeInput",
+        "testReadIntBEWithPartialInput",
+        "testReadIntBEWithValidInput"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readIntLE_6_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadIntLEEndOfStream",
+        "testReadIntLEValidInput",
+        "testReadIntLENegativeInput"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readLongBE_10_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadLongBE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readLongLE_9_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadLongLE",
+        "testReadLongLE_WithBufferUnderrunException"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readShortBE_1_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadShortBEWithValidData",
+        "testReadShortBE",
+        "testReadUShortBEWithEndOfStream",
+        "testReadUShortBE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readShortLE_0_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadShortLEWithBufferUnderrun",
+        "testReadShortLE",
+        "testReadShortLEWithNegativeBytes"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readUE7_11_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadUE7",
+        "testReadUE7_BufferUnderun",
+        "testReadUE7StopsAtFirstByteWithoutContinuation",
+        "testReadUE7_MultipleBytes"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadUIntBE",
+        "testReadUIntBEWithBufferUnderrun"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadUIntLEWithNegativeInput",
+        "testReadUIntLEWithValidInput",
+        "testReadUIntLEWithBufferUnderrun"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadUShortBE_WithBufferUnderrun",
+        "testReadUShortBE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testReadUShortLEWithBufferUnderrun",
+        "testReadUShortLE"
+      ]
+    },
+    "org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testUbyteToInt",
+        "testUbyteToIntNegative",
+        "testUbyteToIntZero",
+        "testUbyteToIntMax",
+        "testUbyteToIntMin"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtils_calculateExtension_10_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testCalculateExtension_withContentType_pdf",
+        "testCalculateExtension_withContentType_png",
+        "testCalculateExtension_withNoContentType",
+        "testCalculateExtension_withContentType_ocr_png"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtils_getName_1_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetNameWithEmptyPath",
+        "testGetNameWithReservedCharacters",
+        "testGetNameWithNullPath",
+        "testGetNameWithWindowsPath",
+        "testGetNameWithCurrentDirectory",
+        "testGetNameWithMultipleDelimiters",
+        "testGetNameWithUnixPath",
+        "testGetNameWithMacintoshDelimiter",
+        "testGetNameWithColonPath",
+        "testGetNameWithASCIINumeric",
+        "testGetNameWithParentDirectory"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndBackslash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColon",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndSlash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndBackslash",
+        "testGetSanitizedEmbeddedFileName_withNullPath",
+        "testGetSanitizedEmbeddedFileName_withPathContainingProtocol",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndColon",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndSlash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColon",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndSlash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndBackslash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColon",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColon",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndSlash",
+        "testGetSanitizedEmbeddedFileName_withEmptyPath",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndBackslash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingPrefix",
+        "testGetSanitizedEmbeddedFileName_withPathContainingQuotes",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndColonAndColonAndColonAndSlash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndBackslash",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndColon",
+        "testGetSanitizedEmbeddedFileName_withPathContainingColonAndSlash"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetSanitizedEmbeddedFilePath_withValidPath",
+        "testGetSanitizedEmbeddedFilePath_withReservedCharacters",
+        "testGetSanitizedEmbeddedFilePath_withLongPath",
+        "testGetSanitizedEmbeddedFilePath_withNullPath",
+        "testGetSanitizedEmbeddedFilePath_withBlankPath"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtils_normalize_0_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testNormalize"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtils_resolveWithin_5_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testResolveWithinSymlink",
+        "testResolveWithin",
+        "testResolveWithinOutside(Path)"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_application_0_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetSubtype",
+        "testGetType",
+        "testGetBaseType",
+        "testGetParameters"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_equals_18_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testEquals",
+        "testEqualsWithNull"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_hasParameters_15_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testHasParametersWithMultipleParameters",
+        "testHasParametersWithEmptyParameters",
+        "testHasParametersWithOneParameter",
+        "testHasParametersWithEmptyStringParameterValue",
+        "testHasParametersWithWhitespaceParameterName",
+        "testHasParametersWithEmptyParameterName",
+        "testHasParametersWithEmptyParameterValue",
+        "testHasParametersWithParameters",
+        "testHasParametersWithWhitespaceParameterValue",
+        "testHasParametersWithSpecialParameterValue",
+        "testHasParametersWithSpecialParameterName",
+        "testHasParametersWithNoParameters",
+        "testHasParametersWithEmptyStringParameterName"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_image_2_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testGetBaseType",
+        "testImageMethodWithParameters",
+        "testImageMethod",
+        "testConstructor",
+        "testGetParameters"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_parse_7_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testParseParametersWithLeadingTrailingSpaces",
+        "testParseNull",
+        "testParseComplexType",
+        "testParseWhitespace",
+        "testParseSimpleTypeWithParameters",
+        "testParseComplexTypeWithParameters",
+        "testParseEmptyString",
+        "testParseParametersWithMultipleEquals",
+        "testParseParametersWithQuotes",
+        "testParseParametersWithEmptyValues",
+        "testParseSyntacticallyValidUnregisteredType",
+        "testParseParametersWithMultipleSemicolons",
+        "testParseSimpleType"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_toString_17_1_Test": {
+      "role": "ai",
+      "cases": [
+        "testToString"
+      ]
+    },
+    "org.apache.tika.mime.MediaType_video_4_0_Test": {
+      "role": "ai",
+      "cases": [
+        "testVideoMethod"
+      ]
+    },
+    "org.apache.tika.io.EndianUtilsManualTest": {
+      "role": "manual",
+      "cases": [
+        "getUIntLE_singleArgOverload_isUnsigned",
+        "readLongLE_distinctBytes_assemblesLittleEndian",
+        "getUShortLE_singleArgOverload_readsFromOffsetZero",
+        "readLongBE_distinctBytes_assemblesBigEndian",
+        "readIntME_allZeroBytes_returnsZero",
+        "readLongLE_allZeroBytes_returnsZero",
+        "readUIntBE_eofOnFirstByteThenData_throwsUnderrun",
+        "readLongBE_eofOnFirstByteThenData_throwsUnderrun",
+        "getUIntBE_singleArgOverload_isUnsigned",
+        "readUE7_continuationThenZeroByte_returns128",
+        "getShortLE_singleArgOverload_readsFromOffsetZero",
+        "readIntLE_eofOnFirstByteThenData_throwsUnderrun",
+        "readUE7_stopsAfterSixContinuationBytes",
+        "getShortBE_withOffset_readsSignedBigEndian",
+        "readUIntLE_eofOnFirstByteThenData_throwsUnderrun",
+        "readLongLE_eofOnFirstByteThenData_throwsUnderrun",
+        "readIntME_eofOnFirstByteThenData_throwsUnderrun",
+        "readIntBE_allZeroBytes_returnsZero",
+        "readUShortBE_allZeroBytes_returnsZero",
+        "getIntBE_singleArgOverload_readsFromOffsetZero",
+        "readUIntBE_allZeroBytes_returnsZero",
+        "readLongBE_allZeroBytes_returnsZero",
+        "getShortBE_singleArgOverload_readsFromOffsetZero",
+        "readIntLE_allZeroBytes_returnsZero",
+        "readUShortLE_allZeroBytes_returnsZero",
+        "readIntBE_eofOnFirstByteThenData_throwsUnderrun",
+        "readLongBE_sevenBytesOnly_throwsUnderrun",
+        "readUIntLE_allZeroBytes_returnsZero"
+      ]
+    },
+    "org.apache.tika.mime.MediaTypeManualTest": {
+      "role": "manual",
+      "cases": [
+        "constructorWithEmptyMap_keepsBaseParameters",
+        "setOfStrings_parsesEachString_andSkipsUnparsable",
+        "parse_simpleNameWithBoundaryCharacters_isCached",
+        "hashCode_isConsistentWithEquals_andWithCanonicalString",
+        "getBaseType_stripsParameters_andReturnsSelfWhenNone",
+        "parse_nonSimpleName_isNotCached_butStillParsed",
+        "constructorWithCharset_addsCharsetParameterToBaseType",
+        "constructorWithParameters_mergesBothMaps_newValuesWin",
+        "setOfMediaTypes_ignoresNullAndDuplicates_andIsUnmodifiable",
+        "parse_charsetBeforeType_isAccepted",
+        "factories_buildCanonicalTypeFromSubtype",
+        "compareTo_followsCanonicalStringOrder"
+      ]
+    },
+    "org.apache.tika.io.FilenameUtilsManualTest": {
+      "role": "manual",
+      "cases": [
+        "embeddedName_eachPropertyAloneIsUsed",
+        "resolveWithin_existingChild_isReturned(Path)",
+        "filePath_exactlyMaxLength_keepsRelativePath",
+        "degenerateShortNames_areKeptAsNames",
+        "filePath_lastSegmentIsOnlyAnExtension_returnsNull",
+        "embeddedPath_resourcePathWinsOverOtherProperties",
+        "calculateExtension_unknownOrInvalidMimeType_fallsBackToBin",
+        "embeddedPath_eachPropertyAloneIsUsed",
+        "filePath_tooLongPath_nameExactlyMaxLength_isNotTruncated",
+        "filePath_dotOnly_returnsNull",
+        "fileName_blankNamePartBeforeExtension_returnsNull",
+        "suffix_fiveCharactersAccepted_sixRejected",
+        "embeddedName_resourceNameWinsOverOtherProperties",
+        "fileName_exactlyMaxLength_isNotTruncated",
+        "resolveWithinRejectsExistingSymbolicLinkOutsideDirectory(Path)",
+        "resolveWithin_missingChildInExistingDir_isReturned(Path)"
+      ]
+    }
+  }
+}

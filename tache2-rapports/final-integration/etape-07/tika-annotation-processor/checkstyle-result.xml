@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="12.3.1">
+<file name="/private/tmp/tika-final-build-x4r_1f3o/tika-annotation-processor/src/main/java/org/apache/tika/annotation/TikaComponentProcessor.java">
+</file>
+<file name="/private/tmp/tika-final-build-x4r_1f3o/tika-annotation-processor/src/main/java/org/apache/tika/annotation/TikaComponent.java">
+</file>
+<file name="/private/tmp/tika-final-build-x4r_1f3o/tika-annotation-processor/src/main/java/org/apache/tika/annotation/KebabCaseConverter.java">
+</file>
+<file name="/private/tmp/tika-final-build-x4r_1f3o/tika-annotation-processor/src/test/java/org/apache/tika/annotation/KebabCaseConverterTest.java">
+</file>
+</checkstyle>

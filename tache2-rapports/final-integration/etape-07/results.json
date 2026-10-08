@@ -1,0 +1,41 @@
+{
+  "build_directory": "/private/tmp/tika-final-build-x4r_1f3o",
+  "build_exit_code": 0,
+  "tests_verifier_exit_code": 0,
+  "pit_exit_code": 0,
+  "pit_summary_exit_code": 0,
+  "modules": {
+    "tika-core": {
+      "tests": 966,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "passed": 964,
+      "checkstyle_errors": 0
+    },
+    "tika-annotation-processor": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 8,
+      "checkstyle_errors": 0
+    }
+  },
+  "mutation_statuses": {
+    "KILLED": 396,
+    "SURVIVED": 7,
+    "NO_COVERAGE": 2,
+    "TIMED_OUT": 1
+  },
+  "mutation_score_killed_only": 97.53694581280789,
+  "production_tests_poms_equal_to_C": true,
+  "ci_assets_sha256": {
+    ".github/workflows/tache2-ift3913.yml": "488c1bb653fb6df62da70770b51cd1433da9dff4a13cfcfef64c8cfbdfcd631f",
+    ".github/scripts/check-tache2-tests.py": "5ccc4c1b8e4963404b53aece13b4b2349c6a47f1a6bfc1c1c23fa0e7ef07d823",
+    ".github/scripts/summarize-tache2-pit.py": "6befef491184307bbe6ab2f1740c2e0f19ba9c57585635f8656a1471fefe1b7b",
+    ".github/scripts/tache2-expected-tests.json": "653754edce689f2ec394c42cfaa6075990b554c75ef6b18a0af23c62cb5bb789"
+  },
+  "github_execution_for_final": false,
+  "pushed": false
+}

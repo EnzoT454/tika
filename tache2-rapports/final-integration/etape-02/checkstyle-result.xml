@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="12.3.1">
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/HighByteLetterStats.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/Detector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/NNTrainedModelBuilder.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/EncodingProbeCache.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/DefaultEncodingDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/CompositeEncodingDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/TrainedModelDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/CompositeDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/CharsetSupersets.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/EncodingResult.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/EmptyDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/MetadataCharsetDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/ZeroSizeFileDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/TextStatistics.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/OverrideEncodingDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/NNTrainedModel.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/TextDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/TrainedModel.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/TypeDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/NameDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/EncodingDetectorContext.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/BOMDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/DetectHelper.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/DefaultDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/NNExampleModelDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/EncodingDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/MetaEncodingDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/MagicDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/XmlRootExtractor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/DefaultProbDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/FileCommandDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/OverrideDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/AutoDetectReader.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/detect/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/RenderRequest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/CompositeRenderer.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/RenderingState.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/Renderer.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/PageRangeRequest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/RenderResults.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/RenderingTracker.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/RenderResult.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/renderer/PageBasedRenderResults.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/quality/TextQualityComparison.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/quality/TextQualityScore.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/quality/TextQualityDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ContentHandlerDecoratorFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/WriteOutContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/BasicContentHandlerFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/CleanPhoneText.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ToXMLContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/TextAndAttributeContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ContentHandlerDecorator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/Link.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/TextContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/LinkContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/NamedElementMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/Matcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/CompositeMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/TextMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/ElementMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/MatchingContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/AttributeMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/XPathParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/NodeMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/ChildMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/SubtreeMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/xpath/NamedAttributeMatcher.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StoppingEarlyException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ContentHandlerFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/PhoneExtractingContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/XHTMLContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StandardsText.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StreamingContentHandlerFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/WriteLimiter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/SafeContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StandardOrganizations.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/SAXOutputConfig.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/TeeContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StandardReference.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StandardsExtractingContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/RecursiveParserWrapperHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/OfflineContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/DIFContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ToMarkdownContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/BodyContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ToHTMLContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/LinkBuilder.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ToTextContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/StrictXHTMLValidator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/TaggedSAXException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/SecureContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/EmbeddedContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/TaggedContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/RichTextContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/XHTMLBalancingHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ExpandedTitleContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/ElementMappingContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/AbstractRecursiveParserWrapperHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/EndDocumentShieldingContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/sax/XMPContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/TikaExtras.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/TikaActivator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/JsonConfig.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/TimeoutLimits.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/OutputLimits.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/SelfConfiguring.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/ParseContextConfig.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/Initializable.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/EmbeddedLimits.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/ConfigValidator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/ConfigDeserializer.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/TikaProgressTracker.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/InputStreamDigester.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/DigestDef.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/DigestHelper.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/DigesterFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/CompositeDigester.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/Digester.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/SkipContainerDocumentDigest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/digest/Encoder.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/CachingSource.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/StreamCache.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/LookaheadInputStream.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/TikaInputSource.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/EndianUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/CachingInputStream.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/BoundedInputStream.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/TailStream.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/SpoolingStrategy.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/FilenameUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/FileSource.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/io/ByteArraySource.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/embedder/Embedder.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/embedder/ExternalEmbedder.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/SystemUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/StringUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/CompareUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/FileProcessResult.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/StreamGobbler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/ConcurrentUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/ExceptionUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/RegexUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/ParserUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/DateUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/ServiceLoaderUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/DurationFormatUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/ProcessUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/utils/CharsetUtils.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/detect/LanguageDetector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/detect/LanguageWriter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/detect/LanguageConfidence.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/detect/LanguageHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/detect/LanguageResult.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/detect/LanguageNames.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/translate/EmptyTranslator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/translate/Translator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/language/translate/DefaultTranslator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/SkipEmbeddedDocumentSelector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/UnpackHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentExtractorFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/ParsingEmbeddedDocumentExtractor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/ContainerExtractor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/DefaultEmbeddedStreamTranslator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/EmbeddedResourceHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/ParserContainerExtractor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/UnpackSelector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/EmbeddedStreamTranslator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentByteStoreExtractorFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentExtractor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/StandardExtractorFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/DocumentSelector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/EmbeddedDocumentUtil.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/extractor/ParentContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/DelegatingParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/RenderingParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/StatefulParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/EmptyParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/Parser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ParsingIntent.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/multiple/SupplementingParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/multiple/FallbackParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/multiple/AbstractMultipleParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/RecursiveParserWrapper.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ParserDecorator.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ParseContext.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/AbstractParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/MetadataOnlyParse.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParserConfig.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ParserPostProcessor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ParsingReader.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/CompositeParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/AutoDetectParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/DefaultParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/external/ExternalParserConfig.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/SimplePasswordProvider.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/AbstractEncodingDetectorParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ParseRecord.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/ErrorParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/AutoDetectParserConfig.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/AbstractExternalProcessParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/PasswordProvider.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/parser/NetworkParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/concurrent/SimpleThreadPoolExecutor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/concurrent/ConfigurableThreadPoolExecutor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MimeTypesFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/Patterns.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/OrClause.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MinShouldMatchClause.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/AndClause.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/ProbabilisticMimeDetectionSelector.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MimeTypes.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MediaType.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MimeTypesReaderMetKeys.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MagicMatch.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MimeTypeException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/Magic.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MimeTypesReader.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MediaTypeRegistry.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/HexCoDec.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/Clause.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/mime/MimeType.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/Tika.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/TikaMemoryLimitException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/EncryptedDocumentException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/CorruptedFileException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/EmbeddedLimitReachedException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/WriteLimitReachedException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/UnsupportedFormatException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/ZeroByteFileException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/TikaConfigException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/TikaException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/RuntimeSAXException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/FileTooLongException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/AccessPermissionException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/exception/TikaTimeoutException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/TikaPagedText.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPDC.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Message.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPPDF.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/ReservedNamespaces.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/FileSystem.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Epub.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/TIFF.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/WordPerfect.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Google.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/QuickTime.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Property.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/MachineMetadata.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/HTML.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/writefilter/StandardMetadataLimiter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/writefilter/StandardMetadataLimiterFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/writefilter/MetadataWriteLimiter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/writefilter/MetadataWriteLimiterFactory.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Audio.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/TikaMimeKeys.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/WARC.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/CreativeCommons.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Rendering.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Video.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPMM.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/TikaCoreProperties.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/DublinCore.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/PropertyTypeException.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Photoshop.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPIdq.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Database.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/ExternalProcess.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Font.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/AccessPermissions.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/PageAnchoring.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Zip.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMP.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/HttpHeaders.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/PDF.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/PassthroughPrefix.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/DWG.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/IPTC.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Geographic.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/RTFMetadata.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Metadata.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/PagedText.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/OfficeOpenXMLExtended.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/IncludeFieldMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/MetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/CompositeMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/LegacyKeyMigrationFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/FieldNameMappingFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/CaptureGroupMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/ExcludeFieldMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/GeoPointMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/MetadataFilterBase.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/DefaultMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/RemoveByMimeMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/DateNormalizingMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/ClearByAttachmentTypeMetadataFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/filter/NoOpFilter.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPTIFF.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPRights.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/XMPDM.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/Office.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/MAPI.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/PST.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/OfficeOpenXMLCore.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/QuattroPro.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/metadata/ClimateForcast.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/main/java/org/apache/tika/package-info.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/MimeDetectionWithNNTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/HighByteLetterStatsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/TypeDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/FileCommandDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/MetadataCharsetDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/BOMDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/TextDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/NameDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/CharsetSupersetsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/MagicDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/detect/ZeroSizeFileDetectorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/XHTMLContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/SafeContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/XHTMLBalancingHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/OfflineContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/BasicContentHandlerFactoryTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/xpath/XPathParserTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/CustomErrorHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/RichTextContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/ToMarkdownContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/NonValidatingContentHandler.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/BodyContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/LinkContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/SerializerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/sax/SecureContentHandlerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/config/ParseContextConfigTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/config/TikaProgressTrackerTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/config/DummyExecutor.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/config/DummyParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/config/TikaExtrasTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/digest/InputStreamDigesterTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortBE_17_1_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="50" severity="error" message="La ligne excède 180 caractères (trouvé 181)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_15_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/TailStreamTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortLE_12_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntME_8_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSuffixFromPath_2_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortBE_3_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="33" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntBE_23_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="51" severity="error" message="La ligne excède 180 caractères (trouvé 186)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="61" severity="error" message="La ligne excède 180 caractères (trouvé 186)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_20_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_normalize_0_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntBE_7_1_Test.java">
+<error line="25" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="34" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/TemporaryResourcesTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_19_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUE7_11_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_27_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_24_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_ubyteToInt_29_1_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUIntLE_4_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_calculateExtension_10_1_Test.java">
+<error line="26" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_21_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtilsManualTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntBE_22_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getLongLE_28_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/TikaInputStreamTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortLE_2_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="33" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortLE_13_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_14_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortBE_1_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntLE_6_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongBE_10_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_resolveWithin_5_0_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="35" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="56" severity="error" message="La ligne excède 180 caractères (trouvé 199)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="73" severity="error" message="La ligne excède 180 caractères (trouvé 199)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_25_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_26_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/LookaheadInputStreamTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUIntBE_5_1_Test.java">
+<error line="26" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="33" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="36" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUByte_30_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_18_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtilsManualTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getName_1_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongLE_9_1_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortBE_16_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/ConcurrentUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/XMLReaderUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/RegexUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/ServiceLoaderUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/CharsetUtilsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/language/detect/LanguageNamesTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/extractor/EmbeddedDocumentUtilExtensionTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/ParseContextTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/ParserDecoratorTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/CompositeParserTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/multiple/MultipleParserTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/mock/VowelParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/mock/MockParserTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/mock/MockParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/DummyParser.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/RegexCaptureParserTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/MultiThreadedTikaTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/ResourceLoggingClassLoader.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/RFC822DetectionTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_text_3_1_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_application_0_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MimeDetectionTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_parse_7_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="26" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="27" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_hashCode_19_1_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="46" severity="error" message="La ligne excède 180 caractères (trouvé 189)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_image_2_0_Test.java">
+<error line="24" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="25" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/CustomReaderTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/PatternsTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_audio_1_1_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_equals_18_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="32" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_toString_17_1_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_video_4_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_hasParameters_15_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="30" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="31" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaType_compareTo_20_0_Test.java">
+<error line="23" column="47" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="24" column="34" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.Mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="28" column="29" severity="error" message="L&apos;utilisation des import.* est prohibé - org.junit.jupiter.api.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="29" column="19" severity="error" message="L&apos;utilisation des import.* est prohibé - org.mockito.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaTypeManualTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/ProbabilisticMimeDetectionTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MediaTypeTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/TypeDetectionBenchmark.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/metadata/TestMetadata.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/metadata/TestPageAnchoring.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/metadata/MetadataInternalKeyGuardTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/metadata/filter/LegacyKeyMigrationFilterTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/TikaDetectionTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/TikaTest.java">
+</file>
+<file name="/private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/custom/detect/MyCustomDetector.java">
+</file>
+</checkstyle>

@@ -17,14 +17,15 @@
 package org.apache.tika.mime;
 
 // Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
-// Exporte tel quel par ChatUniTest (compilait sans intervention).
-// 2 methode(s) de test desactivee(s) (@Disabled) car leur oracle est faux : elles echouent sur le code non mute.
+// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.junit.jupiter.api.Test;
+
 
 public class MediaType_parse_7_0_Test {
 
@@ -51,10 +52,10 @@ public class MediaType_parse_7_0_Test {
         assertEquals("utf-8", mediaType.getParameters().get("charset"));
     }
 
-    @Disabled("ChatUniTest : oracle faux - expected: <null> but was: <invalid/type>")
+
     @Test
-    public void testParseInvalidType() {
-        assertNull(MediaType.parse("invalid/type"));
+    public void testParseSyntacticallyValidUnregisteredType() {
+        assertEquals("invalid/type", MediaType.parse("invalid/type").toString());
     }
 
     @Test
@@ -96,16 +97,7 @@ public class MediaType_parse_7_0_Test {
         assertEquals("value with spaces", mediaType.getParameters().get("param"));
     }
 
-    @Disabled("ChatUniTest : oracle faux - attendait la valeur dequotee utf-8 pour un charset entoure de guillemets echappes ; unquote ne retire pas les guillemets echappes")
-    @Test
-    public void testParseParametersWithEscapedQuotes() {
-        MediaType mediaType = MediaType.parse("image/png; charset=\\\"utf-8\\\"; param=\\\"value with spaces\\\"");
-        assertNotNull(mediaType);
-        assertEquals("image", mediaType.getType());
-        assertEquals("png", mediaType.getSubtype());
-        assertEquals("\"utf-8\"", mediaType.getParameters().get("charset"));
-        assertEquals("\"value with spaces\"", mediaType.getParameters().get("param"));
-    }
+
 
     @Test
     public void testParseParametersWithEmptyValues() {

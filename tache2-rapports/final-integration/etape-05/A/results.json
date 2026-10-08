@@ -1,0 +1,159 @@
+{
+  "state": "A",
+  "tests": {
+    "tika-core": {
+      "tests": 749,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "passed": 747,
+      "checkstyle_errors": 0
+    },
+    "tika-annotation-processor": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 8,
+      "checkstyle_errors": 0
+    }
+  },
+  "test_categories": {
+    "original": {
+      "tests": 749,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "ai": {},
+    "manual": {}
+  },
+  "sources_unchanged_during_build": true,
+  "mutation": {
+    "total": 406,
+    "statuses": {
+      "NO_COVERAGE": 184,
+      "SURVIVED": 36,
+      "KILLED": 185,
+      "TIMED_OUT": 1
+    },
+    "score_killed_only": 45.566502463054185
+  },
+  "by_class": {
+    "org.apache.tika.io.EndianUtils": {
+      "total": 206,
+      "statuses": {
+        "NO_COVERAGE": 154,
+        "SURVIVED": 14,
+        "KILLED": 38
+      },
+      "score_killed_only": 18.446601941747574
+    },
+    "org.apache.tika.io.FilenameUtils": {
+      "total": 115,
+      "statuses": {
+        "KILLED": 79,
+        "NO_COVERAGE": 16,
+        "SURVIVED": 20
+      },
+      "score_killed_only": 68.69565217391305
+    },
+    "org.apache.tika.mime.MediaType": {
+      "total": 85,
+      "statuses": {
+        "KILLED": 68,
+        "NO_COVERAGE": 14,
+        "SURVIVED": 2,
+        "TIMED_OUT": 1
+      },
+      "score_killed_only": 80.0
+    }
+  },
+  "target_bytecode_sha256": {
+    "org/apache/tika/io/EndianUtils$BufferUnderrunException.class": "8837c0f26abf7fc1dbafe22af09104ac86c1a668b4f064e81b0710518ae667b5",
+    "org/apache/tika/io/EndianUtils.class": "cf9f3df72710ffae73112b5857897a22225a4547c84a0c769c9e5ac2a9f83e7a",
+    "org/apache/tika/io/FilenameUtils.class": "d936866181f07400d13daafbd9c7296ede94961d0d39db8b733b8d61e5a59b4c",
+    "org/apache/tika/mime/MediaType.class": "ffebd274b0f8fea69031936adf6552fe952e7c7bb69705482aec2aaf25ae04bd",
+    "org/apache/tika/mime/MediaTypeRegistry.class": "c2c83476530556cbd3aca020c7d750a1709dbff36e4b363ad096dbe0cede4584"
+  },
+  "jacoco_classes": {
+    "org.apache.tika.mime.MediaType": {
+      "INSTRUCTION": {
+        "covered": 554,
+        "missed": 144
+      },
+      "BRANCH": {
+        "covered": 67,
+        "missed": 23
+      },
+      "LINE": {
+        "covered": 125,
+        "missed": 30
+      },
+      "COMPLEXITY": {
+        "covered": 50,
+        "missed": 23
+      },
+      "METHOD": {
+        "covered": 22,
+        "missed": 6
+      },
+      "CLASS": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "org.apache.tika.io.FilenameUtils": {
+      "INSTRUCTION": {
+        "covered": 807,
+        "missed": 64
+      },
+      "BRANCH": {
+        "covered": 86,
+        "missed": 24
+      },
+      "LINE": {
+        "covered": 154,
+        "missed": 21
+      },
+      "COMPLEXITY": {
+        "covered": 46,
+        "missed": 23
+      },
+      "METHOD": {
+        "covered": 13,
+        "missed": 1
+      },
+      "CLASS": {
+        "covered": 1,
+        "missed": 0
+      }
+    },
+    "org.apache.tika.io.EndianUtils": {
+      "INSTRUCTION": {
+        "covered": 158,
+        "missed": 527
+      },
+      "BRANCH": {
+        "covered": 10,
+        "missed": 18
+      },
+      "LINE": {
+        "covered": 31,
+        "missed": 90
+      },
+      "COMPLEXITY": {
+        "covered": 7,
+        "missed": 39
+      },
+      "METHOD": {
+        "covered": 4,
+        "missed": 28
+      },
+      "CLASS": {
+        "covered": 1,
+        "missed": 0
+      }
+    }
+  }
+}

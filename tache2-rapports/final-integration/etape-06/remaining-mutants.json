@@ -1,0 +1,222 @@
+[
+  {
+    "sourceFile": "EndianUtils.java",
+    "mutatedClass": "org.apache.tika.io.EndianUtils",
+    "mutatedMethod": "getIntBE",
+    "methodDescription": "([BI)I",
+    "lineNumber": "388",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator",
+    "description": "Changed increment from 1 to -1",
+    "killingTest": "",
+    "indexes": [
+      "36"
+    ],
+    "blocks": [
+      "0"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "12",
+    "id": "b6ae3eeefe273a3535b7bbf17b45f70634d8965aa3a090b08e233bf69296e981",
+    "classification": "equivalence_justified",
+    "justification": "Le dernier data[i++] lit le même indice que data[i--] ; i est local et jamais relu. Valeur, exceptions et tableau inchangés, même en cas de débordement de l’entier local."
+  },
+  {
+    "sourceFile": "EndianUtils.java",
+    "mutatedClass": "org.apache.tika.io.EndianUtils",
+    "mutatedMethod": "getIntLE",
+    "methodDescription": "([BI)I",
+    "lineNumber": "362",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator",
+    "description": "Changed increment from 1 to -1",
+    "killingTest": "",
+    "indexes": [
+      "36"
+    ],
+    "blocks": [
+      "0"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "7",
+    "id": "d48ed17e7adf8f0cb53d28b361b816f593c474bc1074ba35739bc008ec3d8507",
+    "classification": "equivalence_justified",
+    "justification": "Le dernier data[i++] lit le même indice que data[i--] ; i est local et jamais relu. Valeur, exceptions et tableau inchangés, même en cas de débordement de l’entier local."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getPrefixLength",
+    "methodDescription": "(Ljava/lang/String;)I",
+    "lineNumber": "323",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+    "description": "changed conditional boundary",
+    "killingTest": "",
+    "indexes": [
+      "25"
+    ],
+    "blocks": [
+      "6"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "3",
+    "id": "4a8562d2ce773515689129cc0bd28c029821f301622c37149030b745805dfcc8",
+    "classification": "detectable_missing_boundary",
+    "justification": "Sur macOS, Commons IO 2.22.0 renvoie 0 pour A: ; le repli Tika doit renvoyer 2. Le mutant exclut cette borne et renvoie 0. getSanitizedEmbeddedFilePath avec RESOURCE_NAME_KEY=A:, défaut .bin, maxLength=100 : original null, mutant A.bin. Contre-exemple observé dans probe-results.json ; pas intégré aux suites A/B/C. Ne pas généraliser le code mort observé sous Windows."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getPrefixLength",
+    "methodDescription": "(Ljava/lang/String;)I",
+    "lineNumber": "323",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+    "description": "changed conditional boundary",
+    "killingTest": "",
+    "indexes": [
+      "30"
+    ],
+    "blocks": [
+      "8"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "3",
+    "id": "14e4616e905b5b86897d13eb53e0e7f70bac8c6953c3fa4d17eafb3e609c6e21",
+    "classification": "detectable_missing_boundary",
+    "justification": "Sur macOS, Commons IO 2.22.0 renvoie 0 pour Z: ; le repli Tika doit renvoyer 2. Le mutant exclut cette borne et renvoie 0. getSanitizedEmbeddedFilePath avec RESOURCE_NAME_KEY=Z:, défaut .bin, maxLength=100 : original null, mutant Z.bin. Contre-exemple observé dans probe-results.json ; pas intégré aux suites A/B/C. Ne pas généraliser le code mort observé sous Windows."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getSanitizedEmbeddedFileName",
+    "methodDescription": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+    "lineNumber": "156",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+    "description": "changed conditional boundary",
+    "killingTest": "",
+    "indexes": [
+      "52"
+    ],
+    "blocks": [
+      "13"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "27",
+    "id": "614d8dba45dba99624c417ddce962fc11fc7e977be5a318c39eb4059bc5fe76c",
+    "classification": "equivalence_justified",
+    "justification": "La seule différence est prefixLength == 0 : substring(0) produit le même contenu, utilisé ensuite comme chaîne de valeur. Aucun résultat public ne change."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getSanitizedEmbeddedFileName",
+    "methodDescription": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+    "lineNumber": "156",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator",
+    "description": "negated conditional",
+    "killingTest": "",
+    "indexes": [
+      "52"
+    ],
+    "blocks": [
+      "13"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "27",
+    "id": "87c36d50fd749d87bbdae7b1c3180dbe3944b3d5e771c38fa2597a8d39fd0348",
+    "classification": "detectable_characterization_of_existing_bug",
+    "justification": "RESOURCE_NAME_KEY=~, défaut .bin, maxLength=100 : Commons IO renvoie un préfixe de longueur 2 pour une chaîne de longueur 1. Original : StringIndexOutOfBoundsException ; condition niée : retour ~.bin. ~alice est un second contre-exemple. La différence est réelle, mais figer cette exception serait un test de caractérisation d’un bogue préexistant, pas une spécification métier souhaitable. Aucun test ajouté, aucun changement de production."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getSanitizedEmbeddedFileName",
+    "methodDescription": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+    "lineNumber": "185",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator",
+    "description": "replaced return value with \"\" for org/apache/tika/io/FilenameUtils::getSanitizedEmbeddedFileName",
+    "killingTest": "",
+    "indexes": [
+      "177"
+    ],
+    "blocks": [
+      "41"
+    ],
+    "status": "NO_COVERAGE",
+    "detected": "false",
+    "numberOfTestsRun": "0",
+    "id": "709f09e059805610f7e4bbacd0bc38353f2930df12fd6cd813dc3b1412059786",
+    "classification": "unreachable_guard_justified",
+    "justification": "Avant ces transformations, namePart non blanc est imposé. Les remplacements produisent des caractères non blancs (_ ou %XX) au lieu de supprimer le contenu. Le trim de la méthode nom ne peut pas retirer le dernier caractère non blanc : contrôles ASCII encodés par normalize ; les espaces seuls étaient déjà rejetés. La méthode chemin ne fait même pas de trim. Cette seconde garde ne devient pas vraie sur les entrées normales dans le code figé. NO_COVERAGE reste le statut mesuré."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getSanitizedEmbeddedFilePath",
+    "methodDescription": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+    "lineNumber": "215",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+    "description": "changed conditional boundary",
+    "killingTest": "",
+    "indexes": [
+      "31"
+    ],
+    "blocks": [
+      "6"
+    ],
+    "status": "SURVIVED",
+    "detected": "false",
+    "numberOfTestsRun": "11",
+    "id": "68821e80f472f65e8930167b255a19eba6ada62cf4dd464d2d4bac9447453341",
+    "classification": "equivalence_justified",
+    "justification": "La seule différence est prefixLength == 0 : substring(0) produit le même contenu, utilisé ensuite comme chaîne de valeur. Aucun résultat public ne change."
+  },
+  {
+    "sourceFile": "FilenameUtils.java",
+    "mutatedClass": "org.apache.tika.io.FilenameUtils",
+    "mutatedMethod": "getSanitizedEmbeddedFilePath",
+    "methodDescription": "(Lorg/apache/tika/metadata/Metadata;Ljava/lang/String;I)Ljava/lang/String;",
+    "lineNumber": "259",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator",
+    "description": "replaced return value with \"\" for org/apache/tika/io/FilenameUtils::getSanitizedEmbeddedFilePath",
+    "killingTest": "",
+    "indexes": [
+      "236"
+    ],
+    "blocks": [
+      "52"
+    ],
+    "status": "NO_COVERAGE",
+    "detected": "false",
+    "numberOfTestsRun": "0",
+    "id": "24c3725f6c31c080bfadd7630429158d6e190cb4114235f402db07b56ff8d2f1",
+    "classification": "unreachable_guard_justified",
+    "justification": "Avant ces transformations, namePart non blanc est imposé. Les remplacements produisent des caractères non blancs (_ ou %XX) au lieu de supprimer le contenu. Le trim de la méthode nom ne peut pas retirer le dernier caractère non blanc : contrôles ASCII encodés par normalize ; les espaces seuls étaient déjà rejetés. La méthode chemin ne fait même pas de trim. Cette seconde garde ne devient pas vraie sur les entrées normales dans le code figé. NO_COVERAGE reste le statut mesuré."
+  },
+  {
+    "sourceFile": "MediaType.java",
+    "mutatedClass": "org.apache.tika.mime.MediaType",
+    "mutatedMethod": "parseParameters",
+    "methodDescription": "(Ljava/lang/String;)Ljava/util/Map;",
+    "lineNumber": "305",
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+    "description": "changed conditional boundary",
+    "killingTest": "",
+    "indexes": [
+      "22"
+    ],
+    "blocks": [
+      "7"
+    ],
+    "status": "TIMED_OUT",
+    "detected": "true",
+    "numberOfTestsRun": "0",
+    "id": "d2b657fbbe19e7c6de439c943de8e000502469c4309d854b95ef55188ab0df06",
+    "classification": "non_equivalent_timeout",
+    "justification": "parseParameters : while(string.length()>0) devient >=0. Après consommation du dernier paramètre, string=\"\" ; aucun progrès n’est possible, la boucle continue indéfiniment. PIT détecte le blocage par timeout dans A, B et C ; aucun test tueur ou assertion spécifique n’est enregistré. Ce n’est ni un KILLED ni une équivalence."
+  }
+]

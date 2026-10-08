@@ -17,35 +17,24 @@
 package org.apache.tika.io;
 
 // Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
-// Exporte tel quel par ChatUniTest (compilait sans intervention).
-// 1 methode(s) de test desactivee(s) (@Disabled) car leur oracle est faux : elles echouent sur le code non mute.
+// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.junit.jupiter.api.Test;
 
 import org.apache.tika.exception.TikaException;
 
 public class EndianUtils_getUIntBE_26_0_Test {
 
-    @Disabled("ChatUniTest : oracle faux - expected: <1> but was: <0>")
-    @Test
-    public void testGetUIntBE() throws IOException, TikaException {
-        // Create a mock InputStream
-        InputStream mockInputStream = mock(InputStream.class);
-        when(mockInputStream.read(any(byte[].class), anyInt(), anyInt())).thenReturn(4);
-        // Create a byte array with test data
-        byte[] testData = new byte[] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01 };
-        // Call the getUIntBE method
-        long result = EndianUtils.getUIntBE(testData);
-        // Verify the result
-        assertEquals(1L, result);
-    }
+
 
     @Test
     public void testGetUIntBEWithOffset() throws IOException, TikaException {

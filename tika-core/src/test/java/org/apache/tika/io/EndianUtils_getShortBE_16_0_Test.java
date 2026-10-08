@@ -20,11 +20,10 @@ package org.apache.tika.io;
 // Exporte tel quel par ChatUniTest (compilait sans intervention).
 // Toutes les methodes de test reussissent sur le code non mute.
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.junit.jupiter.api.Test;
+
 
 public class EndianUtils_getShortBE_16_0_Test {
 

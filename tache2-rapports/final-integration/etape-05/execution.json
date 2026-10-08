@@ -1,0 +1,17 @@
+{
+  "A": {
+    "build_exit_code": 0,
+    "pit_exit_code": 0,
+    "build_directory": "/private/tmp/tika-final-build-2p9jzcn6"
+  },
+  "B": {
+    "build_exit_code": 0,
+    "pit_exit_code": 0,
+    "build_directory": "/private/tmp/tika-final-build-0vd07uac"
+  },
+  "C": {
+    "build_exit_code": 0,
+    "pit_exit_code": 0,
+    "build_directory": "/private/tmp/tika-final-build-zjp5qhxd"
+  }
+}

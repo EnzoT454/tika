@@ -1,0 +1,69 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.apache.tika.io;
+
+// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
+// Exporte tel quel par ChatUniTest (compilait sans intervention).
+// 2 methode(s) de test desactivee(s) (@Disabled) car leur oracle est faux : elles echouent sur le code non mute.
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.junit.jupiter.api.*;
+import org.mockito.*;
+
+import org.apache.tika.exception.TikaException;
+
+public class EndianUtils_readUE7_11_0_Test {
+
+    @Test
+    public void testReadUE7() throws IOException, TikaException {
+        EndianUtils endianUtils = new EndianUtils();
+        InputStream inputStream = new ByteArrayInputStream(new byte[] { (byte) 0x7F, 0x00 });
+        long result = endianUtils.readUE7(inputStream);
+        assertEquals(127, result);
+    }
+
+    @Disabled("ChatUniTest : oracle faux - expected: <129> but was: <128>")
+    @Test
+    public void testReadUE7_MultipleBytes() throws IOException, TikaException {
+        EndianUtils endianUtils = new EndianUtils();
+        InputStream inputStream = new ByteArrayInputStream(new byte[] { (byte) 0x81, 0x00 });
+        long result = endianUtils.readUE7(inputStream);
+        assertEquals(129, result);
+    }
+
+    @Disabled("ChatUniTest : oracle faux - expected: <9223372036854775807> but was: <127>")
+    @Test
+    public void testReadUE7_MaxValue() throws IOException, TikaException {
+        EndianUtils endianUtils = new EndianUtils();
+        InputStream inputStream = new ByteArrayInputStream(new byte[] { (byte) 0x7F, (byte) 0x7F, (byte) 0x7F, (byte) 0x7F, (byte) 0x7F, (byte) 0x7F });
+        long result = endianUtils.readUE7(inputStream);
+        assertEquals(0x7FFFFFFFFFFFFFFFL, result);
+    }
+
+    @Test
+    public void testReadUE7_BufferUnderun() throws IOException, TikaException {
+        EndianUtils endianUtils = new EndianUtils();
+        InputStream inputStream = new ByteArrayInputStream(new byte[] { (byte) 0x80 });
+        assertThrows(IOException.class, () -> endianUtils.readUE7(inputStream));
+    }
+}

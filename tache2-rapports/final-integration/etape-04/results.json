@@ -1,0 +1,32 @@
+{
+  "tika-core": {
+    "surefire": {
+      "tests": 966,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "passed": 964,
+    "checkstyle_errors": 0
+  },
+  "tika-annotation-processor": {
+    "surefire": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "passed": 8,
+    "checkstyle_errors": 0
+  },
+  "build_exit_code": 0,
+  "production_sources_equal_to_build": true,
+  "pit_executed": false,
+  "chatunitest_generation_executed": false,
+  "prepare_local_build_validation": {
+    "directory": "/private/tmp/tika-final-build-a3870ao0",
+    "files": 658,
+    "appledouble_files": 0,
+    "core_java_sources_match": true
+  }
+}

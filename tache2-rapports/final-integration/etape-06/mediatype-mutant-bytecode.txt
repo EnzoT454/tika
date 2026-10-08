@@ -1,0 +1,1167 @@
+Compiled from "MediaType.java"
+public final class org.apache.tika.mime.MediaType implements java.lang.Comparable<org.apache.tika.mime.MediaType>, java.io.Serializable {
+  private static final long serialVersionUID;
+
+  private static final java.util.regex.Pattern SPECIAL;
+
+  private static final java.util.regex.Pattern SPECIAL_OR_WHITESPACE;
+
+  private static final java.lang.String VALID_CHARS;
+
+  private static final java.util.regex.Pattern TYPE_PATTERN;
+
+  private static final java.util.regex.Pattern CHARSET_FIRST_PATTERN;
+
+  private static final java.util.Map<java.lang.String, org.apache.tika.mime.MediaType> SIMPLE_TYPES;
+
+  public static final org.apache.tika.mime.MediaType OCTET_STREAM;
+
+  public static final org.apache.tika.mime.MediaType EMPTY;
+
+  public static final org.apache.tika.mime.MediaType TEXT_PLAIN;
+
+  public static final org.apache.tika.mime.MediaType TEXT_HTML;
+
+  public static final org.apache.tika.mime.MediaType APPLICATION_XML;
+
+  public static final org.apache.tika.mime.MediaType APPLICATION_ZIP;
+
+  private final java.lang.String string;
+
+  private final int slash;
+
+  private final int semicolon;
+
+  private final java.util.Map<java.lang.String, java.lang.String> parameters;
+
+  static final boolean $assertionsDisabled;
+
+  public org.apache.tika.mime.MediaType(java.lang.String, java.lang.String, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokespecial #57                 // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: invokevirtual #63                 // Method java/lang/String.trim:()Ljava/lang/String;
+       8: getstatic     #69                 // Field java/util/Locale.ENGLISH:Ljava/util/Locale;
+      11: invokevirtual #73                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      14: astore_1
+      15: aload_2
+      16: invokevirtual #63                 // Method java/lang/String.trim:()Ljava/lang/String;
+      19: getstatic     #69                 // Field java/util/Locale.ENGLISH:Ljava/util/Locale;
+      22: invokevirtual #73                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      25: astore_2
+      26: aload_0
+      27: aload_1
+      28: invokevirtual #77                 // Method java/lang/String.length:()I
+      31: putfield      #79                 // Field slash:I
+      34: aload_0
+      35: aload_0
+      36: getfield      #79                 // Field slash:I
+      39: iconst_1
+      40: iadd
+      41: aload_2
+      42: invokevirtual #77                 // Method java/lang/String.length:()I
+      45: iadd
+      46: putfield      #81                 // Field semicolon:I
+      49: aload_3
+      50: invokeinterface #85,  1           // InterfaceMethod java/util/Map.isEmpty:()Z
+      55: ifeq          79
+      58: aload_0
+      59: invokestatic  #91                 // Method java/util/Collections.emptyMap:()Ljava/util/Map;
+      62: putfield      #93                 // Field parameters:Ljava/util/Map;
+      65: aload_0
+      66: aload_1
+      67: aload_2
+      68: invokedynamic #105,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      73: putfield      #107                // Field string:Ljava/lang/String;
+      76: goto          359
+      79: new           #109                // class java/lang/StringBuilder
+      82: dup
+      83: invokespecial #110                // Method java/lang/StringBuilder."<init>":()V
+      86: astore        4
+      88: aload         4
+      90: aload_1
+      91: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      94: pop
+      95: aload         4
+      97: bipush        47
+      99: invokevirtual #117                // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+     102: pop
+     103: aload         4
+     105: aload_2
+     106: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     109: pop
+     110: new           #119                // class java/util/TreeMap
+     113: dup
+     114: invokespecial #120                // Method java/util/TreeMap."<init>":()V
+     117: astore        5
+     119: aload_3
+     120: invokeinterface #124,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+     125: invokeinterface #130,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     130: astore        6
+     132: aload         6
+     134: invokeinterface #135,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     139: ifeq          198
+     142: aload         6
+     144: invokeinterface #139,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     149: checkcast     #12                 // class java/util/Map$Entry
+     152: astore        7
+     154: aload         7
+     156: invokeinterface #142,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     161: checkcast     #59                 // class java/lang/String
+     164: invokevirtual #63                 // Method java/lang/String.trim:()Ljava/lang/String;
+     167: getstatic     #69                 // Field java/util/Locale.ENGLISH:Ljava/util/Locale;
+     170: invokevirtual #73                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+     173: astore        8
+     175: aload         5
+     177: aload         8
+     179: aload         7
+     181: invokeinterface #145,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     186: checkcast     #59                 // class java/lang/String
+     189: invokeinterface #151,  3          // InterfaceMethod java/util/SortedMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     194: pop
+     195: goto          132
+     198: aload         5
+     200: invokeinterface #152,  1          // InterfaceMethod java/util/SortedMap.entrySet:()Ljava/util/Set;
+     205: invokeinterface #130,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     210: astore        6
+     212: aload         6
+     214: invokeinterface #135,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     219: ifeq          341
+     222: aload         6
+     224: invokeinterface #139,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     229: checkcast     #12                 // class java/util/Map$Entry
+     232: astore        7
+     234: aload         4
+     236: ldc           #154                // String ;
+     238: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     241: pop
+     242: aload         4
+     244: aload         7
+     246: invokeinterface #142,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     251: checkcast     #59                 // class java/lang/String
+     254: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     257: pop
+     258: aload         4
+     260: ldc           #156                // String =
+     262: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     265: pop
+     266: aload         7
+     268: invokeinterface #145,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     273: checkcast     #59                 // class java/lang/String
+     276: astore        8
+     278: getstatic     #158                // Field SPECIAL_OR_WHITESPACE:Ljava/util/regex/Pattern;
+     281: aload         8
+     283: invokevirtual #164                // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+     286: invokevirtual #169                // Method java/util/regex/Matcher.find:()Z
+     289: ifeq          330
+     292: aload         4
+     294: bipush        34
+     296: invokevirtual #117                // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+     299: pop
+     300: aload         4
+     302: getstatic     #171                // Field SPECIAL:Ljava/util/regex/Pattern;
+     305: aload         8
+     307: invokevirtual #164                // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+     310: ldc           #173                // String \\\\$0
+     312: invokevirtual #177                // Method java/util/regex/Matcher.replaceAll:(Ljava/lang/String;)Ljava/lang/String;
+     315: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     318: pop
+     319: aload         4
+     321: bipush        34
+     323: invokevirtual #117                // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+     326: pop
+     327: goto          338
+     330: aload         4
+     332: aload         8
+     334: invokevirtual #114                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     337: pop
+     338: goto          212
+     341: aload_0
+     342: aload         4
+     344: invokevirtual #180                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     347: putfield      #107                // Field string:Ljava/lang/String;
+     350: aload_0
+     351: aload         5
+     353: invokestatic  #184                // Method java/util/Collections.unmodifiableSortedMap:(Ljava/util/SortedMap;)Ljava/util/SortedMap;
+     356: putfield      #93                 // Field parameters:Ljava/util/Map;
+     359: return
+    LineNumberTable:
+      line 98: 0
+      line 99: 4
+      line 100: 15
+      line 102: 26
+      line 103: 34
+      line 105: 49
+      line 106: 58
+      line 107: 65
+      line 109: 79
+      line 110: 88
+      line 111: 95
+      line 112: 103
+      line 114: 110
+      line 115: 119
+      line 116: 154
+      line 117: 175
+      line 118: 195
+      line 119: 198
+      line 120: 234
+      line 121: 242
+      line 122: 258
+      line 123: 266
+      line 124: 278
+      line 125: 292
+      line 126: 300
+      line 127: 319
+      line 129: 330
+      line 131: 338
+      line 133: 341
+      line 134: 350
+      line 136: 359
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+        175      20     8   key   Ljava/lang/String;
+        154      41     7 entry   Ljava/util/Map$Entry;
+        278      60     8 value   Ljava/lang/String;
+        234     104     7 entry   Ljava/util/Map$Entry;
+         88     271     4 builder   Ljava/lang/StringBuilder;
+        119     240     5   map   Ljava/util/SortedMap;
+          0     360     0  this   Lorg/apache/tika/mime/MediaType;
+          0     360     1  type   Ljava/lang/String;
+          0     360     2 subtype   Ljava/lang/String;
+          0     360     3 parameters   Ljava/util/Map;
+
+  public org.apache.tika.mime.MediaType(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #91                 // Method java/util/Collections.emptyMap:()Ljava/util/Map;
+       6: invokespecial #200                // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+       9: return
+    LineNumberTable:
+      line 139: 0
+      line 140: 9
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/apache/tika/mime/MediaType;
+          0      10     1  type   Ljava/lang/String;
+          0      10     2 subtype   Ljava/lang/String;
+
+  private org.apache.tika.mime.MediaType(java.lang.String, int);
+    Code:
+       0: aload_0
+       1: invokespecial #57                 // Method java/lang/Object."<init>":()V
+       4: getstatic     #203                // Field $assertionsDisabled:Z
+       7: ifne          23
+      10: iload_2
+      11: iconst_m1
+      12: if_icmpne     23
+      15: new           #205                // class java/lang/AssertionError
+      18: dup
+      19: invokespecial #206                // Method java/lang/AssertionError."<init>":()V
+      22: athrow
+      23: getstatic     #203                // Field $assertionsDisabled:Z
+      26: ifne          47
+      29: aload_1
+      30: iload_2
+      31: invokevirtual #210                // Method java/lang/String.charAt:(I)C
+      34: bipush        47
+      36: if_icmpeq     47
+      39: new           #205                // class java/lang/AssertionError
+      42: dup
+      43: invokespecial #206                // Method java/lang/AssertionError."<init>":()V
+      46: athrow
+      47: getstatic     #203                // Field $assertionsDisabled:Z
+      50: ifne          73
+      53: aload_1
+      54: iconst_0
+      55: iload_2
+      56: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      59: invokestatic  #218                // Method isSimpleName:(Ljava/lang/String;)Z
+      62: ifne          73
+      65: new           #205                // class java/lang/AssertionError
+      68: dup
+      69: invokespecial #206                // Method java/lang/AssertionError."<init>":()V
+      72: athrow
+      73: getstatic     #203                // Field $assertionsDisabled:Z
+      76: ifne          100
+      79: aload_1
+      80: iload_2
+      81: iconst_1
+      82: iadd
+      83: invokevirtual #221                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      86: invokestatic  #218                // Method isSimpleName:(Ljava/lang/String;)Z
+      89: ifne          100
+      92: new           #205                // class java/lang/AssertionError
+      95: dup
+      96: invokespecial #206                // Method java/lang/AssertionError."<init>":()V
+      99: athrow
+     100: aload_0
+     101: aload_1
+     102: putfield      #107                // Field string:Ljava/lang/String;
+     105: aload_0
+     106: iload_2
+     107: putfield      #79                 // Field slash:I
+     110: aload_0
+     111: aload_1
+     112: invokevirtual #77                 // Method java/lang/String.length:()I
+     115: putfield      #81                 // Field semicolon:I
+     118: aload_0
+     119: invokestatic  #91                 // Method java/util/Collections.emptyMap:()Ljava/util/Map;
+     122: putfield      #93                 // Field parameters:Ljava/util/Map;
+     125: return
+    LineNumberTable:
+      line 142: 0
+      line 143: 4
+      line 144: 23
+      line 145: 47
+      line 146: 73
+      line 147: 100
+      line 148: 105
+      line 149: 110
+      line 150: 118
+      line 151: 125
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0     126     0  this   Lorg/apache/tika/mime/MediaType;
+          0     126     1 string   Ljava/lang/String;
+          0     126     2 slash   I
+
+  public org.apache.tika.mime.MediaType(org.apache.tika.mime.MediaType, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #226                // Method getType:()Ljava/lang/String;
+       5: aload_1
+       6: invokevirtual #229                // Method getSubtype:()Ljava/lang/String;
+       9: aload_1
+      10: getfield      #93                 // Field parameters:Ljava/util/Map;
+      13: aload_2
+      14: invokestatic  #233                // Method union:(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+      17: invokespecial #200                // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+      20: return
+    LineNumberTable:
+      line 154: 0
+      line 155: 20
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      21     0  this   Lorg/apache/tika/mime/MediaType;
+          0      21     1  type   Lorg/apache/tika/mime/MediaType;
+          0      21     2 parameters   Ljava/util/Map;
+
+  public org.apache.tika.mime.MediaType(org.apache.tika.mime.MediaType, java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #238                // Method java/util/Collections.singletonMap:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+       7: invokespecial #240                // Method "<init>":(Lorg/apache/tika/mime/MediaType;Ljava/util/Map;)V
+      10: return
+    LineNumberTable:
+      line 166: 0
+      line 167: 10
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      11     0  this   Lorg/apache/tika/mime/MediaType;
+          0      11     1  type   Lorg/apache/tika/mime/MediaType;
+          0      11     2  name   Ljava/lang/String;
+          0      11     3 value   Ljava/lang/String;
+
+  public org.apache.tika.mime.MediaType(org.apache.tika.mime.MediaType, java.nio.charset.Charset);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: ldc           #244                // String charset
+       4: aload_2
+       5: invokevirtual #248                // Method java/nio/charset/Charset.name:()Ljava/lang/String;
+       8: invokespecial #250                // Method "<init>":(Lorg/apache/tika/mime/MediaType;Ljava/lang/String;Ljava/lang/String;)V
+      11: return
+    LineNumberTable:
+      line 177: 0
+      line 178: 11
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      12     0  this   Lorg/apache/tika/mime/MediaType;
+          0      12     1  type   Lorg/apache/tika/mime/MediaType;
+          0      12     2 charset   Ljava/nio/charset/Charset;
+
+  public static org.apache.tika.mime.MediaType application(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokedynamic #257,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       6: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+       9: areturn
+    LineNumberTable:
+      line 181: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  type   Ljava/lang/String;
+
+  public static org.apache.tika.mime.MediaType audio(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokedynamic #264,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       6: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+       9: areturn
+    LineNumberTable:
+      line 185: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  type   Ljava/lang/String;
+
+  public static org.apache.tika.mime.MediaType image(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokedynamic #268,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       6: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+       9: areturn
+    LineNumberTable:
+      line 189: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  type   Ljava/lang/String;
+
+  public static org.apache.tika.mime.MediaType text(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokedynamic #272,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       6: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+       9: areturn
+    LineNumberTable:
+      line 193: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  type   Ljava/lang/String;
+
+  public static org.apache.tika.mime.MediaType video(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokedynamic #276,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       6: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+       9: areturn
+    LineNumberTable:
+      line 197: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  type   Ljava/lang/String;
+
+  public static java.util.Set<org.apache.tika.mime.MediaType> set(org.apache.tika.mime.MediaType...);
+    Code:
+       0: new           #281                // class java/util/HashSet
+       3: dup
+       4: invokespecial #282                // Method java/util/HashSet."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: astore_2
+      10: aload_2
+      11: arraylength
+      12: istore_3
+      13: iconst_0
+      14: istore        4
+      16: iload         4
+      18: iload_3
+      19: if_icmpge     48
+      22: aload_2
+      23: iload         4
+      25: aaload
+      26: astore        5
+      28: aload         5
+      30: ifnull        42
+      33: aload_1
+      34: aload         5
+      36: invokeinterface #286,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      41: pop
+      42: iinc          4, 1
+      45: goto          16
+      48: aload_1
+      49: invokestatic  #290                // Method java/util/Collections.unmodifiableSet:(Ljava/util/Set;)Ljava/util/Set;
+      52: areturn
+    LineNumberTable:
+      line 209: 0
+      line 210: 8
+      line 211: 28
+      line 212: 33
+      line 210: 42
+      line 215: 48
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         28      14     5  type   Lorg/apache/tika/mime/MediaType;
+          0      53     0 types   [Lorg/apache/tika/mime/MediaType;
+          8      45     1   set   Ljava/util/Set;
+
+  public static java.util.Set<org.apache.tika.mime.MediaType> set(java.lang.String...);
+    Code:
+       0: new           #281                // class java/util/HashSet
+       3: dup
+       4: invokespecial #282                // Method java/util/HashSet."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: astore_2
+      10: aload_2
+      11: arraylength
+      12: istore_3
+      13: iconst_0
+      14: istore        4
+      16: iload         4
+      18: iload_3
+      19: if_icmpge     55
+      22: aload_2
+      23: iload         4
+      25: aaload
+      26: astore        5
+      28: aload         5
+      30: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+      33: astore        6
+      35: aload         6
+      37: ifnull        49
+      40: aload_1
+      41: aload         6
+      43: invokeinterface #286,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      48: pop
+      49: iinc          4, 1
+      52: goto          16
+      55: aload_1
+      56: invokestatic  #290                // Method java/util/Collections.unmodifiableSet:(Ljava/util/Set;)Ljava/util/Set;
+      59: areturn
+    LineNumberTable:
+      line 227: 0
+      line 228: 8
+      line 229: 28
+      line 230: 35
+      line 231: 40
+      line 228: 49
+      line 234: 55
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         35      14     6    mt   Lorg/apache/tika/mime/MediaType;
+         28      21     5  type   Ljava/lang/String;
+          0      60     0 types   [Ljava/lang/String;
+          8      52     1   set   Ljava/util/Set;
+
+  public static org.apache.tika.mime.MediaType parse(java.lang.String);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: getstatic     #302                // Field SIMPLE_TYPES:Ljava/util/Map;
+       9: dup
+      10: astore_1
+      11: monitorenter
+      12: getstatic     #302                // Field SIMPLE_TYPES:Ljava/util/Map;
+      15: aload_0
+      16: invokeinterface #306,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      21: checkcast     #2                  // class org/apache/tika/mime/MediaType
+      24: astore_2
+      25: aload_2
+      26: ifnonnull     107
+      29: aload_0
+      30: bipush        47
+      32: invokevirtual #310                // Method java/lang/String.indexOf:(I)I
+      35: istore_3
+      36: iload_3
+      37: iconst_m1
+      38: if_icmpne     47
+      41: aconst_null
+      42: aload_1
+      43: monitorexit
+      44: pop
+      45: aconst_null
+      46: areturn
+      47: getstatic     #302                // Field SIMPLE_TYPES:Ljava/util/Map;
+      50: invokeinterface #313,  1          // InterfaceMethod java/util/Map.size:()I
+      55: sipush        10000
+      58: if_icmpge     107
+      61: aload_0
+      62: iconst_0
+      63: iload_3
+      64: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      67: invokestatic  #218                // Method isSimpleName:(Ljava/lang/String;)Z
+      70: ifeq          107
+      73: aload_0
+      74: iload_3
+      75: iconst_1
+      76: iadd
+      77: invokevirtual #221                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      80: invokestatic  #218                // Method isSimpleName:(Ljava/lang/String;)Z
+      83: ifeq          107
+      86: new           #2                  // class org/apache/tika/mime/MediaType
+      89: dup
+      90: aload_0
+      91: iload_3
+      92: invokespecial #315                // Method "<init>":(Ljava/lang/String;I)V
+      95: astore_2
+      96: getstatic     #302                // Field SIMPLE_TYPES:Ljava/util/Map;
+      99: aload_0
+     100: aload_2
+     101: invokeinterface #316,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     106: pop
+     107: aload_2
+     108: ifnull        115
+     111: aload_2
+     112: aload_1
+     113: monitorexit
+     114: areturn
+     115: aload_1
+     116: monitorexit
+     117: goto          127
+     120: astore        4
+     122: aload_1
+     123: monitorexit
+     124: aload         4
+     126: athrow
+     127: getstatic     #318                // Field TYPE_PATTERN:Ljava/util/regex/Pattern;
+     130: aload_0
+     131: invokevirtual #164                // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+     134: astore_1
+     135: aload_1
+     136: invokevirtual #321                // Method java/util/regex/Matcher.matches:()Z
+     139: ifeq          168
+     142: new           #2                  // class org/apache/tika/mime/MediaType
+     145: dup
+     146: aload_1
+     147: iconst_1
+     148: invokevirtual #324                // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+     151: aload_1
+     152: iconst_2
+     153: invokevirtual #324                // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+     156: aload_1
+     157: iconst_3
+     158: invokevirtual #324                // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+     161: invokestatic  #328                // Method parseParameters:(Ljava/lang/String;)Ljava/util/Map;
+     164: invokespecial #200                // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+     167: areturn
+     168: getstatic     #330                // Field CHARSET_FIRST_PATTERN:Ljava/util/regex/Pattern;
+     171: aload_0
+     172: invokevirtual #164                // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+     175: astore_1
+     176: aload_1
+     177: invokevirtual #321                // Method java/util/regex/Matcher.matches:()Z
+     180: ifeq          209
+     183: new           #2                  // class org/apache/tika/mime/MediaType
+     186: dup
+     187: aload_1
+     188: iconst_2
+     189: invokevirtual #324                // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+     192: aload_1
+     193: iconst_3
+     194: invokevirtual #324                // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+     197: aload_1
+     198: iconst_1
+     199: invokevirtual #324                // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+     202: invokestatic  #328                // Method parseParameters:(Ljava/lang/String;)Ljava/util/Map;
+     205: invokespecial #200                // Method "<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+     208: areturn
+     209: aconst_null
+     210: areturn
+    Exception table:
+       from    to  target type
+          12    44   120   any
+          47   114   120   any
+         115   117   120   any
+         120   124   120   any
+    LineNumberTable:
+      line 247: 0
+      line 248: 4
+      line 252: 6
+      line 253: 12
+      line 254: 25
+      line 255: 29
+      line 256: 36
+      line 257: 41
+      line 258: 47
+      line 259: 64
+      line 260: 77
+      line 261: 86
+      line 262: 96
+      line 265: 107
+      line 266: 111
+      line 268: 115
+      line 271: 127
+      line 272: 135
+      line 273: 142
+      line 274: 158
+      line 273: 167
+      line 276: 168
+      line 277: 176
+      line 278: 183
+      line 279: 199
+      line 278: 208
+      line 282: 209
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         36      71     3 slash   I
+         25      90     2  type   Lorg/apache/tika/mime/MediaType;
+          0     211     0 string   Ljava/lang/String;
+        135      76     1 matcher   Ljava/util/regex/Matcher;
+
+  private static boolean isSimpleName(java.lang.String);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: aload_0
+       4: invokevirtual #77                 // Method java/lang/String.length:()I
+       7: if_icmpge     72
+      10: aload_0
+      11: iload_1
+      12: invokevirtual #210                // Method java/lang/String.charAt:(I)C
+      15: istore_2
+      16: iload_2
+      17: bipush        45
+      19: if_icmpeq     66
+      22: iload_2
+      23: bipush        43
+      25: if_icmpeq     66
+      28: iload_2
+      29: bipush        46
+      31: if_icmpeq     66
+      34: iload_2
+      35: bipush        95
+      37: if_icmpeq     66
+      40: bipush        48
+      42: iload_2
+      43: if_icmpgt     52
+      46: iload_2
+      47: bipush        57
+      49: if_icmple     66
+      52: bipush        97
+      54: iload_2
+      55: if_icmpgt     64
+      58: iload_2
+      59: bipush        122
+      61: if_icmple     66
+      64: iconst_0
+      65: ireturn
+      66: iinc          1, 1
+      69: goto          2
+      72: aload_0
+      73: invokevirtual #77                 // Method java/lang/String.length:()I
+      76: ifle          83
+      79: iconst_1
+      80: goto          84
+      83: iconst_0
+      84: ireturn
+    LineNumberTable:
+      line 286: 0
+      line 287: 10
+      line 288: 16
+      line 290: 64
+      line 286: 66
+      line 293: 72
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         16      50     2     c   C
+          2      70     1     i   I
+          0      85     0  name   Ljava/lang/String;
+
+  private static java.util.Map<java.lang.String, java.lang.String> parseParameters(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #338                // Method java/lang/String.isEmpty:()Z
+       4: ifeq          11
+       7: invokestatic  #91                 // Method java/util/Collections.emptyMap:()Ljava/util/Map;
+      10: areturn
+      11: new           #340                // class java/util/HashMap
+      14: dup
+      15: invokespecial #341                // Method java/util/HashMap."<init>":()V
+      18: astore_1
+      19: aload_0
+      20: invokevirtual #77                 // Method java/lang/String.length:()I
+      23: ifle          131
+      26: aload_0
+      27: astore_2
+      28: ldc_w         #343                // String
+      31: astore_3
+      32: aload_0
+      33: bipush        59
+      35: invokevirtual #310                // Method java/lang/String.indexOf:(I)I
+      38: istore        4
+      40: iload         4
+      42: iconst_m1
+      43: if_icmpeq     66
+      46: aload_0
+      47: iconst_0
+      48: iload         4
+      50: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      53: astore_2
+      54: aload_0
+      55: iload         4
+      57: iconst_1
+      58: iadd
+      59: invokevirtual #221                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      62: astore_0
+      63: goto          70
+      66: ldc_w         #343                // String
+      69: astore_0
+      70: aload_2
+      71: bipush        61
+      73: invokevirtual #310                // Method java/lang/String.indexOf:(I)I
+      76: istore        5
+      78: iload         5
+      80: iconst_m1
+      81: if_icmpeq     101
+      84: aload_2
+      85: iload         5
+      87: iconst_1
+      88: iadd
+      89: invokevirtual #221                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      92: astore_3
+      93: aload_2
+      94: iconst_0
+      95: iload         5
+      97: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+     100: astore_2
+     101: aload_2
+     102: invokevirtual #63                 // Method java/lang/String.trim:()Ljava/lang/String;
+     105: astore_2
+     106: aload_2
+     107: invokevirtual #77                 // Method java/lang/String.length:()I
+     110: ifle          128
+     113: aload_1
+     114: aload_2
+     115: aload_3
+     116: invokevirtual #63                 // Method java/lang/String.trim:()Ljava/lang/String;
+     119: invokestatic  #346                // Method unquote:(Ljava/lang/String;)Ljava/lang/String;
+     122: invokeinterface #316,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     127: pop
+     128: goto          19
+     131: aload_1
+     132: areturn
+    LineNumberTable:
+      line 297: 0
+      line 298: 7
+      line 304: 11
+      line 305: 19
+      line 306: 26
+      line 307: 28
+      line 309: 32
+      line 310: 40
+      line 311: 46
+      line 312: 54
+      line 314: 66
+      line 317: 70
+      line 318: 78
+      line 319: 84
+      line 320: 93
+      line 323: 101
+      line 324: 106
+      line 325: 113
+      line 327: 128
+      line 328: 131
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         28     100     2   key   Ljava/lang/String;
+         32      96     3 value   Ljava/lang/String;
+         40      88     4 semicolon   I
+         78      50     5 equals   I
+          0     133     0 string   Ljava/lang/String;
+         19     114     1 parameters   Ljava/util/Map;
+
+  private static java.lang.String unquote(java.lang.String);
+    Code:
+       0: aload_0
+       1: ldc_w         #349                // String \"
+       4: invokevirtual #352                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       7: ifne          20
+      10: aload_0
+      11: ldc_w         #354                // String \'
+      14: invokevirtual #352                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      17: ifeq          29
+      20: aload_0
+      21: iconst_1
+      22: invokevirtual #221                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      25: astore_0
+      26: goto          0
+      29: aload_0
+      30: ldc_w         #349                // String \"
+      33: invokevirtual #357                // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+      36: ifne          49
+      39: aload_0
+      40: ldc_w         #354                // String \'
+      43: invokevirtual #357                // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+      46: ifeq          64
+      49: aload_0
+      50: iconst_0
+      51: aload_0
+      52: invokevirtual #77                 // Method java/lang/String.length:()I
+      55: iconst_1
+      56: isub
+      57: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      60: astore_0
+      61: goto          29
+      64: aload_0
+      65: areturn
+    LineNumberTable:
+      line 339: 0
+      line 340: 20
+      line 342: 29
+      line 343: 49
+      line 345: 64
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      66     0     s   Ljava/lang/String;
+
+  private static java.util.Map<java.lang.String, java.lang.String> union(java.util.Map<java.lang.String, java.lang.String>, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokeinterface #85,  1           // InterfaceMethod java/util/Map.isEmpty:()Z
+       6: ifeq          11
+       9: aload_1
+      10: areturn
+      11: aload_1
+      12: invokeinterface #85,  1           // InterfaceMethod java/util/Map.isEmpty:()Z
+      17: ifeq          22
+      20: aload_0
+      21: areturn
+      22: new           #340                // class java/util/HashMap
+      25: dup
+      26: invokespecial #341                // Method java/util/HashMap."<init>":()V
+      29: astore_2
+      30: aload_2
+      31: aload_0
+      32: invokeinterface #363,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+      37: aload_2
+      38: aload_1
+      39: invokeinterface #363,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+      44: aload_2
+      45: areturn
+    LineNumberTable:
+      line 349: 0
+      line 350: 9
+      line 351: 11
+      line 352: 20
+      line 354: 22
+      line 355: 30
+      line 356: 37
+      line 357: 44
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         30      16     2 union   Ljava/util/Map;
+          0      46     0     a   Ljava/util/Map;
+          0      46     1     b   Ljava/util/Map;
+
+  public org.apache.tika.mime.MediaType getBaseType();
+    Code:
+       0: aload_0
+       1: getfield      #93                 // Field parameters:Ljava/util/Map;
+       4: invokeinterface #85,  1           // InterfaceMethod java/util/Map.isEmpty:()Z
+       9: ifeq          14
+      12: aload_0
+      13: areturn
+      14: aload_0
+      15: getfield      #107                // Field string:Ljava/lang/String;
+      18: iconst_0
+      19: aload_0
+      20: getfield      #81                 // Field semicolon:I
+      23: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      26: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+      29: areturn
+    LineNumberTable:
+      line 367: 0
+      line 368: 12
+      line 370: 14
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      30     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public java.lang.String getType();
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field string:Ljava/lang/String;
+       4: iconst_0
+       5: aload_0
+       6: getfield      #79                 // Field slash:I
+       9: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      12: areturn
+    LineNumberTable:
+      line 379: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      13     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public java.lang.String getSubtype();
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field string:Ljava/lang/String;
+       4: aload_0
+       5: getfield      #79                 // Field slash:I
+       8: iconst_1
+       9: iadd
+      10: aload_0
+      11: getfield      #81                 // Field semicolon:I
+      14: invokevirtual #214                // Method java/lang/String.substring:(II)Ljava/lang/String;
+      17: areturn
+    LineNumberTable:
+      line 387: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      18     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public boolean hasParameters();
+    Code:
+       0: aload_0
+       1: getfield      #93                 // Field parameters:Ljava/util/Map;
+       4: invokeinterface #85,  1           // InterfaceMethod java/util/Map.isEmpty:()Z
+       9: ifne          16
+      12: iconst_1
+      13: goto          17
+      16: iconst_0
+      17: ireturn
+    LineNumberTable:
+      line 398: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      18     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public java.util.Map<java.lang.String, java.lang.String> getParameters();
+    Code:
+       0: aload_0
+       1: getfield      #93                 // Field parameters:Ljava/util/Map;
+       4: areturn
+    LineNumberTable:
+      line 408: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field string:Ljava/lang/String;
+       4: areturn
+    LineNumberTable:
+      line 412: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_1
+       1: instanceof    #2                  // class org/apache/tika/mime/MediaType
+       4: ifeq          24
+       7: aload_1
+       8: checkcast     #2                  // class org/apache/tika/mime/MediaType
+      11: astore_2
+      12: aload_0
+      13: getfield      #107                // Field string:Ljava/lang/String;
+      16: aload_2
+      17: getfield      #107                // Field string:Ljava/lang/String;
+      20: invokevirtual #372                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      23: ireturn
+      24: iconst_0
+      25: ireturn
+    LineNumberTable:
+      line 416: 0
+      line 417: 7
+      line 418: 12
+      line 420: 24
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         12      12     2  that   Lorg/apache/tika/mime/MediaType;
+          0      26     0  this   Lorg/apache/tika/mime/MediaType;
+          0      26     1 object   Ljava/lang/Object;
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field string:Ljava/lang/String;
+       4: invokevirtual #378                // Method java/lang/String.hashCode:()I
+       7: ireturn
+    LineNumberTable:
+      line 425: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/apache/tika/mime/MediaType;
+
+  public int compareTo(org.apache.tika.mime.MediaType);
+    Code:
+       0: aload_0
+       1: getfield      #107                // Field string:Ljava/lang/String;
+       4: aload_1
+       5: getfield      #107                // Field string:Ljava/lang/String;
+       8: invokevirtual #383                // Method java/lang/String.compareTo:(Ljava/lang/String;)I
+      11: ireturn
+    LineNumberTable:
+      line 429: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      12     0  this   Lorg/apache/tika/mime/MediaType;
+          0      12     1  that   Lorg/apache/tika/mime/MediaType;
+
+  public int compareTo(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #2                  // class org/apache/tika/mime/MediaType
+       5: invokevirtual #386                // Method compareTo:(Lorg/apache/tika/mime/MediaType;)I
+       8: ireturn
+    LineNumberTable:
+      line 35: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       9     0  this   Lorg/apache/tika/mime/MediaType;
+
+  static {};
+    Code:
+       0: ldc           #2                  // class org/apache/tika/mime/MediaType
+       2: invokevirtual #392                // Method java/lang/Class.desiredAssertionStatus:()Z
+       5: ifne          12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: putstatic     #203                // Field $assertionsDisabled:Z
+      16: ldc_w         #394                // String [\\(\\)<>@,;:\\\\\"/\\[\\]\\?=]
+      19: invokestatic  #398                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      22: putstatic     #171                // Field SPECIAL:Ljava/util/regex/Pattern;
+      25: ldc_w         #400                // String [\\(\\)<>@,;:\\\\\"/\\[\\]\\?=\\s]
+      28: invokestatic  #398                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      31: putstatic     #158                // Field SPECIAL_OR_WHITESPACE:Ljava/util/regex/Pattern;
+      34: ldc_w         #402                // String (?s)\\s*([^\\c\\(\\)<>@,;:\\\\\"/\\[\\]\\?=\\s]+)\\s*/\\s*([^\\c\\(\\)<>@,;:\\\\\"/\\[\\]\\?=\\s]+)\\s*($|;.*)
+      37: invokestatic  #398                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      40: putstatic     #318                // Field TYPE_PATTERN:Ljava/util/regex/Pattern;
+      43: ldc_w         #404                // String (?is)\\s*(charset\\s*=\\s*[^\\c;\\s]+)\\s*;\\s*([^\\c\\(\\)<>@,;:\\\\\"/\\[\\]\\?=\\s]+)\\s*/\\s*([^\\c\\(\\)<>@,;:\\\\\"/\\[\\]\\?=\\s]+)\\s*
+      46: invokestatic  #398                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+      49: putstatic     #330                // Field CHARSET_FIRST_PATTERN:Ljava/util/regex/Pattern;
+      52: new           #340                // class java/util/HashMap
+      55: dup
+      56: invokespecial #341                // Method java/util/HashMap."<init>":()V
+      59: putstatic     #302                // Field SIMPLE_TYPES:Ljava/util/Map;
+      62: ldc_w         #406                // String application/octet-stream
+      65: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+      68: putstatic     #408                // Field OCTET_STREAM:Lorg/apache/tika/mime/MediaType;
+      71: ldc_w         #410                // String application/x-empty
+      74: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+      77: putstatic     #412                // Field EMPTY:Lorg/apache/tika/mime/MediaType;
+      80: ldc_w         #414                // String text/plain
+      83: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+      86: putstatic     #416                // Field TEXT_PLAIN:Lorg/apache/tika/mime/MediaType;
+      89: ldc_w         #418                // String text/html
+      92: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+      95: putstatic     #420                // Field TEXT_HTML:Lorg/apache/tika/mime/MediaType;
+      98: ldc_w         #422                // String application/xml
+     101: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+     104: putstatic     #424                // Field APPLICATION_XML:Lorg/apache/tika/mime/MediaType;
+     107: ldc_w         #426                // String application/zip
+     110: invokestatic  #260                // Method parse:(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;
+     113: putstatic     #428                // Field APPLICATION_ZIP:Lorg/apache/tika/mime/MediaType;
+     116: return
+    LineNumberTable:
+      line 35: 0
+      line 42: 16
+      line 44: 25
+      line 45: 28
+      line 52: 34
+      line 53: 37
+      line 56: 43
+      line 65: 52
+      line 67: 62
+      line 69: 71
+      line 71: 80
+      line 73: 89
+      line 75: 98
+      line 77: 107
+}

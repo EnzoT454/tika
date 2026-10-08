@@ -17,14 +17,11 @@
 package org.apache.tika.io;
 
 // Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
-// Exporte tel quel par ChatUniTest (compilait sans intervention).
-// 4 methode(s) de test desactivee(s) (@Disabled) car leur oracle est faux : elles echouent sur le code non mute.
+// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.junit.jupiter.api.Test;
 
 import org.apache.tika.utils.StringUtils;
 
@@ -65,36 +62,36 @@ public class FilenameUtils_getName_1_0_Test {
         assertEquals("somefilename", result);
     }
 
-    @Disabled("ChatUniTest : oracle faux - expected: <> but was: <report.pdf>")
+
     @Test
     public void testGetNameWithParentDirectory() throws Exception {
         String path = "/home/user/documents/../report.pdf";
         String result = invokePrivateMethod(FilenameUtils.class, "getName", path);
-        assertEquals(StringUtils.EMPTY, result);
+        assertEquals("report.pdf", result);
     }
 
-    @Disabled("ChatUniTest : oracle faux - expected: <> but was: <report.pdf>")
+
     @Test
     public void testGetNameWithCurrentDirectory() throws Exception {
         String path = "/home/user/documents/./report.pdf";
         String result = invokePrivateMethod(FilenameUtils.class, "getName", path);
-        assertEquals(StringUtils.EMPTY, result);
+        assertEquals("report.pdf", result);
     }
 
-    @Disabled("ChatUniTest : oracle faux - expected: <report.pdf> but was: <report?pdf>")
+
     @Test
     public void testGetNameWithReservedCharacters() throws Exception {
         String path = "/home/user/documents/report?pdf";
         String result = invokePrivateMethod(FilenameUtils.class, "getName", path);
-        assertEquals("report.pdf", result);
+        assertEquals("report?pdf", result);
     }
 
-    @Disabled("ChatUniTest : oracle faux - expected: <> but was: <.abcde>")
+
     @Test
     public void testGetNameWithASCIINumeric() throws Exception {
         String path = "/home/user/documents/.abcde";
         String result = invokePrivateMethod(FilenameUtils.class, "getName", path);
-        assertEquals(StringUtils.EMPTY, result);
+        assertEquals(".abcde", result);
     }
 
     @Test

@@ -17,33 +17,32 @@
 package org.apache.tika.io;
 
 // Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).
-// Exporte tel quel par ChatUniTest (compilait sans intervention).
-// 2 methode(s) de test desactivee(s) (@Disabled) car leur oracle est faux : elles echouent sur le code non mute.
+// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.junit.jupiter.api.Test;
+
 
 public class EndianUtils_getUShortBE_19_0_Test {
 
-    @Disabled("ChatUniTest : oracle faux - expected: <256> but was: <1>")
+
     @Test
     public void testGetUShortBE() {
         byte[] data = new byte[] { 0x00, 0x01 };
         int offset = 0;
-        int expected = 256;
+        int expected = 1;
         int result = EndianUtils.getUShortBE(data, offset);
         assertEquals(expected, result);
     }
 
-    @Disabled("ChatUniTest : oracle faux - expected: <256> but was: <0>")
+
     @Test
     public void testGetUShortBEWithOffset() {
         byte[] data = new byte[] { 0x01, 0x00, 0x00, 0x01 };
         int offset = 1;
-        int expected = 256;
+        int expected = 0;
         int result = EndianUtils.getUShortBE(data, offset);
         assertEquals(expected, result);
     }

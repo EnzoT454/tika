@@ -1,0 +1,20 @@
+{
+  "repeat_C_statuses": {
+    "KILLED": 396,
+    "SURVIVED": 7,
+    "NO_COVERAGE": 2,
+    "TIMED_OUT": 1
+  },
+  "same_status_for_all_406_mutants": true,
+  "status_changes": [],
+  "targeted_diagnostic_L257_status": "SURVIVED",
+  "full_C_L257_status": "KILLED",
+  "cause_of_context_discrepancy": "unresolved",
+  "original_A_B_C_archives_preserved": true,
+  "production_changed": false,
+  "accepted_tests_changed": false,
+  "ai_detections_linked": 132,
+  "ai_killing_tests_linked_and_found_in_B_xml": 32,
+  "remaining_mutants_documented": 10,
+  "production_and_accepted_sources_unchanged": true
+}

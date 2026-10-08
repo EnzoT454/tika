@@ -1,0 +1,51 @@
+### Verification des tests de la tache 2
+
+161 cas IA et 56 cas manuels reussis, aucun nouveau cas desactive.
+Suite core : 966 cas, 964 reussis, deux desactivations preexistantes.
+
+| Classe | Origine | Cas | Resultat |
+|---|---|---:|---|
+| EndianUtils_getIntBE_22_0_Test | ai | 4 | Reussis |
+| EndianUtils_getIntLE_20_0_Test | ai | 2 | Reussis |
+| EndianUtils_getIntLE_21_0_Test | ai | 1 | Reussis |
+| EndianUtils_getLongLE_28_0_Test | ai | 1 | Reussis |
+| EndianUtils_getShortBE_16_0_Test | ai | 4 | Reussis |
+| EndianUtils_getShortLE_13_0_Test | ai | 4 | Reussis |
+| EndianUtils_getUByte_30_0_Test | ai | 2 | Reussis |
+| EndianUtils_getUIntBE_26_0_Test | ai | 1 | Reussis |
+| EndianUtils_getUIntBE_27_0_Test | ai | 5 | Reussis |
+| EndianUtils_getUIntLE_24_0_Test | ai | 2 | Reussis |
+| EndianUtils_getUIntLE_25_0_Test | ai | 1 | Reussis |
+| EndianUtils_getUShortBE_18_0_Test | ai | 4 | Reussis |
+| EndianUtils_getUShortBE_19_0_Test | ai | 4 | Reussis |
+| EndianUtils_getUShortLE_14_0_Test | ai | 4 | Reussis |
+| EndianUtils_getUShortLE_15_0_Test | ai | 3 | Reussis |
+| EndianUtils_readIntBE_7_1_Test | ai | 3 | Reussis |
+| EndianUtils_readIntLE_6_1_Test | ai | 3 | Reussis |
+| EndianUtils_readLongBE_10_1_Test | ai | 1 | Reussis |
+| EndianUtils_readLongLE_9_1_Test | ai | 2 | Reussis |
+| EndianUtils_readShortBE_1_1_Test | ai | 4 | Reussis |
+| EndianUtils_readShortLE_0_1_Test | ai | 3 | Reussis |
+| EndianUtils_readUE7_11_0_Test | ai | 4 | Reussis |
+| EndianUtils_readUIntBE_5_1_Test | ai | 2 | Reussis |
+| EndianUtils_readUIntLE_4_1_Test | ai | 3 | Reussis |
+| EndianUtils_readUShortBE_3_1_Test | ai | 2 | Reussis |
+| EndianUtils_readUShortLE_2_1_Test | ai | 2 | Reussis |
+| EndianUtils_ubyteToInt_29_1_Test | ai | 5 | Reussis |
+| FilenameUtils_calculateExtension_10_1_Test | ai | 4 | Reussis |
+| FilenameUtils_getName_1_0_Test | ai | 11 | Reussis |
+| FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test | ai | 22 | Reussis |
+| FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test | ai | 5 | Reussis |
+| FilenameUtils_normalize_0_0_Test | ai | 1 | Reussis |
+| FilenameUtils_resolveWithin_5_0_Test | ai | 3 | Reussis |
+| MediaType_application_0_0_Test | ai | 4 | Reussis |
+| MediaType_equals_18_0_Test | ai | 2 | Reussis |
+| MediaType_hasParameters_15_0_Test | ai | 13 | Reussis |
+| MediaType_image_2_0_Test | ai | 5 | Reussis |
+| MediaType_parse_7_0_Test | ai | 13 | Reussis |
+| MediaType_toString_17_1_Test | ai | 1 | Reussis |
+| MediaType_video_4_0_Test | ai | 1 | Reussis |
+| EndianUtilsManualTest | manual | 28 | Reussis |
+| MediaTypeManualTest | manual | 12 | Reussis |
+| FilenameUtilsManualTest | manual | 16 | Reussis |
+

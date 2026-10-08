@@ -1,0 +1,133 @@
+{
+  "relative_links_checked": 27,
+  "missing_links": [],
+  "ai_detection_cases": 32,
+  "ai_new_killed": 132,
+  "states_checked": {
+    "A": {
+      "tests": 749,
+      "mutation_statuses": {
+        "NO_COVERAGE": 184,
+        "SURVIVED": 36,
+        "KILLED": 185,
+        "TIMED_OUT": 1
+      },
+      "jacoco_lines_branches": {
+        "org.apache.tika.mime.MediaType": {
+          "LINE": {
+            "covered": 125,
+            "missed": 30
+          },
+          "BRANCH": {
+            "covered": 67,
+            "missed": 23
+          }
+        },
+        "org.apache.tika.io.FilenameUtils": {
+          "LINE": {
+            "covered": 154,
+            "missed": 21
+          },
+          "BRANCH": {
+            "covered": 86,
+            "missed": 24
+          }
+        },
+        "org.apache.tika.io.EndianUtils": {
+          "LINE": {
+            "covered": 31,
+            "missed": 90
+          },
+          "BRANCH": {
+            "covered": 10,
+            "missed": 18
+          }
+        }
+      }
+    },
+    "B": {
+      "tests": 910,
+      "mutation_statuses": {
+        "NO_COVERAGE": 32,
+        "KILLED": 317,
+        "SURVIVED": 56,
+        "TIMED_OUT": 1
+      },
+      "jacoco_lines_branches": {
+        "org.apache.tika.mime.MediaType": {
+          "LINE": {
+            "covered": 131,
+            "missed": 24
+          },
+          "BRANCH": {
+            "covered": 72,
+            "missed": 18
+          }
+        },
+        "org.apache.tika.io.FilenameUtils": {
+          "LINE": {
+            "covered": 155,
+            "missed": 20
+          },
+          "BRANCH": {
+            "covered": 86,
+            "missed": 24
+          }
+        },
+        "org.apache.tika.io.EndianUtils": {
+          "LINE": {
+            "covered": 116,
+            "missed": 5
+          },
+          "BRANCH": {
+            "covered": 27,
+            "missed": 1
+          }
+        }
+      }
+    },
+    "C": {
+      "tests": 966,
+      "mutation_statuses": {
+        "KILLED": 396,
+        "SURVIVED": 7,
+        "NO_COVERAGE": 2,
+        "TIMED_OUT": 1
+      },
+      "jacoco_lines_branches": {
+        "org.apache.tika.mime.MediaType": {
+          "LINE": {
+            "covered": 155,
+            "missed": 0
+          },
+          "BRANCH": {
+            "covered": 84,
+            "missed": 6
+          }
+        },
+        "org.apache.tika.io.FilenameUtils": {
+          "LINE": {
+            "covered": 173,
+            "missed": 2
+          },
+          "BRANCH": {
+            "covered": 106,
+            "missed": 4
+          }
+        },
+        "org.apache.tika.io.EndianUtils": {
+          "LINE": {
+            "covered": 121,
+            "missed": 0
+          },
+          "BRANCH": {
+            "covered": 28,
+            "missed": 0
+          }
+        }
+      }
+    }
+  },
+  "markdown_tables": "consistent column counts",
+  "new_test_runs": "not needed: documentation only"
+}

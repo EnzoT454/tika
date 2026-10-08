@@ -1,0 +1,56 @@
+# IFT3913 - tache 2 : execution des tests originaux, generes (ChatUniTest) et manuels
+# des classes ciblees de tika-core, puis analyse de mutation avec pitest.
+name: IFT3913 tache 2 - tests et mutation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests-et-mutation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer le JDK 17 (version de reference de Tika)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Compiler tika-core et ses dependances (sans executer les tests)
+        run: >
+          ./mvnw -B -ntp -pl tika-core -am install -DskipTests
+          -Dossindex.skip -Drat.skip -Dcheckstyle.skip -Dforbiddenapis.skip -Dmaven.javadoc.skip
+
+      - name: Executer les tests des classes ciblees (originaux + ChatUniTest + manuels)
+        run: >
+          ./mvnw -B -ntp -pl tika-core test
+          -Dtest='EndianUtils*,MediaType*,FilenameUtils*'
+          -Dsurefire.failIfNoSpecifiedTests=false
+          -Dossindex.skip -Drat.skip -Dcheckstyle.skip -Dforbiddenapis.skip
+
+      - name: Analyse de mutation pitest (EndianUtils, MediaType, FilenameUtils)
+        run: >
+          ./mvnw -B -ntp -pl tika-core org.pitest:pitest-maven:mutationCoverage
+
+      - name: Resume du score de mutation
+        if: always()
+        run: |
+          echo "## Score de mutation (pitest)" >> "$GITHUB_STEP_SUMMARY"
+          for f in tika-core/target/pit-reports/index.html; do
+            [ -f "$f" ] && grep -o '<td>[0-9]*%' "$f" | head -3 | tr -d '<td>' | paste -sd' ' | sed 's/^/Couverture de lignes, score de mutation, force des tests : /' >> "$GITHUB_STEP_SUMMARY"
+          done
+
+      - name: Publier les rapports (surefire, JaCoCo, pitest)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapports-tache2
+          path: |
+            tika-core/target/surefire-reports
+            tika-core/target/site/jacoco
+            tika-core/target/pit-reports

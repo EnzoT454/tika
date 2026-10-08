@@ -14,6 +14,8 @@ dependency-reduced-pom.xml
 nbactions.xml
 nb-configuration.xml
 *.DS_Store
+# macOS AppleDouble files
+._*
 *.tmp-inception
 *.snap
 .*.swp
@@ -25,3 +27,6 @@ tika-grpc/ignite
 # Python bytecode (e.g. from .skills scripts)
 __pycache__/
 *.pyc
+
+# Local agent instructions
+AGENTS.md

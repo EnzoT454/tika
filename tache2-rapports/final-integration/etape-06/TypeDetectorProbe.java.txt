@@ -1,0 +1,1 @@
+public class TypeDetectorProbe { public static void main(String[] args) { new org.apache.tika.detect.TypeDetectorTest().testDetect(); System.out.println("TEST_DETECT_OK"); } }

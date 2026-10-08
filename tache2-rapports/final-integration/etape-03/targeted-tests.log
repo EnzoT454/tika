@@ -1,0 +1,127 @@
+[INFO] Maveniverse Nisse 0.9.4 loaded
+[INFO] Nisse injecting 23 properties into User Properties
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika-parent:pom:4.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /private/tmp/tika-final-step2-wbf90_na/tika-parent/pom.xml, line 34, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika:pom:4.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /private/tmp/tika-final-step2-wbf90_na/tika-parent/pom.xml, line 34, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] No need for inlining
+[INFO] 
+[INFO] ---------------------< org.apache.tika:tika-core >----------------------
+[INFO] Building Apache Tika core 4.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-cli) @ tika-core ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 113 source files with javac [debug deprecation release 17] to target/test-classes
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java:[296,37] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java:[304,37] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/parser/ParserDecoratorTest.java:[117,28] withFallbacks(java.util.Collection<? extends org.apache.tika.parser.Parser>,java.util.Set<org.apache.tika.mime.MediaType>) in org.apache.tika.parser.ParserDecorator has been deprecated
+[WARNING] /private/tmp/tika-final-step2-wbf90_na/tika-core/src/test/java/org/apache/tika/utils/ServiceLoaderUtilsTest.java:[45,48] org.apache.tika.detect.OverrideDetector in org.apache.tika.detect has been deprecated
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-cli) @ tika-core ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.980 s -- in org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_getUIntLE_25_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s -- in org.apache.tika.io.EndianUtils_readUShortBE_3_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readLongBE_10_1_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_readLongBE_10_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getShortLE_13_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.tika.io.EndianUtils_getShortLE_13_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getLongLE_28_0_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_getLongLE_28_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUIntLE_24_0_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_getUIntLE_24_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getIntBE_22_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.tika.io.EndianUtils_getIntBE_22_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readUE7_11_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.tika.io.EndianUtils_readUE7_11_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_readUShortLE_2_1_Test
+[INFO] Running org.apache.tika.io.FilenameUtils_normalize_0_0_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.FilenameUtils_normalize_0_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readLongLE_9_1_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in org.apache.tika.io.EndianUtils_readLongLE_9_1_Test
+[INFO] Running org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in org.apache.tika.io.FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test
+[INFO] Running org.apache.tika.io.FilenameUtils_calculateExtension_10_1_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.tika.io.FilenameUtils_calculateExtension_10_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getIntLE_21_0_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_getIntLE_21_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_readUIntBE_5_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.tika.io.EndianUtils_getUIntBE_27_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readIntLE_6_1_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.tika.io.EndianUtils_readIntLE_6_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_getUShortBE_18_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getShortBE_16_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_getShortBE_16_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_getUShortLE_15_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readShortLE_0_1_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_readShortLE_0_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_ubyteToInt_29_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_getUShortBE_19_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getIntLE_20_0_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.tika.io.EndianUtils_getIntLE_20_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.tika.io.EndianUtils_getUIntBE_26_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_getUShortLE_14_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readShortBE_1_1_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.tika.io.EndianUtils_readShortBE_1_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.tika.io.EndianUtils_readUIntLE_4_1_Test
+[INFO] Running org.apache.tika.io.FilenameUtils_resolveWithin_5_0_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s -- in org.apache.tika.io.FilenameUtils_resolveWithin_5_0_Test
+[INFO] Running org.apache.tika.io.EndianUtils_readIntBE_7_1_Test
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.io.EndianUtils_readIntBE_7_1_Test
+[INFO] Running org.apache.tika.io.EndianUtils_getUByte_30_0_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.io.EndianUtils_getUByte_30_0_Test
+[INFO] Running org.apache.tika.io.FilenameUtils_getName_1_0_Test
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.apache.tika.io.FilenameUtils_getName_1_0_Test
+[INFO] Running org.apache.tika.mime.MediaType_video_4_0_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in org.apache.tika.mime.MediaType_video_4_0_Test
+[INFO] Running org.apache.tika.mime.MediaType_parse_7_0_Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in org.apache.tika.mime.MediaType_parse_7_0_Test
+[INFO] Running org.apache.tika.mime.MediaType_toString_17_1_Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.mime.MediaType_toString_17_1_Test
+[INFO] Running org.apache.tika.mime.MediaType_image_2_0_Test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in org.apache.tika.mime.MediaType_image_2_0_Test
+[INFO] Running org.apache.tika.mime.MediaType_equals_18_0_Test
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in org.apache.tika.mime.MediaType_equals_18_0_Test
+[INFO] Running org.apache.tika.mime.MediaType_hasParameters_15_0_Test
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in org.apache.tika.mime.MediaType_hasParameters_15_0_Test
+[INFO] Running org.apache.tika.mime.MediaType_application_0_0_Test
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in org.apache.tika.mime.MediaType_application_0_0_Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 161, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.949 s
+[INFO] Finished at: 2026-10-08T10:08:32-04:00
+[INFO] ------------------------------------------------------------------------

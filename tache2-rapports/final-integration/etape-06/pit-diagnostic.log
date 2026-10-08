@@ -1,0 +1,208 @@
+[INFO] Maveniverse Nisse 0.9.4 loaded
+[INFO] Nisse injecting 23 properties into User Properties
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika-parent:pom:4.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /private/tmp/tika-final-build-zjp5qhxd/tika-parent/pom.xml, line 34, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika:pom:4.0.0-SNAPSHOT
+[WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /private/tmp/tika-final-build-zjp5qhxd/tika-parent/pom.xml, line 34, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] No need for inlining
+[INFO] 
+[INFO] ---------------------< org.apache.tika:tika-core >----------------------
+[INFO] Building Apache Tika core 4.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- pitest:1.30.0:mutationCoverage (default-cli) @ tika-core ---
+[INFO] Root dir is : /private/tmp/tika-final-build-zjp5qhxd
+[INFO] Found plugin : Default csv report plugin
+[INFO] Found plugin : Default xml report plugin
+[INFO] Found plugin : Log progress during mutation analysis
+[INFO] Found plugin : Default html report plugin
+[INFO] Found plugin : Static initializer code detector plugin
+[INFO] Found plugin : Excluded annotations plugin
+[INFO] Found plugin : Try with resources filter
+[INFO] Found plugin : Inlined finally block filter plugin
+[INFO] Found plugin : Implicit null check filter
+[INFO] Found plugin : Method reference null check filter
+[INFO] Found plugin : For each loop filter
+[INFO] Found plugin : Enum junk filter
+[INFO] Found plugin : Record junk mutation filter
+[INFO] Found plugin : String switch filter
+[INFO] Found plugin : Assertions filter
+[INFO] Found plugin : Enum switch filter
+[INFO] Found plugin : Logging calls filter
+[INFO] Found plugin : Infinite for loop filter
+[INFO] Found plugin : Long running iterator loop filter
+[INFO] Found plugin : For loop counter filter
+[INFO] Found plugin : Kotlin junk mutations filter
+[INFO] Found plugin : Groovy junk mutations filter
+[INFO] Found plugin : Max mutations per class limit
+[INFO] Found plugin : Equals shortcut equivalent mutant filter
+[INFO] Found plugin : Trivial return vals equivalence filter
+[INFO] Found plugin : Filters mutants with line number <= 1
+[INFO] Found plugin : Division by one equivalent mutant filter
+[INFO] Found plugin : Lombok junk mutations filter
+[INFO] Found plugin : Filter mutations to defensive wrappers such as unmodifiableCollection on return or field write
+[INFO] Found plugin : Final field null assignment equivalent mutant filter
+[INFO] Found plugin : Mutant export plugin
+[INFO] Found plugin : Auto add java.awt.headless=true to keep keyboard focus on Mac OS
+[INFO] Found plugin : Auto set number of threads based on machine
+[INFO] Found plugin : Automatically add -ea to launch args to enable assertions
+[INFO] Found plugin : Default build verifier
+[INFO] Found plugin : Detect missing JUnit5 plugin
+[INFO] Found plugin : Detect missing TestNG plugin
+[INFO] Found plugin : Detect missing kotlin plugin
+[INFO] Found plugin : Detect missing spring plugin
+[INFO] Found plugin : Default coverage exporter
+[INFO] Found plugin : Basic test statistics
+[INFO] Found shared classpath plugin : Default mutation engine
+[INFO] Found shared classpath plugin : JUnit 5 test framework support
+[INFO] Found shared classpath plugin : JUnit plugin
+[INFO] Found shared classpath plugin : Support for mocking frameworks using javassist
+[INFO] Found shared classpath plugin : Disable JaCoCo
+[INFO] Found shared classpath plugin : Normalise record attributes
+[INFO] Found shared classpath plugin : Reset environment for javassist
+[INFO] Available mutators : EXPERIMENTAL_ARGUMENT_PROPAGATION,FALSE_RETURNS,TRUE_RETURNS,CONDITIONALS_BOUNDARY,CONSTRUCTOR_CALLS,EMPTY_RETURNS,INCREMENTS,INLINE_CONSTS,INVERT_NEGS,MATH,NEGATE_CONDITIONALS,NON_VOID_METHOD_CALLS,NULL_RETURNS,PRIMITIVE_RETURNS,REMOVE_CONDITIONALS_EQUAL_IF,REMOVE_CONDITIONALS_EQUAL_ELSE,REMOVE_CONDITIONALS_ORDER_IF,REMOVE_CONDITIONALS_ORDER_ELSE,VOID_METHOD_CALLS,EXPERIMENTAL_BIG_DECIMAL,EXPERIMENTAL_BIG_INTEGER,EXPERIMENTAL_MEMBER_VARIABLE,EXPERIMENTAL_NAKED_RECEIVER,REMOVE_INCREMENTS,EXPERIMENTAL_SWITCH
+[INFO] Adding org.pitest:pitest-junit5-plugin to SUT classpath
+[INFO] Adding org.pitest:pitest to SUT classpath
+[INFO] Mutating from /private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes
+[INFO] Replacing properties in argLine -Xmx4g -Djava.awt.headless=true @{surefireArgLine}
+10 h 37 min 42 s PIT >> INFO : Project base directory is /private/tmp/tika-final-build-zjp5qhxd
+10 h 37 min 42 s PIT >> INFO : ---------------------------------------------------------------------------
+10 h 37 min 42 s PIT >> INFO : Enabled (+) and disabled (-) features.
+10 h 37 min 42 s PIT >> INFO : -----------------------------------------
+10 h 37 min 42 s PIT >> INFO : +auto_assertionsAutomatically add -ea to launch args to enable assertions
+10 h 37 min 42 s PIT >> INFO : +basic_test_statsBasic test statistics
+10 h 37 min 42 s PIT >> INFO : +defaultcoverageDefault coverage exporter
+10 h 37 min 42 s PIT >> INFO : +fann           Filters mutations in classes and methods with matching annotations of class or runtime retention
+10 h 37 min 42 s PIT >> INFO :   [annotation]    Annotation to avoid (full package name not required)
+10 h 37 min 42 s PIT >> INFO : +fassert        Filters mutations in compiler generated code for assertions
+10 h 37 min 42 s PIT >> INFO : +fenum          Filters junk mutations in enums
+10 h 37 min 42 s PIT >> INFO : +feswitch       Filters mutations in switch statements on enums
+10 h 37 min 42 s PIT >> INFO : +ffblock        Filters mutations in code duplicated by finally block inlining
+10 h 37 min 42 s PIT >> INFO : +ffeach         Filters mutations in compiler generated code that implements for each loops
+10 h 37 min 42 s PIT >> INFO : +ffloop         Filters any mutations to increments in for loops as they may cause timeouts
+10 h 37 min 42 s PIT >> INFO : +fgroovy        Filters out junk mutations in groovy code
+10 h 37 min 42 s PIT >> INFO : +finfinc        Filters mutations to increments that may cause infinite loops
+10 h 37 min 42 s PIT >> INFO : +finfit         Filters mutations that may cause infinite loops by removing calls to iterator.next
+10 h 37 min 42 s PIT >> INFO : +finull         Filters mutations in compiler generated code that checks for null by calling getClass
+10 h 37 min 42 s PIT >> INFO : +fkotlin        Filters out junk mutations in bytecode created by compiler for kotlin language features
+10 h 37 min 42 s PIT >> INFO : +flogcall       Filters mutations in code that makes calls to logging frameworks
+10 h 37 min 42 s PIT >> INFO : +fmrnull        Filters mutations in compiler generated code that inserts Objects.requireNonNull for method references
+10 h 37 min 42 s PIT >> INFO : +frecord        Filters mutations in compiler generated record code
+10 h 37 min 42 s PIT >> INFO : +fretequiv      Filters return vals mutants with bytecode equivalent to the unmutated class
+10 h 37 min 42 s PIT >> INFO : +fsequivdiv     Filters equivalent mutations of the form x * -1 -> x / -1
+10 h 37 min 42 s PIT >> INFO : +fsequivequals  Filters equivalent mutations that affect only performance in short cutting equals methods
+10 h 37 min 42 s PIT >> INFO : +fstati         Filters mutations in static initializers and code called only from them
+10 h 37 min 42 s PIT >> INFO : +fstrswitch     Filters mutations in compiler generated code for string switch statements
+10 h 37 min 42 s PIT >> INFO : +ftrywr         Filters mutations in code generated for try with resources statements
+10 h 37 min 42 s PIT >> INFO : +lombok         Filters out junk mutations generated by lombok
+10 h 37 min 42 s PIT >> INFO : +macos_focus    Auto add java.awt.headless=true to keep keyboard focus on Mac OS
+10 h 37 min 42 s PIT >> INFO : +nullfinals     Filters equivalent mutations to null final field assignments
+10 h 37 min 42 s PIT >> INFO : -auto_threads   Auto set number of threads based on machine
+10 h 37 min 42 s PIT >> INFO : -classlimit     Limits the maximum number of mutations per class
+10 h 37 min 42 s PIT >> INFO :   [limit]         Integer value for maximum mutations to create per class
+10 h 37 min 42 s PIT >> INFO : -export         Exports mutants bytecode and other details to disk
+10 h 37 min 42 s PIT >> INFO : -funmodifiablecollectionFilter mutations to defensive wrappers such as unmodifiableCollection on return or field write
+10 h 37 min 42 s PIT >> INFO : -nofirstline    Filters mutants with line number <= 1
+10 h 37 min 42 s PIT >> INFO : -progress       Log progress during mutation analysis
+10 h 37 min 42 s PIT >> INFO :   [interval]      Seconds between progress reports
+10 h 37 min 42 s PIT >> INFO : ---------------------------------------------------------------------------
+10 h 37 min 42 s PIT >> FINE : Running report with ReportOptions[mode=NORMAL, targetClasses=[org.apache.tika.mime.MediaType], excludedMethods=[], excludedClasses=[], excludedTestClasses=[], codePaths=[/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes], reportDir='/private/tmp/tika-step6-pit-diagnostic', historyInputLocation=null, historyOutputLocation=null, sourceDirs=[/private/tmp/tika-final-build-zjp5qhxd/tika-core/src/main/java, /private/tmp/tika-final-build-zjp5qhxd/tika-core/src/test/java], classPathElements=[/private/tmp/tika-final-build-zjp5qhxd/tika-core/target/test-classes, /private/tmp/tika-final-build-zjp5qhxd/tika-core/target/classes, /Users/hamzaaqel/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar, /Users/hamzaaqel/.m2/repository/commons-io/commons-io/2.22.0/commons-io-2.22.0.jar, /Users/hamzaaqel/.m2/repository/org/commonmark/commonmark/0.30.0/commonmark-0.30.0.jar, /Users/hamzaaqel/.m2/repository/org/commonmark/commonmark-ext-gfm-tables/0.30.0/commonmark-ext-gfm-tables-0.30.0.jar, /Users/hamzaaqel/.m2/repository/org/commonmark/commonmark-ext-gfm-strikethrough/0.30.0/commonmark-ext-gfm-strikethrough-0.30.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.compendium/5.0.0/org.osgi.compendium-5.0.0.jar, /Users/hamzaaqel/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/7.3.0/biz.aQute.bndlib-7.3.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.dto/1.0.0/org.osgi.dto-1.0.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.resource/1.0.0/org.osgi.resource-1.0.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.framework/1.8.0/org.osgi.framework-1.8.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.util.tracker/1.5.4/org.osgi.util.tracker-1.5.4.jar, /Users/hamzaaqel/.m2/repository/org/osgi/osgi.annotation/8.0.1/osgi.annotation-8.0.1.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.service.log/1.3.0/org.osgi.service.log-1.3.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.service.repository/1.1.0/org.osgi.service.repository-1.1.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.util.function/1.2.0/org.osgi.util.function-1.2.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.util.promise/1.3.0/org.osgi.util.promise-1.3.0.jar, /Users/hamzaaqel/.m2/repository/biz/aQute/bnd/biz.aQute.bnd.util/7.3.0/biz.aQute.bnd.util-7.3.0.jar, /Users/hamzaaqel/.m2/repository/org/osgi/org.osgi.service.serviceloader/1.0.0/org.osgi.service.serviceloader-1.0.0.jar, /Users/hamzaaqel/.m2/repository/org/apache/tika/tika-annotation-processor/4.0.0-SNAPSHOT/tika-annotation-processor-4.0.0-SNAPSHOT.jar, /Users/hamzaaqel/.m2/repository/com/google/guava/guava/33.6.0-jre/guava-33.6.0-jre.jar, /Users/hamzaaqel/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar, /Users/hamzaaqel/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, /Users/hamzaaqel/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar, /Users/hamzaaqel/.m2/repository/com/google/errorprone/error_prone_annotations/2.50.0/error_prone_annotations-2.50.0.jar, /Users/hamzaaqel/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar, /Users/hamzaaqel/.m2/repository/com/martensigwart/fakeload/0.7.0/fakeload-0.7.0.jar, /Users/hamzaaqel/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /Users/hamzaaqel/.m2/repository/org/apache/logging/log4j/log4j-core/2.26.1/log4j-core-2.26.1.jar, /Users/hamzaaqel/.m2/repository/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.jar, /Users/hamzaaqel/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.26.1/log4j-slf4j2-impl-2.26.1.jar, /Users/hamzaaqel/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.1.3/junit-jupiter-api-6.1.3.jar, /Users/hamzaaqel/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar, /Users/hamzaaqel/.m2/repository/org/junit/platform/junit-platform-commons/6.1.3/junit-platform-commons-6.1.3.jar, /Users/hamzaaqel/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar, /Users/hamzaaqel/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.1.3/junit-jupiter-engine-6.1.3.jar, /Users/hamzaaqel/.m2/repository/org/junit/platform/junit-platform-engine/6.1.3/junit-platform-engine-6.1.3.jar, /Users/hamzaaqel/.m2/repository/org/junit/platform/junit-platform-launcher/6.1.3/junit-platform-launcher-6.1.3.jar, /Users/hamzaaqel/.m2/repository/org/mockito/mockito-junit-jupiter/5.23.0/mockito-junit-jupiter-5.23.0.jar, /Users/hamzaaqel/.m2/repository/org/mockito/mockito-core/5.23.0/mockito-core-5.23.0.jar, /Users/hamzaaqel/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar, /Users/hamzaaqel/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar, /Users/hamzaaqel/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar, /Users/hamzaaqel/.m2/repository/org/pitest/pitest-junit5-plugin/1.2.3/pitest-junit5-plugin-1.2.3.jar, /Users/hamzaaqel/.m2/repository/org/pitest/pitest/1.30.0/pitest-1.30.0.jar], mutators=[NULL_RETURNS], features=[], jvmArgs=[-Xmx2g, -Djava.awt.headless=true, -ea, -Djava.awt.headless=true], argLine=-Xmx4g -Djava.awt.headless=true , numberOfThreads=2, timeoutFactor=1.25, timeoutConstant=4000, targetTests=[^org\.apache\.tika\.detect\.TypeDetectorTest$], loggingClasses=[], verbosity=VERBOSE, failWhenNoMutations=true, skipFailingTests=false, outputs=[HTML, XML], groupConfig=TestGroupConfig [excludedGroups=[], includedGroups=[]], fullMutationMatrix=false, mutationUnitSize=0, shouldCreateTimestampedReports=false, detectInlinedCode=true, exportLineCoverage=true, mutationThreshold=0, coverageThreshold=0, testStrengthThreshold=0, thresholdPrecision=0, mutationEngine='gregor', javaExecutable='null', includeLaunchClasspath=true, properties={}, maxSurvivors=0, excludedRunners=[], includedTestMethods=[], testPlugin='', projectBase=/private/tmp/tika-final-build-zjp5qhxd, inputEncoding=UTF-8, outputEncoding=UTF-8, reportCoverage=true, arcmutateMissing=true]
+10 h 37 min 42 s PIT >> FINE : System class path is /Users/hamzaaqel/.m2/wrapper/dists/apache-maven-3.9.12/6068d197/boot/plexus-classworlds-2.9.0.jar
+10 h 37 min 42 s PIT >> FINE : Maximum available memory is 2048 mb
+10 h 37 min 42 s PIT >> INFO : Created 1 mutation test units in pre scan
+10 h 37 min 42 s PIT >> FINE : MINION : Installing PIT agent
+10 h 37 min 42 s PIT >> INFO : Sending 1 test classes to minion
+10 h 37 min 42 s PIT >> INFO : Sent tests to minion
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> FINE : Expecting 1 tests classes from parent
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> FINE : Tests classes received
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> INFO : Checking environment
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> FINE : Gathering coverage for test Description [testClass=org.apache.tika.detect.TypeDetectorTest, name=[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> INFO : Found 1 tests
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> INFO : 1 tests discovered
+10 h 37 min 42 s PIT >> INFO : MINION : 10 h 37 min 42 s PIT >> INFO : All 1 tests were executed as part of discovery.
+/10 h 37 min 43 s PIT >> FINE : Coverage generator Minion exited ok
+10 h 37 min 43 s PIT >> INFO : Calculated coverage in 0 seconds.
+10 h 37 min 43 s PIT >> INFO : 0 tests took longer than 2000 ms
+10 h 37 min 43 s PIT >> INFO : Slowest test ([engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]) took 164 ms
+10 h 37 min 43 s PIT >> INFO : Largest test ([engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]) covered 168 blocks
+10 h 37 min 43 s PIT >> FINE : Used memory after coverage calculation 93 mb
+10 h 37 min 43 s PIT >> FINE : Free Memory after coverage calculation 76 mb
+10 h 37 min 43 s PIT >> INFO : Created 1 mutation test units
+10 h 37 min 43 s PIT >> FINE : Used memory before analysis start 98 mb
+10 h 37 min 43 s PIT >> FINE : Free Memory before analysis start 71 mb
+10 h 37 min 43 s PIT >> FINE : Running 1 units
+stdout  : Installing PIT agent
+stderr  : 10 h 37 min 43 s PIT >> FINE : Running mutation MutationDetails [id=MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[95], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator], filename=MediaType.java, block=[19], lineNumber=266, description=replaced return value with null for org/apache/tika/mime/MediaType::parse, testsInOrder=[org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]]
+stderr  : 10 h 37 min 43 s PIT >> FINE : mutating method parse
+stderr  : 10 h 37 min 43 s PIT >> FINE : 1 relevant test for parse
+stderr  : 10 h 37 min 43 s PIT >> FINE : replaced class with mutant in 7 ms
+stderr  : 10 h 37 min 43 s PIT >> FINE : Running 1 units
+stderr  : 10 h 37 min 43 s PIT >> FINE : Mutation MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[95], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator] detected = KILLED by [org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]
+stderr  : 10 h 37 min 43 s PIT >> FINE : processed mutation in 42 ms.
+stderr  : 10 h 37 min 43 s PIT >> FINE : Running mutation MutationDetails [id=MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[44], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator], filename=MediaType.java, block=[6], lineNumber=257, description=replaced return value with null for org/apache/tika/mime/MediaType::parse, testsInOrder=[org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]]
+10 h 37 min 43 s PIT >> FINE : MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[95], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator] KILLED by [org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]
+stderr  : 10 h 37 min 43 s PIT >> FINE : mutating method parse
+stderr  : 10 h 37 min 43 s PIT >> FINE : 1 relevant test for parse
+stderr  : 10 h 37 min 43 s PIT >> FINE : replaced class with mutant in 10 ms
+stderr  : 10 h 37 min 43 s PIT >> FINE : Running 1 units
+stderr  : 10 h 37 min 43 s PIT >> FINE : Mutation MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[44], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator] detected = SURVIVED
+stderr  : 10 h 37 min 43 s PIT >> FINE : processed mutation in 21 ms.
+stderr  : 10 h 37 min 43 s PIT >> FINE : Running mutation MutationDetails [id=MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[142], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator], filename=MediaType.java, block=[30], lineNumber=273, description=replaced return value with null for org/apache/tika/mime/MediaType::parse, testsInOrder=[org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]]
+10 h 37 min 43 s PIT >> FINE : MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[44], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator] SURVIVED
+stderr  : 10 h 37 min 43 s PIT >> FINE : mutating method parse
+stderr  : 10 h 37 min 43 s PIT >> FINE : 1 relevant test for parse
+stderr  : 10 h 37 min 43 s PIT >> FINE : replaced class with mutant in 10 ms
+stderr  : 10 h 37 min 43 s PIT >> FINE : Running 1 units
+stderr  : 10 h 37 min 43 s PIT >> FINE : Mutation MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[142], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator] detected = KILLED by [org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]
+stderr  : 10 h 37 min 43 s PIT >> FINE : processed mutation in 19 ms.
+10 h 37 min 43 s PIT >> FINE : MutationIdentifier [location=Location [clazz=org.apache.tika.mime.MediaType, method=parse, methodDesc=(Ljava/lang/String;)Lorg/apache/tika/mime/MediaType;], indexes=[142], mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator] KILLED by [org.apache.tika.detect.TypeDetectorTest.[engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]]
+10 h 37 min 43 s PIT >> FINE : Exit code was - OK
+10 h 37 min 43 s PIT >> FINE : Minion exited ok
+/10 h 37 min 43 s PIT >> INFO : Completed in 1 seconds
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 11 Killed 2 (18%)
+> KILLED 2 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 8 EQUIVALENT 0 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : < 1 second
+> coverage and dependency analysis : < 1 second
+> build mutation tests : < 1 second
+> run mutation analysis : < 1 second
+--------------------------------------------------------------------------------
+> Total  : 1 seconds
+--------------------------------------------------------------------------------
+> 0 tests took longer than 2000 ms
+> Slowest test ([engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]) took 164 ms
+> Largest test ([engine:junit-jupiter]/[class:org.apache.tika.detect.TypeDetectorTest]/[method:testDetect()]) covered 168 blocks
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage (for mutated classes only): 102/156 (65%)
+>> 1 tests examined
+>> Generated 11 mutations Killed 2 (18%)
+>> Mutations with no coverage 8. Test strength 67%
+>> Ran 3 tests (0.27 tests per mutation)
+Enhanced functionality available at https://www.arcmutate.com/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.701 s
+[INFO] Finished at: 2026-10-08T10:37:43-04:00
+[INFO] ------------------------------------------------------------------------

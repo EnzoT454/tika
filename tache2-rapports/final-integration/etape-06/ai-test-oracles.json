@@ -1,0 +1,431 @@
+[
+  {
+    "test": "EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithLargeNumber",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_27_0_Test.java",
+    "line": 58,
+    "data_and_expected_result": "Octets 00 FF FF FF ; entier non signé BE 0x00FFFFFFL.",
+    "method_source": "void testGetUIntBEWithLargeNumber() throws IOException, TikaException {\n        byte[] data = { (byte) 0x00, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF };\n        int offset = 0;\n        long result = EndianUtils.getUIntBE(data, offset);\n        assertEquals(0x00FFFFFFL, result);\n    }",
+    "assertions": [
+      "assertEquals(0x00FFFFFFL, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.exception.TikaException;\n\npublic class EndianUtils_getUIntBE_27_0_Test {\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "BE non signe : 00 FF FF FF = 16777215."
+  },
+  {
+    "test": "EndianUtils_getIntBE_22_0_Test#testGetIntBEWithOffset",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntBE_22_0_Test.java",
+    "line": 39,
+    "data_and_expected_result": "Tableau 01…08, offset 4 ; valeur BE 0x05060708.",
+    "method_source": "void testGetIntBEWithOffset() {\n        byte[] data = new byte[] { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };\n        int result = EndianUtils.getIntBE(data, 4);\n        assertEquals(0x05060708, result);\n    }",
+    "assertions": [
+      "assertEquals(0x05060708, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_getIntBE_22_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getUIntBE_27_0_Test#testGetUIntBEWithNegativeNumber",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntBE_27_0_Test.java",
+    "line": 41,
+    "data_and_expected_result": "Octets FF FF FF FF ; entier non signé 4294967295L.",
+    "method_source": "void testGetUIntBEWithNegativeNumber() throws IOException, TikaException {\n        byte[] data = { (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF };\n        int offset = 0;\n        long result = EndianUtils.getUIntBE(data, offset);\n        assertEquals(4294967295L, result);\n    }",
+    "assertions": [
+      "assertEquals(4294967295L, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.exception.TikaException;\n\npublic class EndianUtils_getUIntBE_27_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getIntLE_20_0_Test#testGetIntLE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_20_0_Test.java",
+    "line": 34,
+    "data_and_expected_result": "Octets 01 02 03 04 ; valeur LE 0x04030201 (appel direct ou réflexion).",
+    "method_source": "void testGetIntLE() throws IOException, TikaException {\n        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };\n        int result = EndianUtils.getIntLE(data);\n        assertEquals(0x04030201, result);\n    }",
+    "assertions": [
+      "assertEquals(0x04030201, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.exception.TikaException;\n\npublic class EndianUtils_getIntLE_20_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getIntLE_21_0_Test#testGetIntLE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getIntLE_21_0_Test.java",
+    "line": 33,
+    "data_and_expected_result": "Octets 01 02 03 04 ; valeur LE 0x04030201 (appel direct ou réflexion).",
+    "method_source": "void testGetIntLE() throws Exception {\n        EndianUtils endianness = new EndianUtils();\n        Method method = endianness.getClass().getDeclaredMethod(\"getIntLE\", byte[].class, int.class);\n        method.setAccessible(true);\n        byte[] data = new byte[4];\n        data[0] = (byte) 0x01;\n        data[1] = (byte) 0x02;\n        data[2] = (byte) 0x03;\n        data[3] = (byte) 0x04;\n        int result = (int) method.invoke(endianness, data, 0);\n        assertEquals(0x04030201, result);\n    }",
+    "assertions": [
+      "assertEquals(0x04030201, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.lang.reflect.Method;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_getIntLE_21_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getLongLE_28_0_Test#testGetLongLE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getLongLE_28_0_Test.java",
+    "line": 35,
+    "data_and_expected_result": "Octets 12 34 56 78 9A BC DE F0, offset 0 ; valeur LE 0xF0DEBC9A78563412L.",
+    "method_source": "void testGetLongLE() throws Exception {\n        EndianUtils endianUtils = new EndianUtils();\n        byte[] data = new byte[] { (byte) 0x12, (byte) 0x34, (byte) 0x56, (byte) 0x78, (byte) 0x9A, (byte) 0xBC, (byte) 0xDE, (byte) 0xF0 };\n        int offset = 0;\n        Method method = EndianUtils.class.getDeclaredMethod(\"getLongLE\", byte[].class, int.class);\n        method.setAccessible(true);\n        long result = (long) method.invoke(endianUtils, data, offset);\n        assertEquals(0xF0DEBC9A78563412L, result);\n    }",
+    "assertions": [
+      "assertEquals(0xF0DEBC9A78563412L, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.lang.reflect.Method;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_getLongLE_28_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getShortLE_13_0_Test#testGetShortLE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getShortLE_13_0_Test.java",
+    "line": 35,
+    "data_and_expected_result": "Octets 01 02, offset 0 ; short LE 0x0201.",
+    "method_source": "void testGetShortLE() throws IOException {\n        byte[] data = { 0x01, 0x02 };\n        int offset = 0;\n        short expected = 0x0201;\n        short result = EndianUtils.getShortLE(data, offset);\n        assertEquals(expected, result);\n    }",
+    "assertions": [
+      "assertEquals(expected, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.function.Executable;\n\n\npublic class EndianUtils_getShortLE_13_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getUByte_30_0_Test#testGetUByte",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUByte_30_0_Test.java",
+    "line": 33,
+    "data_and_expected_result": "Premier octet 01, offset 0 ; valeur non signée 1.",
+    "method_source": "void testGetUByte() throws IOException {\n        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };\n        int offset = 0;\n        short result = EndianUtils.getUByte(data, offset);\n        assertEquals(1, result);\n    }",
+    "assertions": [
+      "assertEquals(1, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_getUByte_30_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getUIntLE_24_0_Test#testGetUIntLEWithOffset",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUIntLE_24_0_Test.java",
+    "line": 41,
+    "data_and_expected_result": "Tableau 00 00 00 00 00 00 01 00, offset 4 ; valeur LE 0x00010000L.",
+    "method_source": "void testGetUIntLEWithOffset() throws IOException {\n        byte[] data = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00 };\n        long result = EndianUtils.getUIntLE(data, 4);\n        assertEquals(0x00010000L, result);\n    }",
+    "assertions": [
+      "assertEquals(0x00010000L, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_getUIntLE_24_0_Test {\n\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "LE a offset 4 : 00 00 01 00 = 65536."
+  },
+  {
+    "test": "EndianUtils_getUShortBE_18_0_Test#testGetUShortBE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortBE_18_0_Test.java",
+    "line": 32,
+    "data_and_expected_result": "Octets 01 02 ; entier BE non signé 258.",
+    "method_source": "void testGetUShortBE() {\n        byte[] data = new byte[] { 0x01, 0x02 };\n        int result = EndianUtils.getUShortBE(data);\n        assertEquals(258, result);\n    }",
+    "assertions": [
+      "assertEquals(258, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.function.Executable;\n\n\npublic class EndianUtils_getUShortBE_18_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_getUShortLE_14_0_Test#testGetUShortLE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_14_0_Test.java",
+    "line": 32,
+    "data_and_expected_result": "Octets 00 01 ; entier LE non signé 256.",
+    "method_source": "void testGetUShortLE() {\n            byte[] data = { 0x00, 0x01 };\n            int result = EndianUtils.getUShortLE(data);\n            assertEquals(0x0100, result);\n\n    }",
+    "assertions": [
+      "assertEquals(0x0100, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_getUShortLE_14_0_Test {\n\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "LE : octet de poids faible en premier ; retirer aussi le catch qui masque les exceptions."
+  },
+  {
+    "test": "EndianUtils_getUShortLE_15_0_Test#testGetUShortLEWithOffset",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_getUShortLE_15_0_Test.java",
+    "line": 40,
+    "data_and_expected_result": "Tableau 01…08, offset 2 ; entier LE 0x0403.",
+    "method_source": "void testGetUShortLEWithOffset() {\n        byte[] data = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };\n        int offset = 2;\n        int expected = 0x0403;\n        int result = EndianUtils.getUShortLE(data, offset);\n        assertEquals(expected, result);\n    }",
+    "assertions": [
+      "assertEquals(expected, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_getUShortLE_15_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readIntBE_7_1_Test#testReadIntBEWithPartialInput",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntBE_7_1_Test.java",
+    "line": 57,
+    "data_and_expected_result": "Mockito renvoie 01, 02, -1, 0 ; BufferUnderrunException obligatoire.",
+    "method_source": "void testReadIntBEWithPartialInput() throws IOException {\n        InputStream inputStream = Mockito.mock(InputStream.class);\n        when(inputStream.read()).thenReturn(0x01, 0x02, -1, 0);\n        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readIntBE(inputStream));\n    }",
+    "assertions": [
+      "assertThrows(BufferUnderrunException.class, () -> EndianUtils.readIntBE(inputStream))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (2) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n//   - exception verifiee BufferUnderrunException ajoutee a la clause throws de testReadIntBEWithValidInput\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.when;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mockito;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readIntBE_7_1_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readIntBE_7_1_Test#testReadIntBEWithNegativeInput",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntBE_7_1_Test.java",
+    "line": 51,
+    "data_and_expected_result": "Flux FF 00 00 00 ; int signé BE 0xFF000000.",
+    "method_source": "void testReadIntBEWithNegativeInput() throws IOException, BufferUnderrunException {\n        InputStream inputStream = new ByteArrayInputStream(new byte[] { -1, 0, 0, 0 });\n        assertEquals(0xFF000000, EndianUtils.readIntBE(inputStream));\n    }",
+    "assertions": [
+      "assertEquals(0xFF000000, EndianUtils.readIntBE(inputStream))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (2) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n//   - exception verifiee BufferUnderrunException ajoutee a la clause throws de testReadIntBEWithValidInput\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.when;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mockito;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readIntBE_7_1_Test {\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "ByteArrayInputStream.read renvoie 255 pour le byte -1 ; quatre octets disponibles, entier BE signe. Ajouter BufferUnderrunException a throws apres passage a un appel direct."
+  },
+  {
+    "test": "EndianUtils_readIntBE_7_1_Test#testReadIntBEWithValidInput",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntBE_7_1_Test.java",
+    "line": 43,
+    "data_and_expected_result": "Flux 01 02 03 04 ; int BE 0x01020304.",
+    "method_source": "void testReadIntBEWithValidInput() throws IOException, BufferUnderrunException {\n        InputStream inputStream = new ByteArrayInputStream(new byte[] { 0x01, 0x02, 0x03, 0x04 });\n        int result = EndianUtils.readIntBE(inputStream);\n        assertEquals(0x01020304, result);\n    }",
+    "assertions": [
+      "assertEquals(0x01020304, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (2) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n//   - exception verifiee BufferUnderrunException ajoutee a la clause throws de testReadIntBEWithValidInput\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.when;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mockito;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readIntBE_7_1_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readIntLE_6_1_Test#testReadIntLEValidInput",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readIntLE_6_1_Test.java",
+    "line": 54,
+    "data_and_expected_result": "Flux 12 34 56 78 ; int LE 0x78563412.",
+    "method_source": "void testReadIntLEValidInput() throws IOException, TikaException {\n        byte[] input = new byte[] { 0x12, 0x34, 0x56, 0x78 };\n        InputStream inputStream = new ByteArrayInputStream(input);\n        int result = endianUtils.readIntLE(inputStream);\n        Assertions.assertEquals(0x78563412, result);\n    }",
+    "assertions": [
+      "assertEquals(0x78563412, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.exception.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\n\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.AfterEach;\nimport org.junit.jupiter.api.Assertions;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.DisplayName;\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.exception.TikaException;\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\npublic class EndianUtils_readIntLE_6_1_Test {\n\n    private EndianUtils endianUtils;\n\n    @BeforeEach\n    public void setUp() {\n        endianUtils = new EndianUtils();\n    }\n\n    @AfterEach\n    public void tearDown() {\n        endianUtils = null;\n    }\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readLongBE_10_1_Test#testReadLongBE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongBE_10_1_Test.java",
+    "line": 38,
+    "data_and_expected_result": "Flux 01…08 → 0x0102030405060708L ; FF FE FD FC FB FA F9 F8 → 0xFFFEFDFCFBFAF9F8L ; quatre octets → underrun.",
+    "method_source": "void testReadLongBE() throws Exception {\n        // Test with valid input\n        byte[] input = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };\n        InputStream inputStream = new ByteArrayInputStream(input);\n        long result = EndianUtils.readLongBE(inputStream);\n        assertEquals(0x0102030405060708L, result);\n        // Test with negative input\n        input = new byte[] { (byte) 0xFF, (byte) 0xFE, (byte) 0xFD, (byte) 0xFC, (byte) 0xFB, (byte) 0xFA, (byte) 0xF9, (byte) 0xF8 };\n        inputStream = new ByteArrayInputStream(input);\n        result = EndianUtils.readLongBE(inputStream);\n        assertEquals(0xFFFEFDFCFBFAF9F8L, result);\n        // Test with buffer underrun\n        InputStream shortStream = new ByteArrayInputStream(new byte[] { 0x01, 0x02, 0x03, 0x04 });\n        Executable executable = () -> EndianUtils.readLongBE(shortStream);\n        assertThrows(BufferUnderrunException.class, executable);\n    }",
+    "assertions": [
+      "assertEquals(0x0102030405060708L, result)",
+      "assertEquals(0xFFFEFDFCFBFAF9F8L, result)",
+      "assertThrows(BufferUnderrunException.class, executable)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (2) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.function.Executable;\n\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\npublic class EndianUtils_readLongBE_10_1_Test {\n\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "Assemblage BE des huit octets FF FE FD FC FB FA F9 F8, sans changer les donnees."
+  },
+  {
+    "test": "EndianUtils_readLongLE_9_1_Test#testReadLongLE_WithBufferUnderrunException",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongLE_9_1_Test.java",
+    "line": 60,
+    "data_and_expected_result": "Mockito renvoie sept octets valides puis -1 ; underrun et huit lectures.",
+    "method_source": "void testReadLongLE_WithBufferUnderrunException() throws IOException {\n        // Mock the InputStream to return -1 (indicating end of stream)\n        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, -1);\n        // Call the method under test and assert that it throws BufferUnderrunException\n        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readLongLE(inputStream));\n        // Verify that read() was called exactly 8 times\n        verify(inputStream, times(8)).read();\n    }",
+    "assertions": [
+      "assertThrows(BufferUnderrunException.class, () -> EndianUtils.readLongLE(inputStream))",
+      "verify(inputStream, times(8))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.times;\nimport static org.mockito.Mockito.verify;\nimport static org.mockito.Mockito.when;\n\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.exception.TikaException;\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readLongLE_9_1_Test {\n\n    @Mock\n    private InputStream inputStream;\n\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readLongLE_9_1_Test#testReadLongLE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readLongLE_9_1_Test.java",
+    "line": 48,
+    "data_and_expected_result": "Mockito renvoie 12 34 56 78 9A BC DE F0 ; 0xF0DEBC9A78563412L et huit lectures.",
+    "method_source": "void testReadLongLE() throws IOException, TikaException {\n        // Mock the InputStream to return specific values\n        when(inputStream.read()).thenReturn(0x12, 0x34, 0x56, 0x78, 0x9A, 0xBC, 0xDE, 0xF0);\n        // Call the method under test\n        long result = EndianUtils.readLongLE(inputStream);\n        // Verify the result\n        assertEquals(0xF0DEBC9A78563412L, result);\n        // Verify that read() was called exactly 8 times\n        verify(inputStream, times(8)).read();\n    }",
+    "assertions": [
+      "assertEquals(0xF0DEBC9A78563412L, result)",
+      "verify(inputStream, times(8))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.times;\nimport static org.mockito.Mockito.verify;\nimport static org.mockito.Mockito.when;\n\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.exception.TikaException;\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readLongLE_9_1_Test {\n\n    @Mock\n    private InputStream inputStream;\n\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "Assemblage LE des huit octets 12 34 56 78 9A BC DE F0."
+  },
+  {
+    "test": "EndianUtils_readShortBE_1_1_Test#testReadShortBE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortBE_1_1_Test.java",
+    "line": 45,
+    "data_and_expected_result": "Mockito renvoie 12 34 puis -1 ; short BE 0x1234 sur les deux premières lectures.",
+    "method_source": "void testReadShortBE() throws IOException, BufferUnderrunException {\n        // Arrange\n        // Simulate reading 0x1234 and then end of stream\n        when(inputStream.read()).thenReturn(0x12, 0x34, -1);\n        EndianUtils endianUtils = new EndianUtils();\n        // Act and Assert\n        assertEquals((short) 0x1234, endianUtils.readShortBE(inputStream));\n    }",
+    "assertions": [
+      "assertEquals((short) 0x1234, endianUtils.readShortBE(inputStream))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.when;\n\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readShortBE_1_1_Test {\n\n    @Mock\n    private InputStream inputStream;\n\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "Deux octets suffisent pour un short BE ; le -1 apres les deux octets nest pas lu."
+  },
+  {
+    "test": "EndianUtils_readShortLE_0_1_Test#testReadShortLEWithNegativeBytes",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java",
+    "line": 54,
+    "data_and_expected_result": "Flux FF FE ; short LE signé 0xFEFF.",
+    "method_source": "void testReadShortLEWithNegativeBytes() throws IOException, BufferUnderrunException {\n        ByteArrayInputStream inputStream = new ByteArrayInputStream(new byte[] { -1, -2 });\n        assertEquals((short) 0xFEFF, EndianUtils.readShortLE(inputStream));\n    }",
+    "assertions": [
+      "assertEquals((short) 0xFEFF, EndianUtils.readShortLE(inputStream))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.exception.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.exception.TikaException;\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readShortLE_0_1_Test {\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "Bytes FF FE disponibles : short LE signe -257, sans underrun. Declaration de BufferUnderrunException necessaire pour lappel direct."
+  },
+  {
+    "test": "EndianUtils_readUE7_11_0_Test#testReadUE7_MultipleBytes",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUE7_11_0_Test.java",
+    "line": 45,
+    "data_and_expected_result": "Flux 81 00 ; (1 << 7) + 0 = 128L.",
+    "method_source": "void testReadUE7_MultipleBytes() throws IOException, TikaException {\n        EndianUtils endianUtils = new EndianUtils();\n        InputStream inputStream = new ByteArrayInputStream(new byte[] { (byte) 0x81, 0x00 });\n        long result = endianUtils.readUE7(inputStream);\n        assertEquals(128L, result);\n    }",
+    "assertions": [
+      "assertEquals(128L, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.exception.TikaException;\n\npublic class EndianUtils_readUE7_11_0_Test {\n\n    ",
+    "integration_decision": "corrected",
+    "correction_reason": "Format UE7 : (1 << 7) + 0 = 128."
+  },
+  {
+    "test": "EndianUtils_readShortBE_1_1_Test#testReadUShortBEWithEndOfStream",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortBE_1_1_Test.java",
+    "line": 79,
+    "data_and_expected_result": "Mockito renvoie 12 puis -1 ; underrun attendu.",
+    "method_source": "void testReadUShortBEWithEndOfStream() throws IOException, BufferUnderrunException {\n        // Arrange\n        // Simulate reading 0x12 and then end of stream\n        when(inputStream.read()).thenReturn(0x12, -1);\n        EndianUtils endianUtils = new EndianUtils();\n        // Act and Assert\n        assertThrows(BufferUnderrunException.class, () -> {\n            endianUtils.readUShortBE(inputStream);\n        });\n    }",
+    "assertions": [
+      "assertThrows(BufferUnderrunException.class, () -> {\n            endianUtils.readUShortBE(inputStream);\n        })"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.io.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.when;\n\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readShortBE_1_1_Test {\n\n    @Mock\n    private InputStream inputStream;\n\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readUShortBE_3_1_Test#testReadUShortBE",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readUShortBE_3_1_Test.java",
+    "line": 44,
+    "data_and_expected_result": "Flux 12 34 ; entier BE non signé 0x1234.",
+    "method_source": "void testReadUShortBE() throws IOException, TikaException {\n        // Arrange\n        byte[] data = { (byte) 0x12, (byte) 0x34 };\n        InputStream inputStream = new ByteArrayInputStream(data);\n        EndianUtils endianUtils = new EndianUtils();\n        // Act\n        int result = endianUtils.readUShortBE(inputStream);\n        // Assert\n        assertEquals(0x1234, result);\n    }",
+    "assertions": [
+      "assertEquals(0x1234, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Toutes les methodes de test reussissent sur le code non mute.\n// Corrections manuelles (1) :\n//   - import manquant ajoute : import org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\nimport static org.mockito.Mockito.mock;\nimport static org.mockito.Mockito.when;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.exception.TikaException;\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readUShortBE_3_1_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_readShortLE_0_1_Test#testReadShortLEWithBufferUnderrun",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_readShortLE_0_1_Test.java",
+    "line": 47,
+    "data_and_expected_result": "Flux contenant seulement 12 ; underrun attendu.",
+    "method_source": "void testReadShortLEWithBufferUnderrun() throws IOException {\n        ByteArrayInputStream inputStream = new ByteArrayInputStream(new byte[] { 0x12 });\n        assertThrows(BufferUnderrunException.class, () -> EndianUtils.readShortLE(inputStream));\n    }",
+    "assertions": [
+      "assertThrows(BufferUnderrunException.class, () -> EndianUtils.readShortLE(inputStream))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), derniere tentative, non compilable tel quel.\n// Corrections manuelles (1) :\n//   - import errone 'import org.apache.tika.exception.BufferUnderrunException;' remplace par 'import org.apache.tika.io.EndianUtils.BufferUnderrunException;'\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport org.apache.tika.exception.TikaException;\nimport org.apache.tika.io.EndianUtils.BufferUnderrunException;\n\n@ExtendWith(MockitoExtension.class)\npublic class EndianUtils_readShortLE_0_1_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "EndianUtils_ubyteToInt_29_1_Test#testUbyteToIntMax",
+    "source": "tika-core/src/test/java/org/apache/tika/io/EndianUtils_ubyteToInt_29_1_Test.java",
+    "line": 57,
+    "data_and_expected_result": "Conversion du byte 127 → entier 127 ; le flux local créé est inutilisé.",
+    "method_source": "void testUbyteToIntMax() throws IOException {\n        byte[] data = { 0x01, 0x02, 0x03, 0x04 };\n        ByteArrayInputStream inputStream = new ByteArrayInputStream(data);\n        int result = EndianUtils.ubyteToInt((byte) 127);\n        assertEquals(127, result);\n    }",
+    "assertions": [
+      "assertEquals(127, result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.io.ByteArrayInputStream;\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.Test;\n\n\npublic class EndianUtils_ubyteToInt_29_1_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test#testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndBackslash",
+    "source": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test.java",
+    "line": 149,
+    "data_and_expected_result": "RESOURCE_NAME_KEY seul = C:::/path/to/file.txt ; nom attendu file.txt.",
+    "method_source": "void testGetSanitizedEmbeddedFileName_withPathContainingColonAndColonAndColonAndBackslash() throws IOException {\n        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(\"C:::/path/to/file.txt\");\n        String result = filenameUtils.getSanitizedEmbeddedFileName(metadata, \"txt\", 10);\n        assertEquals(\"file.txt\", result);\n    }",
+    "assertions": [
+      "assertEquals(\"file.txt\", result)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention) lors de la seconde configuration :\n// contexte Ollama 16384, maxPromptTokens=10000, maxResponseTokens=2048 (2e tentative, tour 0).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertNull;\nimport static org.mockito.Mockito.mock;\nimport static org.mockito.Mockito.when;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.metadata.Metadata;\nimport org.apache.tika.metadata.TikaCoreProperties;\n\npublic class FilenameUtils_getSanitizedEmbeddedFileName_3_1_Test {\n\n    private FilenameUtils filenameUtils;\n\n    private Metadata metadata;\n\n    @BeforeEach\n    public void setUp() {\n        filenameUtils = new FilenameUtils();\n        metadata = mock(Metadata.class);\n    }\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test#testGetSanitizedEmbeddedFilePath_withReservedCharacters",
+    "source": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test.java",
+    "line": 103,
+    "data_and_expected_result": "EMBEDDED_RESOURCE_PATH = invalid:filename, autres propriétés null ; défaut test, maxLength 100 ; résultat non nul sans deux-points.",
+    "method_source": "void testGetSanitizedEmbeddedFilePath_withReservedCharacters() throws IOException {\n        when(metadata.get(TikaCoreProperties.EMBEDDED_RESOURCE_PATH)).thenReturn(\"invalid:filename\");\n        when(metadata.get(TikaCoreProperties.INTERNAL_PATH)).thenReturn(null);\n        when(metadata.get(TikaCoreProperties.RESOURCE_NAME_KEY)).thenReturn(null);\n        when(metadata.get(TikaCoreProperties.EMBEDDED_RELATIONSHIP_ID)).thenReturn(null);\n        when(metadata.get(TikaCoreProperties.ORIGINAL_RESOURCE_NAME)).thenReturn(null);\n        String result = filenameUtils.getSanitizedEmbeddedFilePath(metadata, defaultExtension, maxLength);\n        assertNotNull(result);\n        assertFalse(result.contains(\":\"));\n    }",
+    "assertions": [
+      "assertNotNull(result)",
+      "assertFalse(result.contains(\":\"))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertFalse;\nimport static org.junit.jupiter.api.Assertions.assertNotNull;\nimport static org.junit.jupiter.api.Assertions.assertNull;\nimport static org.junit.jupiter.api.Assertions.assertTrue;\nimport static org.mockito.Mockito.mock;\nimport static org.mockito.Mockito.when;\n\nimport java.io.IOException;\n\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\n\nimport org.apache.tika.metadata.Metadata;\nimport org.apache.tika.metadata.TikaCoreProperties;\n\npublic class FilenameUtils_getSanitizedEmbeddedFilePath_4_0_Test {\n\n    private FilenameUtils filenameUtils;\n\n    private Metadata metadata;\n\n    private String defaultExtension;\n\n    private int maxLength;\n\n    @BeforeEach\n    public void setUp() {\n        filenameUtils = new FilenameUtils();\n        metadata = mock(Metadata.class);\n        defaultExtension = \"test\";\n        maxLength = 100;\n    }\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "FilenameUtils_resolveWithin_5_0_Test#testResolveWithin",
+    "source": "tika-core/src/test/java/org/apache/tika/io/FilenameUtils_resolveWithin_5_0_Test.java",
+    "line": 48,
+    "data_and_expected_result": "Répertoire /tmp, enfant test.txt ; Path attendu /tmp/test.txt. Dépend de l’absence du fichier au moment de la mesure.",
+    "method_source": "void testResolveWithin() throws IOException {\n        Path dir = Paths.get(\"/tmp\");\n        Path resolved = filenameUtils.resolveWithin(dir, \"test.txt\");\n        assertEquals(Paths.get(\"/tmp/test.txt\"), resolved);\n    }",
+    "assertions": [
+      "assertEquals(Paths.get(\"/tmp/test.txt\"), resolved)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.io;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Compilait avant integration ; selection/corrections humaines tracees dans etape-03.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertThrows;\n\nimport java.io.IOException;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.MockitoAnnotations;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\n@ExtendWith(MockitoExtension.class)\npublic class FilenameUtils_resolveWithin_5_0_Test {\n\n    @InjectMocks\n    private FilenameUtils filenameUtils;\n\n    @BeforeEach\n    public void setUp() {\n        MockitoAnnotations.openMocks(this);\n    }\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "MediaType_equals_18_0_Test#testEqualsWithNull",
+    "source": "tika-core/src/test/java/org/apache/tika/mime/MediaType_equals_18_0_Test.java",
+    "line": 59,
+    "data_and_expected_result": "Fixture MediaType avec paramètre charset ; equals(null) doit être false.",
+    "method_source": "void testEqualsWithNull() {\n        assertFalse(mediaType.equals(null));\n    }",
+    "assertions": [
+      "assertFalse(mediaType.equals(null))"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.mime;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertFalse;\nimport static org.junit.jupiter.api.Assertions.assertTrue;\n\nimport java.util.Collections;\nimport java.util.HashMap;\nimport java.util.Map;\n\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\n@ExtendWith(MockitoExtension.class)\npublic class MediaType_equals_18_0_Test {\n\n    private MediaType mediaType;\n\n    @BeforeEach\n    public void setUp() {\n        Map<String, String> parameters = new HashMap<>();\n        parameters.put(\"charset\", \"UTF-8\");\n        mediaType = new MediaType(\"text/plain\", \"utf-8\", parameters);\n    }\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "MediaType_image_2_0_Test#testImageMethod",
+    "source": "tika-core/src/test/java/org/apache/tika/mime/MediaType_image_2_0_Test.java",
+    "line": 41,
+    "data_and_expected_result": "image/png sans puis avec charset=UTF-8 ; image(\"\") doit renvoyer null.",
+    "method_source": "void testImageMethod() {\n        // Test with a valid image type\n        MediaType mediaType = MediaType.image(\"png\");\n        assertEquals(\"image/png\", mediaType.toString());\n        assertEquals(\"image\", mediaType.getType());\n        assertEquals(\"png\", mediaType.getSubtype());\n        assertTrue(mediaType.getParameters().isEmpty());\n        // Test with a valid image type with parameters\n        Map<String, String> params = new HashMap<>();\n        params.put(\"charset\", \"UTF-8\");\n        MediaType mediaTypeWithParams = new MediaType(MediaType.image(\"png\"), params);\n        assertEquals(\"image/png; charset=UTF-8\", mediaTypeWithParams.toString());\n        assertEquals(\"image\", mediaTypeWithParams.getType());\n        assertEquals(\"png\", mediaTypeWithParams.getSubtype());\n        assertEquals(\"UTF-8\", mediaTypeWithParams.getParameters().get(\"charset\"));\n        // Test with an invalid image type\n        MediaType invalidMediaType = MediaType.image(\"\");\n        assertNull(invalidMediaType);\n    }",
+    "assertions": [
+      "assertEquals(\"image/png\", mediaType.toString())",
+      "assertEquals(\"image\", mediaType.getType())",
+      "assertEquals(\"png\", mediaType.getSubtype())",
+      "assertTrue(mediaType.getParameters().isEmpty())",
+      "assertEquals(\"image/png; charset=UTF-8\", mediaTypeWithParams.toString())",
+      "assertEquals(\"image\", mediaTypeWithParams.getType())",
+      "assertEquals(\"png\", mediaTypeWithParams.getSubtype())",
+      "assertEquals(\"UTF-8\", mediaTypeWithParams.getParameters().get(\"charset\"))",
+      "assertNull(invalidMediaType)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.mime;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama), tentative 0 (la tentative 1 etait inexploitable), non compilable tel quel.\n// Corrections manuelles (2) :\n//   - appel a une surcharge inexistante MediaType.image(String, Map) (API hallucinee) remplace par new MediaType(MediaType.image(\"png\"), params) (2 occurrences)\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.junit.jupiter.api.Assertions.assertNull;\nimport static org.junit.jupiter.api.Assertions.assertTrue;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\nimport org.junit.jupiter.api.MethodOrderer;\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.TestMethodOrder;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\n@TestMethodOrder(MethodOrderer.OrderAnnotation.class)\n@ExtendWith(MockitoExtension.class)\npublic class MediaType_image_2_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  },
+  {
+    "test": "MediaType_video_4_0_Test#testVideoMethod",
+    "source": "tika-core/src/test/java/org/apache/tika/mime/MediaType_video_4_0_Test.java",
+    "line": 35,
+    "data_and_expected_result": "video(mp4) doit égaler new MediaType(\"video\", \"mp4\", emptyMap).",
+    "method_source": "void testVideoMethod() {\n        // Arrange\n        String type = \"mp4\";\n        MediaType expectedMediaType = new MediaType(\"video\", type, Collections.emptyMap());\n        // Act\n        MediaType actualMediaType = MediaType.video(type);\n        // Assert\n        assertEquals(expectedMediaType, actualMediaType);\n    }",
+    "assertions": [
+      "assertEquals(expectedMediaType, actualMediaType)"
+    ],
+    "fixture_context": "/*\n * Licensed to the Apache Software Foundation (ASF) under one or more\n * contributor license agreements.  See the NOTICE file distributed with\n * this work for additional information regarding copyright ownership.\n * The ASF licenses this file to You under the Apache License, Version 2.0\n * (the \"License\"); you may not use this file except in compliance with\n * the License.  You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\npackage org.apache.tika.mime;\n\n// Test genere par ChatUniTest 2.1.1 (qwen2.5-coder:7b via Ollama).\n// Exporte tel quel par ChatUniTest (compilait sans intervention).\n// Toutes les methodes de test reussissent sur le code non mute.\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\n\nimport java.util.Collections;\n\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\n@ExtendWith(MockitoExtension.class)\npublic class MediaType_video_4_0_Test {\n\n    ",
+    "integration_decision": "accepted_unchanged",
+    "correction_reason": "Cas actif herite, assertions conservees ; execution a verifier."
+  }
+]

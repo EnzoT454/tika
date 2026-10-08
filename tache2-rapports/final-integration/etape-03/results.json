@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-08",
+  "branch": "tache2-final",
+  "base_commit": "619ff28473dbbc342c787bd9c0cb2a6e378818c9",
+  "decisions": {
+    "accepted_unchanged": 134,
+    "rejected": 32,
+    "corrected": 27
+  },
+  "generated_tests": {
+    "tests": 161,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "full_tika_core": {
+    "tests": 966,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2
+  },
+  "passed_full": 964,
+  "full_build_validated": false,
+  "pit_rerun": false,
+  "java": "17.0.18",
+  "maven": "3.9.12",
+  "initial_generated_files": 49,
+  "accepted_generated_files": 40
+}
