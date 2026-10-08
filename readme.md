@@ -17,7 +17,7 @@ Nous avons d’abord travaillé sur deux branches, puis regroupé les éléments
 
 | Contribution | Travail réalisé |
 |---|---|
-| Saidana — `tache2-saidana` | Étude des trois classes retenues, génération avec ChatUniTest et Qwen 7B, archivage des tentatives et premières corrections de compilation, 55 tests manuels et première version du rapport. |
+| Mohamed — `tache2-saidana` | Étude des trois classes retenues, génération avec ChatUniTest et Qwen 7B, archivage des tentatives et premières corrections de compilation, 55 tests manuels et première version du rapport. |
 | Hamza — `tache2-hamza` | Expériences sur `FilenameUtils` et `LookaheadInputStream`, protocole de reproduction, vérification des tests en CI et test de rejet d’un lien symbolique qui sort du répertoire autorisé. |
 | Intégration sur `tache2-final` | Sélection des tests complémentaires, tri des candidats IA et corrections d’oracles, harmonisation Maven/PIT, nouvelles mesures A/B/C, revue des mutants, adaptation du vérificateur CI et consolidation du rapport. |
 
