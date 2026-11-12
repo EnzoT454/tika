@@ -1,0 +1,38 @@
+{
+  "local_cases": 3,
+  "detector_cases": 9,
+  "ascii_frames": 6,
+  "github_actions_run_executed": false,
+  "github_if_condition_executed_by_runner": false,
+  "prior_stage6_files_verified": 1558,
+  "production_java_files_unchanged": 682,
+  "semgrep_job_dependency_preserved": true,
+  "first_attempt": "sandbox prevented Maven parent install; not a test failure",
+  "baseline": "initial 658-file construction snapshot; no seven injections",
+  "case_summary": [
+    {
+      "case": "passed",
+      "maven_exit_code": 0,
+      "detector_exit_code": 0,
+      "rickroll_invoked": false,
+      "action_exit_code": null,
+      "preserved_build_exit_code": 0
+    },
+    {
+      "case": "junit-failed",
+      "maven_exit_code": 1,
+      "detector_exit_code": 0,
+      "rickroll_invoked": true,
+      "action_exit_code": 0,
+      "preserved_build_exit_code": 1
+    },
+    {
+      "case": "compile-failed",
+      "maven_exit_code": 1,
+      "detector_exit_code": 0,
+      "rickroll_invoked": false,
+      "action_exit_code": null,
+      "preserved_build_exit_code": 1
+    }
+  ]
+}

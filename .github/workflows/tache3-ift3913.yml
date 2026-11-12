@@ -61,10 +61,21 @@ jobs:
           java-version: '17'
           cache: maven
       - name: Construire et tester tika-core et ses dependances
+        id: build
         shell: bash
         run: |
           set -euo pipefail
+          python3 .github/scripts/tache3-test-status.py --start
           ./mvnw -B -ntp -pl tika-core -am clean install 2>&1 | tee tache3-build.log
+      - name: Identifier les echecs JUnit du build courant
+        id: tests
+        if: ${{ always() && (steps.build.outcome == 'success' || steps.build.outcome == 'failure') }}
+        env:
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+        run: python3 .github/scripts/tache3-test-status.py --build-outcome "$BUILD_OUTCOME"
+      - name: Rickroll apres un cas JUnit echoue
+        if: ${{ always() && !cancelled() && steps.tests.outputs.has_failures == 'true' }}
+        uses: ./.github/actions/rickroll
       - name: Conserver les resultats de construction
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
@@ -74,6 +85,7 @@ jobs:
           if-no-files-found: error
           path: |
             tache3-build.log
+            tache3-test-state/
             tika-core/target/surefire-reports/
             tika-core/target/checkstyle-result.xml
             tika-annotation-processor/target/surefire-reports/

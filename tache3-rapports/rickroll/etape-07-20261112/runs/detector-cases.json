@@ -1,0 +1,134 @@
+[
+  {
+    "case": "assertion-failed",
+    "validated": true,
+    "result": {
+      "status": "test_failure",
+      "build_outcome": "failure",
+      "has_failures": true,
+      "totals": {
+        "tests": 2,
+        "failures": 2,
+        "errors": 0,
+        "skipped": 0
+      },
+      "reports": [
+        "tika-annotation-processor/target/surefire-reports/TEST-fixture.xml",
+        "tika-core/target/surefire-reports/TEST-fixture.xml"
+      ],
+      "stale_reports_ignored": []
+    }
+  },
+  {
+    "case": "test-error",
+    "validated": true,
+    "result": {
+      "status": "test_failure",
+      "build_outcome": "failure",
+      "has_failures": true,
+      "totals": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 2,
+        "skipped": 0
+      },
+      "reports": [
+        "tika-annotation-processor/target/surefire-reports/TEST-fixture.xml",
+        "tika-core/target/surefire-reports/TEST-fixture.xml"
+      ],
+      "stale_reports_ignored": []
+    }
+  },
+  {
+    "case": "passed",
+    "validated": true,
+    "result": {
+      "status": "passed",
+      "build_outcome": "success",
+      "has_failures": false,
+      "totals": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "reports": [
+        "tika-annotation-processor/target/surefire-reports/TEST-fixture.xml",
+        "tika-core/target/surefire-reports/TEST-fixture.xml"
+      ],
+      "stale_reports_ignored": []
+    }
+  },
+  {
+    "case": "skipped",
+    "validated": true,
+    "result": {
+      "status": "passed",
+      "build_outcome": "success",
+      "has_failures": false,
+      "totals": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      },
+      "reports": [
+        "tika-annotation-processor/target/surefire-reports/TEST-fixture.xml",
+        "tika-core/target/surefire-reports/TEST-fixture.xml"
+      ],
+      "stale_reports_ignored": []
+    }
+  },
+  {
+    "case": "stale-failure",
+    "validated": true,
+    "result": {
+      "status": "build_failure_without_failed_test",
+      "build_outcome": "failure",
+      "has_failures": false,
+      "totals": {
+        "tests": 0,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "reports": [],
+      "stale_reports_ignored": [
+        "tika-annotation-processor/target/surefire-reports/TEST-fixture.xml",
+        "tika-core/target/surefire-reports/TEST-fixture.xml"
+      ]
+    }
+  },
+  {
+    "case": "compile-no-report",
+    "validated": true,
+    "result": {
+      "status": "build_failure_without_failed_test",
+      "build_outcome": "failure",
+      "has_failures": false,
+      "totals": {
+        "tests": 0,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "reports": [],
+      "stale_reports_ignored": []
+    }
+  },
+  {
+    "case": "success-no-report",
+    "validated": true,
+    "expected_technical_error": "Build annonce reussi mais rapports absents ou tests echoues"
+  },
+  {
+    "case": "malformed-report",
+    "validated": true,
+    "expected_technical_error": "unclosed token: line 1, column 0"
+  },
+  {
+    "case": "counter-mismatch",
+    "validated": true,
+    "expected_technical_error": "Compteur Surefire incoherent : tika-annotation-processor/target/surefire-reports/TEST-fixture.xml"
+  }
+]

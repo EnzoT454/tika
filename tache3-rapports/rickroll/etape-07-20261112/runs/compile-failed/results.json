@@ -1,0 +1,24 @@
+{
+  "case": "compile-failed",
+  "maven_exit_code": 1,
+  "detector_exit_code": 0,
+  "rickroll_invoked": false,
+  "action_exit_code": null,
+  "preserved_build_exit_code": 1,
+  "state": {
+    "status": "build_failure_without_failed_test",
+    "build_outcome": "failure",
+    "has_failures": false,
+    "totals": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "reports": [
+      "tika-annotation-processor/target/surefire-reports/TEST-org.apache.tika.annotation.KebabCaseConverterTest.xml"
+    ],
+    "stale_reports_ignored": []
+  },
+  "github_runner_executed": false
+}

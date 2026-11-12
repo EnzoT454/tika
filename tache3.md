@@ -205,7 +205,7 @@ Estimation indicative : 20 à 35 heures cumulées pour le binôme, à adapter ap
 - [x] Sept modifications pédagogiques distinctes présentes, détectées et décrites ; sept builds validés et preuves consolidées.
 - [ ] Validation comportementale V6 complète : réserve conservée, acceptée pour poursuivre ; aucun ReDoS démontré ni run GitHub des sept états enregistré.
 - [x] Étape 6 du suivi : rapports avant/après, comparaison finale et matrice archivés avec limites explicites.
-- [ ] Action humoristique validée.
+- [x] Action humoristique rétro implémentée et validée localement ; invocation GitHub encore à confirmer après autorisation.
 - [x] Runs GitHub de démonstration obtenus et archivés après autorisation ; runs des sept injections et du rickroll encore à faire.
 - [ ] Rapport final consolidé et usage de l'IA déclaré.
 - [ ] Remise effectuée après autorisation.
@@ -249,3 +249,11 @@ Sur décision utilisateur, le projet poursuit sa réalisation avec la réserve V
 La matrice sépare les réussites locales/CI antérieures, les limites et les cas non exécutés. V6 reste une détection INFO confirmée et compilée, sans démonstration ReDoS ; aucun résultat positif n'est inventé à partir du marqueur réservé. Les sept builds existants réussissent, mais aucun nouveau run intégré du contrôleur ou GitHub des sept états n'est revendiqué. Les copies brutes, sources, configurations et empreintes sont conservées dans le dossier de comparaison ; les anciens guides sont figés avant actualisation.
 
 Aucune source Java, nouvelle vulnérabilité ou sonde n'a été créée/modifiée/exécutée au titre de cette étape. Aucun commit, push, PR ou publication. **Prochaine étape du suivi : 7 — action réutilisable de rickroll**, déclenchée après un échec de test Tika en préservant le statut d'échec ; elle n'est pas implémentée ici. Le rapport final `readme.md` reste à rédiger ultérieurement.
+
+### Étape 7 du suivi — rickroll rétro validé localement, 12 novembre 2026
+
+L'utilisateur a choisi le danseur ASCII animé. L'action composite `.github/actions/rickroll` appelle `ift3913-rickroll.sh` : six poses successives, message humoristique, lien YouTube et aperçu dans le résumé. Aucun téléchargement ni lecture vidéo automatique. Le workflow l'invoque via `uses` uniquement lorsque les nouveaux rapports Surefire contiennent un véritable cas JUnit échoué ; les rapports anciens et erreurs techniques sont distingués.
+
+Les [preuves locales](tache3-rapports/rickroll/etape-07-20261112/README.md) confirment trois cas sur une copie de référence sans injections : tests réussis → aucun rickroll/code 0 ; échec JUnit volontaire → six poses/code Maven 1 conservé ; erreur de compilation → aucun rickroll/code 1 conservé. Neuf cas ciblés du détecteur réussissent aussi. Les fixtures sont archivées hors de la suite normale et les sources du worktree sont inchangées. Une première tentative bloquée par le cache Maven est conservée séparément ; la relance autorisée réussit.
+
+L'étape Maven reste rouge sans `continue-on-error` ; l'action retourne 0 pour son affichage et ne masque pas l'échec. Semgrep reste un préalable de construction. Le moteur GitHub et l'invocation distante de cette nouvelle action restent à valider après autorisation de publication, sur un état de référence permettant d'atteindre les tests. Aucun commit, push, PR ou publication. Prochaine étape : validation GitHub, puis rapport final.
