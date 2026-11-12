@@ -1,0 +1,14 @@
+{
+  "source-manifest.json": "b80f5c04bab1dc83b3cc0241917cf53a87a8c9c4ad10d179fb52a7b71c047194",
+  "preparation-summary.json": "c9f2985c57a3ca42403bcb19166e3b1014d93254ce87e1ac48066ee2b4e1f036",
+  "sources.tar.gz": "c0f68e875f22491367ee21bd53e303e95d77e88a424d6c38b033accfb379cde2",
+  "commands.md": "5620be097eca4b2d309f54411fa97f0ccba49a4ed0d017d0a9411804fc5bb2cf",
+  "build-attempt-01.log": "7336ec4e90e0ae98e1a3ebd859df827c7e634dd30ccd304d36649223cfc19a3b",
+  "maven-version.txt": "93f12c4976dbfe3da74ab0cc4c7048e7fa57dbf403ee561c66ee4052aeac58a4",
+  "results.json": "b789c9ecbccb1d8e9ce4dfb453e38784f8625f77f7e763d88602c53923908305",
+  "build-attempt-02.log": "db8cfba0ed799b5927e49753d4f7512957b3539dfd389bff5d95c99d22725228",
+  "java-version.txt": "3da1aeb6805f4a2afa33b81896052d034dc4d28ddea19f580db76c803beaaf2e",
+  "reference.json": "cffe25be4c9cd432f5972468b2fe0586cb28952f30bdc257a53927509b7330b5",
+  "reports.tar.gz": "6a0323747dbfb986f6eac686456a2f995a4434248cc90721548a5cb114bb92fa",
+  "prepare-local-build.py": "34508ab0253ef6f835f6703f07c850668aebd34a7abd26a2002c55e4c6ace154"
+}

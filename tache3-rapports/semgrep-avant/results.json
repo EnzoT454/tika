@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-11-10T17:19:20.245019+00:00",
+  "branch": "tache3",
+  "base_commit": "62ff2e9b180817f4b38108c4e90ffa05348c5a4d",
+  "engine": "Semgrep Community Edition / OSS",
+  "semgrep_version": "1.185.0",
+  "python_version": "3.11.15",
+  "exit_code": 0,
+  "rules_count": 82,
+  "rules_revision": "a5ad1714f00c9f7fde980cab0ea1d6dc6d414fd2",
+  "expected_java_files": 682,
+  "scanned_java_files": 682,
+  "errors": [],
+  "skipped_rules": [],
+  "findings": 17,
+  "by_rule": {
+    "unsafe-reflection": 7,
+    "command-injection-process-builder": 7,
+    "saxparserfactory-disallow-doctype-decl-missing": 1,
+    "unencrypted-socket": 1,
+    "xmlinputfactory-possible-xxe": 1
+  },
+  "by_severity": {
+    "WARNING": 9,
+    "ERROR": 8
+  },
+  "by_module": {
+    "tika-core": 8,
+    "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module": 4,
+    "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module": 2,
+    "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module": 2,
+    "tika-serialization": 1
+  },
+  "source_snapshot_unchanged": true,
+  "fresh_rule_download_reproduces_findings": true,
+  "findings_are_confirmed_vulnerabilities": false,
+  "differential_gate_implemented": false,
+  "production_modified": false,
+  "scan_profiling_seconds": 6.4371888637542725
+}

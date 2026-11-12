@@ -1,0 +1,79 @@
+# Prolonge la construction tika-core de tâche 2 avec un contrôle de sécurité préalable.
+name: IFT3913 tache 3 - securite et tests
+
+'on':
+  push:
+    branches: [main, tache3]
+  pull_request:
+    branches: [main, tache3]
+  workflow_dispatch:
+    inputs:
+      baseline:
+        description: SHA complet de la reference a comparer
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  securite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Installer le moteur fige
+        run: python -m pip install -r semgrep/requirements.txt
+      - name: Comparer les alertes et bloquer les nouveautes
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: >-
+          python semgrep/gate.py --event-name "$EVENT_NAME"
+          --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports
+      - name: Conserver les rapports meme apres echec
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: semgrep-${{ github.run_id }}-${{ github.run_attempt }}
+          path: security-reports/
+          if-no-files-found: error
+          retention-days: 30
+
+  construction:
+    needs: securite
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Construire et tester tika-core et ses dependances
+        shell: bash
+        run: |
+          set -euo pipefail
+          ./mvnw -B -ntp -pl tika-core -am clean install 2>&1 | tee tache3-build.log
+      - name: Conserver les resultats de construction
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: construction-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            tache3-build.log
+            tika-core/target/surefire-reports/
+            tika-core/target/checkstyle-result.xml
+            tika-annotation-processor/target/surefire-reports/

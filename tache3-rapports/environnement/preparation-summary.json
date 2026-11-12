@@ -1,0 +1,11 @@
+{
+  "source": "/Volumes/TOSHIBA_EXT/ift3913/tika-tache3",
+  "branch": "tache3",
+  "base_commit": "62ff2e9b180817f4b38108c4e90ffa05348c5a4d",
+  "build_directory": "/private/tmp/tika-final-build-yy2wo_ao",
+  "manifest_files": 658,
+  "sha256_verified": true,
+  "no_appledouble": true,
+  "full_and_scoped_inventories_match": true,
+  "build_executed": false
+}

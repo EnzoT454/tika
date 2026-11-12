@@ -1,0 +1,53 @@
+{
+  "build": "SUCCESS",
+  "exit_code": 0,
+  "command": "./mvnw -B -ntp -pl tika-core -am clean install",
+  "java": "17.0.18",
+  "maven": "3.9.12",
+  "project_version": "4.0.0-SNAPSHOT",
+  "build_finished_at": "2026-11-10T12:07:26-05:00",
+  "build_duration_seconds": 27.871,
+  "manifest_files": 658,
+  "source_changes_during_build": [],
+  "modules": {
+    "tika-parent": {
+      "surefire": {
+        "tests": 0,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 0
+      },
+      "surefire_xml_files": 0,
+      "skipped_cases": [],
+      "checkstyle_violations": 0
+    },
+    "tika-annotation-processor": {
+      "surefire": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 8
+      },
+      "surefire_xml_files": 1,
+      "skipped_cases": [],
+      "checkstyle_violations": 0
+    },
+    "tika-core": {
+      "surefire": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2,
+        "passed": 964
+      },
+      "surefire_xml_files": 102,
+      "skipped_cases": [
+        "org.apache.tika.io.TikaInputStreamTest#reproduceRandomizedTestFailure",
+        "org.apache.tika.sax.CustomErrorHandlerTest#testUndeclaredEntityXML"
+      ],
+      "checkstyle_violations": 0
+    }
+  }
+}

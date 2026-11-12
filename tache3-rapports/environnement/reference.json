@@ -1,0 +1,9 @@
+{
+  "branch": "tache3",
+  "commit": "62ff2e9b180817f4b38108c4e90ffa05348c5a4d",
+  "build_directory": "/private/tmp/tika-final-build-yy2wo_ao",
+  "command": "./mvnw -B -ntp -pl tika-core -am clean install",
+  "recorded_at": "2026-11-10T17:07:11.309501+00:00",
+  "attempt_01": "blocked by sandbox writing ~/.m2, before core tests",
+  "attempt_02": "BUILD SUCCESS; exit code 0"
+}

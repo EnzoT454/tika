@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-11-12T10:20:53.401021-05:00",
+  "scenarios_passed": 14,
+  "initial_manifest_matches": true,
+  "current_production_files_unchanged": 682,
+  "yaml_structure": "passed",
+  "github_runs_executed": false,
+  "maven_rerun": false,
+  "source_worktree_commits_created": 0,
+  "identity_limitation": "rule + path + exact matched bytes; occurrence counts; see semgrep/README.md",
+  "global_git_diff_limit": "Global diff/check encountered an unreadable droste.zip test resource in pkg module; targeted checks succeeded."
+}
