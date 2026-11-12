@@ -62,3 +62,5 @@ Les champs d'événement sont lus depuis `GITHUB_EVENT_PATH` par Python ; ils ne
 Le cache doit être présent ; `scan.py` vérifie ses empreintes ou télécharge les règles. Le script couvre même version, changement bénin, déplacement de lignes, nouveauté, doublon, suppression+ajout à total identique, correction, push de plusieurs commits, PR divergente, référence absente, premier push, déclenchement manuel, configuration invalide et source Java malformée. Les rapports et résultats sont archivés dans `tache3-rapports/validation-ci/`. Le bundle Git de validation contient seulement le dépôt de test et permet de retrouver ses SHA ; les règles upstream n'y figurent pas.
 
 La validation locale ne constitue pas un run GitHub. Le téléchargement des actions, l'installation sur Ubuntu, le téléversement des artefacts et le statut distant devront être vérifiés après autorisation de publication. La protection de branche est également distincte du statut d'échec du workflow.
+
+<!-- Validation CI : changement documentaire sans effet sur le scan. -->
