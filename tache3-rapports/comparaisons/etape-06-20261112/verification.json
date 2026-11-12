@@ -1,0 +1,10 @@
+{
+  "prior_manifest_checked_before_guide_updates": 816,
+  "prior_manifest_with_frozen_guides_checked": 816,
+  "java_files_unchanged": 8,
+  "production_manifest_matches": 682,
+  "configuration_unchanged": true,
+  "comparison_objects_equal_to_archived_v7": true,
+  "new_java_scan_or_probe_executed": false,
+  "new_commit_or_publication": false
+}

@@ -1,0 +1,299 @@
+{
+  "source_commit": "62ff2e9b180817f4b38108c4e90ffa05348c5a4d",
+  "source_files": 682,
+  "scenarios": [
+    {
+      "scenario": "same",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "summary": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      }
+    },
+    {
+      "scenario": "benign",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "summary": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "7a6bb855cc6cd2927e087333de635c7698a14c4d",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      }
+    },
+    {
+      "scenario": "line-shift",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "summary": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "21bb92fe710af52d166fb1755a65ac931d20242f",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      }
+    },
+    {
+      "scenario": "new-finding",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "summary": {
+        "status": "new_findings",
+        "exit_code": 1,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "6a07fb319d84a04c465ad012df5530396685f622",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 1,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 18
+      }
+    },
+    {
+      "scenario": "duplicate-occurrence",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "summary": {
+        "status": "new_findings",
+        "exit_code": 1,
+        "base": "6a07fb319d84a04c465ad012df5530396685f622",
+        "head": "1a2dceafc50b9b795f7cb8e941bf5cbea81067a0",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 1,
+        "removed": 0,
+        "retained": 18,
+        "before_count": 18,
+        "after_count": 19
+      }
+    },
+    {
+      "scenario": "equal-count",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "summary": {
+        "status": "new_findings",
+        "exit_code": 1,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "7a2ca95a1ea68e30b60a6b715131e59355d06e35",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 1,
+        "removed": 1,
+        "retained": 16,
+        "before_count": 17,
+        "after_count": 17
+      }
+    },
+    {
+      "scenario": "correction",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "summary": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "6a07fb319d84a04c465ad012df5530396685f622",
+        "head": "2c11ca08776fb5f02ed9accda861ebb2b0384e91",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 1,
+        "retained": 17,
+        "before_count": 18,
+        "after_count": 17
+      }
+    },
+    {
+      "scenario": "push-multiple-commits",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "summary": {
+        "status": "new_findings",
+        "exit_code": 1,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "1a2dceafc50b9b795f7cb8e941bf5cbea81067a0",
+        "event": "push",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 2,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 19
+      }
+    },
+    {
+      "scenario": "pull-request",
+      "expected_exit_code": 1,
+      "actual_exit_code": 1,
+      "summary": {
+        "status": "new_findings",
+        "exit_code": 1,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "6a07fb319d84a04c465ad012df5530396685f622",
+        "event": "pull_request",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 1,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 18
+      }
+    },
+    {
+      "scenario": "missing-reference",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "summary": {
+        "status": "technical_error",
+        "exit_code": 2,
+        "error": "fatal: Needed a single revision"
+      }
+    },
+    {
+      "scenario": "first-push",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "summary": {
+        "status": "technical_error",
+        "exit_code": 2,
+        "error": "Référence absente ou SHA invalide : 0000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "scenario": "manual",
+      "expected_exit_code": 0,
+      "actual_exit_code": 0,
+      "summary": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "2c11ca08776fb5f02ed9accda861ebb2b0384e91",
+        "event": "workflow_dispatch",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      }
+    },
+    {
+      "scenario": "invalid-configuration",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "summary": {
+        "status": "technical_error",
+        "exit_code": 2,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "2c11ca08776fb5f02ed9accda861ebb2b0384e91",
+        "event": "local",
+        "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+      }
+    },
+    {
+      "scenario": "incomplete-scan",
+      "expected_exit_code": 2,
+      "actual_exit_code": 2,
+      "summary": {
+        "status": "technical_error",
+        "exit_code": 2,
+        "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+        "head": "d06638dcc24cca32ffbb8486f762271b60d23a0d",
+        "event": "local",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "error": "Scan after en échec : code 3"
+      }
+    }
+  ]
+}

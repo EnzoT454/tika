@@ -148,7 +148,9 @@ Après autorisation, publier la branche et effectuer les validations GitHub. Con
 
 Après autorisation, préparer une PR sur le dépôt du cours et la branche officielle adéquate. Ajouter sous `tache3/NOM1_NOM2/` le petit `readme.md` conforme au modèle : noms, identifiants GitHub, lien du dépôt et lien du rapport. Ce fichier de liens ne remplace pas le rapport technique du fork. Revalider l'échéance et l'accessibilité des liens avant envoi.
 
-## 8. Matrice de validation à compléter
+## 8. Matrice de validation attendue
+
+L'état effectivement prouvé est maintenant détaillé dans la [matrice de l'étape 6](tache3-rapports/comparaisons/etape-06-20261112/validation-matrix.md). Les attentes ci-dessous restent distinctes des cas réussis, incomplets ou non exécutés.
 
 | Scénario | Résultat attendu | Preuve à enregistrer |
 |---|---|---|
@@ -201,8 +203,8 @@ Estimation indicative : 20 à 35 heures cumulées pour le binôme, à adapter ap
 - [x] Rapport avant archivé.
 - [x] Blocage différentiel validé localement (14 scénarios) puis sur GitHub (succès, blocage et correction) le 12 novembre.
 - [x] Sept modifications pédagogiques distinctes présentes, détectées et décrites ; sept builds validés et preuves consolidées.
-- [ ] Clôture de leur validation comportementale : observateur V6 à vérifier ; aucun run GitHub des sept états enregistré.
-- [ ] Rapports après et comparaison archivés.
+- [ ] Validation comportementale V6 complète : réserve conservée, acceptée pour poursuivre ; aucun ReDoS démontré ni run GitHub des sept états enregistré.
+- [x] Étape 6 du suivi : rapports avant/après, comparaison finale et matrice archivés avec limites explicites.
 - [ ] Action humoristique validée.
 - [x] Runs GitHub de démonstration obtenus et archivés après autorisation ; runs des sept injections et du rickroll encore à faire.
 - [ ] Rapport final consolidé et usage de l'IA déclaré.
@@ -239,3 +241,11 @@ V1 à V7 sont présentes dans sept fichiers core, sans commit des injections. Le
 Les rapports Surefire et Checkstyle confirment, pour les sept builds, 964 tests core et 8 processeur réussis, deux désactivations initiales et zéro violation. Les sept archives sources correspondent à leurs manifestes et les 16 archives gzip/tar sont lisibles ; le manifeste SHA-256 fixe les preuves et le contexte documentaire. Aucune nouvelle analyse Java, compilation ou sonde n'a été exécutée pendant cette consolidation.
 
 La clôture comportementale reste ouverte : V6=false est enregistré même avec deux vrais sauts de ligne. La lecture du code montre que l'indicateur `X-TIKA:INLINE_MATCH` est rejeté par la protection des métadonnées réservées. Il faut donc un observateur adéquat, sans contourner cette protection, et une vérification bornée autorisée avant d'annoncer la réussite de V6. Les anciennes observations positives des six autres V ne prouvent pas une exploitation universelle. Les runs GitHub des sept états, le rickroll et le rapport final sont encore distincts de ces résultats.
+
+### Étape 6 du suivi — comparaison finale terminée, 12 novembre 2026
+
+Sur décision utilisateur, le projet poursuit sa réalisation avec la réserve V6 clairement documentée. La [comparaison finale](tache3-rapports/comparaisons/etape-06-20261112/README.md) réutilise les rapports archivés et confirme exactement : **17 → 24 résultats, 8 identités ajoutées, 1 supprimée, 16 conservées**. Les huit nouveautés sont toutes associées à V1–V7 et à sept CWE distincts ; les deux alertes XXE représentent un seul type. L'identité supprimée correspond au remplacement du fragment ProcessBuilder de V1, pas à une correction.
+
+La matrice sépare les réussites locales/CI antérieures, les limites et les cas non exécutés. V6 reste une détection INFO confirmée et compilée, sans démonstration ReDoS ; aucun résultat positif n'est inventé à partir du marqueur réservé. Les sept builds existants réussissent, mais aucun nouveau run intégré du contrôleur ou GitHub des sept états n'est revendiqué. Les copies brutes, sources, configurations et empreintes sont conservées dans le dossier de comparaison ; les anciens guides sont figés avant actualisation.
+
+Aucune source Java, nouvelle vulnérabilité ou sonde n'a été créée/modifiée/exécutée au titre de cette étape. Aucun commit, push, PR ou publication. **Prochaine étape du suivi : 7 — action réutilisable de rickroll**, déclenchée après un échec de test Tika en préservant le statut d'échec ; elle n'est pas implémentée ici. Le rapport final `readme.md` reste à rédiger ultérieurement.

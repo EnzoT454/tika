@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "tika-core/src/main/java",
+    "tika-serialization/src/main/java",
+    "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java",
+    "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java",
+    "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java"
+  ],
+  "include": "**/*.java",
+  "description": "Java production sources of the five authorized modules; no tests, generated output or archives"
+}

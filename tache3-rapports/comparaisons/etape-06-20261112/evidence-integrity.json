@@ -1,0 +1,14 @@
+{
+  "local_ci": {
+    "files": 6,
+    "mismatches": []
+  },
+  "github": {
+    "files": 701,
+    "mismatches": []
+  },
+  "github_expected_outcomes": {
+    "runs": 5,
+    "status": "passed"
+  }
+}

@@ -1,0 +1,1646 @@
+[
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/detect/FileCommandDetector.java",
+      "matched_source_sha256": "7e711a3f91467049d49559b75171848886a7a89f0ecf9a0b0c69c4d12f92189b"
+    },
+    "before": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/detect/FileCommandDetector.java",
+      "start": {
+        "line": 110,
+        "col": 34,
+        "offset": 4571
+      },
+      "end": {
+        "line": 110,
+        "col": 58,
+        "offset": 4595
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/detect/FileCommandDetector.java",
+      "start": {
+        "line": 110,
+        "col": 34,
+        "offset": 4571
+      },
+      "end": {
+        "line": 110,
+        "col": 58,
+        "offset": 4595
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "matched_source_sha256": "3436ad0613bbca538b2864919f6b579f41dbb0cc713e3964c7acf88c9ba1a68a"
+    },
+    "before": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "start": {
+        "line": 182,
+        "col": 29,
+        "offset": 7704
+      },
+      "end": {
+        "line": 182,
+        "col": 105,
+        "offset": 7780
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "start": {
+        "line": 182,
+        "col": 29,
+        "offset": 7704
+      },
+      "end": {
+        "line": 182,
+        "col": 105,
+        "offset": 7780
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "matched_source_sha256": "9362fb24fd4cfe509a94b8d7b453d4ca1da23b123edfad966a2e21f6310ec28c"
+    },
+    "before": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "start": {
+        "line": 157,
+        "col": 16,
+        "offset": 6650
+      },
+      "end": {
+        "line": 157,
+        "col": 44,
+        "offset": 6678
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "start": {
+        "line": 157,
+        "col": 16,
+        "offset": 6650
+      },
+      "end": {
+        "line": 157,
+        "col": 44,
+        "offset": 6678
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "matched_source_sha256": "5e32c8e2c18744ecf147197fbb17d5af65b08dfc3f28985d1dc049ef3d3b2f41"
+    },
+    "before": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "start": {
+        "line": 507,
+        "col": 29,
+        "offset": 23029
+      },
+      "end": {
+        "line": 507,
+        "col": 52,
+        "offset": 23052
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "start": {
+        "line": 507,
+        "col": 29,
+        "offset": 23029
+      },
+      "end": {
+        "line": 507,
+        "col": 52,
+        "offset": 23052
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "matched_source_sha256": "7e711a3f91467049d49559b75171848886a7a89f0ecf9a0b0c69c4d12f92189b"
+    },
+    "before": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "start": {
+        "line": 731,
+        "col": 29,
+        "offset": 31359
+      },
+      "end": {
+        "line": 731,
+        "col": 53,
+        "offset": 31383
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "start": {
+        "line": 731,
+        "col": 29,
+        "offset": 31359
+      },
+      "end": {
+        "line": 731,
+        "col": 53,
+        "offset": 31383
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/renderer/pdf/poppler/PopplerRenderer.java",
+      "matched_source_sha256": "c58bb678cc110fe7870b460ea5d7c1885b6e052ce1833bfd294f7b22727db3e8"
+    },
+    "before": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/renderer/pdf/poppler/PopplerRenderer.java",
+      "start": {
+        "line": 152,
+        "col": 9,
+        "offset": 6050
+      },
+      "end": {
+        "line": 152,
+        "col": 30,
+        "offset": 6071
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/renderer/pdf/poppler/PopplerRenderer.java",
+      "start": {
+        "line": 152,
+        "col": 9,
+        "offset": 6050
+      },
+      "end": {
+        "line": 152,
+        "col": 30,
+        "offset": 6071
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "saxparserfactory-disallow-doctype-decl-missing",
+      "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesReader.java",
+      "matched_source_sha256": "52f4bd28662b99b89ebfe945279dc98ae9b0488b90ac4089e3b084730c77bf3c"
+    },
+    "before": {
+      "check_id": "saxparserfactory-disallow-doctype-decl-missing",
+      "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesReader.java",
+      "start": {
+        "line": 223,
+        "col": 13,
+        "offset": 7927
+      },
+      "end": {
+        "line": 223,
+        "col": 42,
+        "offset": 7956
+      },
+      "extra": {
+        "message": "DOCTYPE declarations are enabled for this SAXParserFactory. This is vulnerable to XML external entity attacks. Disable this by setting the feature `http://apache.org/xml/features/disallow-doctype-decl` to true. Alternatively, allow DOCTYPE declarations and only prohibit external entities declarations. This can be done by setting the features `http://xml.org/sax/features/external-general-entities` and `http://xml.org/sax/features/external-parameter-entities` to false. NOTE - The previous links are not meant to be clicked. They are the literal config key values that are supposed to be used to disable these features. For more information, see https://semgrep.dev/docs/cheat-sheets/java-xxe/#3a-documentbuilderfactory.",
+        "fix": "factory.setFeature(\"http://apache.org/xml/features/disallow-doctype-decl\", true);\n            factory.newSAXParser();",
+        "metadata": {
+          "cwe": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+          ],
+          "owasp": [
+            "A04:2017 - XML External Entities (XXE)",
+            "A05:2021 - Security Misconfiguration",
+            "A02:2025 - Security Misconfiguration"
+          ],
+          "asvs": {
+            "control_id": "5.5.2 Insecue XML Deserialization",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v55-deserialization-prevention",
+            "section": "V5 Validation, Sanitization and Encoding",
+            "version": "4"
+          },
+          "references": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://blog.sonarsource.com/secure-xml-processor",
+            "https://xerces.apache.org/xerces2-j/features.html"
+          ],
+          "category": "security",
+          "technology": [
+            "java",
+            "xml"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "HIGH"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "saxparserfactory-disallow-doctype-decl-missing",
+      "path": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesReader.java",
+      "start": {
+        "line": 223,
+        "col": 13,
+        "offset": 7927
+      },
+      "end": {
+        "line": 223,
+        "col": 42,
+        "offset": 7956
+      },
+      "extra": {
+        "message": "DOCTYPE declarations are enabled for this SAXParserFactory. This is vulnerable to XML external entity attacks. Disable this by setting the feature `http://apache.org/xml/features/disallow-doctype-decl` to true. Alternatively, allow DOCTYPE declarations and only prohibit external entities declarations. This can be done by setting the features `http://xml.org/sax/features/external-general-entities` and `http://xml.org/sax/features/external-parameter-entities` to false. NOTE - The previous links are not meant to be clicked. They are the literal config key values that are supposed to be used to disable these features. For more information, see https://semgrep.dev/docs/cheat-sheets/java-xxe/#3a-documentbuilderfactory.",
+        "fix": "factory.setFeature(\"http://apache.org/xml/features/disallow-doctype-decl\", true);\n            factory.newSAXParser();",
+        "metadata": {
+          "cwe": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+          ],
+          "owasp": [
+            "A04:2017 - XML External Entities (XXE)",
+            "A05:2021 - Security Misconfiguration",
+            "A02:2025 - Security Misconfiguration"
+          ],
+          "asvs": {
+            "control_id": "5.5.2 Insecue XML Deserialization",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v55-deserialization-prevention",
+            "section": "V5 Validation, Sanitization and Encoding",
+            "version": "4"
+          },
+          "references": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://blog.sonarsource.com/secure-xml-processor",
+            "https://xerces.apache.org/xerces2-j/features.html"
+          ],
+          "category": "security",
+          "technology": [
+            "java",
+            "xml"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "HIGH"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unencrypted-socket",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/NetworkParser.java",
+      "matched_source_sha256": "75d51f7c09c8f800c469fe1c8e3c3362bce289ede2bde9b56a8a50112faea2f7"
+    },
+    "before": {
+      "check_id": "unencrypted-socket",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/NetworkParser.java",
+      "start": {
+        "line": 68,
+        "col": 34,
+        "offset": 2405
+      },
+      "end": {
+        "line": 68,
+        "col": 74,
+        "offset": 2445
+      },
+      "extra": {
+        "message": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "metadata": {
+          "functional-categories": [
+            "net::search::crypto-config::java.net"
+          ],
+          "cwe": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#UNENCRYPTED_SOCKET",
+          "asvs": {
+            "control_id": "6.2.5 Insecure Algorithm",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x14-V6-Cryptography.md#v62-algorithms",
+            "section": "V6 Stored Cryptography Verification Requirements",
+            "version": "4"
+          },
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unencrypted-socket",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/NetworkParser.java",
+      "start": {
+        "line": 68,
+        "col": 34,
+        "offset": 2405
+      },
+      "end": {
+        "line": 68,
+        "col": 74,
+        "offset": 2445
+      },
+      "extra": {
+        "message": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "metadata": {
+          "functional-categories": [
+            "net::search::crypto-config::java.net"
+          ],
+          "cwe": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#UNENCRYPTED_SOCKET",
+          "asvs": {
+            "control_id": "6.2.5 Insecure Algorithm",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x14-V6-Cryptography.md#v62-algorithms",
+            "section": "V6 Stored Cryptography Verification Requirements",
+            "version": "4"
+          },
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java",
+      "matched_source_sha256": "49a897edacd86397badcf01985788e47fea7774a0ec04e567ca31f533f82ee63"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java",
+      "start": {
+        "line": 196,
+        "col": 26,
+        "offset": 6839
+      },
+      "end": {
+        "line": 196,
+        "col": 59,
+        "offset": 6872
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java",
+      "start": {
+        "line": 196,
+        "col": 26,
+        "offset": 6839
+      },
+      "end": {
+        "line": 196,
+        "col": 59,
+        "offset": 6872
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "matched_source_sha256": "d629212c8db3ddd5377374390483e8d80587bf14a15b378d74ee47feb84eb283"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 828,
+        "col": 25,
+        "offset": 31671
+      },
+      "end": {
+        "line": 828,
+        "col": 64,
+        "offset": 31710
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 828,
+        "col": 25,
+        "offset": 31671
+      },
+      "end": {
+        "line": 828,
+        "col": 64,
+        "offset": 31710
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "matched_source_sha256": "d629212c8db3ddd5377374390483e8d80587bf14a15b378d74ee47feb84eb283"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 872,
+        "col": 25,
+        "offset": 33942
+      },
+      "end": {
+        "line": 872,
+        "col": 64,
+        "offset": 33981
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 872,
+        "col": 25,
+        "offset": 33942
+      },
+      "end": {
+        "line": 872,
+        "col": 64,
+        "offset": 33981
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/DataElement.java",
+      "matched_source_sha256": "499c5d6cd96f3359b355ca4114c05e739c3cc76055d47b12a1cf0bb2147ffd40"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/DataElement.java",
+      "start": {
+        "line": 53,
+        "col": 59,
+        "offset": 2363
+      },
+      "end": {
+        "line": 53,
+        "col": 83,
+        "offset": 2387
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/DataElement.java",
+      "start": {
+        "line": 53,
+        "col": 59,
+        "offset": 2363
+      },
+      "end": {
+        "line": 53,
+        "col": 83,
+        "offset": 2387
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/StreamObject.java",
+      "matched_source_sha256": "499c5d6cd96f3359b355ca4114c05e739c3cc76055d47b12a1cf0bb2147ffd40"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/StreamObject.java",
+      "start": {
+        "line": 76,
+        "col": 52,
+        "offset": 3735
+      },
+      "end": {
+        "line": 76,
+        "col": 76,
+        "offset": 3759
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/StreamObject.java",
+      "start": {
+        "line": 76,
+        "col": 52,
+        "offset": 3735
+      },
+      "end": {
+        "line": 76,
+        "col": 76,
+        "offset": 3759
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/parser/pdf/PDFParserConfig.java",
+      "matched_source_sha256": "499c5d6cd96f3359b355ca4114c05e739c3cc76055d47b12a1cf0bb2147ffd40"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/parser/pdf/PDFParserConfig.java",
+      "start": {
+        "line": 617,
+        "col": 30,
+        "offset": 21149
+      },
+      "end": {
+        "line": 617,
+        "col": 54,
+        "offset": 21173
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/parser/pdf/PDFParserConfig.java",
+      "start": {
+        "line": 617,
+        "col": 30,
+        "offset": 21149
+      },
+      "end": {
+        "line": 617,
+        "col": 54,
+        "offset": 21173
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "unsafe-reflection",
+      "path": "tika-serialization/src/main/java/org/apache/tika/config/loader/ConfigLoader.java",
+      "matched_source_sha256": "499c5d6cd96f3359b355ca4114c05e739c3cc76055d47b12a1cf0bb2147ffd40"
+    },
+    "before": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-serialization/src/main/java/org/apache/tika/config/loader/ConfigLoader.java",
+      "start": {
+        "line": 179,
+        "col": 30,
+        "offset": 6911
+      },
+      "end": {
+        "line": 179,
+        "col": 54,
+        "offset": 6935
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "unsafe-reflection",
+      "path": "tika-serialization/src/main/java/org/apache/tika/config/loader/ConfigLoader.java",
+      "start": {
+        "line": 179,
+        "col": 30,
+        "offset": 6911
+      },
+      "end": {
+        "line": 179,
+        "col": 54,
+        "offset": 6935
+      },
+      "extra": {
+        "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+        "metadata": {
+          "cwe": [
+            "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  },
+  {
+    "identity": {
+      "rule": "xmlinputfactory-possible-xxe",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "matched_source_sha256": "1b9d0111a136e0621f36926a0c1cca3ade865a6423ed39f5805b141fcd2c173f"
+    },
+    "before": {
+      "check_id": "xmlinputfactory-possible-xxe",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 307,
+        "col": 35,
+        "offset": 12721
+      },
+      "end": {
+        "line": 307,
+        "col": 63,
+        "offset": 12749
+      },
+      "extra": {
+        "message": "XML external entities are not explicitly disabled for this XMLInputFactory. This could be vulnerable to XML external entity vulnerabilities. Explicitly disable external entities by setting \"javax.xml.stream.isSupportingExternalEntities\" to false.",
+        "metadata": {
+          "cwe": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+          ],
+          "owasp": [
+            "A04:2017 - XML External Entities (XXE)",
+            "A05:2021 - Security Misconfiguration",
+            "A02:2025 - Security Misconfiguration"
+          ],
+          "asvs": {
+            "control_id": "5.5.2 Insecue XML Deserialization",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v55-deserialization-prevention",
+            "section": "V5 Validation, Sanitization and Encoding",
+            "version": "4"
+          },
+          "references": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-java-wp.pdf",
+            "https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html#xmlinputfactory-a-stax-parser"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "MEDIUM"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "after": {
+      "check_id": "xmlinputfactory-possible-xxe",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 307,
+        "col": 35,
+        "offset": 12721
+      },
+      "end": {
+        "line": 307,
+        "col": 63,
+        "offset": 12749
+      },
+      "extra": {
+        "message": "XML external entities are not explicitly disabled for this XMLInputFactory. This could be vulnerable to XML external entity vulnerabilities. Explicitly disable external entities by setting \"javax.xml.stream.isSupportingExternalEntities\" to false.",
+        "metadata": {
+          "cwe": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+          ],
+          "owasp": [
+            "A04:2017 - XML External Entities (XXE)",
+            "A05:2021 - Security Misconfiguration",
+            "A02:2025 - Security Misconfiguration"
+          ],
+          "asvs": {
+            "control_id": "5.5.2 Insecue XML Deserialization",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v55-deserialization-prevention",
+            "section": "V5 Validation, Sanitization and Encoding",
+            "version": "4"
+          },
+          "references": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://www.blackhat.com/docs/us-15/materials/us-15-Wang-FileCry-The-New-Age-Of-XXE-java-wp.pdf",
+            "https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html#xmlinputfactory-a-stax-parser"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "MEDIUM"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "identity": {
+      "rule": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+      "matched_source_sha256": "599b644cf0be1b6f044999c1cb0d3c58bdd94c85b9cbeb6ef22b1a2dee88aaeb"
+    },
+    "finding": {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+      "start": {
+        "line": 193,
+        "col": 21,
+        "offset": 7786
+      },
+      "end": {
+        "line": 193,
+        "col": 56,
+        "offset": 7821
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    "related_vulnerability": "V1",
+    "meaning": "ancienne identité remplacée par le fragment shell V1 ; pas une correction de sécurité"
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "V1",
+    "file": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+    "cwe": [
+      "CWE-78"
+    ],
+    "findings": [
+      {
+        "rule": "command-injection-process-builder",
+        "line": 192,
+        "severity": "ERROR",
+        "identity": {
+          "rule": "command-injection-process-builder",
+          "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+          "matched_source_sha256": "20d11175d9f64ea681ad8d89b21c9f10401b131b5bc05ba0212b8221b6909ff1"
+        }
+      }
+    ],
+    "behavior_status": "archived_bounded_observation",
+    "github_run": null
+  },
+  {
+    "id": "V2",
+    "file": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+    "cwe": [
+      "CWE-611"
+    ],
+    "findings": [
+      {
+        "rule": "documentbuilderfactory-disallow-doctype-decl-false",
+        "line": 1270,
+        "severity": "ERROR",
+        "identity": {
+          "rule": "documentbuilderfactory-disallow-doctype-decl-false",
+          "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+          "matched_source_sha256": "f1904b0c97641444c20524a24b3e643f489293c409d3965c133587db38b0be74"
+        }
+      },
+      {
+        "rule": "documentbuilderfactory-disallow-doctype-decl-missing",
+        "line": 1271,
+        "severity": "ERROR",
+        "identity": {
+          "rule": "documentbuilderfactory-disallow-doctype-decl-missing",
+          "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+          "matched_source_sha256": "09e357c67b6bd61e08542c6401958ee9214d84c9189ea458d845ca7b77a86464"
+        }
+      }
+    ],
+    "behavior_status": "archived_bounded_observation",
+    "github_run": null
+  },
+  {
+    "id": "V3",
+    "file": "tika-core/src/main/java/org/apache/tika/parser/ParseContext.java",
+    "cwe": [
+      "CWE-502"
+    ],
+    "findings": [
+      {
+        "rule": "object-deserialization",
+        "line": 149,
+        "severity": "WARNING",
+        "identity": {
+          "rule": "object-deserialization",
+          "path": "tika-core/src/main/java/org/apache/tika/parser/ParseContext.java",
+          "matched_source_sha256": "887d32e2abf9f65e5729e87ca308f0f65ce0d68bbf2b7624940ead2652e7b92e"
+        }
+      }
+    ],
+    "behavior_status": "archived_bounded_observation",
+    "github_run": null
+  },
+  {
+    "id": "V4",
+    "file": "tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java",
+    "cwe": [
+      "CWE-295"
+    ],
+    "findings": [
+      {
+        "rule": "insecure-hostname-verifier",
+        "line": 224,
+        "severity": "WARNING",
+        "identity": {
+          "rule": "insecure-hostname-verifier",
+          "path": "tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java",
+          "matched_source_sha256": "c5bd04d02018dae5d5a04d82d81bc4e9ad471ae510e4dde2753988ea27e34a17"
+        }
+      }
+    ],
+    "behavior_status": "archived_bounded_observation",
+    "github_run": null
+  },
+  {
+    "id": "V5",
+    "file": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+    "cwe": [
+      "CWE-327"
+    ],
+    "findings": [
+      {
+        "rule": "use-of-default-aes",
+        "line": 78,
+        "severity": "WARNING",
+        "identity": {
+          "rule": "use-of-default-aes",
+          "path": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+          "matched_source_sha256": "86472fd336a4c4a022c8c863a12ccd2c470e8eb65104cc7ee628a1aec6e6d727"
+        }
+      }
+    ],
+    "behavior_status": "archived_bounded_observation",
+    "github_run": null
+  },
+  {
+    "id": "V6",
+    "file": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+    "cwe": [
+      "CWE-1333"
+    ],
+    "findings": [
+      {
+        "rule": "java-pattern-from-string-parameter",
+        "line": 138,
+        "severity": "INFO",
+        "identity": {
+          "rule": "java-pattern-from-string-parameter",
+          "path": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+          "matched_source_sha256": "98c55be2cf5ca04bb1096a16895f56550d75ec530866008b3ff14bc25e79695c"
+        }
+      }
+    ],
+    "behavior_status": "incomplete",
+    "github_run": null
+  },
+  {
+    "id": "V7",
+    "file": "tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java",
+    "cwe": [
+      "CWE-276"
+    ],
+    "findings": [
+      {
+        "rule": "overly-permissive-file-permission",
+        "line": 94,
+        "severity": "WARNING",
+        "identity": {
+          "rule": "overly-permissive-file-permission",
+          "path": "tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java",
+          "matched_source_sha256": "0036cdf0a0b16b22fa31519b56c086dbf22f076a8370764d9131a7e0bee6c195"
+        }
+      }
+    ],
+    "behavior_status": "archived_bounded_observation",
+    "github_run": null
+  }
+]
