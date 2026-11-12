@@ -1,0 +1,518 @@
+[
+  {
+    "scenario": "same",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 0,
+    "summary": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "benign",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 0,
+    "summary": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "7a6bb855cc6cd2927e087333de635c7698a14c4d",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "line-shift",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 0,
+    "summary": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "21bb92fe710af52d166fb1755a65ac931d20242f",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "new-finding",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 1,
+    "summary": {
+      "status": "new_findings",
+      "exit_code": 1,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "6a07fb319d84a04c465ad012df5530396685f622",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 1,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 18
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "duplicate-occurrence",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 1,
+    "summary": {
+      "status": "new_findings",
+      "exit_code": 1,
+      "base": "6a07fb319d84a04c465ad012df5530396685f622",
+      "head": "1a2dceafc50b9b795f7cb8e941bf5cbea81067a0",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 1,
+      "removed": 0,
+      "retained": 18,
+      "before_count": 18,
+      "after_count": 19
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "equal-count",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 1,
+    "summary": {
+      "status": "new_findings",
+      "exit_code": 1,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "7a2ca95a1ea68e30b60a6b715131e59355d06e35",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 1,
+      "removed": 1,
+      "retained": 16,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "correction",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 0,
+    "summary": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "6a07fb319d84a04c465ad012df5530396685f622",
+      "head": "2c11ca08776fb5f02ed9accda861ebb2b0384e91",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 1,
+      "retained": 17,
+      "before_count": 18,
+      "after_count": 17
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "push-multiple-commits",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 1,
+    "summary": {
+      "status": "new_findings",
+      "exit_code": 1,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "1a2dceafc50b9b795f7cb8e941bf5cbea81067a0",
+      "event": "push",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 2,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 19
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "pull-request",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 1,
+    "summary": {
+      "status": "new_findings",
+      "exit_code": 1,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "6a07fb319d84a04c465ad012df5530396685f622",
+      "event": "pull_request",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 1,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 18
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "missing-reference",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 2,
+    "summary": {
+      "status": "technical_error",
+      "exit_code": 2,
+      "error": "fatal: Needed a single revision"
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "first-push",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 2,
+    "summary": {
+      "status": "technical_error",
+      "exit_code": 2,
+      "error": "Référence absente ou SHA invalide : 0000000000000000000000000000000000000000"
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "manual",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 0,
+    "summary": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "2c11ca08776fb5f02ed9accda861ebb2b0384e91",
+      "event": "workflow_dispatch",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "invalid-configuration",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 2,
+    "summary": {
+      "status": "technical_error",
+      "exit_code": 2,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "2c11ca08776fb5f02ed9accda861ebb2b0384e91",
+      "event": "local",
+      "error": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "incomplete-scan",
+    "status": "reussie",
+    "scope": "validation locale antérieure du contrôleur sur historique synthétique",
+    "observed_exit_code": 2,
+    "summary": {
+      "status": "technical_error",
+      "exit_code": 2,
+      "base": "673766a30fb39f6eb3e6f6167c3d29864b3909a6",
+      "head": "d06638dcc24cca32ffbb8486f762271b60d23a0d",
+      "event": "local",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "error": "Scan after en échec : code 3"
+    },
+    "evidence": "../comparaisons/etape-06-20261112/evidence/local-ci-results.json"
+  },
+  {
+    "scenario": "github-43251450652",
+    "status": "reussie",
+    "scope": "démonstration CI antérieure ; exemple temporaire, pas les sept injections",
+    "observed_conclusion": "failure",
+    "security": {
+      "status": "technical_error",
+      "exit_code": 2,
+      "error": "Référence absente ou SHA invalide : 0000000000000000000000000000000000000000"
+    },
+    "jobs": {
+      "securite": "failure",
+      "construction": "skipped"
+    },
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43251450652",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/github-results.json"
+  },
+  {
+    "scenario": "github-43251595954",
+    "status": "reussie",
+    "scope": "démonstration CI antérieure ; exemple temporaire, pas les sept injections",
+    "observed_conclusion": "success",
+    "security": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "62ff2e9b180817f4b38108c4e90ffa05348c5a4d",
+      "head": "20a91e9686a67dc248839fd078c531b4b71358c7",
+      "event": "workflow_dispatch",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "jobs": {
+      "securite": "success",
+      "construction": "success"
+    },
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43251595954",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/github-results.json"
+  },
+  {
+    "scenario": "github-43252710325",
+    "status": "reussie",
+    "scope": "démonstration CI antérieure ; exemple temporaire, pas les sept injections",
+    "observed_conclusion": "success",
+    "security": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "20a91e9686a67dc248839fd078c531b4b71358c7",
+      "head": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+      "event": "push",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "jobs": {
+      "securite": "success",
+      "construction": "success"
+    },
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43252710325",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/github-results.json"
+  },
+  {
+    "scenario": "github-43253590194",
+    "status": "reussie",
+    "scope": "démonstration CI antérieure ; exemple temporaire, pas les sept injections",
+    "observed_conclusion": "failure",
+    "security": {
+      "status": "new_findings",
+      "exit_code": 1,
+      "base": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+      "head": "96318db1eada7b025fefeb1be2b8d9a59565e345",
+      "event": "pull_request",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 1,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 18
+    },
+    "jobs": {
+      "securite": "failure",
+      "construction": "skipped"
+    },
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43253590194",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/github-results.json"
+  },
+  {
+    "scenario": "github-43254989974",
+    "status": "reussie",
+    "scope": "démonstration CI antérieure ; exemple temporaire, pas les sept injections",
+    "observed_conclusion": "success",
+    "security": {
+      "status": "passed",
+      "exit_code": 0,
+      "base": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+      "head": "e8384e424ad8cc8fe4b43a78464fa71b056c0bdb",
+      "event": "pull_request",
+      "configuration_sha256": {
+        "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+        "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+        "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+        "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+        "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+      },
+      "added": 0,
+      "removed": 0,
+      "retained": 17,
+      "before_count": 17,
+      "after_count": 17
+    },
+    "jobs": {
+      "securite": "success",
+      "construction": "success"
+    },
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43254989974",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/github-results.json"
+  },
+  {
+    "scenario": "sept-types-detection-statique",
+    "status": "reussie",
+    "scope": "682 sources finales, sept CWE, huit identités ajoutées",
+    "evidence": "vulnerability-provenance.json"
+  },
+  {
+    "scenario": "sept-etats-build-tests",
+    "status": "reussie",
+    "scope": "sept builds archivés, 964 core + 8 processeur, deux désactivations initiales, zéro violation",
+    "evidence": "../vulnerabilites/consolidation-20261112/matrix.json"
+  },
+  {
+    "scenario": "six-observations-bornees",
+    "status": "reussie",
+    "scope": "anciennes sondes V1–V5/V7 ; limites de portée conservées",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/archived-behavior.json"
+  },
+  {
+    "scenario": "v6-comportement",
+    "status": "incomplete",
+    "scope": "détection INFO et build confirmés ; marqueur réservé rejeté, pas de démonstration ReDoS",
+    "evidence": "../comparaisons/etape-06-20261112/evidence/v6-only-after.log"
+  },
+  {
+    "scenario": "sept-injections-blocage-integre",
+    "status": "reussie",
+    "scope": "Semgrep code 1, 17 → 24, +8/−1, construction ignorée",
+    "expected_exit_code": 1,
+    "evidence": "semgrep-results.json",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43278937793",
+    "observed_exit_code": 1
+  },
+  {
+    "scenario": "rickroll-apres-tests-reussis",
+    "status": "reussie",
+    "scope": "Aucun rickroll et job réussi ; retour au vert également confirmé",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43276322587",
+    "evidence": "rickroll-results.json"
+  },
+  {
+    "scenario": "rickroll-apres-test-junit-echoue",
+    "status": "reussie",
+    "scope": "Un cas JUnit échoué ; six poses, action réussie et job en échec",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43276898487",
+    "evidence": "rickroll-results.json"
+  },
+  {
+    "scenario": "compilation-echouee-sans-echec-junit",
+    "status": "reussie",
+    "scope": "Erreur javac, rickroll ignoré, job échoué",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43277596512",
+    "evidence": "rickroll-results.json"
+  }
+]

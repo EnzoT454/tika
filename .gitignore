@@ -30,3 +30,6 @@ __pycache__/
 
 # Local agent instructions
 AGENTS.md
+
+# Local task plan
+/tache3.md

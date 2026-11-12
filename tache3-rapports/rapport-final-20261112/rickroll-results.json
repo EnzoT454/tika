@@ -1,0 +1,74 @@
+[
+  {
+    "case": "tests-reussis",
+    "run_id": 43276322587,
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43276322587",
+    "head_sha": "99ef66be2baff901cecd20358cee73349b0db42a",
+    "conclusion": "success",
+    "security_conclusion": "success",
+    "rickroll_step": "skipped",
+    "frames": 0,
+    "surefire": {
+      "tests": 974,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "status": "passed",
+    "evidence": "tache3-rapports/rickroll/github/43276322587"
+  },
+  {
+    "case": "echec-junit",
+    "run_id": 43276898487,
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43276898487",
+    "head_sha": "3c6fc2d2e19ad5f229fe7b7494f3f5baf59e3cf7",
+    "conclusion": "failure",
+    "security_conclusion": "success",
+    "rickroll_step": "success",
+    "frames": 6,
+    "surefire": {
+      "tests": 975,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 2
+    },
+    "status": "test_failure",
+    "evidence": "tache3-rapports/rickroll/github/43276898487"
+  },
+  {
+    "case": "echec-compilation",
+    "run_id": 43277596512,
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43277596512",
+    "head_sha": "1073e389f96192a5e8abfab19624430dd32da141",
+    "conclusion": "failure",
+    "security_conclusion": "success",
+    "rickroll_step": "skipped",
+    "frames": 0,
+    "surefire": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "status": "build_failure_without_failed_test",
+    "evidence": "tache3-rapports/rickroll/github/43277596512"
+  },
+  {
+    "case": "correction",
+    "run_id": 43278025406,
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43278025406",
+    "head_sha": "f91d03f5f46ed9f8706ff66b53c06039408fc94d",
+    "conclusion": "success",
+    "security_conclusion": "success",
+    "rickroll_step": "skipped",
+    "frames": 0,
+    "surefire": {
+      "tests": 974,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    },
+    "status": "passed",
+    "evidence": "tache3-rapports/rickroll/github/43278025406"
+  }
+]

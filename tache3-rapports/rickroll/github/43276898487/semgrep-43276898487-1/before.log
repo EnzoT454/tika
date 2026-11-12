@@ -1,0 +1,21 @@
+{"cwd": "/tmp/tika-security-ouqmendv/before", "command": ["/opt/hostedtoolcache/Python/3.11.18/x64/bin/semgrep", "scan", "--config", "/tmp/tika-semgrep-a5ad1714f00c9f7fde980cab0ea1d6dc6d414fd2/rules", "--oss-only", "--no-rewrite-rule-ids", "--strict", "--metrics", "off", "--disable-version-check", "--disable-nosem", "--no-git-ignore", "--include", "*.java", "--exclude", "**/._*", "--jobs", "2", "--timeout", "30", "--max-target-bytes", "0", "--json", "--output", "/home/runner/work/tika/tika/security-reports/before.json", "tika-core/src/main/java", "tika-serialization/src/main/java", "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java", "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java", "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java"]}
+Paths that match both --include and --exclude will be skipped by Semgrep.
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 682 files with 82 Code rules:
+  Scanning 682 files with 82 java rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+✅ Scan completed successfully.
+ • Findings: 17 (17 blocking)
+ • Rules run: 82
+ • Targets scanned: 682
+ • Parsed lines: ~100.0%
+ • No ignore information available
+Ran 82 rules on 682 files: 17 findings.

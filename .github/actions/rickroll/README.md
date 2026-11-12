@@ -24,6 +24,6 @@ Le délai par pose est de 0,2 seconde par défaut, limité à une petite liste e
 
 L'intégration conserve le job Semgrep comme préalable de construction. Une branche contenant les sept injections sera donc arrêtée avant les tests ; la démonstration du rickroll utilise une copie de référence sans injections, sans assouplir le contrôle de sécurité du workflow.
 
-Les preuves locales et leurs limites sont conservées dans `tache3-rapports/rickroll/`. Elles ne constituent pas un run GitHub Actions ; les conditions, sorties et téléchargements d'actions devront être confirmés à distance après autorisation de publication.
+Les preuves locales sont conservées dans `tache3-rapports/rickroll/`. La validation GitHub est maintenant confirmée : [réussite sans rickroll](https://github.com/EnzoT454/tika/actions/runs/43276322587), [échec JUnit avec six poses et build rouge](https://github.com/EnzoT454/tika/actions/runs/43276898487), [compilation échouée sans rickroll](https://github.com/EnzoT454/tika/actions/runs/43277596512), puis [retour au vert](https://github.com/EnzoT454/tika/actions/runs/43278025406). La consolidation des artefacts et leurs limites se trouve dans `tache3-rapports/rapport-final-20261112/`.
 
 Références : [actions composites](https://docs.github.com/en/actions/tutorials/create-actions/create-a-composite-action) et [conditions de statut GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/expressions). Implémentation personnelle avec assistance de Codex ; aucun code de `random-rickroll` ni implémentation Rust repris.

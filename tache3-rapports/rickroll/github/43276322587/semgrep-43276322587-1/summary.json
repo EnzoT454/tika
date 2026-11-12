@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "base": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+  "head": "99ef66be2baff901cecd20358cee73349b0db42a",
+  "event": "pull_request",
+  "configuration_sha256": {
+    "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+    "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+    "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+    "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+    "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+  },
+  "added": 0,
+  "removed": 0,
+  "retained": 17,
+  "before_count": 17,
+  "after_count": 17
+}

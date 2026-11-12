@@ -1,0 +1,15 @@
+{
+  "status": "build_failure_without_failed_test",
+  "build_outcome": "failure",
+  "has_failures": false,
+  "totals": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "reports": [
+    "tika-annotation-processor/target/surefire-reports/TEST-org.apache.tika.annotation.KebabCaseConverterTest.xml"
+  ],
+  "stale_reports_ignored": []
+}

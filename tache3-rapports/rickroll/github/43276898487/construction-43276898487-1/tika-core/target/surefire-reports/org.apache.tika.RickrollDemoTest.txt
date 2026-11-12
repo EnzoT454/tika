@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.tika.RickrollDemoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! -- in org.apache.tika.RickrollDemoTest
+org.apache.tika.RickrollDemoTest.demonstration -- Time elapsed: 0.010 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: IFT3913 controlled JUnit failure
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:142)
+	at org.apache.tika.RickrollDemoTest.demonstration(RickrollDemoTest.java:24)
+

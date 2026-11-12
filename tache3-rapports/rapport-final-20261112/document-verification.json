@@ -1,0 +1,12 @@
+{
+  "documents_checked": 14,
+  "local_links_checked": 75,
+  "issues": [],
+  "report_words": 1440,
+  "prior_report_words": 6081,
+  "java_sources_unchanged": 682,
+  "archive_files_verified": 705,
+  "prior_hashes_verified": 1607,
+  "prior_document_hashes_verified_via_snapshot": 10,
+  "new_tests_executed": false
+}

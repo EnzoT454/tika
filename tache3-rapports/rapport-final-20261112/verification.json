@@ -1,0 +1,14 @@
+{
+  "github_runs_checked": 5,
+  "rickroll_cases_checked": 4,
+  "semgrep_final_confirmed": true,
+  "v6_behavior": "incomplete, unchanged",
+  "all_source_manifests_match": true,
+  "tests_executed_during_consolidation": false,
+  "network_access": false,
+  "matrix_statuses": {
+    "reussie": 26,
+    "incomplete": 1
+  },
+  "task2_report_backup_sha256": "7bd2a146ea9edebfa7e88089c44b16deade16c6cc7176fcb473d5f8249761cb7"
+}

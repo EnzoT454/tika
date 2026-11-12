@@ -15,3 +15,7 @@ Correction : conserver les permissions restrictives de `Files.createTempFile` et
 ## Consolidation documentaire du 12 novembre
 
 Les anciennes traces indiquent les bits POSIX de lecture et écriture pour les autres comptes ; aucun accès croisé entre utilisateurs n’est démontré. Les archives sources, XML et comptes Semgrep ont été recoupés sans nouvelle sonde. Voir [le bilan des sept types](../consolidation-20261112/README.md) et ses limites. Aucun run GitHub propre à cette injection n’est encore enregistré.
+
+## Actualisation GitHub après les scans locaux
+
+Ces sources ont été introduites dans le [commit 5d37388](https://github.com/EnzoT454/tika/commit/5d37388b0cbf1baeb19c04a2e1c0ed633753765c) et les nouveautés ont été confirmées dans le [run final 43278937793](https://github.com/EnzoT454/tika/actions/runs/43278937793), sur c20318f. Les mentions « non commitée » et « aucun run » ci-dessus décrivent les premiers scans locaux. Voir [la consolidation finale](../../rapport-final-20261112/README.md).

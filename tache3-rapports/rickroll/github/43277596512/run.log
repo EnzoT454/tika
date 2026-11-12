@@ -1,0 +1,1258 @@
+securite	Set up job	﻿2026-11-12T18:13:38.1027245Z Current runner version: '2.338.2'
+securite	Set up job	2026-11-12T18:13:38.1055288Z ##[group]Runner Image Provisioner
+securite	Set up job	2026-11-12T18:13:38.1056391Z Hosted Compute Agent
+securite	Set up job	2026-11-12T18:13:38.1056984Z Version: 20261028.624
+securite	Set up job	2026-11-12T18:13:38.1057685Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+securite	Set up job	2026-11-12T18:13:38.1058813Z Build Date: 2026-10-28T21:51:42Z
+securite	Set up job	2026-11-12T18:13:38.1059514Z Worker ID: {b3df763e-74df-4ef6-a51c-2b3775f72c82}
+securite	Set up job	2026-11-12T18:13:38.1060307Z Region: eastus
+securite	Set up job	2026-11-12T18:13:38.1060861Z Cloud: Azure
+securite	Set up job	2026-11-12T18:13:38.1061440Z ##[endgroup]
+securite	Set up job	2026-11-12T18:13:38.1063018Z ##[group]Operating System
+securite	Set up job	2026-11-12T18:13:38.1063706Z Ubuntu
+securite	Set up job	2026-11-12T18:13:38.1064354Z 26.04.1
+securite	Set up job	2026-11-12T18:13:38.1064874Z LTS
+securite	Set up job	2026-11-12T18:13:38.1065446Z ##[endgroup]
+securite	Set up job	2026-11-12T18:13:38.1066107Z ##[group]Runner Image
+securite	Set up job	2026-11-12T18:13:38.1066708Z Image: ubuntu-26.04
+securite	Set up job	2026-11-12T18:13:38.1067745Z Version: 20261101.186.1
+securite	Set up job	2026-11-12T18:13:38.1069283Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+securite	Set up job	2026-11-12T18:13:38.1071235Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+securite	Set up job	2026-11-12T18:13:38.1072190Z ##[endgroup]
+securite	Set up job	2026-11-12T18:13:38.1073415Z ##[group]GITHUB_TOKEN Permissions
+securite	Set up job	2026-11-12T18:13:38.1075617Z Contents: read
+securite	Set up job	2026-11-12T18:13:38.1076406Z Metadata: read
+securite	Set up job	2026-11-12T18:13:38.1076982Z ##[endgroup]
+securite	Set up job	2026-11-12T18:13:38.1079605Z Secret source: Actions
+securite	Set up job	2026-11-12T18:13:38.1080629Z Cache mode: write
+securite	Set up job	2026-11-12T18:13:38.1081475Z Prepare workflow directory
+securite	Set up job	2026-11-12T18:13:38.1435408Z Prepare all required actions
+securite	Set up job	2026-11-12T18:13:38.1487188Z Getting action download info
+securite	Set up job	2026-11-12T18:13:38.3812904Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+securite	Set up job	2026-11-12T18:13:38.4980943Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+securite	Set up job	2026-11-12T18:13:38.5624105Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+securite	Set up job	2026-11-12T18:13:38.7546673Z Complete job name: securite
+securite	Run actions/checkout@v4	﻿2026-11-12T18:13:38.8521799Z ##[group]Run actions/checkout@v4
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8522780Z with:
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8523238Z   fetch-depth: 0
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8523768Z   ref: 1073e389f96192a5e8abfab19624430dd32da141
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8524411Z   persist-credentials: false
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8524946Z   repository: EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8529129Z   token: ***
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8529589Z   ssh-strict: true
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8530043Z   ssh-user: git
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8530479Z   clean: true
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8530937Z   sparse-checkout-cone-mode: true
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8531486Z   fetch-tags: false
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8531941Z   show-progress: true
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8532397Z   lfs: false
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8532814Z   submodules: false
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8533274Z   set-safe-directory: true
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8533784Z   allow-unsafe-pr-checkout: false
+securite	Run actions/checkout@v4	2026-11-12T18:13:38.8534584Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1635560Z Syncing repository: EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1640429Z ##[group]Getting Git version info
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1641769Z Working directory is '/home/runner/work/tika/tika'
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1646205Z [command]/usr/bin/git version
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1649614Z git version 2.56.0
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1680696Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1698263Z Temporarily overriding HOME='/home/runner/work/_temp/9e56f788-102d-4e45-839d-372a589e0713' before making global git config changes
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1702157Z Adding repository directory to the temporary git global config as a safe directory
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1706250Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1805027Z Deleting the contents of '/home/runner/work/tika/tika'
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1807920Z ##[group]Initializing the repository
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1815022Z [command]/usr/bin/git init /home/runner/work/tika/tika
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1973336Z hint: Using 'master' as the name for the initial branch. This default branch name
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1976195Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1979969Z hint: to use in all of your new repositories, which will suppress this warning,
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1981697Z hint: call:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1982649Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1983801Z hint: 	git config --global init.defaultBranch <name>
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1985199Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1986464Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1989005Z hint: 'development'. The just-created branch can be renamed via this command:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1990750Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1991673Z hint: 	git branch -m <name>
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1992791Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1994155Z hint: Disable this message with "git config set advice.defaultBranchName false"
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.1996598Z Initialized empty Git repository in /home/runner/work/tika/tika/.git/
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2011874Z [command]/usr/bin/git remote add origin https://github.com/EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2098868Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2100876Z ##[group]Disabling automatic garbage collection
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2104533Z [command]/usr/bin/git config --local gc.auto 0
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2148480Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2149553Z ##[group]Setting up auth
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2158285Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2210797Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2753556Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.2795808Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.3095097Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.3133190Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.3421213Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.3465636Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.3466801Z ##[group]Fetching the repository
+securite	Run actions/checkout@v4	2026-11-12T18:13:39.3476446Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9224830Z From https://github.com/EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9226464Z  * [new branch]          main                 -> origin/main
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9227110Z  * [new branch]          tache2-final         -> origin/tache2-final
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9227726Z  * [new branch]          tache2-hamza         -> origin/tache2-hamza
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9229030Z  * [new branch]          tache2-saidana       -> origin/tache2-saidana
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9230051Z  * [new branch]          tache3               -> origin/tache3
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9230865Z  * [new branch]          validation-ci-tache3 -> origin/validation-ci-tache3
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9231617Z  * [new branch]          validation-rickroll  -> origin/validation-rickroll
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9241204Z [command]/usr/bin/git rev-parse --verify --quiet 1073e389f96192a5e8abfab19624430dd32da141^{object}
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9272348Z 1073e389f96192a5e8abfab19624430dd32da141
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9277801Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9278823Z ##[group]Determining the checkout info
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9280226Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9285642Z [command]/usr/bin/git sparse-checkout disable
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9345134Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9380424Z ##[group]Checking out the ref
+securite	Run actions/checkout@v4	2026-11-12T18:13:47.9384746Z [command]/usr/bin/git checkout --progress --force 1073e389f96192a5e8abfab19624430dd32da141
+securite	Run actions/checkout@v4	2026-11-12T18:13:48.9610112Z Updating files:  75% (7420/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.0002941Z Updating files:  76% (7457/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.0749080Z Updating files:  77% (7555/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.0865895Z Updating files:  78% (7653/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.0987613Z Updating files:  79% (7751/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.1056138Z Updating files:  80% (7849/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.1113358Z Updating files:  81% (7947/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.1205574Z Updating files:  82% (8046/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.1612540Z Updating files:  83% (8144/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.1828449Z Updating files:  84% (8242/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.2256409Z Updating files:  85% (8340/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.2563793Z Updating files:  86% (8438/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.2929487Z Updating files:  87% (8536/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3140095Z Updating files:  88% (8634/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3418664Z Updating files:  89% (8732/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3503970Z Updating files:  90% (8830/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3600745Z Updating files:  91% (8929/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3684611Z Updating files:  92% (9027/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3801840Z Updating files:  93% (9125/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3901284Z Updating files:  94% (9223/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.3994712Z Updating files:  95% (9321/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4080550Z Updating files:  96% (9419/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4141687Z Updating files:  97% (9517/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4229156Z Updating files:  98% (9615/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4414973Z Updating files:  99% (9713/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4415577Z Updating files: 100% (9811/9811)
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4416006Z Updating files: 100% (9811/9811), done.
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4581195Z Note: switching to '1073e389f96192a5e8abfab19624430dd32da141'.
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4581711Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4581948Z You are in 'detached HEAD' state. You can look around, make experimental
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4582618Z changes and commit them, and you can discard any commits you make in this
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4583898Z state without impacting any branches by switching back to a branch.
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4584411Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4584741Z If you want to create a new branch to retain commits you create, you may
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4585562Z do so (now or later) by using -c with the switch command. Example:
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4586059Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4586226Z   git switch -c <new-branch-name>
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4586511Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4586672Z Or undo this operation with:
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4586936Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4587072Z   git switch -
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4587264Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4587615Z Turn off this advice by setting config variable advice.detachedHead to false
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4588389Z 
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4588831Z HEAD is now at 1073e389f Verifier absence de rickroll apres erreur de compilation
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4681244Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4739336Z [command]/usr/bin/git log -1 --format=%H
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4773406Z 1073e389f96192a5e8abfab19624430dd32da141
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4783878Z ##[group]Removing auth
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4787820Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.4821632Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5122831Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5148672Z http.https://github.com/.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5156133Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5190603Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5486880Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5523772Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	Run actions/checkout@v4	2026-11-12T18:13:49.5822225Z ##[endgroup]
+securite	Run actions/setup-python@v5	﻿2026-11-12T18:13:49.6095916Z ##[group]Run actions/setup-python@v5
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6096241Z with:
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6096461Z   python-version: 3.11
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6096691Z   check-latest: false
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6099679Z   token: ***
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6099906Z   update-environment: true
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6100166Z   allow-prereleases: false
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6100404Z   freethreaded: false
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.6100615Z ##[endgroup]
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.7526864Z ##[group]Installed versions
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.7698667Z (node:2462) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.7700023Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.7700721Z Successfully set up CPython (3.11.18)
+securite	Run actions/setup-python@v5	2026-11-12T18:13:49.7701664Z ##[endgroup]
+securite	Installer le moteur fige	﻿2026-11-12T18:13:49.7896242Z ##[group]Run python -m pip install -r semgrep/requirements.txt
+securite	Installer le moteur fige	2026-11-12T18:13:49.7897101Z ^[[36;1mpython -m pip install -r semgrep/requirements.txt^[[0m
+securite	Installer le moteur fige	2026-11-12T18:13:49.7990564Z shell: /usr/bin/bash -e {0}
+securite	Installer le moteur fige	2026-11-12T18:13:49.7991138Z env:
+securite	Installer le moteur fige	2026-11-12T18:13:49.7991706Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:13:49.7992453Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	Installer le moteur fige	2026-11-12T18:13:49.7993237Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:13:49.7993894Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:13:49.7994579Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:13:49.7995258Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	Installer le moteur fige	2026-11-12T18:13:49.7995927Z ##[endgroup]
+securite	Installer le moteur fige	2026-11-12T18:13:50.8063452Z Collecting semgrep==1.185.0 (from -r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:50.8739479Z   Downloading semgrep-1.185.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl.metadata (22 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:50.9002830Z Collecting attrs>=21.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:50.9167495Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:50.9392992Z Collecting boltons~=21.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:50.9551778Z   Downloading boltons-21.0.0-py2.py3-none-any.whl.metadata (1.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:50.9792122Z Collecting certifi>=2026.10.19 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:50.9955443Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.0146532Z Collecting click-option-group~=0.5 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.0308854Z   Downloading click_option_group-0.5.9-py3-none-any.whl.metadata (5.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.0544798Z Collecting click~=8.4.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.0712204Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.0950403Z Collecting colorama~=0.4.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.1111809Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.1316988Z Collecting exceptiongroup~=1.2.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.1477142Z   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.1666411Z Collecting glom>=23.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.1828574Z   Downloading glom-25.12.0-py3-none-any.whl.metadata (5.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.2142099Z Collecting jsonschema~=4.25.1 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.2303911Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.2544617Z Collecting mcp==1.29.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.2704012Z   Downloading mcp-1.29.0-py3-none-any.whl.metadata (9.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.2970841Z Collecting opentelemetry-api~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.3134994Z   Downloading opentelemetry_api-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.3396454Z Collecting opentelemetry-sdk~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.3561371Z   Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.3779291Z Collecting opentelemetry-exporter-otlp-proto-http~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.3940750Z   Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.4205334Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.4365806Z   Downloading opentelemetry_instrumentation_requests-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.4580465Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.4740891Z   Downloading opentelemetry_instrumentation_threading-0.66b2-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.4951038Z Collecting packaging>=21.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.5114899Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.5379420Z Collecting peewee~=3.14 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.5541498Z   Downloading peewee-3.19.0-py3-none-any.whl.metadata (7.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.5774892Z Collecting pyjwt<3,>=2.15.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.5936407Z   Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.6240475Z Collecting requests~=2.22 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.6401723Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.6750826Z Collecting rich>=13.5.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.6913342Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.8101219Z Collecting ruamel.yaml>=0.18.15 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.8264974Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.8701918Z Collecting ruamel.yaml.clib==0.2.15 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.8865628Z   Downloading ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.9070707Z Collecting semantic-version~=2.10.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.9231293Z   Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.9453992Z Collecting structlog~=26.1.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:51.9611760Z   Downloading structlog-26.1.0-py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:51.9983200Z Collecting tomli~=2.4.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.0142485Z   Downloading tomli-2.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.0385036Z Collecting typing-extensions~=4.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.0639440Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.0907510Z Collecting urllib3~=2.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.1070595Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.1324382Z Collecting wcmatch~=8.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.1483118Z   Downloading wcmatch-8.5.2-py3-none-any.whl.metadata (4.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.1807787Z Collecting anyio>=4.5 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.1983504Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.2155549Z Collecting httpx-sse>=0.4 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.2315451Z   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.2544965Z Collecting httpx<1.0.0,>=0.27.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.2706525Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.2945456Z Collecting pydantic-settings>=2.5.2 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.3108238Z   Downloading pydantic_settings-2.16.2-py3-none-any.whl.metadata (4.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.4348288Z Collecting pydantic<3.0.0,>=2.11.0 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.4513741Z   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.4982061Z Collecting python-multipart>=0.0.9 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.5139128Z   Downloading python_multipart-0.0.33-py3-none-any.whl.metadata (6.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.5410894Z Collecting sse-starlette>=1.6.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.5570331Z   Downloading sse_starlette-3.7.0-py3-none-any.whl.metadata (15 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.5886423Z Collecting starlette>=0.27 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.6049341Z   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.6261644Z Collecting typing-inspection>=0.4.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.6429973Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.6733062Z Collecting uvicorn>=0.31.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.6894083Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.7169810Z Collecting httpcore==1.* (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.7329394Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.7619969Z Collecting idna (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.7785186Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.7974443Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.8137845Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.8352267Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.8513121Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:52.8773186Z Collecting referencing>=0.28.4 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:52.8934940Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.1674156Z Collecting rpds-py>=0.7.1 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.1843622Z   Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.2144471Z Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.2304576Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.2559150Z Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.2737075Z   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.3031242Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.3195632Z   Downloading googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.3436001Z Collecting opentelemetry-exporter-otlp-proto-common==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.3599710Z   Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl.metadata (1.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.3836014Z Collecting opentelemetry-proto==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.4015265Z   Downloading opentelemetry_proto-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.5462469Z Collecting protobuf<7.0,>=5.0 (from opentelemetry-proto==1.37.0->opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.5626944Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+securite	Installer le moteur fige	2026-11-12T18:13:53.5956371Z Collecting opentelemetry-instrumentation==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.6119801Z   Downloading opentelemetry_instrumentation-0.66b2-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.6354946Z Collecting opentelemetry-semantic-conventions==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.6520622Z   Downloading opentelemetry_semantic_conventions-0.66b2-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:53.6750111Z Collecting opentelemetry-util-http==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:53.6912043Z   Downloading opentelemetry_util_http-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.0831575Z Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.66b2->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.0997744Z   Downloading wrapt-2.5.2-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.1051142Z INFO: pip is looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:13:54.1061955Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.1225063Z   Downloading opentelemetry_instrumentation_requests-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.1275243Z Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.1435702Z   Downloading opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.1481532Z Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.1644166Z   Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.1690905Z Collecting opentelemetry-util-http==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.1853544Z   Downloading opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.1916107Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.2178960Z   Downloading opentelemetry_instrumentation_requests-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.2230666Z Collecting opentelemetry-instrumentation==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.2394564Z   Downloading opentelemetry_instrumentation-0.66b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.2442916Z Collecting opentelemetry-semantic-conventions==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.2605185Z   Downloading opentelemetry_semantic_conventions-0.66b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.2652733Z Collecting opentelemetry-util-http==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.2815719Z   Downloading opentelemetry_util_http-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.2880183Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.3044290Z   Downloading opentelemetry_instrumentation_requests-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.3094789Z Collecting opentelemetry-instrumentation==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.3263288Z   Downloading opentelemetry_instrumentation-0.65b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.3310305Z Collecting opentelemetry-semantic-conventions==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.3490260Z   Downloading opentelemetry_semantic_conventions-0.65b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.3535262Z Collecting opentelemetry-util-http==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.3704805Z   Downloading opentelemetry_util_http-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.3759575Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.3923466Z   Downloading opentelemetry_instrumentation_requests-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.3978259Z Collecting opentelemetry-instrumentation==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.4142402Z   Downloading opentelemetry_instrumentation-0.64b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.4190599Z Collecting opentelemetry-semantic-conventions==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.4354812Z   Downloading opentelemetry_semantic_conventions-0.64b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.4401272Z Collecting opentelemetry-util-http==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.4564154Z   Downloading opentelemetry_util_http-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.4620341Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.4783807Z   Downloading opentelemetry_instrumentation_requests-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.4835798Z Collecting opentelemetry-instrumentation==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.4999064Z   Downloading opentelemetry_instrumentation-0.63b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.5047885Z Collecting opentelemetry-semantic-conventions==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.5211015Z   Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.5262729Z Collecting opentelemetry-util-http==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.5425799Z   Downloading opentelemetry_util_http-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.5481499Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.5645119Z   Downloading opentelemetry_instrumentation_requests-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.5696885Z Collecting opentelemetry-instrumentation==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.5863583Z   Downloading opentelemetry_instrumentation-0.63b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.5911204Z Collecting opentelemetry-semantic-conventions==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.6072084Z   Downloading opentelemetry_semantic_conventions-0.63b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.6114332Z Collecting opentelemetry-util-http==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.6274471Z   Downloading opentelemetry_util_http-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.6328838Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.6501419Z   Downloading opentelemetry_instrumentation_requests-0.62b1-py3-none-any.whl.metadata (2.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.6549072Z Collecting opentelemetry-instrumentation==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.6712350Z   Downloading opentelemetry_instrumentation-0.62b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.6757386Z Collecting opentelemetry-semantic-conventions==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.6921013Z   Downloading opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.6965320Z Collecting opentelemetry-util-http==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.7125712Z   Downloading opentelemetry_util_http-0.62b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.7172721Z INFO: pip is still looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:13:54.7181859Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.7342319Z   Downloading opentelemetry_instrumentation_requests-0.62b0-py3-none-any.whl.metadata (2.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.7389343Z Collecting opentelemetry-instrumentation==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.7549693Z   Downloading opentelemetry_instrumentation-0.62b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.7593479Z Collecting opentelemetry-semantic-conventions==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.7763090Z   Downloading opentelemetry_semantic_conventions-0.62b0-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.7809116Z Collecting opentelemetry-util-http==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.7981538Z   Downloading opentelemetry_util_http-0.62b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.8033902Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.8201631Z   Downloading opentelemetry_instrumentation_requests-0.61b0-py3-none-any.whl.metadata (2.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.8251786Z Collecting opentelemetry-instrumentation==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.8415446Z   Downloading opentelemetry_instrumentation-0.61b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.8469320Z Collecting opentelemetry-semantic-conventions==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.8657317Z   Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.8704168Z Collecting opentelemetry-util-http==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.8868901Z   Downloading opentelemetry_util_http-0.61b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.8923960Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.9085516Z   Downloading opentelemetry_instrumentation_requests-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.9134903Z Collecting opentelemetry-instrumentation==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.9298873Z   Downloading opentelemetry_instrumentation-0.60b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.9344429Z Collecting opentelemetry-semantic-conventions==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.9514316Z   Downloading opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.9565641Z Collecting opentelemetry-util-http==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.9726299Z   Downloading opentelemetry_util_http-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.9780206Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:54.9945137Z   Downloading opentelemetry_instrumentation_requests-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:54.9994907Z Collecting opentelemetry-instrumentation==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.0159133Z   Downloading opentelemetry_instrumentation-0.60b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.0208207Z Collecting opentelemetry-semantic-conventions==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.0397154Z   Downloading opentelemetry_semantic_conventions-0.60b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.0443578Z Collecting opentelemetry-util-http==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.0636193Z   Downloading opentelemetry_util_http-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.0694011Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.0855853Z   Downloading opentelemetry_instrumentation_requests-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.0904458Z Collecting opentelemetry-instrumentation==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.1066890Z   Downloading opentelemetry_instrumentation-0.59b0-py3-none-any.whl.metadata (7.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.1115798Z Collecting opentelemetry-semantic-conventions==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.1284701Z   Downloading opentelemetry_semantic_conventions-0.59b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.1328288Z Collecting opentelemetry-util-http==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.1495221Z   Downloading opentelemetry_util_http-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.1543970Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+securite	Installer le moteur fige	2026-11-12T18:13:55.1553868Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.1718427Z   Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.1771424Z Collecting opentelemetry-instrumentation==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.1937454Z   Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl.metadata (7.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.1985723Z Collecting opentelemetry-semantic-conventions==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.2149552Z   Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.2205470Z Collecting opentelemetry-util-http==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.2365781Z   Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.2460947Z Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.58b0->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.2621307Z   Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.2678804Z INFO: pip is looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:13:55.2685267Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.2849591Z   Downloading opentelemetry_instrumentation_threading-0.66b1-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.3059507Z   Downloading opentelemetry_instrumentation_threading-0.66b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.3316141Z   Downloading opentelemetry_instrumentation_threading-0.65b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.3521493Z   Downloading opentelemetry_instrumentation_threading-0.64b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.3748688Z   Downloading opentelemetry_instrumentation_threading-0.63b1-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.3979465Z   Downloading opentelemetry_instrumentation_threading-0.63b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.4196457Z   Downloading opentelemetry_instrumentation_threading-0.62b1-py3-none-any.whl.metadata (2.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.4241993Z INFO: pip is still looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:13:55.4407345Z   Downloading opentelemetry_instrumentation_threading-0.62b0-py3-none-any.whl.metadata (2.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.4618327Z   Downloading opentelemetry_instrumentation_threading-0.61b0-py3-none-any.whl.metadata (2.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.4856475Z   Downloading opentelemetry_instrumentation_threading-0.60b1-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.5060672Z   Downloading opentelemetry_instrumentation_threading-0.60b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.5266297Z   Downloading opentelemetry_instrumentation_threading-0.59b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.5307454Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+securite	Installer le moteur fige	2026-11-12T18:13:55.5474721Z   Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:55.5740195Z Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:55.5911111Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.3931301Z Collecting pydantic-core==2.50.4 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.4096905Z   Downloading pydantic_core-2.50.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.5828343Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.5992006Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.7187537Z Collecting charset_normalizer<4,>=2 (from requests~=2.22->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.7351351Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.7682668Z Collecting bracex>=2.1.1 (from wcmatch~=8.3->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.7843878Z   Downloading bracex-3.2.2-py3-none-any.whl.metadata (3.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.9015878Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.9175317Z   Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.9359704Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.9518340Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:56.9720993Z Collecting face>=20.1.1 (from glom>=23.3->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:56.9880666Z   Downloading face-26.0.1-py3-none-any.whl.metadata (1.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.0177187Z Collecting python-dotenv>=1.2.2 (from pydantic-settings>=2.5.2->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:57.0337663Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.0639158Z Collecting markdown-it-py>=2.2.0 (from rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:57.0802514Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.1064943Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:57.1226495Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.1410341Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:13:57.1568270Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.1905820Z Downloading semgrep-1.185.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl (72.3 MB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.5011984Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.3/72.3 MB 246.3 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:13:57.5187161Z Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.5379199Z Downloading ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (777 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.5451175Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 777.6/777.6 kB 134.0 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:13:57.5611609Z Downloading boltons-21.0.0-py2.py3-none-any.whl (193 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.5798940Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.5985874Z Downloading click_option_group-0.5.9-py3-none-any.whl (11 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.6200604Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.6379805Z Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.6572293Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.6755632Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.6938325Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.7126217Z Downloading opentelemetry_api-1.37.0-py3-none-any.whl (65 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.7759628Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.7952482Z Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl (19 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.8130368Z Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.8313633Z Downloading opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.8503371Z Downloading googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.8702086Z Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl (12 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.8881027Z Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl (207 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.9064352Z Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl (33 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.9243176Z Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl (7.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.9427449Z Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl (9.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.9605481Z Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl (131 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:57.9814656Z Downloading peewee-3.19.0-py3-none-any.whl (411 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.0003858Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.0221383Z Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.0449023Z Downloading pydantic_core-2.50.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.0546261Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 278.6 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:13:58.0707122Z Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.0891497Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.1079367Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.1275130Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.1455799Z Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.1641518Z Downloading structlog-26.1.0-py3-none-any.whl (73 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.1828485Z Downloading tomli-2.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (243 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.2025629Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.2210976Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.2405871Z Downloading wcmatch-8.5.2-py3-none-any.whl (39 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.2594065Z Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (82 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.2791352Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.2984511Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.3194454Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.3382618Z Downloading bracex-3.2.2-py3-none-any.whl (14 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.3569818Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.3762788Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.3946397Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 291.1 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:13:58.4124796Z Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (217 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.4315573Z Downloading glom-25.12.0-py3-none-any.whl (103 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.4502971Z Downloading face-26.0.1-py3-none-any.whl (57 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.4684471Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.4872695Z Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.5063903Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.5250153Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.5435752Z Downloading pydantic_settings-2.16.2-py3-none-any.whl (81 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.5619545Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.5801758Z Downloading python_multipart-0.0.33-py3-none-any.whl (32 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.5987092Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.6202515Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.6382478Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.6469602Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 204.5 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:13:58.6622152Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.6817492Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.7002805Z Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (375 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.7195050Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.7382491Z Downloading sse_starlette-3.7.0-py3-none-any.whl (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.7571693Z Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.7758625Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.7949222Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.8135229Z Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:58.8318786Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+securite	Installer le moteur fige	2026-11-12T18:13:59.1541860Z Installing collected packages: peewee, boltons, zipp, wrapt, urllib3, typing-extensions, tomli, structlog, semantic-version, ruamel.yaml.clib, ruamel.yaml, rpds-py, python-multipart, python-dotenv, pyjwt, pygments, pycparser, protobuf, packaging, opentelemetry-util-http, mdurl, idna, httpx-sse, h11, face, exceptiongroup, colorama, click, charset_normalizer, certifi, bracex, attrs, annotated-types, wcmatch, uvicorn, typing-inspection, requests, referencing, pydantic-core, opentelemetry-proto, markdown-it-py, importlib-metadata, httpcore, googleapis-common-protos, glom, click-option-group, cffi, anyio, starlette, rich, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, jsonschema-specifications, httpx, cryptography, sse-starlette, pydantic-settings, opentelemetry-semantic-conventions, jsonschema, opentelemetry-sdk, opentelemetry-instrumentation, mcp, opentelemetry-instrumentation-threading, opentelemetry-instrumentation-requests, opentelemetry-exporter-otlp-proto-http, semgrep
+securite	Installer le moteur fige	2026-11-12T18:14:04.1736583Z 
+securite	Installer le moteur fige	2026-11-12T18:14:04.1771872Z Successfully installed annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boltons-21.0.0 bracex-3.2.2 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 click-8.4.2 click-option-group-0.5.9 colorama-0.4.6 cryptography-50.0.2 exceptiongroup-1.2.2 face-26.0.1 glom-25.12.0 googleapis-common-protos-1.76.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.20 importlib-metadata-8.7.1 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 markdown-it-py-4.3.0 mcp-1.29.0 mdurl-0.1.2 opentelemetry-api-1.37.0 opentelemetry-exporter-otlp-proto-common-1.37.0 opentelemetry-exporter-otlp-proto-http-1.37.0 opentelemetry-instrumentation-0.58b0 opentelemetry-instrumentation-requests-0.58b0 opentelemetry-instrumentation-threading-0.58b0 opentelemetry-proto-1.37.0 opentelemetry-sdk-1.37.0 opentelemetry-semantic-conventions-0.58b0 opentelemetry-util-http-0.58b0 packaging-26.3 peewee-3.19.0 protobuf-6.33.6 pycparser-3.12 pydantic-2.14.3 pydantic-core-2.50.4 pydantic-settings-2.16.2 pygments-2.21.0 pyjwt-2.15.1 python-dotenv-1.2.4 python-multipart-0.0.33 referencing-0.37.0 requests-2.34.2 rich-15.0.0 rpds-py-2026.9.1 ruamel.yaml-0.19.1 ruamel.yaml.clib-0.2.15 semantic-version-2.10.0 semgrep-1.185.0 sse-starlette-3.7.0 starlette-1.10.0 structlog-26.1.0 tomli-2.4.1 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 wcmatch-8.5.2 wrapt-1.17.3 zipp-4.1.2
+securite	Installer le moteur fige	2026-11-12T18:14:04.1781550Z 
+securite	Installer le moteur fige	2026-11-12T18:14:04.1781752Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+securite	Installer le moteur fige	2026-11-12T18:14:04.1782147Z [notice] To update, run: pip install --upgrade pip
+securite	Comparer les alertes et bloquer les nouveautes	﻿2026-11-12T18:14:04.4495059Z ##[group]Run python semgrep/gate.py --event-name "$EVENT_NAME" --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4495980Z ^[[36;1mpython semgrep/gate.py --event-name "$EVENT_NAME" --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports^[[0m
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4550560Z shell: /usr/bin/bash -e {0}
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4550844Z env:
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4551133Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4551583Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4552020Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4552411Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4552799Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4553186Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4553524Z   EVENT_NAME: pull_request
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:04.4553756Z ##[endgroup]
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:31.2354372Z Contrôle Semgrep : passed
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:31.2355577Z Référence : b6f2723a3cdafdec790872041cd2285c36443ff8
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:31.2356368Z Version : 1073e389f96192a5e8abfab19624430dd32da141
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:14:31.2357170Z Alertes : 17 → 17 ; 0 nouvelles, 0 supprimées.
+securite	Conserver les rapports meme apres echec	﻿2026-11-12T18:14:31.2535690Z ##[group]Run actions/upload-artifact@v4
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2536074Z with:
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2536282Z   name: semgrep-43277596512-1
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2536536Z   path: security-reports/
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2536784Z   if-no-files-found: error
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2537014Z   retention-days: 30
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2537225Z   compression-level: 6
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2537435Z   overwrite: false
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2537648Z   include-hidden-files: false
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2537884Z env:
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2538391Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2538837Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2539291Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2539938Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2540331Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2540713Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.2541074Z ##[endgroup]
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.4317226Z (node:2792) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.4318814Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.4461013Z With the provided path, there will be 11 files uploaded
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.4461575Z Artifact name is valid!
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.4461818Z Root directory input is valid!
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.6611137Z Beginning upload of artifact content to blob storage
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.7139053Z (node:2792) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.7501746Z Uploaded bytes 88648
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.7684442Z Finished uploading artifact content to blob storage!
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.7685702Z SHA256 digest of uploaded artifact zip is 3bcc2eac8a086179a02f898b5a7014f924062f6bc7e0dcd4a1cf9eba4ed434ea
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:31.7686783Z Finalizing artifact upload
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:32.1801694Z Artifact semgrep-43277596512-1.zip successfully finalized. Artifact ID 13971396984
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:32.1803564Z Artifact semgrep-43277596512-1 has been successfully uploaded! Final size is 88648 bytes. Artifact ID is 13971396984
+securite	Conserver les rapports meme apres echec	2026-11-12T18:14:32.1809469Z Artifact download URL: https://github.com/EnzoT454/tika/actions/runs/43277596512/artifacts/13971396984
+securite	Post Run actions/setup-python@v5	﻿2026-11-12T18:14:32.2016541Z Post job cleanup.
+securite	Post Run actions/setup-python@v5	2026-11-12T18:14:32.3273352Z (node:2805) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	Post Run actions/setup-python@v5	2026-11-12T18:14:32.3274415Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	Post Run actions/checkout@v4	﻿2026-11-12T18:14:32.3449321Z Post job cleanup.
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4449638Z [command]/usr/bin/git version
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4498904Z git version 2.56.0
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4540555Z Temporarily overriding HOME='/home/runner/work/_temp/3326f340-487d-4a3e-9959-62919ee08efe' before making global git config changes
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4543589Z Adding repository directory to the temporary git global config as a safe directory
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4545005Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4592627Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.4636379Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.5022213Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.5061915Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.5423361Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	Post Run actions/checkout@v4	2026-11-12T18:14:32.5470352Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	Complete job	﻿2026-11-12T18:14:32.5983280Z Cleaning up orphan processes
+securite	Complete job	2026-11-12T18:14:32.6564036Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+construction	Set up job	﻿2026-11-12T18:14:36.4051438Z Current runner version: '2.338.2'
+construction	Set up job	2026-11-12T18:14:36.4072790Z ##[group]Runner Image Provisioner
+construction	Set up job	2026-11-12T18:14:36.4073549Z Hosted Compute Agent
+construction	Set up job	2026-11-12T18:14:36.4074131Z Version: 20261103.629
+construction	Set up job	2026-11-12T18:14:36.4074697Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+construction	Set up job	2026-11-12T18:14:36.4075362Z Build Date: 2026-11-03T17:26:59Z
+construction	Set up job	2026-11-12T18:14:36.4075931Z Worker ID: {932f07b8-c720-4308-8c5a-b8693eb11942}
+construction	Set up job	2026-11-12T18:14:36.4076661Z Region: westcentralus
+construction	Set up job	2026-11-12T18:14:36.4077196Z Cloud: Azure
+construction	Set up job	2026-11-12T18:14:36.4077683Z ##[endgroup]
+construction	Set up job	2026-11-12T18:14:36.4079007Z ##[group]Operating System
+construction	Set up job	2026-11-12T18:14:36.4079616Z Ubuntu
+construction	Set up job	2026-11-12T18:14:36.4080054Z 26.04.1
+construction	Set up job	2026-11-12T18:14:36.4080505Z LTS
+construction	Set up job	2026-11-12T18:14:36.4080983Z ##[endgroup]
+construction	Set up job	2026-11-12T18:14:36.4081465Z ##[group]Runner Image
+construction	Set up job	2026-11-12T18:14:36.4082008Z Image: ubuntu-26.04
+construction	Set up job	2026-11-12T18:14:36.4082474Z Version: 20261111.196.1
+construction	Set up job	2026-11-12T18:14:36.4083364Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+construction	Set up job	2026-11-12T18:14:36.4084785Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+construction	Set up job	2026-11-12T18:14:36.4085627Z ##[endgroup]
+construction	Set up job	2026-11-12T18:14:36.4086788Z ##[group]GITHUB_TOKEN Permissions
+construction	Set up job	2026-11-12T18:14:36.4088440Z Contents: read
+construction	Set up job	2026-11-12T18:14:36.4089047Z Metadata: read
+construction	Set up job	2026-11-12T18:14:36.4089581Z ##[endgroup]
+construction	Set up job	2026-11-12T18:14:36.4091309Z Secret source: Actions
+construction	Set up job	2026-11-12T18:14:36.4092173Z Cache mode: write
+construction	Set up job	2026-11-12T18:14:36.4092735Z Prepare workflow directory
+construction	Set up job	2026-11-12T18:14:36.4362666Z Prepare all required actions
+construction	Set up job	2026-11-12T18:14:36.4401248Z Getting action download info
+construction	Set up job	2026-11-12T18:14:36.7492890Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+construction	Set up job	2026-11-12T18:14:36.8596147Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+construction	Set up job	2026-11-12T18:14:37.5285068Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+construction	Set up job	2026-11-12T18:14:37.7406049Z Complete job name: construction
+construction	Run actions/checkout@v4	﻿2026-11-12T18:14:37.8162777Z ##[group]Run actions/checkout@v4
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8163525Z with:
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8163943Z   ref: 1073e389f96192a5e8abfab19624430dd32da141
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8164524Z   persist-credentials: false
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8164979Z   repository: EnzoT454/tika
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8168739Z   token: ***
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8169258Z   ssh-strict: true
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8169774Z   ssh-user: git
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8170246Z   clean: true
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8170723Z   sparse-checkout-cone-mode: true
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8171368Z   fetch-depth: 1
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8171832Z   fetch-tags: false
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8172347Z   show-progress: true
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8172857Z   lfs: false
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8173320Z   submodules: false
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8173869Z   set-safe-directory: true
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8174440Z   allow-unsafe-pr-checkout: false
+construction	Run actions/checkout@v4	2026-11-12T18:14:37.8175255Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0359319Z Syncing repository: EnzoT454/tika
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0361225Z ##[group]Getting Git version info
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0362413Z Working directory is '/home/runner/work/tika/tika'
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0363915Z [command]/usr/bin/git version
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0367586Z git version 2.56.1
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0377901Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0388341Z Temporarily overriding HOME='/home/runner/work/_temp/ffe022a1-4bdc-4b8d-9215-28cbbae5c2c4' before making global git config changes
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0390742Z Adding repository directory to the temporary git global config as a safe directory
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0393882Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0443479Z Deleting the contents of '/home/runner/work/tika/tika'
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0447086Z ##[group]Initializing the repository
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0450851Z [command]/usr/bin/git init /home/runner/work/tika/tika
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0548899Z hint: Using 'master' as the name for the initial branch. This default branch name
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0551473Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0553665Z hint: to use in all of your new repositories, which will suppress this warning,
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0555019Z hint: call:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0556166Z hint:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0557489Z hint: 	git config --global init.defaultBranch <name>
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0558391Z hint:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0559258Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0560845Z hint: 'development'. The just-created branch can be renamed via this command:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0562089Z hint:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0562820Z hint: 	git branch -m <name>
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0563442Z hint:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0564128Z hint: Disable this message with "git config set advice.defaultBranchName false"
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0565708Z Initialized empty Git repository in /home/runner/work/tika/tika/.git/
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0573366Z [command]/usr/bin/git remote add origin https://github.com/EnzoT454/tika
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0619261Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0620314Z ##[group]Disabling automatic garbage collection
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0621798Z [command]/usr/bin/git config --local gc.auto 0
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0652253Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0653150Z ##[group]Setting up auth
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0657849Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.0689713Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1061375Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1092425Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1328406Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1359241Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1588115Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1622719Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1624411Z ##[group]Fetching the repository
+construction	Run actions/checkout@v4	2026-11-12T18:14:38.1631195Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 1073e389f96192a5e8abfab19624430dd32da141
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1870360Z From https://github.com/EnzoT454/tika
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1871828Z  * branch            1073e389f96192a5e8abfab19624430dd32da141 -> FETCH_HEAD
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1874330Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1874996Z ##[group]Determining the checkout info
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1877239Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1883308Z [command]/usr/bin/git sparse-checkout disable
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1925907Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1952353Z ##[group]Checking out the ref
+construction	Run actions/checkout@v4	2026-11-12T18:14:43.1954983Z [command]/usr/bin/git checkout --progress --force 1073e389f96192a5e8abfab19624430dd32da141
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.2218527Z Updating files:  85% (8407/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.2467347Z Updating files:  86% (8438/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.2773693Z Updating files:  87% (8536/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.2941366Z Updating files:  88% (8634/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3172342Z Updating files:  89% (8732/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3234086Z Updating files:  90% (8830/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3317326Z Updating files:  91% (8929/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3374376Z Updating files:  92% (9027/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3463662Z Updating files:  93% (9125/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3533693Z Updating files:  94% (9223/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3601070Z Updating files:  95% (9321/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3659194Z Updating files:  96% (9419/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3703655Z Updating files:  97% (9517/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3743655Z Updating files:  98% (9615/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3903231Z Updating files:  99% (9713/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3903655Z Updating files: 100% (9811/9811)
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.3904001Z Updating files: 100% (9811/9811), done.
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4009174Z Note: switching to '1073e389f96192a5e8abfab19624430dd32da141'.
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4009601Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4009879Z You are in 'detached HEAD' state. You can look around, make experimental
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4010368Z changes and commit them, and you can discard any commits you make in this
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4011023Z state without impacting any branches by switching back to a branch.
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4011404Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4011657Z If you want to create a new branch to retain commits you create, you may
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4012264Z do so (now or later) by using -c with the switch command. Example:
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4012614Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4012771Z   git switch -c <new-branch-name>
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4012983Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4013108Z Or undo this operation with:
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4013286Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4013396Z   git switch -
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4013549Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4013795Z Turn off this advice by setting config variable advice.detachedHead to false
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4014164Z 
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4014408Z HEAD is now at 1073e38 Verifier absence de rickroll apres erreur de compilation
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4074147Z ##[endgroup]
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4116024Z [command]/usr/bin/git log -1 --format=%H
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4136331Z 1073e389f96192a5e8abfab19624430dd32da141
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4144163Z ##[group]Removing auth
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4147037Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4171971Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4419800Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4439903Z http.https://github.com/.extraheader
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4445453Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4473218Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4715464Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4741980Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+construction	Run actions/checkout@v4	2026-11-12T18:14:44.4977667Z ##[endgroup]
+construction	Run actions/setup-java@v4	﻿2026-11-12T18:14:44.5214520Z ##[group]Run actions/setup-java@v4
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5214772Z with:
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5214955Z   distribution: temurin
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5215144Z   java-version: 17
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5215318Z   cache: maven
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5215492Z   java-package: jdk
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5215677Z   check-latest: false
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5215868Z   server-id: github
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5216047Z   server-username: GITHUB_ACTOR
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5216256Z   server-password: GITHUB_TOKEN
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5216597Z   overwrite-settings: true
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5216793Z   job-status: success
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5218656Z   token: ***
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.5218836Z ##[endgroup]
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6592357Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6602125Z ##[group]Installed distributions
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6632136Z Resolved Java 17.0.21+9 from tool-cache
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6632563Z Setting Java 17.0.21+9 as the default
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6640300Z (node:2355) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6641013Z (Use `node --trace-deprecation ...` to show where the warning was created)
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6643408Z Creating toolchains.xml for JDK version 17 from temurin
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6698821Z Writing to /home/runner/.m2/toolchains.xml
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6699160Z 
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6699421Z Java configuration:
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6699749Z   Distribution: temurin
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6700011Z   Version: 17.0.21+9
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6700322Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6700600Z 
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6700890Z ##[endgroup]
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6715494Z Creating settings.xml with server-id: github
+construction	Run actions/setup-java@v4	2026-11-12T18:14:44.6735344Z Writing to /home/runner/.m2/settings.xml
+construction	Run actions/setup-java@v4	2026-11-12T18:14:45.6888508Z Cache hit for: setup-java-Linux-x64-maven-84a9e9a8a09be5199af0b9d3acd2d4f763a37f6828a4fd5480512bb087db73fa
+construction	Run actions/setup-java@v4	2026-11-12T18:14:45.6969677Z (node:2355) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+construction	Run actions/setup-java@v4	2026-11-12T18:14:46.8971958Z Received 62914560 of 134374904 (46.8%), 60.0 MBs/sec
+construction	Run actions/setup-java@v4	2026-11-12T18:14:47.4771086Z Received 134374904 of 134374904 (100.0%), 81.1 MBs/sec
+construction	Run actions/setup-java@v4	2026-11-12T18:14:47.4771590Z Cache Size: ~128 MB (134374904 B)
+construction	Run actions/setup-java@v4	2026-11-12T18:14:47.4801796Z [command]/usr/bin/tar -xf /home/runner/work/_temp/bd4d10bd-f6fe-4f5e-963e-1a85ace56cf2/cache.tzst -P -C /home/runner/work/tika/tika --use-compress-program unzstd
+construction	Run actions/setup-java@v4	2026-11-12T18:14:47.7287755Z Cache restored successfully
+construction	Run actions/setup-java@v4	2026-11-12T18:14:47.7346949Z Cache restored from key: setup-java-Linux-x64-maven-84a9e9a8a09be5199af0b9d3acd2d4f763a37f6828a4fd5480512bb087db73fa
+construction	Construire et tester tika-core et ses dependances	﻿2026-11-12T18:14:47.7635114Z ##[group]Run set -euo pipefail
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7635439Z ^[[36;1mset -euo pipefail^[[0m
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7635749Z ^[[36;1mpython3 .github/scripts/tache3-test-status.py --start^[[0m
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7636183Z ^[[36;1m./mvnw -B -ntp -pl tika-core -am clean install 2>&1 | tee tache3-build.log^[[0m
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7691837Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7692134Z env:
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7692403Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7692827Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:47.7693129Z ##[endgroup]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:49.5844272Z [INFO] Maveniverse Nisse 0.9.4 loaded
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:53.1085874Z [INFO] Nisse injecting 39 properties into User Properties
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:53.1237298Z [INFO] Scanning for projects...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1797912Z [WARNING] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1811785Z [WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika-parent:pom:4.0.0-SNAPSHOT
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1867924Z [WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /home/runner/work/tika/tika/tika-parent/pom.xml, line 34, column 12
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1897347Z [WARNING] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1937399Z [WARNING] Some problems were encountered while building the effective model for org.apache.tika:tika:pom:4.0.0-SNAPSHOT
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1957814Z [WARNING] 'version' contains an expression but should be a constant. @ org.apache.tika:tika-parent:${revision}, /home/runner/work/tika/tika/tika-parent/pom.xml, line 34, column 12
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.1994669Z [WARNING] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2007546Z [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2008402Z [WARNING] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2009120Z [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2009963Z [WARNING] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2010553Z [INFO] No need for inlining
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2011528Z [INFO] ------------------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2012139Z [INFO] Reactor Build Order:
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2012569Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2013080Z [INFO] Apache Tika parent                                                 [pom]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2013822Z [INFO] Apache Tika Annotation Processor                                   [jar]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2014684Z [INFO] Apache Tika core                                                [bundle]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2084363Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2114490Z [INFO] --------------------< org.apache.tika:tika-parent >---------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2127121Z [INFO] Building Apache Tika parent 4.0.0-SNAPSHOT                         [1/3]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2153759Z [INFO]   from pom.xml
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2160607Z [INFO] --------------------------------[ pom ]---------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2839535Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.2848632Z [INFO] --- clean:3.5.0:clean (default-clean) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.3099732Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.3100626Z [INFO] --- flatten:1.8.0:clean (flatten.clean) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.3358546Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.3359406Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4277691Z [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4307216Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4308052Z [INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4402112Z [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4403040Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4403836Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4473939Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4481880Z [INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4495239Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4527171Z [INFO] --- enforcer:3.6.3:enforce (ban-bad-log4j-versions) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4647344Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4648098Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4648561Z [INFO] --- enforcer:3.6.3:enforce (ban-xerces-and-xml-apis) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4677206Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4697814Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.4698392Z [INFO] --- jacoco:0.8.15:prepare-agent (default) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.5041025Z [INFO] surefireArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/home/runner/work/tika/tika/tika-parent/target/jacoco.exec
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.5042408Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.5042965Z [INFO] --- spotless:3.9.0:apply (default) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.6227634Z [INFO] Index file does not exist. Fallback to an empty index
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.6313956Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.6315011Z [INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.7254660Z [INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.7770480Z [INFO] Copying 3 resources from 1 bundle.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.8129273Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.8151538Z [INFO] --- flatten:1.8.0:flatten (flatten) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.8192026Z [INFO] Generating flattened POM of project org.apache.tika:tika-parent:pom:4.0.0-SNAPSHOT...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.8557424Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:54.8558300Z [INFO] --- checkstyle:3.6.0:check (validate) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.4237459Z [INFO] You have 0 Checkstyle violations.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.4238174Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.4238911Z [INFO] --- jacoco:0.8.15:report (report) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.4277086Z [INFO] Skipping JaCoCo execution due to missing execution data file.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.4277584Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.4277965Z [INFO] --- ossindex:3.2.0:audit (audit-dependencies) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.5979643Z [INFO] Skipping; POM module
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.5980440Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.5981065Z [INFO] --- forbiddenapis:3.10:check (default) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6082783Z [INFO] Skipping execution for packaging "pom"
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6107433Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6111605Z [INFO] --- forbiddenapis:3.10:testCheck (default) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6112419Z [INFO] Skipping execution for packaging "pom"
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6112974Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6113545Z [INFO] --- install:3.1.4:install (default-install) @ tika-parent ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6302766Z [INFO] Installing /home/runner/work/tika/tika/tika-parent/.flattened-pom.xml to /home/runner/.m2/repository/org/apache/tika/tika-parent/4.0.0-SNAPSHOT/tika-parent-4.0.0-SNAPSHOT.pom
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6367734Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6368446Z [INFO] -------------< org.apache.tika:tika-annotation-processor >--------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6369407Z [INFO] Building Apache Tika Annotation Processor 4.0.0-SNAPSHOT           [2/3]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6370417Z [INFO]   from /home/runner/work/tika/tika/tika-annotation-processor/pom.xml
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6371203Z [INFO] --------------------------------[ jar ]---------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6594575Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6600294Z [INFO] --- clean:3.5.0:clean (default-clean) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6645414Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6665334Z [INFO] --- flatten:1.8.0:clean (flatten.clean) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6727016Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6731123Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6761791Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6787298Z [INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6802402Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6803098Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6804154Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6804870Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6805461Z [INFO] --- enforcer:3.6.3:enforce (ban-bad-log4j-versions) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6806703Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6813733Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6814403Z [INFO] --- enforcer:3.6.3:enforce (ban-xerces-and-xml-apis) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6815440Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6816160Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6816912Z [INFO] --- jacoco:0.8.15:prepare-agent (default) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6820624Z [INFO] surefireArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/home/runner/work/tika/tika/tika-annotation-processor/target/jacoco.exec
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6821965Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6822512Z [INFO] --- spotless:3.9.0:apply (default) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.6824084Z [INFO] Index file does not exist. Fallback to an empty index
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9160762Z [INFO] Spotless.Java is keeping 4 files clean - 0 were changed to be clean, 4 were already clean, 0 were skipped because caching determined they were already clean
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9200495Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9207605Z [INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9208646Z [INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9225028Z [INFO] Copying 3 resources from 1 bundle.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9323920Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9367253Z [INFO] --- resources:3.5.0:resources (default-resources) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9630622Z [INFO] Copying 1 resource from src/main/resources to target/classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9657369Z [INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9677073Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9692286Z [INFO] --- flatten:1.8.0:flatten (flatten) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9693249Z [INFO] Generating flattened POM of project org.apache.tika:tika-annotation-processor:jar:4.0.0-SNAPSHOT...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9845449Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:55.9846269Z [INFO] --- compiler:3.15.0:compile (default-compile) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:56.0280487Z [INFO] Recompiling the module because of changed source code.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:56.0336660Z [INFO] Compiling 3 source files with javac [debug deprecation release 17] to target/classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:56.7289437Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:56.7290076Z [INFO] --- checkstyle:3.6.0:check (validate) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3735791Z [INFO] You have 0 Checkstyle violations.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3772127Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3796991Z [INFO] --- resources:3.5.0:testResources (default-testResources) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3798056Z [INFO] skip non existing resourceDirectory /home/runner/work/tika/tika/tika-annotation-processor/src/test/resources
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3798990Z [INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3799572Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3800065Z [INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3861186Z [INFO] Recompiling the module because of changed dependency.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.3865717Z [INFO] Compiling 1 source file with javac [debug deprecation release 17] to target/test-classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.4739156Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.4747661Z [INFO] --- surefire:3.5.6:test (default-test) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.5287718Z [INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.5477712Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.5494100Z [INFO] -------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.5494538Z [INFO]  T E S T S
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:57.5494957Z [INFO] -------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.8578726Z [INFO] Running org.apache.tika.annotation.KebabCaseConverterTest
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9607914Z [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s -- in org.apache.tika.annotation.KebabCaseConverterTest
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9907642Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9908095Z [INFO] Results:
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9908437Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9914960Z [INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9915473Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9934971Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9948962Z [INFO] --- jacoco:0.8.15:report (report) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:58.9964205Z [INFO] Loading execution data file /home/runner/work/tika/tika/tika-annotation-processor/target/jacoco.exec
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.0657681Z [INFO] Analyzed bundle 'Apache Tika Annotation Processor' with 2 classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.0988078Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.1015370Z [INFO] --- jar:3.5.0:jar (default-jar) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.2459844Z [INFO] Building jar: /home/runner/work/tika/tika/tika-annotation-processor/target/tika-annotation-processor-4.0.0-SNAPSHOT.jar
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.2887341Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.2917182Z [INFO] --- ossindex:3.2.0:audit (audit-dependencies) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.2917792Z [INFO] Skipping; configured
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.2918114Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.2918555Z [INFO] --- forbiddenapis:3.10:check (default) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.3085089Z [INFO] Scanning for classes to check...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.3103507Z [INFO] Reading bundled API signatures: jdk-unsafe-17
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:14:59.4489871Z [INFO] Reading bundled API signatures: jdk-deprecated-17
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0193581Z [INFO] Reading bundled API signatures: jdk-non-portable
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0194533Z [INFO] Reading bundled API signatures: jdk-internal-17
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0196154Z [INFO] Reading bundled API signatures: commons-io-unsafe-2.11.0
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0203302Z [INFO] Loading classes to check...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0205697Z [INFO] Scanning classes for violations...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0357569Z [INFO] Scanned 3 class file(s) for forbidden API invocations (in 0.74s), 0 error(s).
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0376881Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0407220Z [INFO] --- forbiddenapis:3.10:testCheck (default) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0436907Z [INFO] Scanning for classes to check...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0437600Z [INFO] Reading bundled API signatures: jdk-unsafe-17
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0467093Z [INFO] Reading bundled API signatures: jdk-deprecated-17
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0597144Z [INFO] Reading bundled API signatures: jdk-non-portable
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0626989Z [INFO] Reading bundled API signatures: jdk-internal-17
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0627885Z [INFO] Reading bundled API signatures: commons-io-unsafe-2.11.0
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0628422Z [INFO] Loading classes to check...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0628810Z [INFO] Scanning classes for violations...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0644445Z [INFO] Scanned 1 class file(s) for forbidden API invocations (in 0.03s), 0 error(s).
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0645117Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0645744Z [INFO] --- install:3.1.4:install (default-install) @ tika-annotation-processor ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0658015Z [INFO] Installing /home/runner/work/tika/tika/tika-annotation-processor/.flattened-pom.xml to /home/runner/.m2/repository/org/apache/tika/tika-annotation-processor/4.0.0-SNAPSHOT/tika-annotation-processor-4.0.0-SNAPSHOT.pom
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0660870Z [INFO] Installing /home/runner/work/tika/tika/tika-annotation-processor/target/tika-annotation-processor-4.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/tika/tika-annotation-processor/4.0.0-SNAPSHOT/tika-annotation-processor-4.0.0-SNAPSHOT.jar
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0674981Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0675600Z [INFO] ---------------------< org.apache.tika:tika-core >----------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0676564Z [INFO] Building Apache Tika core 4.0.0-SNAPSHOT                           [3/3]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0677333Z [INFO]   from /home/runner/work/tika/tika/tika-core/pom.xml
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.0678011Z [INFO] -------------------------------[ bundle ]-------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1127422Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1128211Z [INFO] --- clean:3.5.0:clean (default-clean) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1199465Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1200076Z [INFO] --- flatten:1.8.0:clean (flatten.clean) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1395708Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1396671Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven-version) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1900552Z [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1904960Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1905542Z [INFO] --- enforcer:3.6.3:enforce (enforce-java-version) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1978179Z [INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1978965Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.1979472Z [INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2038144Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2039276Z [INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2040060Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2040574Z [INFO] --- enforcer:3.6.3:enforce (ban-bad-log4j-versions) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2180777Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2214598Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2249012Z [INFO] --- enforcer:3.6.3:enforce (ban-xerces-and-xml-apis) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2277381Z [INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2294545Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:00.2312618Z [INFO] --- checkstyle:3.6.0:check (validate) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.6217936Z [INFO] You have 0 Checkstyle violations.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.6237387Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.6252211Z [INFO] --- jacoco:0.8.15:prepare-agent (default) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.6422526Z [INFO] surefireArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.15/org.jacoco.agent-0.8.15-runtime.jar=destfile=/home/runner/work/tika/tika/tika-core/target/jacoco.exec
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.6424981Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.6425586Z [INFO] --- spotless:3.9.0:apply (default) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:03.7142378Z [INFO] Index file does not exist. Fallback to an empty index
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.7781348Z [INFO] Spotless.Java is keeping 433 files clean - 0 were changed to be clean, 433 were already clean, 0 were skipped because caching determined they were already clean
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.7828876Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.7835212Z [INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.8814181Z [INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.8
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.9256983Z [INFO] Copying 3 resources from 1 bundle.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.9710807Z [INFO] Copying appended resource: META-INF/LICENSE
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.9747064Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.9755120Z [INFO] --- resources:3.5.0:resources (default-resources) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:04.9987709Z [INFO] Copying 5 resources from src/main/resources to target/classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0014534Z [INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0019994Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0020523Z [INFO] --- flatten:1.8.0:flatten (flatten) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0057993Z [INFO] Generating flattened POM of project org.apache.tika:tika-core:bundle:4.0.0-SNAPSHOT...
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0328150Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0367306Z [INFO] --- compiler:3.15.0:compile (default-compile) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0868703Z [INFO] Recompiling the module because of changed dependency.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:05.0942498Z [INFO] Compiling 324 source files with javac [debug deprecation release 17] to target/classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0232759Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0249032Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/detect/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0257566Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/exception/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0259433Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/extractor/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0261313Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/io/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0263103Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/metadata/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0264899Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/mime/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0267152Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0268939Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/parser/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0270688Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0272386Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/xpath/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0274134Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/utils/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0275643Z [INFO] Processing @TikaComponent: org.apache.tika.config.EmbeddedLimits -> embedded-limits (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0277668Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/EmbeddedLimits.java:[71,8] Class org.apache.tika.config.EmbeddedLimits is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0279311Z [INFO] Processing @TikaComponent: org.apache.tika.config.OutputLimits -> output-limits (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0280908Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/OutputLimits.java:[65,8] Class org.apache.tika.config.OutputLimits is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0282525Z [INFO] Processing @TikaComponent: org.apache.tika.config.TimeoutLimits -> timeout-limits (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0284465Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/TimeoutLimits.java:[54,8] Class org.apache.tika.config.TimeoutLimits is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0286176Z [INFO] Processing @TikaComponent: org.apache.tika.detect.BOMDetector -> bom-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0297001Z [INFO] Auto-detected contextKey=org.apache.tika.detect.EncodingDetector for org.apache.tika.detect.BOMDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0327427Z [INFO] Processing @TikaComponent: org.apache.tika.detect.DefaultDetector -> default-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0329698Z [INFO] Auto-detected contextKey=org.apache.tika.detect.Detector for org.apache.tika.detect.DefaultDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0331002Z [INFO] Processing @TikaComponent: org.apache.tika.detect.EmptyDetector -> empty-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0332821Z [INFO] Auto-detected contextKey=org.apache.tika.detect.Detector for org.apache.tika.detect.EmptyDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0334074Z [INFO] Processing @TikaComponent: org.apache.tika.detect.FileCommandDetector -> file-command-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0335455Z [INFO] Auto-detected contextKey=org.apache.tika.detect.Detector for org.apache.tika.detect.FileCommandDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0336747Z [INFO] Processing @TikaComponent: org.apache.tika.detect.MagicDetector -> magic-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0337804Z [INFO] Auto-detected contextKey=org.apache.tika.detect.Detector for org.apache.tika.detect.MagicDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0345151Z [INFO] Processing @TikaComponent: org.apache.tika.detect.MetadataCharsetDetector -> metadata-charset-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0346873Z [INFO] Auto-detected contextKey=org.apache.tika.detect.EncodingDetector for org.apache.tika.detect.MetadataCharsetDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0348850Z [INFO] Processing @TikaComponent: org.apache.tika.detect.OverrideEncodingDetector -> override-encoding-detector (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0350540Z [INFO] Auto-detected contextKey=org.apache.tika.detect.EncodingDetector for org.apache.tika.detect.OverrideEncodingDetector
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0352286Z [INFO] Processing @TikaComponent: org.apache.tika.extractor.SkipEmbeddedDocumentSelector -> skip-embedded-document-selector (SPI: true, contextKey: org.apache.tika.extractor.DocumentSelector, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0354615Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/extractor/SkipEmbeddedDocumentSelector.java:[30,8] Class org.apache.tika.extractor.SkipEmbeddedDocumentSelector is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0356943Z [INFO] Processing @TikaComponent: org.apache.tika.extractor.StandardExtractorFactory -> standard-extractor-factory (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0358990Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/extractor/StandardExtractorFactory.java:[28,8] Class org.apache.tika.extractor.StandardExtractorFactory is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0360968Z [INFO] Processing @TikaComponent: org.apache.tika.io.SpoolingStrategy -> spooling-strategy (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0362682Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/io/SpoolingStrategy.java:[47,8] Class org.apache.tika.io.SpoolingStrategy is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0364482Z [INFO] Processing @TikaComponent: org.apache.tika.language.translate.DefaultTranslator -> default-translator (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0366754Z [INFO] Auto-detected contextKey=org.apache.tika.language.translate.Translator for org.apache.tika.language.translate.DefaultTranslator
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0368341Z [INFO] Processing @TikaComponent: org.apache.tika.language.translate.EmptyTranslator -> empty-translator (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0369848Z [INFO] Auto-detected contextKey=org.apache.tika.language.translate.Translator for org.apache.tika.language.translate.EmptyTranslator
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0371504Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.CaptureGroupMetadataFilter -> capture-group-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0373198Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.CaptureGroupMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0376064Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.ClearByAttachmentTypeMetadataFilter -> clear-by-attachment-type-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0378137Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.ClearByAttachmentTypeMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0380898Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.DateNormalizingMetadataFilter -> date-normalizing-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0382711Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.DateNormalizingMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0384463Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.ExcludeFieldMetadataFilter -> exclude-field-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0386163Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.ExcludeFieldMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0387997Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.FieldNameMappingFilter -> field-name-mapping-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0390040Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.FieldNameMappingFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0391682Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.GeoPointMetadataFilter -> geo-point-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0394125Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.GeoPointMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0395881Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.IncludeFieldMetadataFilter -> include-field-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0397761Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.IncludeFieldMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0399398Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.LegacyKeyMigrationFilter -> legacy-key-migration-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0401051Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.LegacyKeyMigrationFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0414563Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.NoOpFilter -> no-op-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0416064Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.NoOpFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0417858Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.filter.RemoveByMimeMetadataFilter -> remove-by-mime-metadata-filter (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0420122Z [INFO] Auto-detected contextKey=org.apache.tika.metadata.filter.MetadataFilter for org.apache.tika.metadata.filter.RemoveByMimeMetadataFilter
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0422281Z [INFO] Processing @TikaComponent: org.apache.tika.metadata.writefilter.StandardMetadataLimiterFactory -> standard-metadata-limiter-factory (SPI: true, contextKey: org.apache.tika.metadata.writefilter.MetadataWriteLimiterFactory, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0425100Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/metadata/writefilter/StandardMetadataLimiterFactory.java:[50,8] Class org.apache.tika.metadata.writefilter.StandardMetadataLimiterFactory is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0427680Z [INFO] Processing @TikaComponent: org.apache.tika.mime.MimeTypes -> mime-types (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0428901Z [INFO] Auto-detected contextKey=org.apache.tika.detect.Detector for org.apache.tika.mime.MimeTypes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0430374Z [INFO] Processing @TikaComponent: org.apache.tika.parser.AutoDetectParserConfig -> auto-detect-parser-config (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0432393Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/parser/AutoDetectParserConfig.java:[38,8] Class org.apache.tika.parser.AutoDetectParserConfig is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0454912Z [INFO] Processing @TikaComponent: org.apache.tika.parser.DefaultParser -> default-parser (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0456832Z [INFO] Auto-detected contextKey=org.apache.tika.parser.Parser for org.apache.tika.parser.DefaultParser
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0458163Z [INFO] Processing @TikaComponent: org.apache.tika.parser.EmptyParser -> empty-parser (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0459390Z [INFO] Auto-detected contextKey=org.apache.tika.parser.Parser for org.apache.tika.parser.EmptyParser
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0460640Z [INFO] Processing @TikaComponent: org.apache.tika.parser.ErrorParser -> error-parser (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0462158Z [INFO] Auto-detected contextKey=org.apache.tika.parser.Parser for org.apache.tika.parser.ErrorParser
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0463447Z [INFO] Processing @TikaComponent: org.apache.tika.parser.RegexCaptureParser -> regex-capture-parser (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0464822Z [INFO] Auto-detected contextKey=org.apache.tika.parser.Parser for org.apache.tika.parser.RegexCaptureParser
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0466538Z [INFO] Processing @TikaComponent: org.apache.tika.parser.SimplePasswordProvider -> simple-password-provider (SPI: true, contextKey: org.apache.tika.parser.PasswordProvider, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0468705Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/parser/SimplePasswordProvider.java:[38,8] Class org.apache.tika.parser.SimplePasswordProvider is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0470643Z [INFO] Processing @TikaComponent: org.apache.tika.parser.external.ExternalParser -> external-parser (SPI: true, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0473734Z [INFO] Auto-detected contextKey=org.apache.tika.parser.Parser for org.apache.tika.parser.external.ExternalParser
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0475422Z [INFO] Processing @TikaComponent: org.apache.tika.sax.BasicContentHandlerFactory -> basic-content-handler-factory (SPI: true, contextKey: null, defaultFor: org.apache.tika.sax.ContentHandlerFactory)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0477795Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/BasicContentHandlerFactory.java:[40,8] Class org.apache.tika.sax.BasicContentHandlerFactory is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0479657Z [INFO] Processing @TikaComponent: org.apache.tika.sax.SAXOutputConfig -> sax-output-config (SPI: false, contextKey: null, defaultFor: null)
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0481628Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/SAXOutputConfig.java:[31,8] Class org.apache.tika.sax.SAXOutputConfig is a parse-context component, adding to parse-context.idx
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0483604Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0485421Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/detect/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0487452Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/exception/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0493201Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/extractor/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0495116Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/io/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0497097Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/metadata/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0499248Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/mime/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0502603Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0504434Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/parser/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0506710Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0508585Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/xpath/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0510381Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/utils/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0511919Z [INFO] Generated SPI file: META-INF/services/org.apache.tika.language.translate.Translator with 2 implementations
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0512983Z [INFO] Generated SPI file: META-INF/services/org.apache.tika.parser.Parser with 1 implementations
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0514066Z [INFO] Generated SPI file: META-INF/services/org.apache.tika.metadata.filter.MetadataFilter with 10 implementations
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0515080Z [INFO] Generated index file: META-INF/tika/encoding-detectors.idx with 3 components
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0515909Z [INFO] Generated index file: META-INF/tika/translators.idx with 2 components
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0519222Z [INFO] Generated index file: META-INF/tika/metadata-filters.idx with 10 components
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0520157Z [INFO] Generated index file: META-INF/tika/parse-context.idx with 11 components
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0520960Z [INFO] Generated index file: META-INF/tika/parsers.idx with 5 components
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0521718Z [INFO] Generated index file: META-INF/tika/detectors.idx with 5 components
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0523032Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0525078Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/detect/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0527046Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/exception/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0528969Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/extractor/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0530776Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/io/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0532567Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/metadata/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0534401Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/mime/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0536200Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0538101Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/parser/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0539901Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0541701Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/xpath/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0543531Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/utils/package-info.java:[21,22] aQute.bnd.annotation.Version in aQute.bnd.annotation has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0545745Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/detect/DefaultDetector.java:[122,37] org.apache.tika.detect.OverrideDetector in org.apache.tika.detect has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0549610Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/mime/ProbabilisticMimeDetectionSelector.java:[164,36] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0551816Z [WARNING] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/sax/RecursiveParserWrapperHandler.java:[157,44] TIKA_CONTENT_HANDLER in org.apache.tika.metadata.TikaCoreProperties has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0553686Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java: Some input files use unchecked or unsafe operations.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0555238Z [INFO] /home/runner/work/tika/tika/tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java: Recompile with -Xlint:unchecked for details.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0556191Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0557008Z [INFO] --- resources:3.5.0:testResources (default-testResources) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0557769Z [INFO] Copying 57 resources from src/test/resources to target/test-classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0558521Z [INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0559106Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0559517Z [INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ tika-core ---
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0560121Z [INFO] Recompiling the module because of changed dependency.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:07.0560800Z [INFO] Compiling 114 source files with javac [debug deprecation release 17] to target/test-classes
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2195695Z [INFO] -------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2196863Z [WARNING] COMPILATION WARNING : 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2197293Z [INFO] -------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2198398Z [WARNING] /home/runner/work/tika/tika/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java:[296,37] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2199978Z [WARNING] /home/runner/work/tika/tika/tika-core/src/test/java/org/apache/tika/mime/MimeTypesReaderTest.java:[304,37] getMimeType(java.lang.String) in org.apache.tika.mime.MimeTypes has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2202089Z [WARNING] /home/runner/work/tika/tika/tika-core/src/test/java/org/apache/tika/parser/ParserDecoratorTest.java:[117,28] withFallbacks(java.util.Collection<? extends org.apache.tika.parser.Parser>,java.util.Set<org.apache.tika.mime.MediaType>) in org.apache.tika.parser.ParserDecorator has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2204329Z [WARNING] /home/runner/work/tika/tika/tika-core/src/test/java/org/apache/tika/utils/ServiceLoaderUtilsTest.java:[45,48] org.apache.tika.detect.OverrideDetector in org.apache.tika.detect has been deprecated
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2205422Z [INFO] 4 warnings 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2224313Z [INFO] -------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2247368Z [INFO] -------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2248052Z [ERROR] COMPILATION ERROR : 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2248567Z [INFO] -------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2249676Z [ERROR] /home/runner/work/tika/tika/tika-core/src/test/java/org/apache/tika/RickrollDemoTest.java:[24,21] incompatible types: java.lang.String cannot be converted to int
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2250656Z [INFO] 1 error
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2251126Z [INFO] -------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2251752Z [INFO] ------------------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2252687Z [INFO] Reactor Summary for Apache Tika parent 4.0.0-SNAPSHOT:
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2253185Z [INFO] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2253679Z [INFO] Apache Tika parent ................................. SUCCESS [  1.429 s]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2254427Z [INFO] Apache Tika Annotation Processor ................... SUCCESS [  4.431 s]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2255146Z [INFO] Apache Tika core ................................... FAILURE [  8.153 s]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2255836Z [INFO] ------------------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2256538Z [INFO] BUILD FAILURE
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2257013Z [INFO] ------------------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2257539Z [INFO] Total time:  15.103 s
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2258219Z [INFO] Finished at: 2026-11-12T18:15:08Z
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2258803Z [INFO] ------------------------------------------------------------------------
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2259993Z [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile (default-testCompile) on project tika-core: Compilation failure
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2263082Z [ERROR] /home/runner/work/tika/tika/tika-core/src/test/java/org/apache/tika/RickrollDemoTest.java:[24,21] incompatible types: java.lang.String cannot be converted to int
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2267065Z [ERROR] -> [Help 1]
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2267579Z [ERROR] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2268124Z [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2268844Z [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2269418Z [ERROR] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2270039Z [ERROR] For more information about the errors and possible solutions, please read the following articles:
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2271011Z [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2273160Z [ERROR] 
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2273558Z [ERROR] After correcting the problems, you can resume the build with the command
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.2274043Z [ERROR]   mvn <args> -rf :tika-core
+construction	Construire et tester tika-core et ses dependances	2026-11-12T18:15:08.3111461Z ##[error]Process completed with exit code 1.
+construction	Identifier les echecs JUnit du build courant	﻿2026-11-12T18:15:08.3153212Z ##[group]Run python3 .github/scripts/tache3-test-status.py --build-outcome "$BUILD_OUTCOME"
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3153768Z ^[[36;1mpython3 .github/scripts/tache3-test-status.py --build-outcome "$BUILD_OUTCOME"^[[0m
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3198353Z shell: /usr/bin/bash -e {0}
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3198572Z env:
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3198832Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3199245Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3199562Z   BUILD_OUTCOME: failure
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3199754Z ##[endgroup]
+construction	Identifier les echecs JUnit du build courant	2026-11-12T18:15:08.3600934Z {"status": "build_failure_without_failed_test", "build_outcome": "failure", "has_failures": false, "totals": {"tests": 8, "failures": 0, "errors": 0, "skipped": 0}, "reports": ["tika-annotation-processor/target/surefire-reports/TEST-org.apache.tika.annotation.KebabCaseConverterTest.xml"], "stale_reports_ignored": []}
+construction	Conserver les resultats de construction	﻿2026-11-12T18:15:08.3739116Z ##[group]Run actions/upload-artifact@v4
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3739363Z with:
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3739546Z   name: construction-43277596512-1
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3739773Z   retention-days: 30
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3739961Z   if-no-files-found: error
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3740517Z   path: tache3-build.log
+construction	Conserver les resultats de construction	tache3-test-state/
+construction	Conserver les resultats de construction	tika-core/target/surefire-reports/
+construction	Conserver les resultats de construction	tika-core/target/checkstyle-result.xml
+construction	Conserver les resultats de construction	tika-annotation-processor/target/surefire-reports/
+construction	Conserver les resultats de construction	
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3741083Z   compression-level: 6
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3741283Z   overwrite: false
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3741485Z   include-hidden-files: false
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3741684Z env:
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3741936Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3742339Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.3742793Z ##[endgroup]
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5088306Z (node:2608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5089091Z (Use `node --trace-deprecation ...` to show where the warning was created)
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5175483Z Multiple search paths detected. Calculating the least common ancestor of all paths
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5178118Z The least common ancestor is /home/runner/work/tika/tika. This will be the root directory of the artifact
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5178816Z With the provided path, there will be 6 files uploaded
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5197057Z Artifact name is valid!
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.5197428Z Root directory input is valid!
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.8545619Z Beginning upload of artifact content to blob storage
+construction	Conserver les resultats de construction	2026-11-12T18:15:08.8760999Z (node:2608) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.0879742Z Uploaded bytes 11691
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.1440789Z Finished uploading artifact content to blob storage!
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.1441366Z SHA256 digest of uploaded artifact zip is 3886e31cf20fff054c0ab3433461b9c05e88f0cfa8d3a62422a45e51e0d63d98
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.1443135Z Finalizing artifact upload
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.6033887Z Artifact construction-43277596512-1.zip successfully finalized. Artifact ID 13971935758
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.6034898Z Artifact construction-43277596512-1 has been successfully uploaded! Final size is 11691 bytes. Artifact ID is 13971935758
+construction	Conserver les resultats de construction	2026-11-12T18:15:09.6039803Z Artifact download URL: https://github.com/EnzoT454/tika/actions/runs/43277596512/artifacts/13971935758
+construction	Post Run actions/setup-java@v4	﻿2026-11-12T18:15:09.6264085Z Post job cleanup.
+construction	Post Run actions/setup-java@v4	2026-11-12T18:15:09.7391665Z (node:2620) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+construction	Post Run actions/setup-java@v4	2026-11-12T18:15:09.7483772Z (Use `node --trace-deprecation ...` to show where the warning was created)
+construction	Post Run actions/checkout@v4	﻿2026-11-12T18:15:09.7544130Z Post job cleanup.
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8277055Z [command]/usr/bin/git version
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8313909Z git version 2.56.1
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8348825Z Temporarily overriding HOME='/home/runner/work/_temp/f0bd658c-bd9b-4194-a47b-86cecfe93d47' before making global git config changes
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8350056Z Adding repository directory to the temporary git global config as a safe directory
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8355046Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8402795Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8451169Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8817393Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.8871979Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.9193182Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+construction	Post Run actions/checkout@v4	2026-11-12T18:15:09.9229271Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+construction	Complete job	﻿2026-11-12T18:15:09.9619370Z Cleaning up orphan processes
+construction	Complete job	2026-11-12T18:15:09.9952100Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

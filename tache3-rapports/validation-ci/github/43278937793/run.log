@@ -1,0 +1,597 @@
+securite	Set up job	﻿2026-11-12T18:21:20.4892779Z Current runner version: '2.338.2'
+securite	Set up job	2026-11-12T18:21:20.4915756Z ##[group]Runner Image Provisioner
+securite	Set up job	2026-11-12T18:21:20.4916622Z Hosted Compute Agent
+securite	Set up job	2026-11-12T18:21:20.4917111Z Version: 20261028.624
+securite	Set up job	2026-11-12T18:21:20.4917657Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+securite	Set up job	2026-11-12T18:21:20.4918335Z Build Date: 2026-10-28T21:51:42Z
+securite	Set up job	2026-11-12T18:21:20.4918883Z Worker ID: {43eb1395-d4b6-42f0-9a32-51a5ff9fa58c}
+securite	Set up job	2026-11-12T18:21:20.4919506Z Region: westus3
+securite	Set up job	2026-11-12T18:21:20.4919961Z Cloud: Azure
+securite	Set up job	2026-11-12T18:21:20.4920669Z ##[endgroup]
+securite	Set up job	2026-11-12T18:21:20.4921865Z ##[group]Operating System
+securite	Set up job	2026-11-12T18:21:20.4922380Z Ubuntu
+securite	Set up job	2026-11-12T18:21:20.4922871Z 26.04.1
+securite	Set up job	2026-11-12T18:21:20.4923305Z LTS
+securite	Set up job	2026-11-12T18:21:20.4923717Z ##[endgroup]
+securite	Set up job	2026-11-12T18:21:20.4924378Z ##[group]Runner Image
+securite	Set up job	2026-11-12T18:21:20.4924882Z Image: ubuntu-26.04
+securite	Set up job	2026-11-12T18:21:20.4925386Z Version: 20261101.186.1
+securite	Set up job	2026-11-12T18:21:20.4926252Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261101.186/images/ubuntu/Ubuntu2604-Readme.md
+securite	Set up job	2026-11-12T18:21:20.4927762Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261101.186
+securite	Set up job	2026-11-12T18:21:20.4928545Z ##[endgroup]
+securite	Set up job	2026-11-12T18:21:20.4929501Z ##[group]GITHUB_TOKEN Permissions
+securite	Set up job	2026-11-12T18:21:20.4931380Z Contents: read
+securite	Set up job	2026-11-12T18:21:20.4931992Z Metadata: read
+securite	Set up job	2026-11-12T18:21:20.4932458Z ##[endgroup]
+securite	Set up job	2026-11-12T18:21:20.4934565Z Secret source: Actions
+securite	Set up job	2026-11-12T18:21:20.4935401Z Cache mode: write
+securite	Set up job	2026-11-12T18:21:20.4935966Z Prepare workflow directory
+securite	Set up job	2026-11-12T18:21:20.5243851Z Prepare all required actions
+securite	Set up job	2026-11-12T18:21:20.5294731Z Getting action download info
+securite	Set up job	2026-11-12T18:21:20.8302077Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+securite	Set up job	2026-11-12T18:21:20.9125104Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+securite	Set up job	2026-11-12T18:21:20.9967166Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+securite	Set up job	2026-11-12T18:21:21.2471769Z Complete job name: securite
+securite	Run actions/checkout@v4	﻿2026-11-12T18:21:21.3214182Z ##[group]Run actions/checkout@v4
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3214909Z with:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3215298Z   fetch-depth: 0
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3215706Z   ref: c20318f65f5fabb3a59be08f8cb8529ea06ca6b8
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3216207Z   persist-credentials: false
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3216643Z   repository: EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3219681Z   token: ***
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3220053Z   ssh-strict: true
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3220611Z   ssh-user: git
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3220970Z   clean: true
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3221346Z   sparse-checkout-cone-mode: true
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3221789Z   fetch-tags: false
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3222162Z   show-progress: true
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3222532Z   lfs: false
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3222889Z   submodules: false
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3223260Z   set-safe-directory: true
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3223671Z   allow-unsafe-pr-checkout: false
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.3224267Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5221050Z Syncing repository: EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5222812Z ##[group]Getting Git version info
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5223600Z Working directory is '/home/runner/work/tika/tika'
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5224490Z [command]/usr/bin/git version
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5225061Z git version 2.56.0
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5238020Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5249733Z Temporarily overriding HOME='/home/runner/work/_temp/9bcbb37c-5308-4675-8453-ab511bec55ce' before making global git config changes
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5251958Z Adding repository directory to the temporary git global config as a safe directory
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5253870Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5311351Z Deleting the contents of '/home/runner/work/tika/tika'
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5313728Z ##[group]Initializing the repository
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5341954Z [command]/usr/bin/git init /home/runner/work/tika/tika
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5390191Z hint: Using 'master' as the name for the initial branch. This default branch name
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5392048Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5393285Z hint: to use in all of your new repositories, which will suppress this warning,
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5394232Z hint: call:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5395026Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5395963Z hint: 	git config --global init.defaultBranch <name>
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5397044Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5398091Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5399725Z hint: 'development'. The just-created branch can be renamed via this command:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5401285Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5402162Z hint: 	git branch -m <name>
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5403018Z hint:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5404151Z hint: Disable this message with "git config set advice.defaultBranchName false"
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5405826Z Initialized empty Git repository in /home/runner/work/tika/tika/.git/
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5424268Z [command]/usr/bin/git remote add origin https://github.com/EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5472774Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5474146Z ##[group]Disabling automatic garbage collection
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5476296Z [command]/usr/bin/git config --local gc.auto 0
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5510749Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5512128Z ##[group]Setting up auth
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5517361Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5549689Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5953543Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.5978250Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.6235300Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.6265642Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.6503008Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.6541213Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.6541993Z ##[group]Fetching the repository
+securite	Run actions/checkout@v4	2026-11-12T18:21:21.6549252Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1082450Z From https://github.com/EnzoT454/tika
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1084268Z  * [new branch]          main                 -> origin/main
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1085591Z  * [new branch]          tache2-final         -> origin/tache2-final
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1086599Z  * [new branch]          tache2-hamza         -> origin/tache2-hamza
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1087739Z  * [new branch]          tache2-saidana       -> origin/tache2-saidana
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1088786Z  * [new branch]          tache3               -> origin/tache3
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1090040Z  * [new branch]          validation-ci-tache3 -> origin/validation-ci-tache3
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1091602Z  * [new branch]          validation-rickroll  -> origin/validation-rickroll
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1094839Z [command]/usr/bin/git rev-parse --verify --quiet c20318f65f5fabb3a59be08f8cb8529ea06ca6b8^{object}
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1119569Z c20318f65f5fabb3a59be08f8cb8529ea06ca6b8
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1124784Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1126485Z ##[group]Determining the checkout info
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1128369Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1130453Z [command]/usr/bin/git sparse-checkout disable
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1175516Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1203767Z ##[group]Checking out the ref
+securite	Run actions/checkout@v4	2026-11-12T18:21:31.1207261Z [command]/usr/bin/git checkout --progress --force c20318f65f5fabb3a59be08f8cb8529ea06ca6b8
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.1372518Z Updating files:  80% (8050/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.1414289Z Updating files:  81% (8109/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.1472974Z Updating files:  82% (8209/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.1575780Z Updating files:  83% (8309/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.1941048Z Updating files:  84% (8409/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.2214994Z Updating files:  85% (8509/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.2544389Z Updating files:  86% (8609/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.2766879Z Updating files:  87% (8709/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3057109Z Updating files:  88% (8809/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3300145Z Updating files:  89% (8909/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3399149Z Updating files:  90% (9009/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3472728Z Updating files:  91% (9110/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3544264Z Updating files:  92% (9210/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3643854Z Updating files:  93% (9310/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3723652Z Updating files:  94% (9410/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3796105Z Updating files:  95% (9510/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3866318Z Updating files:  96% (9610/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3919590Z Updating files:  97% (9710/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.3968918Z Updating files:  98% (9810/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4138640Z Updating files:  99% (9910/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4138989Z Updating files: 100% (10010/10010)
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4139289Z Updating files: 100% (10010/10010), done.
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4270686Z Note: switching to 'c20318f65f5fabb3a59be08f8cb8529ea06ca6b8'.
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4271002Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4280953Z You are in 'detached HEAD' state. You can look around, make experimental
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4281544Z changes and commit them, and you can discard any commits you make in this
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4282063Z state without impacting any branches by switching back to a branch.
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4282382Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4282589Z If you want to create a new branch to retain commits you create, you may
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4283220Z do so (now or later) by using -c with the switch command. Example:
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4283830Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4283968Z   git switch -c <new-branch-name>
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4284160Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4284287Z Or undo this operation with:
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4284507Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4284612Z   git switch -
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4284756Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4284991Z Turn off this advice by setting config variable advice.detachedHead to false
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4285357Z 
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4285741Z HEAD is now at c20318f65 rickroll ajouté
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4379636Z ##[endgroup]
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4424945Z [command]/usr/bin/git log -1 --format=%H
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4452136Z c20318f65f5fabb3a59be08f8cb8529ea06ca6b8
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4460065Z ##[group]Removing auth
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4462982Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4491010Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4747316Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4769234Z http.https://github.com/.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4775890Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.4805372Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.5058922Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.5086202Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	Run actions/checkout@v4	2026-11-12T18:21:32.5336476Z ##[endgroup]
+securite	Run actions/setup-python@v5	﻿2026-11-12T18:21:32.5622044Z ##[group]Run actions/setup-python@v5
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5622289Z with:
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5622468Z   python-version: 3.11
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5622655Z   check-latest: false
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5624456Z   token: ***
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5624630Z   update-environment: true
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5624836Z   allow-prereleases: false
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5625020Z   freethreaded: false
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.5625194Z ##[endgroup]
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.6730684Z ##[group]Installed versions
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.6827193Z (node:2291) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.6827964Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.6828461Z Successfully set up CPython (3.11.18)
+securite	Run actions/setup-python@v5	2026-11-12T18:21:32.6828962Z ##[endgroup]
+securite	Installer le moteur fige	﻿2026-11-12T18:21:32.6986965Z ##[group]Run python -m pip install -r semgrep/requirements.txt
+securite	Installer le moteur fige	2026-11-12T18:21:32.6987405Z ^[[36;1mpython -m pip install -r semgrep/requirements.txt^[[0m
+securite	Installer le moteur fige	2026-11-12T18:21:32.7046796Z shell: /usr/bin/bash -e {0}
+securite	Installer le moteur fige	2026-11-12T18:21:32.7047056Z env:
+securite	Installer le moteur fige	2026-11-12T18:21:32.7047298Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:21:32.7047678Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	Installer le moteur fige	2026-11-12T18:21:32.7048016Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:21:32.7048318Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:21:32.7048614Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Installer le moteur fige	2026-11-12T18:21:32.7048914Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	Installer le moteur fige	2026-11-12T18:21:32.7049176Z ##[endgroup]
+securite	Installer le moteur fige	2026-11-12T18:21:33.4443603Z Collecting semgrep==1.185.0 (from -r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.4730541Z   Downloading semgrep-1.185.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl.metadata (22 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.4933410Z Collecting attrs>=21.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.4971176Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.5153929Z Collecting boltons~=21.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.5191460Z   Downloading boltons-21.0.0-py2.py3-none-any.whl.metadata (1.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.5573862Z Collecting certifi>=2026.10.19 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.5612179Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.5784312Z Collecting click-option-group~=0.5 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.5822450Z   Downloading click_option_group-0.5.9-py3-none-any.whl.metadata (5.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.6024194Z Collecting click~=8.4.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.6063033Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.6248008Z Collecting colorama~=0.4.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.6289432Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.6460431Z Collecting exceptiongroup~=1.2.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.6500196Z   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.6665010Z Collecting glom>=23.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.6701005Z   Downloading glom-25.12.0-py3-none-any.whl.metadata (5.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.6930932Z Collecting jsonschema~=4.25.1 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.6967902Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.7165842Z Collecting mcp==1.29.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.7206528Z   Downloading mcp-1.29.0-py3-none-any.whl.metadata (9.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.7500410Z Collecting opentelemetry-api~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.7539409Z   Downloading opentelemetry_api-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.7755179Z Collecting opentelemetry-sdk~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.7791297Z   Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.7980847Z Collecting opentelemetry-exporter-otlp-proto-http~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.8016226Z   Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.8218163Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.8255337Z   Downloading opentelemetry_instrumentation_requests-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.8434500Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.8471760Z   Downloading opentelemetry_instrumentation_threading-0.66b2-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.8691444Z Collecting packaging>=21.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.8729367Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.8948860Z Collecting peewee~=3.14 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.8986469Z   Downloading peewee-3.19.0-py3-none-any.whl.metadata (7.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.9185211Z Collecting pyjwt<3,>=2.15.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.9226823Z   Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.9538478Z Collecting requests~=2.22 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.9575162Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:33.9847188Z Collecting rich>=13.5.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:33.9891132Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.0801322Z Collecting ruamel.yaml>=0.18.15 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.0839496Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.1177426Z Collecting ruamel.yaml.clib==0.2.15 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.1216785Z   Downloading ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.1410630Z Collecting semantic-version~=2.10.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.1447430Z   Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.1651128Z Collecting structlog~=26.1.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.1688880Z   Downloading structlog-26.1.0-py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.1959577Z Collecting tomli~=2.4.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.1998531Z   Downloading tomli-2.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.2193633Z Collecting typing-extensions~=4.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.2230509Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.2444086Z Collecting urllib3~=2.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.2480623Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.2677602Z Collecting wcmatch~=8.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.2715495Z   Downloading wcmatch-8.5.2-py3-none-any.whl.metadata (4.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.2921527Z Collecting anyio>=4.5 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.2958437Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.3197223Z Collecting httpx-sse>=0.4 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.3233082Z   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.3424124Z Collecting httpx<1.0.0,>=0.27.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.3459547Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.3655485Z Collecting pydantic-settings>=2.5.2 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.3697246Z   Downloading pydantic_settings-2.16.2-py3-none-any.whl.metadata (4.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.5012101Z Collecting pydantic<3.0.0,>=2.11.0 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.5054628Z   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.5319689Z Collecting python-multipart>=0.0.9 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.5354842Z   Downloading python_multipart-0.0.33-py3-none-any.whl.metadata (6.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.5554962Z Collecting sse-starlette>=1.6.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.5590898Z   Downloading sse_starlette-3.7.0-py3-none-any.whl.metadata (15 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.5855609Z Collecting starlette>=0.27 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.5899263Z   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.6075666Z Collecting typing-inspection>=0.4.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.6113032Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.6353218Z Collecting uvicorn>=0.31.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.6393362Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.6619674Z Collecting httpcore==1.* (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.6657695Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.6846756Z Collecting idna (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.6883197Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.7188743Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.7226394Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.7411429Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.7445791Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.7653485Z Collecting referencing>=0.28.4 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.7689344Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:34.9841059Z Collecting rpds-py>=0.7.1 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:34.9882036Z   Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.0121372Z Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.0158368Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.0371549Z Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.0408463Z   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.0627036Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.0662918Z   Downloading googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.1054470Z Collecting opentelemetry-exporter-otlp-proto-common==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.1091383Z   Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl.metadata (1.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.1280180Z Collecting opentelemetry-proto==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.1316306Z   Downloading opentelemetry_proto-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.2378394Z Collecting protobuf<7.0,>=5.0 (from opentelemetry-proto==1.37.0->opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.2420802Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+securite	Installer le moteur fige	2026-11-12T18:21:35.2816999Z Collecting opentelemetry-instrumentation==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.2854478Z   Downloading opentelemetry_instrumentation-0.66b2-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.3044650Z Collecting opentelemetry-semantic-conventions==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.3080468Z   Downloading opentelemetry_semantic_conventions-0.66b2-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.3264596Z Collecting opentelemetry-util-http==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.3297654Z   Downloading opentelemetry_util_http-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6113215Z Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.66b2->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6153397Z   Downloading wrapt-2.5.2-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6195625Z INFO: pip is looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:21:35.6203875Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6238938Z   Downloading opentelemetry_instrumentation_requests-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6272408Z Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6306001Z   Downloading opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6337854Z Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6372716Z   Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6403113Z Collecting opentelemetry-util-http==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6437814Z   Downloading opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6658594Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6696940Z   Downloading opentelemetry_instrumentation_requests-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6732225Z Collecting opentelemetry-instrumentation==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6767837Z   Downloading opentelemetry_instrumentation-0.66b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6801216Z Collecting opentelemetry-semantic-conventions==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6837665Z   Downloading opentelemetry_semantic_conventions-0.66b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6870007Z Collecting opentelemetry-util-http==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6904233Z   Downloading opentelemetry_util_http-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.6952317Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.6989756Z   Downloading opentelemetry_instrumentation_requests-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.7025702Z Collecting opentelemetry-instrumentation==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.7062773Z   Downloading opentelemetry_instrumentation-0.65b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.7096649Z Collecting opentelemetry-semantic-conventions==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.7129551Z   Downloading opentelemetry_semantic_conventions-0.65b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.7160878Z Collecting opentelemetry-util-http==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.7197401Z   Downloading opentelemetry_util_http-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.7235644Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.7272880Z   Downloading opentelemetry_instrumentation_requests-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:35.9140652Z Collecting opentelemetry-instrumentation==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:35.9177257Z   Downloading opentelemetry_instrumentation-0.64b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0071980Z Collecting opentelemetry-semantic-conventions==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0107022Z   Downloading opentelemetry_semantic_conventions-0.64b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0141805Z Collecting opentelemetry-util-http==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0176772Z   Downloading opentelemetry_util_http-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0215690Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0251650Z   Downloading opentelemetry_instrumentation_requests-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0286353Z Collecting opentelemetry-instrumentation==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0320737Z   Downloading opentelemetry_instrumentation-0.63b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0353653Z Collecting opentelemetry-semantic-conventions==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0388332Z   Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0419140Z Collecting opentelemetry-util-http==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0454476Z   Downloading opentelemetry_util_http-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0491878Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0527390Z   Downloading opentelemetry_instrumentation_requests-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0569309Z Collecting opentelemetry-instrumentation==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0607004Z   Downloading opentelemetry_instrumentation-0.63b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0640503Z Collecting opentelemetry-semantic-conventions==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0674381Z   Downloading opentelemetry_semantic_conventions-0.63b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0706217Z Collecting opentelemetry-util-http==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0738928Z   Downloading opentelemetry_util_http-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0775512Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.0810811Z   Downloading opentelemetry_instrumentation_requests-0.62b1-py3-none-any.whl.metadata (2.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.0978848Z Collecting opentelemetry-instrumentation==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1016851Z   Downloading opentelemetry_instrumentation-0.62b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1051958Z Collecting opentelemetry-semantic-conventions==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1087689Z   Downloading opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1119705Z Collecting opentelemetry-util-http==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1156448Z   Downloading opentelemetry_util_http-0.62b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1189486Z INFO: pip is still looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:21:36.1196489Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1237530Z   Downloading opentelemetry_instrumentation_requests-0.62b0-py3-none-any.whl.metadata (2.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1271949Z Collecting opentelemetry-instrumentation==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1310200Z   Downloading opentelemetry_instrumentation-0.62b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1346562Z Collecting opentelemetry-semantic-conventions==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1382834Z   Downloading opentelemetry_semantic_conventions-0.62b0-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1413313Z Collecting opentelemetry-util-http==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1447698Z   Downloading opentelemetry_util_http-0.62b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1484300Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1524454Z   Downloading opentelemetry_instrumentation_requests-0.61b0-py3-none-any.whl.metadata (2.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1559537Z Collecting opentelemetry-instrumentation==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1593852Z   Downloading opentelemetry_instrumentation-0.61b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1626915Z Collecting opentelemetry-semantic-conventions==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1663442Z   Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1694513Z Collecting opentelemetry-util-http==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1734153Z   Downloading opentelemetry_util_http-0.61b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1772349Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1808089Z   Downloading opentelemetry_instrumentation_requests-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1844217Z Collecting opentelemetry-instrumentation==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1879057Z   Downloading opentelemetry_instrumentation-0.60b1-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1912911Z Collecting opentelemetry-semantic-conventions==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.1951642Z   Downloading opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.1983390Z Collecting opentelemetry-util-http==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2018808Z   Downloading opentelemetry_util_http-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2058050Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2095562Z   Downloading opentelemetry_instrumentation_requests-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2131921Z Collecting opentelemetry-instrumentation==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2167084Z   Downloading opentelemetry_instrumentation-0.60b0-py3-none-any.whl.metadata (7.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2200027Z Collecting opentelemetry-semantic-conventions==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2236545Z   Downloading opentelemetry_semantic_conventions-0.60b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2268438Z Collecting opentelemetry-util-http==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2312503Z   Downloading opentelemetry_util_http-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2350502Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2397552Z   Downloading opentelemetry_instrumentation_requests-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2432185Z Collecting opentelemetry-instrumentation==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2465944Z   Downloading opentelemetry_instrumentation-0.59b0-py3-none-any.whl.metadata (7.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2500109Z Collecting opentelemetry-semantic-conventions==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2534402Z   Downloading opentelemetry_semantic_conventions-0.59b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2565974Z Collecting opentelemetry-util-http==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2600715Z   Downloading opentelemetry_util_http-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2635674Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+securite	Installer le moteur fige	2026-11-12T18:21:36.2642979Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2682181Z   Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2903812Z Collecting opentelemetry-instrumentation==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.2955754Z   Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl.metadata (7.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.2991173Z Collecting opentelemetry-semantic-conventions==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.3031205Z   Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl.metadata (2.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3063991Z Collecting opentelemetry-util-http==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.3100176Z   Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3165914Z Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.58b0->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.3202226Z   Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3245508Z INFO: pip is looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:21:36.3249977Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.3291400Z   Downloading opentelemetry_instrumentation_threading-0.66b1-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3358759Z   Downloading opentelemetry_instrumentation_threading-0.66b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3430791Z   Downloading opentelemetry_instrumentation_threading-0.65b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3496074Z   Downloading opentelemetry_instrumentation_threading-0.64b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3560086Z   Downloading opentelemetry_instrumentation_threading-0.63b1-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3647082Z   Downloading opentelemetry_instrumentation_threading-0.63b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3721527Z   Downloading opentelemetry_instrumentation_threading-0.62b1-py3-none-any.whl.metadata (2.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3751004Z INFO: pip is still looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+securite	Installer le moteur fige	2026-11-12T18:21:36.3789883Z   Downloading opentelemetry_instrumentation_threading-0.62b0-py3-none-any.whl.metadata (2.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3855365Z   Downloading opentelemetry_instrumentation_threading-0.61b0-py3-none-any.whl.metadata (2.2 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3922909Z   Downloading opentelemetry_instrumentation_threading-0.60b1-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.3992212Z   Downloading opentelemetry_instrumentation_threading-0.60b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.4059017Z   Downloading opentelemetry_instrumentation_threading-0.59b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.4089594Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+securite	Installer le moteur fige	2026-11-12T18:21:36.4128836Z   Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl.metadata (2.1 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:36.4302616Z Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:36.4342573Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.0052267Z Collecting pydantic-core==2.50.4 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.0090428Z   Downloading pydantic_core-2.50.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.1328758Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.1366223Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.2240453Z Collecting charset_normalizer<4,>=2 (from requests~=2.22->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.2283891Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.2721663Z Collecting bracex>=2.1.1 (from wcmatch~=8.3->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.2758498Z   Downloading bracex-3.2.2-py3-none-any.whl.metadata (3.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.3552219Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.3592409Z   Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.3785779Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.3823154Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.3998496Z Collecting face>=20.1.1 (from glom>=23.3->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.4035389Z   Downloading face-26.0.1-py3-none-any.whl.metadata (1.8 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.4420949Z Collecting python-dotenv>=1.2.2 (from pydantic-settings>=2.5.2->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.4462461Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.4718904Z Collecting markdown-it-py>=2.2.0 (from rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.4758638Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.5102749Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.5144738Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.5419095Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	Installer le moteur fige	2026-11-12T18:21:37.5458098Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:37.5629632Z Downloading semgrep-1.185.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl (72.3 MB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1491664Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.3/72.3 MB 123.8 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:21:38.1530930Z Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1590838Z Downloading ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (777 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1663596Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 777.6/777.6 kB 100.7 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:21:38.1705418Z Downloading boltons-21.0.0-py2.py3-none-any.whl (193 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1763422Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1816796Z Downloading click_option_group-0.5.9-py3-none-any.whl (11 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1865819Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1915322Z Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.1967669Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2018371Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2077316Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2128714Z Downloading opentelemetry_api-1.37.0-py3-none-any.whl (65 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2178445Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2227260Z Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl (19 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2277578Z Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2331833Z Downloading opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2384151Z Downloading googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2465697Z Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl (12 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2514118Z Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl (207 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2569690Z Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl (33 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2616281Z Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl (7.7 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2664033Z Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl (9.3 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2713938Z Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl (131 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2769478Z Downloading peewee-3.19.0-py3-none-any.whl (411 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.2832613Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3239673Z Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3312452Z Downloading pydantic_core-2.50.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3487099Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 129.5 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:21:38.3523600Z Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3573269Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3745393Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3809537Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3868472Z Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3923106Z Downloading structlog-26.1.0-py3-none-any.whl (73 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.3974146Z Downloading tomli-2.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (243 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.4028181Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.4075408Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.4126680Z Downloading wcmatch-8.5.2-py3-none-any.whl (39 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.4827377Z Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (82 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.4890007Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.4941050Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.5159807Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.5213378Z Downloading bracex-3.2.2-py3-none-any.whl (14 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.6627662Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.6682964Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.7190645Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 92.6 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:21:38.7243043Z Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (217 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.8925007Z Downloading glom-25.12.0-py3-none-any.whl (103 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9163712Z Downloading face-26.0.1-py3-none-any.whl (57 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9215059Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9264520Z Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9313815Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9362254Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9415897Z Downloading pydantic_settings-2.16.2-py3-none-any.whl (81 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9466856Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9519190Z Downloading python_multipart-0.0.33-py3-none-any.whl (32 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9568659Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9621960Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9690410Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9799557Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 130.2 MB/s  0:00:00
+securite	Installer le moteur fige	2026-11-12T18:21:38.9839682Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9901898Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:38.9953641Z Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (375 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0026930Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0078947Z Downloading sse_starlette-3.7.0-py3-none-any.whl (18 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0132241Z Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0181627Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0231873Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0281317Z Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.0328480Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+securite	Installer le moteur fige	2026-11-12T18:21:39.2694638Z Installing collected packages: peewee, boltons, zipp, wrapt, urllib3, typing-extensions, tomli, structlog, semantic-version, ruamel.yaml.clib, ruamel.yaml, rpds-py, python-multipart, python-dotenv, pyjwt, pygments, pycparser, protobuf, packaging, opentelemetry-util-http, mdurl, idna, httpx-sse, h11, face, exceptiongroup, colorama, click, charset_normalizer, certifi, bracex, attrs, annotated-types, wcmatch, uvicorn, typing-inspection, requests, referencing, pydantic-core, opentelemetry-proto, markdown-it-py, importlib-metadata, httpcore, googleapis-common-protos, glom, click-option-group, cffi, anyio, starlette, rich, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, jsonschema-specifications, httpx, cryptography, sse-starlette, pydantic-settings, opentelemetry-semantic-conventions, jsonschema, opentelemetry-sdk, opentelemetry-instrumentation, mcp, opentelemetry-instrumentation-threading, opentelemetry-instrumentation-requests, opentelemetry-exporter-otlp-proto-http, semgrep
+securite	Installer le moteur fige	2026-11-12T18:21:43.3376217Z 
+securite	Installer le moteur fige	2026-11-12T18:21:43.3406613Z Successfully installed annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boltons-21.0.0 bracex-3.2.2 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 click-8.4.2 click-option-group-0.5.9 colorama-0.4.6 cryptography-50.0.2 exceptiongroup-1.2.2 face-26.0.1 glom-25.12.0 googleapis-common-protos-1.76.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.20 importlib-metadata-8.7.1 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 markdown-it-py-4.3.0 mcp-1.29.0 mdurl-0.1.2 opentelemetry-api-1.37.0 opentelemetry-exporter-otlp-proto-common-1.37.0 opentelemetry-exporter-otlp-proto-http-1.37.0 opentelemetry-instrumentation-0.58b0 opentelemetry-instrumentation-requests-0.58b0 opentelemetry-instrumentation-threading-0.58b0 opentelemetry-proto-1.37.0 opentelemetry-sdk-1.37.0 opentelemetry-semantic-conventions-0.58b0 opentelemetry-util-http-0.58b0 packaging-26.3 peewee-3.19.0 protobuf-6.33.6 pycparser-3.12 pydantic-2.14.3 pydantic-core-2.50.4 pydantic-settings-2.16.2 pygments-2.21.0 pyjwt-2.15.1 python-dotenv-1.2.4 python-multipart-0.0.33 referencing-0.37.0 requests-2.34.2 rich-15.0.0 rpds-py-2026.9.1 ruamel.yaml-0.19.1 ruamel.yaml.clib-0.2.15 semantic-version-2.10.0 semgrep-1.185.0 sse-starlette-3.7.0 starlette-1.10.0 structlog-26.1.0 tomli-2.4.1 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 wcmatch-8.5.2 wrapt-1.17.3 zipp-4.1.2
+securite	Installer le moteur fige	2026-11-12T18:21:43.3413137Z 
+securite	Installer le moteur fige	2026-11-12T18:21:43.3413341Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+securite	Installer le moteur fige	2026-11-12T18:21:43.3413826Z [notice] To update, run: pip install --upgrade pip
+securite	Comparer les alertes et bloquer les nouveautes	﻿2026-11-12T18:21:43.6320170Z ##[group]Run python semgrep/gate.py --event-name "$EVENT_NAME" --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6321003Z ^[[36;1mpython semgrep/gate.py --event-name "$EVENT_NAME" --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports^[[0m
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6368395Z shell: /usr/bin/bash -e {0}
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6368620Z env:
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6368844Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6369203Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6369550Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6369859Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6370152Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6370533Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6370796Z   EVENT_NAME: workflow_dispatch
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:21:43.6370991Z ##[endgroup]
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3213828Z Contrôle Semgrep : new_findings
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3236685Z Référence : 860a2631d9e78311387207ed9380275b2a151781
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3237365Z Version : c20318f65f5fabb3a59be08f8cb8529ea06ca6b8
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3237943Z Alertes : 17 → 24 ; 8 nouvelles, 1 supprimées.
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3238620Z - command-injection-process-builder : tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java:192
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3239682Z - documentbuilderfactory-disallow-doctype-decl-false : tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java:1270
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3240848Z - documentbuilderfactory-disallow-doctype-decl-missing : tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java:1271
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3241807Z - insecure-hostname-verifier : tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java:224
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3242740Z - java-pattern-from-string-parameter : tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java:138
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3243605Z - object-deserialization : tika-core/src/main/java/org/apache/tika/parser/ParseContext.java:149
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3244469Z - overly-permissive-file-permission : tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java:94
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3245251Z - use-of-default-aes : tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java:78
+securite	Comparer les alertes et bloquer les nouveautes	2026-11-12T18:22:04.3312087Z ##[error]Process completed with exit code 1.
+securite	Conserver les rapports meme apres echec	﻿2026-11-12T18:22:04.3407647Z ##[group]Run actions/upload-artifact@v4
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3407896Z with:
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3408075Z   name: semgrep-43278937793-1
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3408287Z   path: security-reports/
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3408484Z   if-no-files-found: error
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3408675Z   retention-days: 30
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3408855Z   compression-level: 6
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3409096Z   overwrite: false
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3409277Z   include-hidden-files: false
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3409471Z env:
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3409681Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3410019Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3410495Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3410788Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3411091Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3411403Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.3411695Z ##[endgroup]
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.4789842Z (node:2572) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.4790706Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.4896181Z With the provided path, there will be 11 files uploaded
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.4896673Z Artifact name is valid!
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.4896874Z Root directory input is valid!
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.8501173Z Beginning upload of artifact content to blob storage
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:04.8850054Z (node:2572) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.2218274Z Uploaded bytes 93995
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.2846143Z Finished uploading artifact content to blob storage!
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.2847126Z SHA256 digest of uploaded artifact zip is 84d02218542bd4c7e3ae22dc8208ed4891b562133128ecd0581552cb83efbfec
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.2848242Z Finalizing artifact upload
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.7349847Z Artifact semgrep-43278937793-1.zip successfully finalized. Artifact ID 13971862365
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.7350723Z Artifact semgrep-43278937793-1 has been successfully uploaded! Final size is 93995 bytes. Artifact ID is 13971862365
+securite	Conserver les rapports meme apres echec	2026-11-12T18:22:05.7356329Z Artifact download URL: https://github.com/EnzoT454/tika/actions/runs/43278937793/artifacts/13971862365
+securite	Post Run actions/checkout@v4	﻿2026-11-12T18:22:05.7774025Z Post job cleanup.
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8511034Z [command]/usr/bin/git version
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8535699Z git version 2.56.0
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8570044Z Temporarily overriding HOME='/home/runner/work/_temp/81d69dc3-31d0-4b02-909b-46df15e14ede' before making global git config changes
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8571435Z Adding repository directory to the temporary git global config as a safe directory
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8574906Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8861631Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.8899168Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.9195443Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.9229919Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.9494205Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	Post Run actions/checkout@v4	2026-11-12T18:22:05.9528055Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	Complete job	﻿2026-11-12T18:22:05.9916860Z Cleaning up orphan processes
+securite	Complete job	2026-11-12T18:22:06.0236552Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
