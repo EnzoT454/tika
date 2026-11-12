@@ -21,6 +21,7 @@ import org.junit.jupiter.api.Test;
 public class RickrollDemoTest {
     @Test
     void demonstration() {
-        org.junit.jupiter.api.Assertions.fail("IFT3913 controlled JUnit failure");
+        int count = "IFT3913 controlled compiler error";
+        org.junit.jupiter.api.Assertions.assertEquals(0, count);
     }
 }
