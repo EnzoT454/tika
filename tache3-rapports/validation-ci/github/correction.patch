@@ -1,0 +1,20 @@
+commit e8384e424ad8cc8fe4b43a78464fa71b056c0bdb
+Author:     Enzo <hamza.aqel@umontreal.ca>
+AuthorDate: Thu Nov 12 11:05:59 2026 -0500
+Commit:     Enzo <hamza.aqel@umontreal.ca>
+CommitDate: Thu Nov 12 11:05:59 2026 -0500
+
+    Retirer l'exemple temporaire de validation
+
+diff --git a/tika-core/src/main/java/org/apache/tika/GateValidation.java b/tika-core/src/main/java/org/apache/tika/GateValidation.java
+deleted file mode 100644
+index 57fcdf4..0000000
+--- a/tika-core/src/main/java/org/apache/tika/GateValidation.java
++++ /dev/null
+@@ -1,6 +0,0 @@
+-package org.apache.tika;
+-class GateValidation {
+-    void execute(String input) throws java.io.IOException {
+-        new ProcessBuilder(input).start();
+-    }
+-}

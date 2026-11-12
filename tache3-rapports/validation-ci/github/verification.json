@@ -1,0 +1,10 @@
+{
+  "run_checks": "passed",
+  "artifact_zip_crc": "passed",
+  "artifact_digests": "checked when supplied by GitHub",
+  "semgrep_configuration_matches_current_files": true,
+  "source_manifest_matches_current_files": true,
+  "pr_state": "CLOSED",
+  "pr_merged": false,
+  "temporary_source_absent": true
+}

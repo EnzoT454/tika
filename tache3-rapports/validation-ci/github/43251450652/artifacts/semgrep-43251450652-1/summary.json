@@ -1,0 +1,5 @@
+{
+  "status": "technical_error",
+  "exit_code": 2,
+  "error": "Référence absente ou SHA invalide : 0000000000000000000000000000000000000000"
+}

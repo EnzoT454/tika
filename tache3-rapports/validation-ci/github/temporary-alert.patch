@@ -1,0 +1,20 @@
+commit 96318db1eada7b025fefeb1be2b8d9a59565e345
+Author:     Enzo <hamza.aqel@umontreal.ca>
+AuthorDate: Thu Nov 12 10:58:10 2026 -0500
+Commit:     Enzo <hamza.aqel@umontreal.ca>
+CommitDate: Thu Nov 12 10:58:10 2026 -0500
+
+    Tester temporairement le blocage Semgrep
+
+diff --git a/tika-core/src/main/java/org/apache/tika/GateValidation.java b/tika-core/src/main/java/org/apache/tika/GateValidation.java
+new file mode 100644
+index 0000000..57fcdf4
+--- /dev/null
++++ b/tika-core/src/main/java/org/apache/tika/GateValidation.java
+@@ -0,0 +1,6 @@
++package org.apache.tika;
++class GateValidation {
++    void execute(String input) throws java.io.IOException {
++        new ProcessBuilder(input).start();
++    }
++}

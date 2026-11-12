@@ -1,0 +1,742 @@
+[
+  {
+    "attempt": 1,
+    "conclusion": "failure",
+    "createdAt": "2026-11-12T15:46:39Z",
+    "databaseId": 43251450652,
+    "event": "push",
+    "headBranch": "tache3",
+    "headSha": "20a91e9686a67dc248839fd078c531b4b71358c7",
+    "jobs": [
+      {
+        "completedAt": "2026-11-12T15:47:07Z",
+        "conclusion": "failure",
+        "databaseId": 131298028176,
+        "name": "securite",
+        "startedAt": "2026-11-12T15:46:41Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T15:46:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T15:46:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:46:52Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T15:46:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:46:53Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "startedAt": "2026-11-12T15:46:52Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:04Z",
+            "conclusion": "success",
+            "name": "Installer le moteur fige",
+            "number": 4,
+            "startedAt": "2026-11-12T15:46:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:04Z",
+            "conclusion": "failure",
+            "name": "Comparer les alertes et bloquer les nouveautes",
+            "number": 5,
+            "startedAt": "2026-11-12T15:47:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:05Z",
+            "conclusion": "success",
+            "name": "Conserver les rapports meme apres echec",
+            "number": 6,
+            "startedAt": "2026-11-12T15:47:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:05Z",
+            "conclusion": "skipped",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 11,
+            "startedAt": "2026-11-12T15:47:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:05Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 12,
+            "startedAt": "2026-11-12T15:47:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:05Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-12T15:47:05Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43251450652/job/131298028176"
+      },
+      {
+        "completedAt": "2026-11-12T15:47:08Z",
+        "conclusion": "skipped",
+        "databaseId": 131298326120,
+        "name": "construction",
+        "startedAt": "2026-11-12T15:47:08Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43251450652/job/131298326120"
+      }
+    ],
+    "startedAt": "2026-11-12T15:46:39Z",
+    "status": "completed",
+    "updatedAt": "2026-11-12T15:47:08Z",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43251450652",
+    "workflowName": "IFT3913 tache 3 - securite et tests"
+  },
+  {
+    "attempt": 1,
+    "conclusion": "success",
+    "createdAt": "2026-11-12T15:47:28Z",
+    "databaseId": 43251595954,
+    "event": "workflow_dispatch",
+    "headBranch": "tache3",
+    "headSha": "20a91e9686a67dc248839fd078c531b4b71358c7",
+    "jobs": [
+      {
+        "completedAt": "2026-11-12T15:48:28Z",
+        "conclusion": "success",
+        "databaseId": 131298559469,
+        "name": "securite",
+        "startedAt": "2026-11-12T15:47:32Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T15:47:34Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T15:47:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:45Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T15:47:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:47:45Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "startedAt": "2026-11-12T15:47:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:01Z",
+            "conclusion": "success",
+            "name": "Installer le moteur fige",
+            "number": 4,
+            "startedAt": "2026-11-12T15:47:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:23Z",
+            "conclusion": "success",
+            "name": "Comparer les alertes et bloquer les nouveautes",
+            "number": 5,
+            "startedAt": "2026-11-12T15:48:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:24Z",
+            "conclusion": "success",
+            "name": "Conserver les rapports meme apres echec",
+            "number": 6,
+            "startedAt": "2026-11-12T15:48:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:25Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 11,
+            "startedAt": "2026-11-12T15:48:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:25Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 12,
+            "startedAt": "2026-11-12T15:48:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:25Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-12T15:48:25Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43251595954/job/131298559469"
+      },
+      {
+        "completedAt": "2026-11-12T15:49:55Z",
+        "conclusion": "success",
+        "databaseId": 131299167646,
+        "name": "construction",
+        "startedAt": "2026-11-12T15:48:29Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T15:48:31Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T15:48:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:38Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T15:48:31Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:48:39Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-java@v4",
+            "number": 3,
+            "startedAt": "2026-11-12T15:48:38Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:49:50Z",
+            "conclusion": "success",
+            "name": "Construire et tester tika-core et ses dependances",
+            "number": 4,
+            "startedAt": "2026-11-12T15:48:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:49:52Z",
+            "conclusion": "success",
+            "name": "Conserver les resultats de construction",
+            "number": 5,
+            "startedAt": "2026-11-12T15:49:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:49:54Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-java@v4",
+            "number": 9,
+            "startedAt": "2026-11-12T15:49:52Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:49:54Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 10,
+            "startedAt": "2026-11-12T15:49:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:49:54Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 11,
+            "startedAt": "2026-11-12T15:49:54Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43251595954/job/131299167646"
+      }
+    ],
+    "startedAt": "2026-11-12T15:47:28Z",
+    "status": "completed",
+    "updatedAt": "2026-11-12T15:49:56Z",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43251595954",
+    "workflowName": "IFT3913 tache 3 - securite et tests"
+  },
+  {
+    "attempt": 1,
+    "conclusion": "success",
+    "createdAt": "2026-11-12T15:53:41Z",
+    "databaseId": 43252710325,
+    "event": "push",
+    "headBranch": "tache3",
+    "headSha": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+    "jobs": [
+      {
+        "completedAt": "2026-11-12T15:54:28Z",
+        "conclusion": "success",
+        "databaseId": 131302580943,
+        "name": "securite",
+        "startedAt": "2026-11-12T15:53:44Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T15:53:45Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T15:53:44Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:53:54Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T15:53:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:53:54Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "startedAt": "2026-11-12T15:53:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:07Z",
+            "conclusion": "success",
+            "name": "Installer le moteur fige",
+            "number": 4,
+            "startedAt": "2026-11-12T15:53:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:24Z",
+            "conclusion": "success",
+            "name": "Comparer les alertes et bloquer les nouveautes",
+            "number": 5,
+            "startedAt": "2026-11-12T15:54:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:26Z",
+            "conclusion": "success",
+            "name": "Conserver les rapports meme apres echec",
+            "number": 6,
+            "startedAt": "2026-11-12T15:54:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:26Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 11,
+            "startedAt": "2026-11-12T15:54:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:26Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 12,
+            "startedAt": "2026-11-12T15:54:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:26Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-12T15:54:26Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43252710325/job/131302580943"
+      },
+      {
+        "completedAt": "2026-11-12T15:55:15Z",
+        "conclusion": "success",
+        "databaseId": 131303073204,
+        "name": "construction",
+        "startedAt": "2026-11-12T15:54:29Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T15:54:31Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T15:54:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:37Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T15:54:31Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:54:40Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-java@v4",
+            "number": 3,
+            "startedAt": "2026-11-12T15:54:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:55:12Z",
+            "conclusion": "success",
+            "name": "Construire et tester tika-core et ses dependances",
+            "number": 4,
+            "startedAt": "2026-11-12T15:54:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:55:14Z",
+            "conclusion": "success",
+            "name": "Conserver les resultats de construction",
+            "number": 5,
+            "startedAt": "2026-11-12T15:55:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:55:14Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-java@v4",
+            "number": 9,
+            "startedAt": "2026-11-12T15:55:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:55:14Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 10,
+            "startedAt": "2026-11-12T15:55:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:55:14Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 11,
+            "startedAt": "2026-11-12T15:55:14Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43252710325/job/131303073204"
+      }
+    ],
+    "startedAt": "2026-11-12T15:53:41Z",
+    "status": "completed",
+    "updatedAt": "2026-11-12T15:55:16Z",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43252710325",
+    "workflowName": "IFT3913 tache 3 - securite et tests"
+  },
+  {
+    "attempt": 1,
+    "conclusion": "failure",
+    "createdAt": "2026-11-12T15:58:39Z",
+    "databaseId": 43253590194,
+    "event": "pull_request",
+    "headBranch": "validation-ci-tache3",
+    "headSha": "96318db1eada7b025fefeb1be2b8d9a59565e345",
+    "jobs": [
+      {
+        "completedAt": "2026-11-12T15:59:40Z",
+        "conclusion": "failure",
+        "databaseId": 131305727097,
+        "name": "securite",
+        "startedAt": "2026-11-12T15:58:41Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T15:58:43Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T15:58:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:58:55Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T15:58:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:58:55Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "startedAt": "2026-11-12T15:58:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:59:07Z",
+            "conclusion": "success",
+            "name": "Installer le moteur fige",
+            "number": 4,
+            "startedAt": "2026-11-12T15:58:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:59:33Z",
+            "conclusion": "failure",
+            "name": "Comparer les alertes et bloquer les nouveautes",
+            "number": 5,
+            "startedAt": "2026-11-12T15:59:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:59:35Z",
+            "conclusion": "success",
+            "name": "Conserver les rapports meme apres echec",
+            "number": 6,
+            "startedAt": "2026-11-12T15:59:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:59:35Z",
+            "conclusion": "skipped",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 11,
+            "startedAt": "2026-11-12T15:59:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:59:35Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 12,
+            "startedAt": "2026-11-12T15:59:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T15:59:35Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-12T15:59:35Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43253590194/job/131305727097"
+      },
+      {
+        "completedAt": "2026-11-12T15:59:40Z",
+        "conclusion": "skipped",
+        "databaseId": 131306396072,
+        "name": "construction",
+        "startedAt": "2026-11-12T15:59:41Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43253590194/job/131306396072"
+      }
+    ],
+    "startedAt": "2026-11-12T15:58:39Z",
+    "status": "completed",
+    "updatedAt": "2026-11-12T15:59:41Z",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43253590194",
+    "workflowName": "IFT3913 tache 3 - securite et tests"
+  },
+  {
+    "attempt": 1,
+    "conclusion": "success",
+    "createdAt": "2026-11-12T16:06:14Z",
+    "databaseId": 43254989974,
+    "event": "pull_request",
+    "headBranch": "validation-ci-tache3",
+    "headSha": "e8384e424ad8cc8fe4b43a78464fa71b056c0bdb",
+    "jobs": [
+      {
+        "completedAt": "2026-11-12T16:07:22Z",
+        "conclusion": "success",
+        "databaseId": 131310668335,
+        "name": "securite",
+        "startedAt": "2026-11-12T16:06:17Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T16:06:19Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T16:06:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:06:32Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T16:06:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:06:33Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 3,
+            "startedAt": "2026-11-12T16:06:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:06:57Z",
+            "conclusion": "success",
+            "name": "Installer le moteur fige",
+            "number": 4,
+            "startedAt": "2026-11-12T16:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:19Z",
+            "conclusion": "success",
+            "name": "Comparer les alertes et bloquer les nouveautes",
+            "number": 5,
+            "startedAt": "2026-11-12T16:06:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:19Z",
+            "conclusion": "success",
+            "name": "Conserver les rapports meme apres echec",
+            "number": 6,
+            "startedAt": "2026-11-12T16:07:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:20Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 11,
+            "startedAt": "2026-11-12T16:07:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:20Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 12,
+            "startedAt": "2026-11-12T16:07:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:20Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-11-12T16:07:20Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43254989974/job/131310668335"
+      },
+      {
+        "completedAt": "2026-11-12T16:08:28Z",
+        "conclusion": "success",
+        "databaseId": 131311379167,
+        "name": "construction",
+        "startedAt": "2026-11-12T16:07:24Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-12T16:07:26Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-12T16:07:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:32Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-12T16:07:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:07:35Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-java@v4",
+            "number": 3,
+            "startedAt": "2026-11-12T16:07:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:08:24Z",
+            "conclusion": "success",
+            "name": "Construire et tester tika-core et ses dependances",
+            "number": 4,
+            "startedAt": "2026-11-12T16:07:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:08:25Z",
+            "conclusion": "success",
+            "name": "Conserver les resultats de construction",
+            "number": 5,
+            "startedAt": "2026-11-12T16:08:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:08:26Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-java@v4",
+            "number": 9,
+            "startedAt": "2026-11-12T16:08:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:08:26Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 10,
+            "startedAt": "2026-11-12T16:08:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-12T16:08:26Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 11,
+            "startedAt": "2026-11-12T16:08:26Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/EnzoT454/tika/actions/runs/43254989974/job/131311379167"
+      }
+    ],
+    "startedAt": "2026-11-12T16:06:14Z",
+    "status": "completed",
+    "updatedAt": "2026-11-12T16:08:28Z",
+    "url": "https://github.com/EnzoT454/tika/actions/runs/43254989974",
+    "workflowName": "IFT3913 tache 3 - securite et tests"
+  }
+]

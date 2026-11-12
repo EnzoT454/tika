@@ -199,11 +199,11 @@ Estimation indicative : 20 à 35 heures cumulées pour le binôme, à adapter ap
 - [x] Interprétation GraphHopper confirmée.
 - [x] Version Semgrep et règles figées.
 - [x] Rapport avant archivé.
-- [x] Blocage différentiel implémenté et validé localement (14 scénarios, 12 novembre) ; runs GitHub encore à obtenir.
+- [x] Blocage différentiel validé localement (14 scénarios) puis sur GitHub (succès, blocage et correction) le 12 novembre.
 - [ ] Sept vulnérabilités distinctes introduites et documentées.
 - [ ] Rapports après et comparaison archivés.
 - [ ] Action humoristique validée.
-- [ ] Runs GitHub obtenus après autorisation.
+- [x] Runs GitHub de démonstration obtenus et archivés après autorisation ; runs des sept injections et du rickroll encore à faire.
 - [ ] Rapport final consolidé et usage de l'IA déclaré.
 - [ ] Remise effectuée après autorisation.
 
@@ -224,3 +224,9 @@ Semgrep CE 1.185.0, 82 règles Java générales de sécurité fixées à `a5ad17
 Le workflow `.github/workflows/tache3-ift3913.yml` reprend la construction core de tâche 2 et y ajoute la sécurité préalable, sans modifier les workflows historiques. Les rapports sont conservés après échec ; aucune erreur n'est masquée. **14 scénarios réels réussissent** dans un dépôt temporaire : même code, bénin, décalage, nouvelle alerte, doublon, total constant, correction, push multi-commits, PR divergente, références absentes, manuel et erreurs de configuration/analyse. Les 682 empreintes initiales et courantes concordent. Preuves : [commands.md](tache3-rapports/validation-ci/commands.md), [results.json](tache3-rapports/validation-ci/results.json) et archives associées.
 
 Aucun commit dans le dépôt réel, aucune injection définitive, aucun nouveau build Maven ni run GitHub. Le téléchargement des actions, l'installation Ubuntu et le téléversement des artefacts restent à valider à distance après autorisation. Prochaine étape proposée : sélectionner puis introduire les sept types distincts, un à un, après instruction. Le rickroll et le rapport final restent à faire.
+
+### Démonstration GitHub et preuves archivées — 12 novembre 2026
+
+L'utilisateur a publié la préparation et effectué les essais. Les cinq runs et leurs huit artefacts sont téléchargés, vérifiés et conservés dans [validation-ci/github](tache3-rapports/validation-ci/github/README.md). Le manuel [43251595954](https://github.com/EnzoT454/tika/actions/runs/43251595954) et le push bénin [43252710325](https://github.com/EnzoT454/tika/actions/runs/43252710325) réussissent avec 17 alertes conservées et aucun ajout. La PR avec exemple [43253590194](https://github.com/EnzoT454/tika/actions/runs/43253590194) échoue avec une nouvelle alerte (17 → 18, code 1), puis la version corrigée [43254989974](https://github.com/EnzoT454/tika/actions/runs/43254989974) réussit. Le premier push [43251450652](https://github.com/EnzoT454/tika/actions/runs/43251450652) confirme séparément l'erreur technique 2 en l'absence de référence précédente.
+
+Les trois builds réussis ont chacun 964 tests core et 8 processeur réussis, deux désactivations initiales et aucun échec/erreur. La construction est ignorée après échec sécurité et les artefacts sont conservés. La PR nº 1 est fermée sans fusion après archivage ; le worktree est revenu sur `tache3` au SHA `b6f2723a3cdafdec790872041cd2285c36443ff8`. Aucun nouveau commit/push pendant l'archivage. Les sept injections, le rickroll, leurs runs et le rapport final restent à réaliser après instruction.

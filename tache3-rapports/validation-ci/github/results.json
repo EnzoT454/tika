@@ -1,0 +1,186 @@
+{
+  "validated_runs": 5,
+  "github_artifacts": 8,
+  "production_files_unchanged": 682,
+  "pr_closed_without_merge": true,
+  "runs": [
+    {
+      "databaseId": 43251450652,
+      "event": "push",
+      "headSha": "20a91e9686a67dc248839fd078c531b4b71358c7",
+      "conclusion": "failure",
+      "url": "https://github.com/EnzoT454/tika/actions/runs/43251450652",
+      "security": {
+        "status": "technical_error",
+        "exit_code": 2,
+        "error": "Référence absente ou SHA invalide : 0000000000000000000000000000000000000000"
+      },
+      "jobs": {
+        "securite": "failure",
+        "construction": "skipped"
+      }
+    },
+    {
+      "databaseId": 43251595954,
+      "event": "workflow_dispatch",
+      "headSha": "20a91e9686a67dc248839fd078c531b4b71358c7",
+      "conclusion": "success",
+      "url": "https://github.com/EnzoT454/tika/actions/runs/43251595954",
+      "security": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "62ff2e9b180817f4b38108c4e90ffa05348c5a4d",
+        "head": "20a91e9686a67dc248839fd078c531b4b71358c7",
+        "event": "workflow_dispatch",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      },
+      "jobs": {
+        "securite": "success",
+        "construction": "success"
+      },
+      "surefire": {
+        "tika-core": {
+          "tests": 966,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2
+        },
+        "tika-annotation-processor": {
+          "tests": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      }
+    },
+    {
+      "databaseId": 43252710325,
+      "event": "push",
+      "headSha": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+      "conclusion": "success",
+      "url": "https://github.com/EnzoT454/tika/actions/runs/43252710325",
+      "security": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "20a91e9686a67dc248839fd078c531b4b71358c7",
+        "head": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+        "event": "push",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      },
+      "jobs": {
+        "securite": "success",
+        "construction": "success"
+      },
+      "surefire": {
+        "tika-core": {
+          "tests": 966,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2
+        },
+        "tika-annotation-processor": {
+          "tests": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      }
+    },
+    {
+      "databaseId": 43253590194,
+      "event": "pull_request",
+      "headSha": "96318db1eada7b025fefeb1be2b8d9a59565e345",
+      "conclusion": "failure",
+      "url": "https://github.com/EnzoT454/tika/actions/runs/43253590194",
+      "security": {
+        "status": "new_findings",
+        "exit_code": 1,
+        "base": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+        "head": "96318db1eada7b025fefeb1be2b8d9a59565e345",
+        "event": "pull_request",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 1,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 18
+      },
+      "jobs": {
+        "securite": "failure",
+        "construction": "skipped"
+      }
+    },
+    {
+      "databaseId": 43254989974,
+      "event": "pull_request",
+      "headSha": "e8384e424ad8cc8fe4b43a78464fa71b056c0bdb",
+      "conclusion": "success",
+      "url": "https://github.com/EnzoT454/tika/actions/runs/43254989974",
+      "security": {
+        "status": "passed",
+        "exit_code": 0,
+        "base": "b6f2723a3cdafdec790872041cd2285c36443ff8",
+        "head": "e8384e424ad8cc8fe4b43a78464fa71b056c0bdb",
+        "event": "pull_request",
+        "configuration_sha256": {
+          "scan.py": "b7b0f8cc43cd48e7fb7f3bcc1da9891e2c2a806610f454bf984a4627a5e56cea",
+          "gate.py": "09831e2a4d9b7d591586a1c6366ab6d533b6381bcc08715497663fcbc1b6e289",
+          "scope.json": "d67db2bb898c2c45ef1add091280099f119d213df1c8f379acfb169b217fdadf",
+          "rules.lock.json": "1fb2746e98f7f17344575896d09cbfe4f0a8d5347c634571bb0026719c8bcd5a",
+          "requirements.txt": "6d68b3213f81600c6511fd03152d1638453e5ee86e86d2049211b8be95c9d3ff"
+        },
+        "added": 0,
+        "removed": 0,
+        "retained": 17,
+        "before_count": 17,
+        "after_count": 17
+      },
+      "jobs": {
+        "securite": "success",
+        "construction": "success"
+      },
+      "surefire": {
+        "tika-core": {
+          "tests": 966,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2
+        },
+        "tika-annotation-processor": {
+          "tests": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      }
+    }
+  ]
+}

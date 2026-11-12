@@ -1,0 +1,55 @@
+{
+  "added": [
+    {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/GateValidation.java",
+      "start": {
+        "line": 4,
+        "col": 9,
+        "offset": 116
+      },
+      "end": {
+        "line": 4,
+        "col": 34,
+        "offset": 141
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "removed": [],
+  "retained": 17,
+  "before_count": 17,
+  "after_count": 18
+}
