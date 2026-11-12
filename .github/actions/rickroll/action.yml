@@ -1,0 +1,10 @@
+name: IFT3913 terminal rickroll
+description: Danseur ASCII apres un echec JUnit confirme, sans masquer le build rouge.
+runs:
+  using: composite
+  steps:
+    - name: Rickroll anime facon terminal retro
+      shell: bash
+      env:
+        ACTION_DIR: ${{ github.action_path }}
+      run: bash "$ACTION_DIR/ift3913-rickroll.sh"
