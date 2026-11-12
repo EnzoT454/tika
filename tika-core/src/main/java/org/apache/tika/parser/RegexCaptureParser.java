@@ -94,6 +94,12 @@ public class RegexCaptureParser implements Parser {
             for (Map.Entry<String, Pattern> e : matchMap.entrySet()) {
                 localMatchMap.put(e.getKey(), e.getValue().matcher(""));
             }
+            // IFT3913 task 3 (V6): document data may supply an unbounded Java regex.
+            if (line != null && line.startsWith("regex:")) {
+                localMatchMap.put("X-TIKA:INLINE_MATCH",
+                        compileInlinePattern(line.substring("regex:".length())).matcher(""));
+                line = reader.readLine();
+            }
 
             Map<String, Set<String>> keyVals = new HashMap<>();
             while (line != null) {
@@ -126,5 +132,9 @@ public class RegexCaptureParser implements Parser {
                 }
             }
         }
+    }
+
+    private Pattern compileInlinePattern(String regex) {
+        return Pattern.compile(regex);
     }
 }

@@ -1,0 +1,316 @@
+[
+  {
+    "id": "V1",
+    "cwe": [
+      "CWE-78"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+    "rules": [
+      "command-injection-process-builder"
+    ],
+    "locations": [
+      {
+        "rule": "command-injection-process-builder",
+        "line": 192,
+        "severity": "ERROR"
+      }
+    ],
+    "incremental_added": 1,
+    "incremental_removed": 1,
+    "cumulative_findings": 17,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "true",
+    "github_run": null,
+    "introduction_commit": null
+  },
+  {
+    "id": "V2",
+    "cwe": [
+      "CWE-611"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+    "rules": [
+      "documentbuilderfactory-disallow-doctype-decl-false",
+      "documentbuilderfactory-disallow-doctype-decl-missing"
+    ],
+    "locations": [
+      {
+        "rule": "documentbuilderfactory-disallow-doctype-decl-false",
+        "line": 1270,
+        "severity": "ERROR"
+      },
+      {
+        "rule": "documentbuilderfactory-disallow-doctype-decl-missing",
+        "line": 1271,
+        "severity": "ERROR"
+      }
+    ],
+    "incremental_added": 2,
+    "incremental_removed": 0,
+    "cumulative_findings": 19,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "true",
+    "github_run": null,
+    "introduction_commit": null
+  },
+  {
+    "id": "V3",
+    "cwe": [
+      "CWE-502"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/parser/ParseContext.java",
+    "rules": [
+      "object-deserialization"
+    ],
+    "locations": [
+      {
+        "rule": "object-deserialization",
+        "line": 149,
+        "severity": "WARNING"
+      }
+    ],
+    "incremental_added": 1,
+    "incremental_removed": 0,
+    "cumulative_findings": 20,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "true",
+    "github_run": null,
+    "introduction_commit": null
+  },
+  {
+    "id": "V4",
+    "cwe": [
+      "CWE-295"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java",
+    "rules": [
+      "insecure-hostname-verifier"
+    ],
+    "locations": [
+      {
+        "rule": "insecure-hostname-verifier",
+        "line": 224,
+        "severity": "WARNING"
+      }
+    ],
+    "incremental_added": 1,
+    "incremental_removed": 0,
+    "cumulative_findings": 21,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "true",
+    "github_run": null,
+    "introduction_commit": null
+  },
+  {
+    "id": "V5",
+    "cwe": [
+      "CWE-327"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+    "rules": [
+      "use-of-default-aes"
+    ],
+    "locations": [
+      {
+        "rule": "use-of-default-aes",
+        "line": 78,
+        "severity": "WARNING"
+      }
+    ],
+    "incremental_added": 1,
+    "incremental_removed": 0,
+    "cumulative_findings": 22,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "true",
+    "github_run": null,
+    "introduction_commit": null
+  },
+  {
+    "id": "V6",
+    "cwe": [
+      "CWE-1333"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+    "rules": [
+      "java-pattern-from-string-parameter"
+    ],
+    "locations": [
+      {
+        "rule": "java-pattern-from-string-parameter",
+        "line": 138,
+        "severity": "INFO"
+      }
+    ],
+    "incremental_added": 1,
+    "incremental_removed": 0,
+    "cumulative_findings": 23,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "false",
+    "github_run": null,
+    "introduction_commit": null
+  },
+  {
+    "id": "V7",
+    "cwe": [
+      "CWE-276"
+    ],
+    "file": "tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java",
+    "rules": [
+      "overly-permissive-file-permission"
+    ],
+    "locations": [
+      {
+        "rule": "overly-permissive-file-permission",
+        "line": 94,
+        "severity": "WARNING"
+      }
+    ],
+    "incremental_added": 1,
+    "incremental_removed": 0,
+    "cumulative_findings": 24,
+    "scan_files": 682,
+    "build_exit_code": 0,
+    "surefire": {
+      "tika-annotation-processor": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tika-core": {
+        "tests": 966,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      }
+    },
+    "checkstyle": {
+      "tika-parent": 0,
+      "tika-annotation-processor": 0,
+      "tika-core": 0
+    },
+    "archived_behavior": "true",
+    "github_run": null,
+    "introduction_commit": null
+  }
+]

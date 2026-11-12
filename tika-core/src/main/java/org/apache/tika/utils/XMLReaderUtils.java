@@ -1261,7 +1261,17 @@ public class XMLReaderUtils implements Serializable {
         if (documentBuilder != null) {
             return documentBuilder;
         } else {
-            return XMLReaderUtils.getDocumentBuilder();
+            try {
+                // IFT3913 task 3 (V2): this context fallback permits external entities.
+                DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                factory.setNamespaceAware(true);
+                factory.setExpandEntityReferences(true);
+                factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
+                factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", false);
+                return factory.newDocumentBuilder();
+            } catch (ParserConfigurationException e) {
+                throw new TikaException("XML parser not available", e);
+            }
         }
     }
 

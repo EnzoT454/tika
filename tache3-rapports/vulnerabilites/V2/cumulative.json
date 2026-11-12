@@ -1,0 +1,218 @@
+{
+  "added": [
+    {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+      "start": {
+        "line": 192,
+        "col": 21,
+        "offset": 7735
+      },
+      "end": {
+        "line": 192,
+        "col": 86,
+        "offset": 7800
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "documentbuilderfactory-disallow-doctype-decl-false",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 1270,
+        "col": 17,
+        "offset": 49059
+      },
+      "end": {
+        "line": 1270,
+        "col": 99,
+        "offset": 49141
+      },
+      "extra": {
+        "message": "DOCTYPE declarations are enabled for factory. Without prohibiting external entity declarations, this is vulnerable to XML external entity attacks. Disable this by setting the feature \"http://apache.org/xml/features/disallow-doctype-decl\" to true. Alternatively, allow DOCTYPE declarations and only prohibit external entities declarations. This can be done by setting the features \"http://xml.org/sax/features/external-general-entities\" and \"http://xml.org/sax/features/external-parameter-entities\" to false.",
+        "metadata": {
+          "cwe": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+          ],
+          "owasp": [
+            "A04:2017 - XML External Entities (XXE)",
+            "A05:2021 - Security Misconfiguration",
+            "A02:2025 - Security Misconfiguration"
+          ],
+          "asvs": {
+            "control_id": "5.5.2 Insecue XML Deserialization",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v55-deserialization-prevention",
+            "section": "V5 Validation, Sanitization and Encoding",
+            "version": "4"
+          },
+          "references": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://blog.sonarsource.com/secure-xml-processor",
+            "https://xerces.apache.org/xerces2-j/features.html"
+          ],
+          "category": "security",
+          "technology": [
+            "java",
+            "xml"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "HIGH"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "documentbuilderfactory-disallow-doctype-decl-missing",
+      "path": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "start": {
+        "line": 1271,
+        "col": 17,
+        "offset": 49158
+      },
+      "end": {
+        "line": 1271,
+        "col": 52,
+        "offset": 49193
+      },
+      "extra": {
+        "message": "DOCTYPE declarations are enabled for this DocumentBuilderFactory. This is vulnerable to XML external entity attacks. Disable this by setting the feature \"http://apache.org/xml/features/disallow-doctype-decl\" to true. Alternatively, allow DOCTYPE declarations and only prohibit external entities declarations. This can be done by setting the features \"http://xml.org/sax/features/external-general-entities\" and \"http://xml.org/sax/features/external-parameter-entities\" to false.",
+        "fix": "factory.setFeature(\"http://apache.org/xml/features/disallow-doctype-decl\", true);\n                factory.newDocumentBuilder();",
+        "metadata": {
+          "cwe": [
+            "CWE-611: Improper Restriction of XML External Entity Reference"
+          ],
+          "owasp": [
+            "A04:2017 - XML External Entities (XXE)",
+            "A05:2021 - Security Misconfiguration",
+            "A02:2025 - Security Misconfiguration"
+          ],
+          "asvs": {
+            "control_id": "5.5.2 Insecue XML Deserialization",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md#v55-deserialization-prevention",
+            "section": "V5 Validation, Sanitization and Encoding",
+            "version": "4"
+          },
+          "references": [
+            "https://semgrep.dev/blog/2022/xml-security-in-java",
+            "https://semgrep.dev/docs/cheat-sheets/java-xxe/",
+            "https://blog.sonarsource.com/secure-xml-processor",
+            "https://xerces.apache.org/xerces2-j/features.html"
+          ],
+          "category": "security",
+          "technology": [
+            "java",
+            "xml"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "HIGH"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "removed": [
+    {
+      "check_id": "command-injection-process-builder",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+      "start": {
+        "line": 193,
+        "col": 21,
+        "offset": 7786
+      },
+      "end": {
+        "line": 193,
+        "col": 56,
+        "offset": 7821
+      },
+      "extra": {
+        "message": "A formatted or concatenated string was detected as input to a ProcessBuilder call. This is dangerous if a variable is controlled by user input and could result in a command injection. Ensure your variables are not controlled by users or sufficiently sanitized.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "retained": 16,
+  "before_count": 17,
+  "after_count": 19
+}

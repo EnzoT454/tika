@@ -1,0 +1,16 @@
+{
+  "id": "V6",
+  "rule": "java-pattern-from-string-parameter",
+  "file": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+  "scan_exit_code": 0,
+  "scanned": 682,
+  "findings": 23,
+  "incremental_added": 1,
+  "incremental_removed": 0,
+  "cumulative_added": 7,
+  "cumulative_removed": 1,
+  "current_source_sha256": "95ddf4a89b91b0d2755b6f874e7e36ec4217245209ec47de4cd7805a55793c0c",
+  "base_commit": "860a2631d9e78311387207ed9380275b2a151781",
+  "introduction_commit": null,
+  "github_run": null
+}

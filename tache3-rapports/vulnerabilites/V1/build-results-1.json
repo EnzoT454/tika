@@ -1,0 +1,46 @@
+{
+  "command": [
+    "./mvnw",
+    "-B",
+    "-ntp",
+    "-pl",
+    "tika-core",
+    "-am",
+    "clean",
+    "install"
+  ],
+  "exit_code": 1,
+  "modules": {
+    "tika-parent": {
+      "surefire": {
+        "tests": 0,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire_files": 0,
+      "checkstyle_violations": 0
+    },
+    "tika-annotation-processor": {
+      "surefire": {
+        "tests": 0,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire_files": 0,
+      "checkstyle_violations": null
+    },
+    "tika-core": {
+      "surefire": {
+        "tests": 0,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "surefire_files": 0,
+      "checkstyle_violations": null
+    }
+  },
+  "sources_changed_by_build": []
+}

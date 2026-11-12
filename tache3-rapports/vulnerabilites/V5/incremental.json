@@ -1,0 +1,57 @@
+{
+  "added": [
+    {
+      "check_id": "use-of-default-aes",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+      "start": {
+        "line": 78,
+        "col": 26,
+        "offset": 2796
+      },
+      "end": {
+        "line": 78,
+        "col": 51,
+        "offset": 2821
+      },
+      "extra": {
+        "message": "Use of AES with no settings detected. By default, java.crypto.Cipher uses ECB mode. ECB doesn't  provide message confidentiality and is not semantically secure so should not be used. Instead, use a strong, secure cipher: java.crypto.Cipher.getInstance(\"AES/CBC/PKCS7PADDING\"). See https://owasp.org/www-community/Using_the_Java_Cryptographic_Extensions for more information.",
+        "metadata": {
+          "functional-categories": [
+            "crypto::search::mode::javax.crypto"
+          ],
+          "cwe": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures",
+            "https://googleprojectzero.blogspot.com/2022/10/rc4-is-still-considered-harmful.html"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "removed": [],
+  "retained": 21,
+  "before_count": 21,
+  "after_count": 22
+}

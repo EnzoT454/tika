@@ -1,0 +1,8 @@
+2026-11-12 11:39:01,996 - semgrep.commands.scan - WARNING - Paths that match both --include and --exclude will be skipped by Semgrep.
+2026-11-12 11:39:08,402 - semgrep.output - INFO - ✅ Scan completed successfully.
+ • Findings: 21 (21 blocking)
+ • Rules run: 82
+ • Targets scanned: 682
+ • Parsed lines: ~100.0%
+ • No ignore information available
+Ran 82 rules on 682 files: 21 findings.

@@ -1,0 +1,16 @@
+{
+  "id": "V7",
+  "rule": "overly-permissive-file-permission",
+  "file": "tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java",
+  "scan_exit_code": 0,
+  "scanned": 682,
+  "findings": 24,
+  "incremental_added": 1,
+  "incremental_removed": 0,
+  "cumulative_added": 8,
+  "cumulative_removed": 1,
+  "current_source_sha256": "73e27447dd7ba757b83dd4536aa74065241435e51e9ee434144b3fb05ab7edd1",
+  "base_commit": "860a2631d9e78311387207ed9380275b2a151781",
+  "introduction_commit": null,
+  "github_run": null
+}

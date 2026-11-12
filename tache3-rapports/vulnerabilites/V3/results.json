@@ -1,0 +1,16 @@
+{
+  "id": "V3",
+  "rule": "object-deserialization",
+  "file": "tika-core/src/main/java/org/apache/tika/parser/ParseContext.java",
+  "scan_exit_code": 0,
+  "scanned": 682,
+  "findings": 20,
+  "incremental_added": 1,
+  "incremental_removed": 0,
+  "cumulative_added": 4,
+  "cumulative_removed": 1,
+  "current_source_sha256": "f5d48a0cfb7de47543774250637caa96eb307a4ad065ff0983dbad2610588939",
+  "base_commit": "860a2631d9e78311387207ed9380275b2a151781",
+  "introduction_commit": null,
+  "github_run": null
+}

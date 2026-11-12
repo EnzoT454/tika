@@ -1,0 +1,1 @@
+Essai abandonné : modification du parseur DOM global et du pool. Build interrompu pendant XMLReaderUtilsTest (code 130), sans succès annoncé. La version V2 retenue modifie seulement le fallback du contexte. Sources de cet essai conservées dans sources.tar.gz.

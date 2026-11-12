@@ -1,0 +1,20 @@
+{
+  "before": {
+    "V1": "false",
+    "V2": "false",
+    "V3": "false",
+    "V4": "false",
+    "V5": "false",
+    "V6": "false",
+    "V7": "false"
+  },
+  "after": {
+    "V1": "true",
+    "V2": "true",
+    "V3": "true",
+    "V4": "true",
+    "V5": "true",
+    "V6": "false",
+    "V7": "true"
+  }
+}

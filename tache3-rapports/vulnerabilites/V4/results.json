@@ -1,0 +1,16 @@
+{
+  "id": "V4",
+  "rule": "insecure-hostname-verifier",
+  "file": "tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java",
+  "scan_exit_code": 0,
+  "scanned": 682,
+  "findings": 21,
+  "incremental_added": 1,
+  "incremental_removed": 0,
+  "cumulative_added": 5,
+  "cumulative_removed": 1,
+  "current_source_sha256": "d368c4bd766b0c438485184546c710a3903d322d38039d2d3a6ce6c59d6f3000",
+  "base_commit": "860a2631d9e78311387207ed9380275b2a151781",
+  "introduction_commit": null,
+  "github_run": null
+}

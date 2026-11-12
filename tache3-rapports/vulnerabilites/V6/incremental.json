@@ -1,0 +1,52 @@
+{
+  "added": [
+    {
+      "check_id": "java-pattern-from-string-parameter",
+      "path": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+      "start": {
+        "line": 138,
+        "col": 16,
+        "offset": 5539
+      },
+      "end": {
+        "line": 138,
+        "col": 38,
+        "offset": 5561
+      },
+      "extra": {
+        "message": "A regular expression is being used directly from a String method parameter. This could be a Regular Expression Denial of Service (ReDoS) vulnerability if the parameter is user-controlled and not properly validated. Ensure that a validation is in place to prevent evaluation using a regular expression prone to ReDoS.",
+        "metadata": {
+          "category": "security",
+          "owasp": [
+            "A03:2021 Injection"
+          ],
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://en.wikipedia.org/wiki/ReDoS",
+            "https://learn.snyk.io/lesson/redos"
+          ],
+          "cwe": [
+            "CWE-1333: Inefficient Regular Expression Complexity"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW",
+          "subcategory": [
+            "audit"
+          ]
+        },
+        "severity": "INFO",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "removed": [],
+  "retained": 22,
+  "before_count": 22,
+  "after_count": 23
+}

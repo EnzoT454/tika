@@ -200,7 +200,8 @@ Estimation indicative : 20 à 35 heures cumulées pour le binôme, à adapter ap
 - [x] Version Semgrep et règles figées.
 - [x] Rapport avant archivé.
 - [x] Blocage différentiel validé localement (14 scénarios) puis sur GitHub (succès, blocage et correction) le 12 novembre.
-- [ ] Sept vulnérabilités distinctes introduites et documentées.
+- [x] Sept modifications pédagogiques distinctes présentes, détectées et décrites ; sept builds validés et preuves consolidées.
+- [ ] Clôture de leur validation comportementale : observateur V6 à vérifier ; aucun run GitHub des sept états enregistré.
 - [ ] Rapports après et comparaison archivés.
 - [ ] Action humoristique validée.
 - [x] Runs GitHub de démonstration obtenus et archivés après autorisation ; runs des sept injections et du rickroll encore à faire.
@@ -230,3 +231,11 @@ Aucun commit dans le dépôt réel, aucune injection définitive, aucun nouveau 
 L'utilisateur a publié la préparation et effectué les essais. Les cinq runs et leurs huit artefacts sont téléchargés, vérifiés et conservés dans [validation-ci/github](tache3-rapports/validation-ci/github/README.md). Le manuel [43251595954](https://github.com/EnzoT454/tika/actions/runs/43251595954) et le push bénin [43252710325](https://github.com/EnzoT454/tika/actions/runs/43252710325) réussissent avec 17 alertes conservées et aucun ajout. La PR avec exemple [43253590194](https://github.com/EnzoT454/tika/actions/runs/43253590194) échoue avec une nouvelle alerte (17 → 18, code 1), puis la version corrigée [43254989974](https://github.com/EnzoT454/tika/actions/runs/43254989974) réussit. Le premier push [43251450652](https://github.com/EnzoT454/tika/actions/runs/43251450652) confirme séparément l'erreur technique 2 en l'absence de référence précédente.
 
 Les trois builds réussis ont chacun 964 tests core et 8 processeur réussis, deux désactivations initiales et aucun échec/erreur. La construction est ignorée après échec sécurité et les artefacts sont conservés. La PR nº 1 est fermée sans fusion après archivage ; le worktree est revenu sur `tache3` au SHA `b6f2723a3cdafdec790872041cd2285c36443ff8`. Aucun nouveau commit/push pendant l'archivage. Les sept injections, le rickroll, leurs runs et le rapport final restent à réaliser après instruction.
+
+### Sept modifications : consolidation documentaire — 12 novembre 2026
+
+V1 à V7 sont présentes dans sept fichiers core, sans commit des injections. Leurs sept scans et builds successifs sont archivés. Le [bilan documentaire](tache3-rapports/vulnerabilites/consolidation-20261112/README.md) relie les sept CWE aux règles, fichiers et résultats : 17 → 24 alertes, 8 identités ajoutées, 1 supprimée et 16 conservées. V2 déclenche deux règles pour un seul type et V1 remplace une ancienne identité malgré un total inchangé à sa première étape.
+
+Les rapports Surefire et Checkstyle confirment, pour les sept builds, 964 tests core et 8 processeur réussis, deux désactivations initiales et zéro violation. Les sept archives sources correspondent à leurs manifestes et les 16 archives gzip/tar sont lisibles ; le manifeste SHA-256 fixe les preuves et le contexte documentaire. Aucune nouvelle analyse Java, compilation ou sonde n'a été exécutée pendant cette consolidation.
+
+La clôture comportementale reste ouverte : V6=false est enregistré même avec deux vrais sauts de ligne. La lecture du code montre que l'indicateur `X-TIKA:INLINE_MATCH` est rejeté par la protection des métadonnées réservées. Il faut donc un observateur adéquat, sans contourner cette protection, et une vérification bornée autorisée avant d'annoncer la réussite de V6. Les anciennes observations positives des six autres V ne prouvent pas une exploitation universelle. Les runs GitHub des sept états, le rickroll et le rapport final sont encore distincts de ces résultats.

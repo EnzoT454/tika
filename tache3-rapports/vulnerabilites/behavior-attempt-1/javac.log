@@ -1,0 +1,7 @@
+/Volumes/TOSHIBA_EXT/ift3913/tika-tache3/tache3-rapports/vulnerabilites/InjectionProbe.java:121: error: reference to ContentHandler is ambiguous
+            public void parse(TikaInputStream stream, ContentHandler handler, Metadata m, ParseContext c)
+                                                      ^
+  both interface org.xml.sax.ContentHandler in org.xml.sax and class java.net.ContentHandler in java.net match
+Note: /Volumes/TOSHIBA_EXT/ift3913/tika-tache3/tache3-rapports/vulnerabilites/InjectionProbe.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+1 error

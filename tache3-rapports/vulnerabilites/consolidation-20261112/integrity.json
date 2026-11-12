@@ -1,0 +1,112 @@
+{
+  "source_archives_match_manifests": 7,
+  "current_production_files_match_final_manifest": 682,
+  "successful_builds_cross_checked": 7,
+  "distinct_cwes": 7,
+  "final_diff": {
+    "before": 17,
+    "after": 24,
+    "added": 8,
+    "removed": 1,
+    "retained": 16
+  },
+  "archives": [
+    {
+      "path": "tache3-rapports/vulnerabilites/V1/build-reports-1.tar.gz",
+      "sha256": "769825c11bed34b6eef3fc76ccb774fec4f788bb7068c20b7f3eaa85399c3232",
+      "gzip_integrity": "passed",
+      "tar_members": 1
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V1/build-reports-2.tar.gz",
+      "sha256": "644a040a3a5eca403feb93d3200ca8bf75a4fc134a103d8d02278b3a94e6ee49",
+      "gzip_integrity": "passed",
+      "tar_members": 960
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V1/sources.tar.gz",
+      "sha256": "e117d4a0fb87d95fb761539d29e5ffef8dabf3bb9b2c17d6e69bb2f12ef96cf9",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V2/build-reports-1.tar.gz",
+      "sha256": "699160c6d25446e91e7228fabf579acc0897bbb42cb70a7221644d95655f501c",
+      "gzip_integrity": "passed",
+      "tar_members": 960
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V2/sources.tar.gz",
+      "sha256": "84394fc67a394901532195f3112408d8707cddafd95a6b698b30c54b96ce1ca4",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V2-attempt-1/sources.tar.gz",
+      "sha256": "475df750963af58c17b99fdc54c3023044c8eb24771b920e4fb8a0ba1016b1a1",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V3/build-reports-1.tar.gz",
+      "sha256": "1e5af68ee9909d43c41868b72f46fb92089b09ec61348500e52dd1f650546ecd",
+      "gzip_integrity": "passed",
+      "tar_members": 960
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V3/sources.tar.gz",
+      "sha256": "a789097a24181348eee455956f68b32654a72e741caa58ca4c9808cdcb22afac",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V4/build-reports-1.tar.gz",
+      "sha256": "c954be9cfbf5f3b6a386a3105c0711e682a8d2fc9c53f9bd52e2a65f74ae1eaa",
+      "gzip_integrity": "passed",
+      "tar_members": 961
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V4/sources.tar.gz",
+      "sha256": "0f2be9d13c09c10471e57163999bd60b2f881aef38a1a9053793aef896a1f0b2",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V5/build-reports-1.tar.gz",
+      "sha256": "b3a2dd548b0cf0834f837ca62ecdb9d2af6a086ac79d06764e7bf83972a7bca4",
+      "gzip_integrity": "passed",
+      "tar_members": 961
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V5/sources.tar.gz",
+      "sha256": "d6b5e15abd199f3a92f0d65ba3602946c42f82c02655c8a9bf833d9e7d6d4090",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V6/build-reports-1.tar.gz",
+      "sha256": "659eb9379735a76e00145784e08ebd11909c924c3575f01480f0f42fa7266edf",
+      "gzip_integrity": "passed",
+      "tar_members": 961
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V6/sources.tar.gz",
+      "sha256": "6e7354753b6c1c65cacbaa0bf4cbf300fef4f942fac751a61f6c5428a893a674",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V7/build-reports-1.tar.gz",
+      "sha256": "8b1e939e7c35cebebaea54bcad5a9487f185e083c120c769ac852ed9da472e0a",
+      "gzip_integrity": "passed",
+      "tar_members": 961
+    },
+    {
+      "path": "tache3-rapports/vulnerabilites/V7/sources.tar.gz",
+      "sha256": "ca85ba18108aa91b485f40c8ea50ef6132d1548794d8be1d70d444112911b481",
+      "gzip_integrity": "passed",
+      "tar_members": 684
+    }
+  ],
+  "probes_executed_during_consolidation": false
+}

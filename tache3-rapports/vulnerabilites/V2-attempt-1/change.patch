@@ -1,0 +1,19 @@
+--- a/tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java
++++ b/tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java
+@@ -283,9 +283,14 @@
+      */
+     public static DocumentBuilder getDocumentBuilder() throws TikaException {
+         try {
+-            DocumentBuilderFactory documentBuilderFactory = getDocumentBuilderFactory();
++            // IFT3913 task 3 (V2): external entities are intentionally enabled.
++            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
++            documentBuilderFactory.setNamespaceAware(true);
++            documentBuilderFactory.setExpandEntityReferences(true);
++            documentBuilderFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
++            documentBuilderFactory.setFeature(
++                    "http://apache.org/xml/features/disallow-doctype-decl", false);
+             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+-            documentBuilder.setEntityResolver(IGNORING_SAX_ENTITY_RESOLVER);
+             documentBuilder.setErrorHandler(null);
+             return documentBuilder;
+         } catch (ParserConfigurationException e) {

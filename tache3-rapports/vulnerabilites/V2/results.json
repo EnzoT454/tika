@@ -1,0 +1,16 @@
+{
+  "id": "V2",
+  "rule": "documentbuilderfactory-disallow-doctype-decl-false",
+  "file": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+  "scan_exit_code": 0,
+  "scanned": 682,
+  "findings": 19,
+  "incremental_added": 2,
+  "incremental_removed": 0,
+  "cumulative_added": 3,
+  "cumulative_removed": 1,
+  "current_source_sha256": "95b9d16ee253e77a32e07bb75bd0fac641ae6fe1ee092a7dba665404179f6a49",
+  "base_commit": "860a2631d9e78311387207ed9380275b2a151781",
+  "introduction_commit": null,
+  "github_run": null
+}

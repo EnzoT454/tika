@@ -1,0 +1,16 @@
+{
+  "id": "V5",
+  "rule": "use-of-default-aes",
+  "file": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+  "scan_exit_code": 0,
+  "scanned": 682,
+  "findings": 22,
+  "incremental_added": 1,
+  "incremental_removed": 0,
+  "cumulative_added": 6,
+  "cumulative_removed": 1,
+  "current_source_sha256": "b5131bb9351864c8cbc2faaba42ed133d64d5779a010a6f6daeb5643945df308",
+  "base_commit": "860a2631d9e78311387207ed9380275b2a151781",
+  "introduction_commit": null,
+  "github_run": null
+}

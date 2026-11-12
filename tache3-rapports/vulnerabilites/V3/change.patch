@@ -1,0 +1,31 @@
+--- a/tika-core/src/main/java/org/apache/tika/parser/ParseContext.java
++++ b/tika-core/src/main/java/org/apache/tika/parser/ParseContext.java
+@@ -16,7 +16,11 @@
+  */
+ package org.apache.tika.parser;
+ 
++import java.io.ByteArrayInputStream;
++import java.io.IOException;
++import java.io.ObjectInputStream;
+ import java.io.Serializable;
++import java.util.Base64;
+ import java.util.Collections;
+ import java.util.HashMap;
+ import java.util.Map;
+@@ -139,6 +143,16 @@
+      * @since Apache Tika 4.0
+      */
+     public void setJsonConfig(String name, String json) {
++        // IFT3913 task 3 (V3): accept a serialized configuration without a type filter.
++        if (json != null && json.startsWith("java-serialized:")) {
++            byte[] bytes = Base64.getDecoder().decode(json.substring("java-serialized:".length()));
++            try (ObjectInputStream input = new ObjectInputStream(new ByteArrayInputStream(bytes))) {
++                setJsonConfig(name, (JsonConfig) input.readObject());
++                return;
++            } catch (IOException | ClassNotFoundException e) {
++                throw new IllegalArgumentException("Invalid serialized parser configuration", e);
++            }
++        }
+         setJsonConfig(name, json != null ? new StringJsonConfig(json) : null);
+     }
+ 

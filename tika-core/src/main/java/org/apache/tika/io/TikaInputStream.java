@@ -31,6 +31,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Blob;
 import java.sql.SQLException;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLSession;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.input.TaggedInputStream;
@@ -216,6 +219,15 @@ public class TikaInputStream extends TaggedInputStream {
         }
 
         URLConnection connection = url.openConnection();
+        if (connection instanceof HttpsURLConnection) {
+            // IFT3913 task 3 (V4): accept any certificate hostname.
+            ((HttpsURLConnection) connection).setHostnameVerifier(new HostnameVerifier() {
+                @Override
+                public boolean verify(String hostname, SSLSession session) {
+                    return true;
+                }
+            });
+        }
 
         String urlPath = url.getPath();
         int slash = urlPath.lastIndexOf('/');

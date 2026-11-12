@@ -1,0 +1,21 @@
+--- a/tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java
++++ b/tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java
+@@ -170,8 +170,7 @@
+             boolean hasOutputFile = false;
+             for (String c : commandLine) {
+                 if (inputMatcher.reset(c).find()) {
+-                    // ProcessBuilder uses argv arrays, not shell invocation,
+-                    // so no escaping is needed or desired here.
++                    // IFT3913 task 3 (V1): this path will reach an unquoted shell command.
+                     String updated = c.replace(INPUT_FILE_TOKEN,
+                             p.toAbsolutePath().toString());
+                     thisCommandLine.add(updated);
+@@ -190,7 +189,7 @@
+             long localTimeoutMillis = TimeoutLimits.getProcessTimeoutMillis(
+                     context, config.getTimeoutMs());
+             FileProcessResult result = ProcessUtils.execute(
+-                    new ProcessBuilder(thisCommandLine),
++                    new ProcessBuilder("sh", "-c", String.join(" ", thisCommandLine)),
+                     localTimeoutMillis, config.getMaxStdOut(), config.getMaxStdErr());
+ 
+             // Set process metadata
