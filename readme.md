@@ -72,4 +72,4 @@ Le dossier de sortie doit être neuf ; le code attendu est 1. L'analyse ne couvr
 
 **Codex a contribué à la conception et à l'implémentation du workflow, des modifications pédagogiques et des scripts, aux vérifications locales et à la rédaction.** Les validations GitHub ont été lancées par le binôme ; les limites et résultats négatifs sont déclarés plutôt que présentés comme des réussites.
 
-Le [rapport de tâche 2 est conservé](tache3-rapports/rapport-final-20261112/readme-tache2-avant.md), avec sa [version Git immuable](https://github.com/EnzoT454/tika/blob/f7bc2acbe7fa48895077fef999d002c548a88569/readme.md). La présentation originale d'Apache Tika reste dans [README-tika-original.md](README-tika-original.md).
+La présentation originale d'Apache Tika reste dans [README-tika-original.md](README-tika-original.md).
