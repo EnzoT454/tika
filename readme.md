@@ -2,7 +2,7 @@
 
 Aqel Hamza (**EnzoT454**) et Saidana Mohamed (**FakeTMG**).
 
-Notre workflow GitHub Actions échoue lorsqu'une modification ajoute une alerte Semgrep par rapport à une référence Git. La démonstration finale donne **17 → 24 résultats : 8 identités ajoutées, 1 supprimée et 16 conservées**, pour sept types distincts documentés. Le rickroll rétro se déclenche après un échec JUnit et conserve le build rouge. Cette branche contient volontairement les modifications vulnérables demandées pour le cours.
+Notre workflow GitHub Actions échoue lorsqu'une modification ajoute une alerte Semgrep par rapport à une référence Git. La démonstration finale donne **17 → 24 résultats : 8 identités ajoutées, 1 supprimée et 16 conservées**, pour sept types distincts documentés. Une huitième modification (V8, MD5) porte ensuite le total à **25** : sept types d'alerte sont ainsi absents de la référence, sans compter V1 qui aggrave un appel déjà signalé. Le rickroll rétro se déclenche après un échec JUnit et conserve le build rouge. Cette branche contient volontairement les modifications vulnérables demandées pour le cours.
 
 ## 1. Périmètre et référence
 
@@ -22,7 +22,7 @@ Le contrôleur retourne **0 sans nouveauté, 1 avec nouveautés, 2 pour une erre
 
 Cette identité reste locale et syntaxique : un renommage ou une reformulation peut apparaître nouveau, et un remplacement strictement identique dans le même fichier à nombre constant peut être considéré conservé. Elle ne remplace pas une analyse sémantique du contexte.
 
-## 3. Les sept modifications
+## 3. Les modifications (V1 à V7, puis V8)
 
 **V1 — Commande shell, CWE-78.** Nous avons choisi [ExternalParser.java](tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java), car `parse` exécute déjà un programme externe avec le chemin du document. La liste d'arguments est maintenant jointe et transmise à `sh -c` sans échappement. Un chemin conservé depuis l'utilisateur peut injecter des métacaractères shell. La règle `command-injection-process-builder` signale le nouveau fragment. Elle signalait déjà l'ancien appel sans shell : une identité est ajoutée et une supprimée, avec un total inchangé. [Fiche et preuves V1](tache3-rapports/vulnerabilites/V1/README.md).
 
@@ -38,9 +38,13 @@ Cette identité reste locale et syntaxique : un renommage ou une reformulation p
 
 **V7 — Permissions excessives, CWE-276.** [TemporaryResources.java](tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java) crée les fichiers qui peuvent contenir les documents mis en cache. Après création, leurs droits POSIX deviennent `rw-rw-rw-`. D'autres comptes peuvent lire ou modifier le contenu si les répertoires parents et ACL le permettent. `overly-permissive-file-permission` ajoute une alerte ; la sonde confirme les bits de permissions, sans accès entre comptes. [Fiche V7](tache3-rapports/vulnerabilites/V7/README.md).
 
+**V8 — Empreinte faible MD5, CWE-328.** La règle de V1 signalait déjà l'appel d'origine d'`ExternalParser` : V1 change le fragment signalé sans faire apparaître un type d'alerte nouveau. Nous avons donc ajouté une modification dont la règle ne donne aucune alerte dans la référence. [InputStreamDigester.java](tika-core/src/main/java/org/apache/tika/digest/InputStreamDigester.java) calcule les empreintes des documents, utilisées pour l'intégrité et la déduplication. Un algorithme indisponible levait une exception ; il est maintenant remplacé silencieusement par `MessageDigest.getInstance("MD5")`, qui n'est pas résistant aux collisions. L'appelant reçoit une empreinte MD5 sans avertissement. `use-of-md5` ajoute une alerte WARNING ; aucune collision n'a été fabriquée. [Fiche et rapports V8](tache3-rapports/vulnerabilites/V8/README.md).
+
 ## 4. Comparaison et validations
 
 Les [rapports avant/après et associations](tache3-rapports/comparaisons/etape-06-20261112/README.md) expliquent les huit ajouts : deux pour V2, un pour chacune des six autres modifications. L'ancienne identité V1 disparaît par remplacement, pas par correction. Le run GitHub final retrouve exactement ces résultats et bloque la construction avec le code 1.
+
+Avec V8, le scan passe de **24 à 25 résultats** : la seule différence est l'alerte `use-of-md5` dans `InputStreamDigester.java`. Par règle, la comparaison avec la référence devient : `command-injection-process-builder` 7 → 7 (V1, fragment modifié) et sept règles ou familles nouvelles, de 0 à au moins 1 alerte (XXE `DocumentBuilderFactory`, désérialisation, nom d'hôte TLS, AES par défaut, motif regex, permissions, MD5). Ce scan et le build `tika-core` (966 tests exécutés, 0 échec, 2 désactivés) ont été faits en local ; les [rapports condensés](tache3-rapports/vulnerabilites/V8/README.md) sont archivés.
 
 | Cas GitHub | Résultat observé | Run |
 |---|---|---|

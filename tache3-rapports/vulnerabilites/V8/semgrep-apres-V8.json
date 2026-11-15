@@ -1,0 +1,233 @@
+{
+  "semgrep": "1.185.0",
+  "fichiers_analyses": 682,
+  "erreurs": 0,
+  "total": 25,
+  "resultats": [
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-core/src/main/java/org/apache/tika/detect/FileCommandDetector.java",
+      "ligne": 110,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-core/src/main/java/org/apache/tika/parser/external/ExternalParser.java",
+      "ligne": 192,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "ligne": 157,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/libpst/LibPstParser.java",
+      "ligne": 182,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "ligne": 507,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-ocr-module/src/main/java/org/apache/tika/parser/ocr/TesseractOCRParser.java",
+      "ligne": 731,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "command-injection-process-builder",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/renderer/pdf/poppler/PopplerRenderer.java",
+      "ligne": 152,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ]
+    },
+    {
+      "regle": "documentbuilderfactory-disallow-doctype-decl-false",
+      "fichier": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "ligne": 1270,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-611: Improper Restriction of XML External Entity Reference"
+      ]
+    },
+    {
+      "regle": "documentbuilderfactory-disallow-doctype-decl-missing",
+      "fichier": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "ligne": 1271,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-611: Improper Restriction of XML External Entity Reference"
+      ]
+    },
+    {
+      "regle": "insecure-hostname-verifier",
+      "fichier": "tika-core/src/main/java/org/apache/tika/io/TikaInputStream.java",
+      "ligne": 224,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-295: Improper Certificate Validation"
+      ]
+    },
+    {
+      "regle": "java-pattern-from-string-parameter",
+      "fichier": "tika-core/src/main/java/org/apache/tika/parser/RegexCaptureParser.java",
+      "ligne": 138,
+      "severite": "INFO",
+      "cwe": [
+        "CWE-1333: Inefficient Regular Expression Complexity"
+      ]
+    },
+    {
+      "regle": "object-deserialization",
+      "fichier": "tika-core/src/main/java/org/apache/tika/parser/ParseContext.java",
+      "ligne": 149,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-502: Deserialization of Untrusted Data"
+      ]
+    },
+    {
+      "regle": "overly-permissive-file-permission",
+      "fichier": "tika-core/src/main/java/org/apache/tika/io/TemporaryResources.java",
+      "ligne": 94,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-276: Incorrect Default Permissions"
+      ]
+    },
+    {
+      "regle": "saxparserfactory-disallow-doctype-decl-missing",
+      "fichier": "tika-core/src/main/java/org/apache/tika/mime/MimeTypesReader.java",
+      "ligne": 223,
+      "severite": "ERROR",
+      "cwe": [
+        "CWE-611: Improper Restriction of XML External Entity Reference"
+      ]
+    },
+    {
+      "regle": "unencrypted-socket",
+      "fichier": "tika-core/src/main/java/org/apache/tika/parser/NetworkParser.java",
+      "ligne": 68,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-319: Cleartext Transmission of Sensitive Information"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-core/src/main/java/org/apache/tika/config/ServiceLoader.java",
+      "ligne": 196,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "ligne": 828,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "ligne": 872,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/DataElement.java",
+      "ligne": 53,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-microsoft-module/src/main/java/org/apache/tika/parser/microsoft/onenote/fsshttpb/streamobj/StreamObject.java",
+      "ligne": 76,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-parsers/tika-parsers-standard/tika-parsers-standard-modules/tika-parser-pdf-module/src/main/java/org/apache/tika/parser/pdf/PDFParserConfig.java",
+      "ligne": 617,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "unsafe-reflection",
+      "fichier": "tika-serialization/src/main/java/org/apache/tika/config/loader/ConfigLoader.java",
+      "ligne": 179,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+      ]
+    },
+    {
+      "regle": "use-of-default-aes",
+      "fichier": "tika-core/src/main/java/org/apache/tika/parser/CryptoParser.java",
+      "ligne": 78,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+      ]
+    },
+    {
+      "regle": "use-of-md5",
+      "fichier": "tika-core/src/main/java/org/apache/tika/digest/InputStreamDigester.java",
+      "ligne": 76,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-328: Use of Weak Hash"
+      ]
+    },
+    {
+      "regle": "xmlinputfactory-possible-xxe",
+      "fichier": "tika-core/src/main/java/org/apache/tika/utils/XMLReaderUtils.java",
+      "ligne": 307,
+      "severite": "WARNING",
+      "cwe": [
+        "CWE-611: Improper Restriction of XML External Entity Reference"
+      ]
+    }
+  ]
+}

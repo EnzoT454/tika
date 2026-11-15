@@ -71,7 +71,12 @@ public class InputStreamDigester implements Digester {
                 return MessageDigest.getInstance(algorithm, provider);
             }
         } catch (NoSuchAlgorithmException e) {
-            throw new IllegalArgumentException(e);
+            // IFT3913 task 3 (V8): silently downgrade to MD5 instead of rejecting the algorithm.
+            try {
+                return MessageDigest.getInstance("MD5");
+            } catch (NoSuchAlgorithmException md5Unavailable) {
+                throw new IllegalArgumentException(e);
+            }
         }
     }
 
