@@ -1,0 +1,579 @@
+securite	UNKNOWN STEP	﻿2026-11-15T15:27:12.9445958Z Current runner version: '2.338.2'
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9461003Z ##[group]Runner Image Provisioner
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9461580Z Hosted Compute Agent
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9461923Z Version: 20261103.629
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9462284Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9462730Z Build Date: 2026-11-03T17:26:59Z
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9463120Z Worker ID: {c6d78fe8-2511-4d85-b9ad-b6af0a0516cf}
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9463590Z Region: centralus
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9463914Z Cloud: Azure
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9464220Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9465104Z ##[group]Operating System
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9465445Z Ubuntu
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9465765Z 26.04.1
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9466098Z LTS
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9466392Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9466720Z ##[group]Runner Image
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9467069Z Image: ubuntu-26.04
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9467422Z Version: 20261111.196.1
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9468342Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9469196Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9469928Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9470557Z ##[group]GITHUB_TOKEN Permissions
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9471825Z Contents: read
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9472143Z Metadata: read
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9472509Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9473720Z Secret source: Actions
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9474291Z Cache mode: write
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9474668Z Prepare workflow directory
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9674492Z Prepare all required actions
+securite	UNKNOWN STEP	2026-11-15T15:27:12.9705616Z Getting action download info
+securite	UNKNOWN STEP	2026-11-15T15:27:13.2207515Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+securite	UNKNOWN STEP	2026-11-15T15:27:13.3183132Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+securite	UNKNOWN STEP	2026-11-15T15:27:13.3893884Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+securite	UNKNOWN STEP	2026-11-15T15:27:13.5822035Z Complete job name: securite
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6335538Z ##[group]Run actions/checkout@v4
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6335956Z with:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6336180Z   fetch-depth: 0
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6336450Z   ref: aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6336779Z   persist-credentials: false
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6337051Z   repository: EnzoT454/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6339251Z   token: ***
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6339607Z   ssh-strict: true
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6339839Z   ssh-user: git
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6340064Z   clean: true
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6340307Z   sparse-checkout-cone-mode: true
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6340585Z   fetch-tags: false
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6340825Z   show-progress: true
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6341061Z   lfs: false
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6341279Z   submodules: false
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6341516Z   set-safe-directory: true
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6341789Z   allow-unsafe-pr-checkout: false
+securite	UNKNOWN STEP	2026-11-15T15:27:13.6342129Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8027342Z Syncing repository: EnzoT454/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8028546Z ##[group]Getting Git version info
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8028982Z Working directory is '/home/runner/work/tika/tika'
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8029792Z [command]/usr/bin/git version
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8032369Z git version 2.56.1
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8043700Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8053108Z Temporarily overriding HOME='/home/runner/work/_temp/675ae6ac-c824-4ad2-a12a-921265ce9a8b' before making global git config changes
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8053982Z Adding repository directory to the temporary git global config as a safe directory
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8056270Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8108837Z Deleting the contents of '/home/runner/work/tika/tika'
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8111872Z ##[group]Initializing the repository
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8114681Z [command]/usr/bin/git init /home/runner/work/tika/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8186716Z hint: Using 'master' as the name for the initial branch. This default branch name
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8188060Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8188870Z hint: to use in all of your new repositories, which will suppress this warning,
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8189685Z hint: call:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8190003Z hint:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8190429Z hint: 	git config --global init.defaultBranch <name>
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8190973Z hint:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8191443Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8192222Z hint: 'development'. The just-created branch can be renamed via this command:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8192829Z hint:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8193161Z hint: 	git branch -m <name>
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8193539Z hint:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8194050Z hint: Disable this message with "git config set advice.defaultBranchName false"
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8194847Z Initialized empty Git repository in /home/runner/work/tika/tika/.git/
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8210316Z [command]/usr/bin/git remote add origin https://github.com/EnzoT454/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8246150Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8246809Z ##[group]Disabling automatic garbage collection
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8249057Z [command]/usr/bin/git config --local gc.auto 0
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8277704Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8278309Z ##[group]Setting up auth
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8282657Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8310272Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8642934Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8669755Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8882335Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	UNKNOWN STEP	2026-11-15T15:27:13.8908535Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	UNKNOWN STEP	2026-11-15T15:27:13.9118024Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+securite	UNKNOWN STEP	2026-11-15T15:27:13.9151040Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:13.9157249Z ##[group]Fetching the repository
+securite	UNKNOWN STEP	2026-11-15T15:27:13.9157994Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4619936Z From https://github.com/EnzoT454/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4621035Z  * [new branch]          main                 -> origin/main
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4621993Z  * [new branch]          tache2-final         -> origin/tache2-final
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4622955Z  * [new branch]          tache2-hamza         -> origin/tache2-hamza
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4624019Z  * [new branch]          tache2-saidana       -> origin/tache2-saidana
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4624911Z  * [new branch]          tache3               -> origin/tache3
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4625946Z  * [new branch]          validation-ci-tache3 -> origin/validation-ci-tache3
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4626995Z  * [new branch]          validation-rickroll  -> origin/validation-rickroll
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4629546Z [command]/usr/bin/git rev-parse --verify --quiet aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4^{object}
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4633581Z aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4637414Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4638373Z ##[group]Determining the checkout info
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4639360Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:21.4642884Z [command]/usr/bin/git sparse-checkout disable
+securite	UNKNOWN STEP	2026-11-15T15:27:21.5197901Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+securite	UNKNOWN STEP	2026-11-15T15:27:21.5493405Z ##[group]Checking out the ref
+securite	UNKNOWN STEP	2026-11-15T15:27:21.5495607Z [command]/usr/bin/git checkout --progress --force aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4
+securite	UNKNOWN STEP	2026-11-15T15:27:22.5692717Z Updating files:  88% (9556/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.5851718Z Updating files:  89% (9563/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6037896Z Updating files:  90% (9670/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6100579Z Updating files:  91% (9778/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6170396Z Updating files:  92% (9885/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6242830Z Updating files:  93% (9992/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6323115Z Updating files:  94% (10100/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6402157Z Updating files:  95% (10207/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6469658Z Updating files:  96% (10315/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6514443Z Updating files:  97% (10422/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6563657Z Updating files:  98% (10530/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6706159Z Updating files:  99% (10637/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6706508Z Updating files: 100% (10744/10744)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6706762Z Updating files: 100% (10744/10744), done.
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6815291Z Note: switching to 'aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4'.
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6815611Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6815792Z You are in 'detached HEAD' state. You can look around, make experimental
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6816089Z changes and commit them, and you can discard any commits you make in this
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6816377Z state without impacting any branches by switching back to a branch.
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6816536Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6816667Z If you want to create a new branch to retain commits you create, you may
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6816944Z do so (now or later) by using -c with the switch command. Example:
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817089Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817176Z   git switch -c <new-branch-name>
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817287Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817367Z Or undo this operation with:
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817472Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817536Z   git switch -
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817622Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817784Z Turn off this advice by setting config variable advice.detachedHead to false
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6817970Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6818381Z HEAD is now at aa5d406bb Ajouter V8 (repli MD5, CWE-328) : septieme type d'alerte absent de la reference
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6905690Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6948227Z [command]/usr/bin/git log -1 --format=%H
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6970353Z aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6977297Z ##[group]Removing auth
+securite	UNKNOWN STEP	2026-11-15T15:27:22.6980181Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7004167Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7226661Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7245722Z http.https://github.com/.extraheader
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7250472Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7276044Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7491931Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7515605Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7738254Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7984188Z ##[group]Run actions/setup-python@v5
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7984392Z with:
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7984536Z   python-version: 3.11
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7984693Z   check-latest: false
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7986085Z   token: ***
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7986229Z   update-environment: true
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7986393Z   allow-prereleases: false
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7986552Z   freethreaded: false
+securite	UNKNOWN STEP	2026-11-15T15:27:22.7986842Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:22.8860820Z ##[group]Installed versions
+securite	UNKNOWN STEP	2026-11-15T15:27:22.8930407Z (node:2265) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	UNKNOWN STEP	2026-11-15T15:27:22.8931048Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.8931440Z Successfully set up CPython (3.11.18)
+securite	UNKNOWN STEP	2026-11-15T15:27:22.8931762Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9071063Z ##[group]Run python -m pip install -r semgrep/requirements.txt
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9071584Z ^[[36;1mpython -m pip install -r semgrep/requirements.txt^[[0m
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9182499Z shell: /usr/bin/bash -e {0}
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9182751Z env:
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9182952Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9183225Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9183487Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9183744Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9183982Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9184217Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	UNKNOWN STEP	2026-11-15T15:27:22.9184425Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:26.0184483Z Collecting semgrep==1.185.0 (from -r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.0826336Z   Downloading semgrep-1.185.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl.metadata (22 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1027440Z Collecting attrs>=21.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1127078Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1296283Z Collecting boltons~=21.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1392460Z   Downloading boltons-21.0.0-py2.py3-none-any.whl.metadata (1.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1563869Z Collecting certifi>=2026.10.19 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1660514Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1880070Z Collecting click-option-group~=0.5 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.1975929Z   Downloading click_option_group-0.5.9-py3-none-any.whl.metadata (5.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2149770Z Collecting click~=8.4.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2246335Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2410998Z Collecting colorama~=0.4.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2507644Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2674865Z Collecting exceptiongroup~=1.2.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2773180Z   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.2977824Z Collecting glom>=23.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3074935Z   Downloading glom-25.12.0-py3-none-any.whl.metadata (5.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3273058Z Collecting jsonschema~=4.25.1 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3368872Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3554825Z Collecting mcp==1.29.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3652780Z   Downloading mcp-1.29.0-py3-none-any.whl.metadata (9.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3838390Z Collecting opentelemetry-api~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.3935089Z   Downloading opentelemetry_api-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.4121776Z Collecting opentelemetry-sdk~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.4219116Z   Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.4390204Z Collecting opentelemetry-exporter-otlp-proto-http~=1.37.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.4487174Z   Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.4665439Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.4762022Z   Downloading opentelemetry_instrumentation_requests-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5085925Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5184464Z   Downloading opentelemetry_instrumentation_threading-0.66b2-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5380674Z Collecting packaging>=21.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5484597Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5678608Z Collecting peewee~=3.14 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5776021Z   Downloading peewee-3.19.0-py3-none-any.whl.metadata (7.0 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.5990700Z Collecting pyjwt<3,>=2.15.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.6085887Z   Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.6281020Z Collecting requests~=2.22 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.6375850Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.6604042Z Collecting rich>=13.5.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.6700953Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.7502144Z Collecting ruamel.yaml>=0.18.15 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.7601672Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.7884398Z Collecting ruamel.yaml.clib==0.2.15 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.7984206Z   Downloading ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.8174031Z Collecting semantic-version~=2.10.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.8270062Z   Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.8442374Z Collecting structlog~=26.1.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.8538153Z   Downloading structlog-26.1.0-py3-none-any.whl.metadata (9.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.8775108Z Collecting tomli~=2.4.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.8879718Z   Downloading tomli-2.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9058753Z Collecting typing-extensions~=4.2 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9155964Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9342700Z Collecting urllib3~=2.0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9440000Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9612228Z Collecting wcmatch~=8.3 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9707343Z   Downloading wcmatch-8.5.2-py3-none-any.whl.metadata (4.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9897500Z Collecting anyio>=4.5 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:26.9999860Z   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.0270439Z Collecting httpx-sse>=0.4 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.0367978Z   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.0547067Z Collecting httpx<1.0.0,>=0.27.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.0646818Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.0823887Z Collecting pydantic-settings>=2.5.2 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.1004548Z   Downloading pydantic_settings-2.16.3-py3-none-any.whl.metadata (4.0 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.1841956Z Collecting pydantic<3.0.0,>=2.11.0 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.1942216Z   Downloading pydantic-2.14.3-py3-none-any.whl.metadata (141 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.2447952Z Collecting python-multipart>=0.0.9 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.2543958Z   Downloading python_multipart-0.0.33-py3-none-any.whl.metadata (6.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.2786161Z Collecting sse-starlette>=1.6.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.2882400Z   Downloading sse_starlette-3.7.0-py3-none-any.whl.metadata (15 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.3103697Z Collecting starlette>=0.27 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.3201497Z   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.3504810Z Collecting typing-inspection>=0.4.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.3602329Z   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.3804608Z Collecting uvicorn>=0.31.1 (from mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.3902799Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4095776Z Collecting httpcore==1.* (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4192235Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4366992Z Collecting idna (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4463830Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4620903Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4717564Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4896719Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.4997325Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.5200724Z Collecting referencing>=0.28.4 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.5302575Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.7051873Z Collecting rpds-py>=0.7.1 (from jsonschema~=4.25.1->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.7154166Z   Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.7518781Z Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.7617303Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.7806621Z Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.7903606Z   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.8098127Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.8194961Z   Downloading googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.8480165Z Collecting opentelemetry-exporter-otlp-proto-common==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.8576848Z   Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl.metadata (1.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.8751049Z Collecting opentelemetry-proto==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.8849032Z   Downloading opentelemetry_proto-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.9625540Z Collecting protobuf<7.0,>=5.0 (from opentelemetry-proto==1.37.0->opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:27.9731310Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+securite	UNKNOWN STEP	2026-11-15T15:27:27.9929209Z Collecting opentelemetry-instrumentation==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.0027854Z   Downloading opentelemetry_instrumentation-0.66b2-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.0202266Z Collecting opentelemetry-semantic-conventions==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.0307226Z   Downloading opentelemetry_semantic_conventions-0.66b2-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.0622315Z Collecting opentelemetry-util-http==0.66b2 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.0717558Z   Downloading opentelemetry_util_http-0.66b2-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.2837692Z Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.66b2->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.2939792Z   Downloading wrapt-2.5.2-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.2980145Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3076685Z   Downloading opentelemetry_instrumentation_requests-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3107379Z Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3204632Z   Downloading opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3232350Z Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3328089Z   Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3353623Z Collecting opentelemetry-util-http==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3450386Z   Downloading opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3650196Z INFO: pip is looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3657230Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3754078Z   Downloading opentelemetry_instrumentation_requests-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3786018Z Collecting opentelemetry-instrumentation==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3882144Z   Downloading opentelemetry_instrumentation-0.66b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.3910413Z Collecting opentelemetry-semantic-conventions==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4004965Z   Downloading opentelemetry_semantic_conventions-0.66b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4031650Z Collecting opentelemetry-util-http==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4133407Z   Downloading opentelemetry_util_http-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4164250Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4259369Z   Downloading opentelemetry_instrumentation_requests-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4287069Z Collecting opentelemetry-instrumentation==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4383836Z   Downloading opentelemetry_instrumentation-0.65b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4410489Z Collecting opentelemetry-semantic-conventions==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4506042Z   Downloading opentelemetry_semantic_conventions-0.65b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4531031Z Collecting opentelemetry-util-http==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4625138Z   Downloading opentelemetry_util_http-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4676263Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4772004Z   Downloading opentelemetry_instrumentation_requests-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4804038Z Collecting opentelemetry-instrumentation==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4899679Z   Downloading opentelemetry_instrumentation-0.64b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.4925758Z Collecting opentelemetry-semantic-conventions==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5022012Z   Downloading opentelemetry_semantic_conventions-0.64b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5048027Z Collecting opentelemetry-util-http==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5143995Z   Downloading opentelemetry_util_http-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5174146Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5271361Z   Downloading opentelemetry_instrumentation_requests-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5304118Z Collecting opentelemetry-instrumentation==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5402146Z   Downloading opentelemetry_instrumentation-0.63b1-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5429027Z Collecting opentelemetry-semantic-conventions==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5526560Z   Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5552904Z Collecting opentelemetry-util-http==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5649100Z   Downloading opentelemetry_util_http-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5774785Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5868892Z   Downloading opentelemetry_instrumentation_requests-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5896506Z Collecting opentelemetry-instrumentation==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.5992328Z   Downloading opentelemetry_instrumentation-0.63b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6018702Z Collecting opentelemetry-semantic-conventions==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6118039Z   Downloading opentelemetry_semantic_conventions-0.63b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6142192Z Collecting opentelemetry-util-http==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6237501Z   Downloading opentelemetry_util_http-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6266373Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6362273Z   Downloading opentelemetry_instrumentation_requests-0.62b1-py3-none-any.whl.metadata (2.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6389206Z Collecting opentelemetry-instrumentation==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6484847Z   Downloading opentelemetry_instrumentation-0.62b1-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6511199Z Collecting opentelemetry-semantic-conventions==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6606132Z   Downloading opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl.metadata (2.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6633413Z Collecting opentelemetry-util-http==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6728884Z   Downloading opentelemetry_util_http-0.62b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6773475Z INFO: pip is still looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6778987Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6877154Z   Downloading opentelemetry_instrumentation_requests-0.62b0-py3-none-any.whl.metadata (2.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.6906926Z Collecting opentelemetry-instrumentation==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7006370Z   Downloading opentelemetry_instrumentation-0.62b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7044808Z Collecting opentelemetry-semantic-conventions==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7143251Z   Downloading opentelemetry_semantic_conventions-0.62b0-py3-none-any.whl.metadata (2.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7168745Z Collecting opentelemetry-util-http==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7264385Z   Downloading opentelemetry_util_http-0.62b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7293688Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7389096Z   Downloading opentelemetry_instrumentation_requests-0.61b0-py3-none-any.whl.metadata (2.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7418120Z Collecting opentelemetry-instrumentation==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7513386Z   Downloading opentelemetry_instrumentation-0.61b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7542132Z Collecting opentelemetry-semantic-conventions==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7638282Z   Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl.metadata (2.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7773944Z Collecting opentelemetry-util-http==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7871871Z   Downloading opentelemetry_util_http-0.61b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.7904583Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8001407Z   Downloading opentelemetry_instrumentation_requests-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8034764Z Collecting opentelemetry-instrumentation==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8131189Z   Downloading opentelemetry_instrumentation-0.60b1-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8162427Z Collecting opentelemetry-semantic-conventions==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8257059Z   Downloading opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8283328Z Collecting opentelemetry-util-http==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8379358Z   Downloading opentelemetry_util_http-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8414918Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8514450Z   Downloading opentelemetry_instrumentation_requests-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8544711Z Collecting opentelemetry-instrumentation==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8641949Z   Downloading opentelemetry_instrumentation-0.60b0-py3-none-any.whl.metadata (7.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8842163Z Collecting opentelemetry-semantic-conventions==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8938983Z   Downloading opentelemetry_semantic_conventions-0.60b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.8971476Z Collecting opentelemetry-util-http==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9067541Z   Downloading opentelemetry_util_http-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9098507Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9195534Z   Downloading opentelemetry_instrumentation_requests-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9238485Z Collecting opentelemetry-instrumentation==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9334507Z   Downloading opentelemetry_instrumentation-0.59b0-py3-none-any.whl.metadata (7.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9361524Z Collecting opentelemetry-semantic-conventions==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9455825Z   Downloading opentelemetry_semantic_conventions-0.59b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9481615Z Collecting opentelemetry-util-http==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9575802Z   Downloading opentelemetry_util_http-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9602686Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9607640Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9702514Z   Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9731732Z Collecting opentelemetry-instrumentation==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9827303Z   Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl.metadata (7.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:28.9946256Z Collecting opentelemetry-semantic-conventions==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0042396Z   Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl.metadata (2.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0067408Z Collecting opentelemetry-util-http==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0164632Z   Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0212615Z Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.58b0->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0313453Z   Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0349840Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0446111Z   Downloading opentelemetry_instrumentation_threading-0.66b1-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0470365Z INFO: pip is looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0569070Z   Downloading opentelemetry_instrumentation_threading-0.66b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.0878306Z   Downloading opentelemetry_instrumentation_threading-0.65b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1006264Z   Downloading opentelemetry_instrumentation_threading-0.64b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1137769Z   Downloading opentelemetry_instrumentation_threading-0.63b1-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1267921Z   Downloading opentelemetry_instrumentation_threading-0.63b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1395410Z   Downloading opentelemetry_instrumentation_threading-0.62b1-py3-none-any.whl.metadata (2.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1470573Z INFO: pip is still looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1581470Z   Downloading opentelemetry_instrumentation_threading-0.62b0-py3-none-any.whl.metadata (2.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1865766Z   Downloading opentelemetry_instrumentation_threading-0.61b0-py3-none-any.whl.metadata (2.2 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.1991748Z   Downloading opentelemetry_instrumentation_threading-0.60b1-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.2122041Z   Downloading opentelemetry_instrumentation_threading-0.60b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.2249932Z   Downloading opentelemetry_instrumentation_threading-0.59b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.2275040Z INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+securite	UNKNOWN STEP	2026-11-15T15:27:29.2373910Z   Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl.metadata (2.1 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.2538806Z Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.2635902Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.6979976Z Collecting pydantic-core==2.50.4 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.7082626Z   Downloading pydantic_core-2.50.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.8026022Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.8126730Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.8802627Z Collecting charset_normalizer<4,>=2 (from requests~=2.22->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.8902898Z   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:29.9132297Z Collecting bracex>=2.1.1 (from wcmatch~=8.3->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:29.9230031Z   Downloading bracex-3.2.3-py3-none-any.whl.metadata (3.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0052344Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0155312Z   Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0316882Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0414295Z   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0579877Z Collecting face>=20.1.1 (from glom>=23.3->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0676495Z   Downloading face-26.0.1-py3-none-any.whl.metadata (1.8 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0885342Z Collecting python-dotenv>=1.2.2 (from pydantic-settings>=2.5.2->mcp==1.29.0->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.0981610Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.1193811Z Collecting markdown-it-py>=2.2.0 (from rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.1293190Z   Downloading markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.1486757Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.1584366Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.1737833Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.5.2->semgrep==1.185.0->-r semgrep/requirements.txt (line 1))
+securite	UNKNOWN STEP	2026-11-15T15:27:30.1836348Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.2141386Z Downloading semgrep-1.185.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl (72.3 MB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.8208809Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.3/72.3 MB 122.1 MB/s  0:00:00
+securite	UNKNOWN STEP	2026-11-15T15:27:30.8308898Z Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.8425727Z Downloading ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (777 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.8485891Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 777.6/777.6 kB 131.3 MB/s  0:00:00
+securite	UNKNOWN STEP	2026-11-15T15:27:30.8597232Z Downloading boltons-21.0.0-py2.py3-none-any.whl (193 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:30.8715834Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2116237Z Downloading click_option_group-0.5.9-py3-none-any.whl (11 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2225134Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2333430Z Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2441101Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2549628Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2661964Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2770933Z Downloading opentelemetry_api-1.37.0-py3-none-any.whl (65 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.2878569Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3057292Z Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl (19 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3164984Z Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl (18 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3274039Z Downloading opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3383725Z Downloading googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3503121Z Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl (12 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3611036Z Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl (207 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3723616Z Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl (33 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.3831726Z Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl (7.7 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4106097Z Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl (9.3 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4214696Z Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl (131 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4324591Z Downloading peewee-3.19.0-py3-none-any.whl (411 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4441630Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4556572Z Downloading pydantic-2.14.3-py3-none-any.whl (494 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4672730Z Downloading pydantic_core-2.50.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4815236Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 156.5 MB/s  0:00:00
+securite	UNKNOWN STEP	2026-11-15T15:27:31.4909008Z Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5152247Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5260506Z Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5373755Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5481862Z Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5589902Z Downloading structlog-26.1.0-py3-none-any.whl (73 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5698591Z Downloading tomli-2.4.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (243 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5808387Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.5914287Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6200835Z Downloading wcmatch-8.5.2-py3-none-any.whl (39 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6307986Z Downloading wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (82 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6418021Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6527074Z Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6641451Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6751293Z Downloading bracex-3.2.3-py3-none-any.whl (14 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.6862823Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7151099Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7416787Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 179.2 MB/s  0:00:00
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7515454Z Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (217 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7628474Z Downloading glom-25.12.0-py3-none-any.whl (103 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7738003Z Downloading face-26.0.1-py3-none-any.whl (57 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7846414Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.7954922Z Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8061815Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8253960Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8366109Z Downloading pydantic_settings-2.16.3-py3-none-any.whl (82 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8474158Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8592199Z Downloading python_multipart-0.0.33-py3-none-any.whl (32 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8698424Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8805440Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8921921Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.8962822Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 372.0 MB/s  0:00:00
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9058967Z Downloading markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9302627Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9410417Z Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (375 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9522685Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9631281Z Downloading sse_starlette-3.7.0-py3-none-any.whl (18 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9738129Z Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9847237Z Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:31.9954193Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:32.0061597Z Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:32.0251614Z Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+securite	UNKNOWN STEP	2026-11-15T15:27:32.4266637Z Installing collected packages: peewee, boltons, zipp, wrapt, urllib3, typing-extensions, tomli, structlog, semantic-version, ruamel.yaml.clib, ruamel.yaml, rpds-py, python-multipart, python-dotenv, pyjwt, pygments, pycparser, protobuf, packaging, opentelemetry-util-http, mdurl, idna, httpx-sse, h11, face, exceptiongroup, colorama, click, charset_normalizer, certifi, bracex, attrs, annotated-types, wcmatch, uvicorn, typing-inspection, requests, referencing, pydantic-core, opentelemetry-proto, markdown-it-py, importlib-metadata, httpcore, googleapis-common-protos, glom, click-option-group, cffi, anyio, starlette, rich, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, jsonschema-specifications, httpx, cryptography, sse-starlette, pydantic-settings, opentelemetry-semantic-conventions, jsonschema, opentelemetry-sdk, opentelemetry-instrumentation, mcp, opentelemetry-instrumentation-threading, opentelemetry-instrumentation-requests, opentelemetry-exporter-otlp-proto-http, semgrep
+securite	UNKNOWN STEP	2026-11-15T15:27:35.4131957Z 
+securite	UNKNOWN STEP	2026-11-15T15:27:35.4150039Z Successfully installed annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 boltons-21.0.0 bracex-3.2.3 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 click-8.4.2 click-option-group-0.5.9 colorama-0.4.6 cryptography-50.0.2 exceptiongroup-1.2.2 face-26.0.1 glom-25.12.0 googleapis-common-protos-1.76.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.20 importlib-metadata-8.7.1 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 markdown-it-py-4.3.0 mcp-1.29.0 mdurl-0.1.2 opentelemetry-api-1.37.0 opentelemetry-exporter-otlp-proto-common-1.37.0 opentelemetry-exporter-otlp-proto-http-1.37.0 opentelemetry-instrumentation-0.58b0 opentelemetry-instrumentation-requests-0.58b0 opentelemetry-instrumentation-threading-0.58b0 opentelemetry-proto-1.37.0 opentelemetry-sdk-1.37.0 opentelemetry-semantic-conventions-0.58b0 opentelemetry-util-http-0.58b0 packaging-26.3 peewee-3.19.0 protobuf-6.33.6 pycparser-3.12 pydantic-2.14.3 pydantic-core-2.50.4 pydantic-settings-2.16.3 pygments-2.21.0 pyjwt-2.15.1 python-dotenv-1.2.4 python-multipart-0.0.33 referencing-0.37.0 requests-2.34.2 rich-15.0.0 rpds-py-2026.9.1 ruamel.yaml-0.19.1 ruamel.yaml.clib-0.2.15 semantic-version-2.10.0 semgrep-1.185.0 sse-starlette-3.7.0 starlette-1.10.0 structlog-26.1.0 tomli-2.4.1 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 wcmatch-8.5.2 wrapt-1.17.3 zipp-4.1.2
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6072214Z ##[group]Run python semgrep/gate.py --event-name "$EVENT_NAME" --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6072688Z ^[[36;1mpython semgrep/gate.py --event-name "$EVENT_NAME" --event-json "$GITHUB_EVENT_PATH" --output-dir security-reports^[[0m
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6114385Z shell: /usr/bin/bash -e {0}
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6114521Z env:
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6114670Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6114903Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6115126Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6115333Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6115537Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6115745Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6115924Z   EVENT_NAME: push
+securite	UNKNOWN STEP	2026-11-15T15:27:35.6116065Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4826104Z Contrôle Semgrep : new_findings
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4846794Z Référence : 5edd9c9da85d30c2c63ddde265023313855690d8
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4847220Z Version : aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4847618Z Alertes : 24 → 25 ; 1 nouvelles, 0 supprimées.
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4848031Z - use-of-md5 : tika-core/src/main/java/org/apache/tika/digest/InputStreamDigester.java:76
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4921436Z ##[error]Process completed with exit code 1.
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4989672Z ##[group]Run actions/upload-artifact@v4
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4989915Z with:
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990092Z   name: semgrep-43729952161-1
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990235Z   path: security-reports/
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990366Z   if-no-files-found: error
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990494Z   retention-days: 30
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990611Z   compression-level: 6
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990731Z   overwrite: false
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990851Z   include-hidden-files: false
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4990981Z env:
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4991124Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4991369Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib/pkgconfig
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4991589Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4991792Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4991994Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.18/x64
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4992222Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.18/x64/lib
+securite	UNKNOWN STEP	2026-11-15T15:27:51.4992393Z ##[endgroup]
+securite	UNKNOWN STEP	2026-11-15T15:27:51.6068729Z (node:2556) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+securite	UNKNOWN STEP	2026-11-15T15:27:51.6069221Z (Use `node --trace-deprecation ...` to show where the warning was created)
+securite	UNKNOWN STEP	2026-11-15T15:27:51.6129801Z With the provided path, there will be 11 files uploaded
+securite	UNKNOWN STEP	2026-11-15T15:27:51.6133238Z Artifact name is valid!
+securite	UNKNOWN STEP	2026-11-15T15:27:51.6133744Z Root directory input is valid!
+securite	UNKNOWN STEP	2026-11-15T15:27:51.8686410Z Beginning upload of artifact content to blob storage
+securite	UNKNOWN STEP	2026-11-15T15:27:51.8969041Z (node:2556) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+securite	UNKNOWN STEP	2026-11-15T15:27:52.0859661Z Uploaded bytes 93095
+securite	UNKNOWN STEP	2026-11-15T15:27:52.1311024Z Finished uploading artifact content to blob storage!
+securite	UNKNOWN STEP	2026-11-15T15:27:52.1311570Z SHA256 digest of uploaded artifact zip is c2f73bb6d8e0db3eda4a5857177e270f4ec6f068fa68c3e175e28db34980ffc9
+securite	UNKNOWN STEP	2026-11-15T15:27:52.1312890Z Finalizing artifact upload
+securite	UNKNOWN STEP	2026-11-15T15:27:52.4555120Z Artifact semgrep-43729952161-1.zip successfully finalized. Artifact ID 14167683458
+securite	UNKNOWN STEP	2026-11-15T15:27:52.4555749Z Artifact semgrep-43729952161-1 has been successfully uploaded! Final size is 93095 bytes. Artifact ID is 14167683458
+securite	UNKNOWN STEP	2026-11-15T15:27:52.4560110Z Artifact download URL: https://github.com/EnzoT454/tika/actions/runs/43729952161/artifacts/14167683458
+securite	UNKNOWN STEP	2026-11-15T15:27:52.4734647Z Post job cleanup.
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5243009Z [command]/usr/bin/git version
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5276417Z git version 2.56.1
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5297715Z Temporarily overriding HOME='/home/runner/work/_temp/bdc47a87-b89a-4065-8bb1-4a65b1f61c02' before making global git config changes
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5298358Z Adding repository directory to the temporary git global config as a safe directory
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5300659Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tika/tika
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5330947Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5357801Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5595983Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5631938Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5891900Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+securite	UNKNOWN STEP	2026-11-15T15:27:52.5925730Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+securite	UNKNOWN STEP	2026-11-15T15:27:52.6260831Z Cleaning up orphan processes
+securite	UNKNOWN STEP	2026-11-15T15:27:52.6505245Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

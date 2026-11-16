@@ -1,0 +1,58 @@
+{
+  "added": [
+    {
+      "check_id": "use-of-md5",
+      "path": "tika-core/src/main/java/org/apache/tika/digest/InputStreamDigester.java",
+      "start": {
+        "line": 76,
+        "col": 50,
+        "offset": 3222
+      },
+      "end": {
+        "line": 76,
+        "col": 55,
+        "offset": 3227
+      },
+      "extra": {
+        "message": "Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use HMAC instead.",
+        "fix": "\"SHA-512\"",
+        "metadata": {
+          "functional-categories": [
+            "crypto::search::hash-algorithm::java.security"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "cwe": [
+            "CWE-328: Use of Weak Hash"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_MD5",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH"
+        },
+        "severity": "WARNING",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "removed": [],
+  "retained": 24,
+  "before_count": 24,
+  "after_count": 25
+}

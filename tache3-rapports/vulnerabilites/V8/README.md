@@ -2,7 +2,7 @@
 
 ## Pourquoi une huitième modification
 
-La V1 (injection de commande) modifie un appel `ProcessBuilder` que la règle `command-injection-process-builder` signalait déjà avant nos changements : cette règle donne 7 alertes dans la référence et 7 après. Le contrôle différentiel la compte comme nouvelle parce que le fragment signalé a changé, mais le type d'alerte existait déjà. V8 ajoute donc un septième type d'alerte **absent de la référence**, pour que sept types soient nouveaux sans ambiguïté (V2 à V8), V1 restant documentée comme aggravation d'une alerte existante.
+Nous avons ajouté le repli silencieux vers MD5 pour compléter la démonstration avec une faiblesse distincte détectée par une règle absente du rapport initial. V1 reste une injection shell introduite dans un chemin existant : le fait que Semgrep signalait déjà l'ancien appel ne l'invalide pas. Le type d'une vulnérabilité et l'identifiant d'une règle déjà présente sont deux notions différentes.
 
 ## Fichier et modification
 
@@ -30,9 +30,13 @@ La seule différence entre les deux derniers rapports est une alerte WARNING `us
 
 Les trois scans ont été lancés en local sous Windows, directement avec la commande `semgrep scan` et les options de `semgrep/scan.py`, car `scan.py` et `gate.py` comparent des chemins avec `/` et ne fonctionnent pas tels quels sous Windows. Les rapports condensés gardent la règle, le fichier, la ligne, la sévérité et le CWE de chaque alerte.
 
+Le [run GitHub 43729952161](https://github.com/EnzoT454/tika/actions/runs/43729952161), déclenché par le push de [aa5d406](https://github.com/EnzoT454/tika/commit/aa5d406bbded2dd73aecbc9c03fbb9d6f22da7a4), confirme ensuite ces résultats sur Ubuntu. La référence de ce push est `5edd9c9da85d30c2c63ddde265023313855690d8`, qui contient déjà V1 à V7 : 24 → 25 alertes, un ajout `use-of-md5`, aucune suppression et 24 conservées. Le statut est `new_findings`, code 1 ; la construction est ignorée et le téléversement des rapports réussit. Les deux JSON bruts ne contiennent aucune erreur d'analyse.
+
+Les [preuves téléchargées](github-43729952161/) comprennent les rapports bruts avant/après, le différentiel, les manifestes, les journaux des scans et le journal du workflow. Le fichier `checksums.json` fixe leurs empreintes SHA-256. Aucun nouveau run n'a été lancé pour cet archivage.
+
 ## Build
 
-`mvn -B -ntp -pl tika-core -am clean install` réussit avec la modification : 966 tests `tika-core` exécutés, 0 échec, 0 erreur, 2 désactivés (préexistants), Checkstyle sans violation.
+La validation locale consignée est `mvn -B -ntp -pl tika-core -am clean install` : réussite avec la modification, 966 cas `tika-core` dont 2 désactivés (préexistants), 0 échec, 0 erreur, Checkstyle sans violation. Le journal Maven et les XML de ce build ne sont pas présents dans les archives disponibles ; cette déclaration n'est donc pas recoupée avec des preuves brutes. Le run GitHub ci-dessus bloque avant Maven et ne constitue pas une validation de construction.
 
 ## Correction
 
